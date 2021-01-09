@@ -29,14 +29,28 @@
           <div class="navRight">
             <div class="menuBox">
               <div class="infoItem">
-                <span class="p2" :class="$route.path === '/home1/index' ? 'active' : ''" @click="() => {
-                  $router.push('/home1/index')
-                }">首页</span>
+                <span
+                  class="p2"
+                  :class="$route.path === '/home1/index' ? 'active' : ''"
+                  @click="
+                    () => {
+                      $router.push('/home1/index');
+                    }
+                  "
+                  >首页</span
+                >
               </div>
               <div class="infoItem">
-                <span class="p2" :class="$route.path === '/home2/index' ? 'active' : ''" @click="() => {
-                  $router.push('/home2/index')
-                }">资历要求</span>
+                <span
+                  class="p2"
+                  :class="$route.path === '/home2/index' ? 'active' : ''"
+                  @click="
+                    () => {
+                      $router.push('/home2/index');
+                    }
+                  "
+                  >资历要求</span
+                >
               </div>
             </div>
           </div>
@@ -48,12 +62,44 @@
         <router-view :key="key" />
       </keep-alive>
     </transition>
+    <div class="footer">
+      <div class="contact">
+        <el-row style="width: 1200px; margin: 0 auto">
+          <el-col :span="12">
+            <el-image class="g1" :src="logo2Img" fit="cover" lazy
+              ><div slot="placeholder" class="emptyImg"
+            /></el-image>
+            <div class="p1">
+              Dr.J Writer Studio，全网最大英文写手高薪兼职平台
+            </div>
+            <el-button class="btn1" type="primary">了解更多</el-button>
+          </el-col>
+          <el-col :span="12" style="text-align: center">
+            <div style="text-align: left; display: inline-block">
+              <div class="p2">联系方式</div>
+              <div class="p3">
+                <div class="p33">微信：ReportJ888</div>
+                <div class="p33">工作时间：周一至周日</div>
+              </div>
+              <div class="p4">
+                <el-image class="g2" :src="wechatImg" fit="cover" lazy
+                  ><div slot="placeholder" class="emptyImg"
+                /></el-image>
+              </div>
+            </div>
+          </el-col>
+        </el-row>
+      </div>
+      <div class="copyRight">Dr.J Writer Studio @2011-2020 copyright</div>
+    </div>
   </div>
 </template>
 
 <script>
 const topLeftImg = require("@/assets/img/topLeft.png");
 const logoImg = require("@/assets/img/logo.png");
+const logo2Img = require("@/assets/img/logo2.png");
+const wechatImg = require("@/assets/img/wechat.png");
 
 export default {
   name: "BaseLayout",
@@ -62,6 +108,8 @@ export default {
     return {
       topLeftImg,
       logoImg,
+      logo2Img,
+      wechatImg,
     };
   },
   computed: {
@@ -74,7 +122,7 @@ export default {
   },
   created() {},
   mounted() {
-    console.log(this.$route.path)
+    console.log(this.$route.path);
   },
   methods: {},
 };
@@ -220,6 +268,66 @@ export default {
         }
       }
     }
+  }
+}
+.footer {
+  .contact {
+    height: 416px;
+    background-color: rgba(28, 58, 85, 1);
+    padding-top: 90px;
+
+    .g1 {
+      width: 315px;
+      height: 108px;
+    }
+
+    .p1 {
+      font-size: 16px;
+      font-weight: 400;
+      color: #ffffff;
+      margin: 30px 0;
+    }
+
+    .btn1 {
+      font-size: 20px;
+      height: 60px;
+      background: rgba(0, 79, 160, 1);
+      border-color: rgba(0, 79, 160, 1);
+    }
+
+    .p2 {
+      font-size: 18px;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .p3 {
+      position: relative;
+      margin: 30px 0;
+
+      .p33 {
+        font-size: 14px;
+        color: #333333;
+        line-height: 18px;
+        color: #fff;
+      }
+    }
+
+    .g2 {
+      width: 121px;
+      height: 121px;
+    }
+  }
+
+  .copyRight {
+    background: rgba(14, 14, 14, 1);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
   }
 }
 </style>
