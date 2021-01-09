@@ -170,6 +170,120 @@
         </div>
       </div>
     </div>
+    <div class="pageSection sec5">
+      <el-image class="pageSectionImg" :src="sec5Img" fit="cover" lazy
+        ><div slot="placeholder" class="emptyImg"
+      /></el-image>
+      <div class="pageSectionContent">
+        <div class="sec1Box">
+          <div class="p1">Evaluation of our cooperative teachers</div>
+          <div class="d1"></div>
+          <div class="p2">
+            15年来，Dr.J Writer
+            Studio为数千位优秀写作老师提供了高薪、稳定的兼职收入来源，
+          </div>
+          <div class="p2">将有才变有财！多年来收获合作老师一致好评！</div>
+          <el-row :gutter="30" style="height: 295px; margin-top: 20px">
+            <el-col :span="12" style="height: 100%">
+              <div class="b1">
+                <el-rate :value="5" style="text-align: right"> </el-rate>
+                <div class="p3">约克大学</div>
+                <div class="p4">
+                  我是2008年加入的Dr.J，是在网络上
+                  无意搜到的，没想到一开始接单就停
+                  不下来，越干越有劲，哈哈，可能是
+                  对钱的诱惑力吧！我木有抵抗力阿！
+                </div>
+                <div class="p5">英文专业写作老师</div>
+                <el-image class="g1" :src="p1Img" fit="cover" lazy
+                  ><div slot="placeholder" class="emptyImg"
+                /></el-image>
+              </div>
+            </el-col>
+            <el-col :span="12" style="height: 100%">
+              <div class="b1">
+                <el-rate :value="5" style="text-align: right"> </el-rate>
+                <div class="p3">南京大学</div>
+                <div class="p4">
+                  我最初是在应聘网站上看到的，本身
+                  对于这一块有点反感，但是想着还不
+                  如赚点快外，就开始合作了，没想到
+                  现在兼职费是我平常上班的好几倍了。
+                </div>
+                <div class="p5">会计专业写作老师</div>
+                <el-image class="g1" :src="p2Img" fit="cover" lazy
+                  ><div slot="placeholder" class="emptyImg"
+                /></el-image>
+              </div>
+            </el-col>
+          </el-row>
+          <el-progress
+            style="width: 50%; margin: 35px auto 0"
+            :show-text="false"
+            :stroke-width="15"
+            :percentage="50"
+          ></el-progress>
+        </div>
+      </div>
+    </div>
+    <div class="pageSection sec6">
+      <el-image class="pageSectionImg" :src="sec6Img" fit="cover" lazy
+        ><div slot="placeholder" class="emptyImg"
+      /></el-image>
+      <div class="pageSectionContent">
+        <div class="sec1Box">
+          <el-row :gutter="80" style="height: 100%">
+            <el-col :span="12" style="height: 100%">
+              <div class="sec1BoxCol col1">
+                <div class="p1">A Chance To Change Your Life</div>
+                <div class="p2">Dr.J WRITER STUDIO的薪资</div>
+                <div class="d1"></div>
+                <div class="p3">
+                  Dr.J Writer
+                  Studio实行分级定薪政策，根据订单难度、耗费精力时长、
+                  作业类别三个方面来提供不同的薪资待遇，确保每一份订单的薪资都是
+                  合理且让您满意的！
+                </div>
+              </div>
+            </el-col>
+            <el-col :span="12" style="height: 100%">
+              <div class="sec1BoxCol col2">
+                <el-row :gutter="34">
+                  <el-col :span="6" style="text-align: center;">
+                    <div class="b1">
+                      <span class="t1"> 200+ </span>
+                    </div>
+                    <div class="p1">普通难度</div>
+                    <div class="p2">千字200-300RMB</div>
+                  </el-col>
+                  <el-col :span="6" style="text-align: center;">
+                    <div class="b1">
+                      <span class="t1"> 300+ </span>
+                    </div>
+                    <div class="p1">难度较大</div>
+                    <div class="p2">千字300-500RMB</div>
+                  </el-col>
+                  <el-col :span="6" style="text-align: center;">
+                    <div class="b1">
+                      <span class="t1"> 200+ </span>
+                    </div>
+                    <div class="p1">考试价格</div>
+                    <div class="p2">根据难度、时间及成绩 600-2500 RMB</div>
+                  </el-col>
+                  <el-col :span="6" style="text-align: center;">
+                    <div class="b1">
+                      <span class="t1"> 200+ </span>
+                    </div>
+                    <div class="p1">网课价格</div>
+                    <div class="p2">根据成绩要求 1200-3000 RMB</div>
+                  </el-col>
+                </el-row>
+              </div>
+            </el-col>
+          </el-row>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -178,8 +292,13 @@ const sec1Img = require("@/assets/img/bg1.png");
 const sec2Img = require("@/assets/img/bg2.png");
 const sec3Img = require("@/assets/img/bg3.png");
 const sec4Img = require("@/assets/img/bg4.png");
+const sec5Img = require("@/assets/img/bg5.png");
+const sec6Img = require("@/assets/img/bg6.png");
 
 const list3Img = require("@/assets/img/list3.png");
+
+const p1Img = require("@/assets/img/p1.png");
+const p2Img = require("@/assets/img/p2.png");
 
 export default {
   name: "Home1",
@@ -190,7 +309,11 @@ export default {
       sec2Img,
       sec3Img,
       sec4Img,
+      sec5Img,
+      sec6Img,
       list3Img,
+      p1Img,
+      p2Img,
     };
   },
   created() {},
@@ -453,6 +576,150 @@ export default {
           margin-bottom: 15px;
           line-height: 28px;
           font-size: 17px;
+        }
+      }
+    }
+  }
+}
+.sec5 {
+  height: 625px;
+
+  .sec1Box {
+    height: 100%;
+
+    .p1 {
+      font-size: 36px;
+      font-weight: bold;
+      color: #ffffff;
+      line-height: 48px;
+      margin-top: 80px;
+    }
+
+    .d1 {
+      background: rgba(62, 171, 220, 1);
+      width: 400px;
+      height: 2px;
+      margin: 20px 0;
+    }
+
+    .p2 {
+      font-size: 16px;
+      font-weight: 400;
+      color: #ffffff;
+      line-height: 26px;
+    }
+
+    .b1 {
+      position: relative;
+      background: #dbe7f1;
+      padding: 25px 40px 40px 283px;
+      height: 100%;
+
+      .p3 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #2a2a2a;
+        line-height: 48px;
+        margin-top: 20px;
+      }
+
+      .p4 {
+        font-size: 16px;
+        font-weight: 400;
+        color: #333333;
+        line-height: 26px;
+      }
+
+      .p5 {
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: 400;
+        font-style: italic;
+        color: #3eabdc;
+        line-height: 24px;
+      }
+
+      .g1 {
+        width: 243px;
+        height: 295px;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+}
+.sec6 {
+  height: 428px;
+
+  .sec1Box {
+    height: 100%;
+
+    .sec1BoxCol {
+      height: 100%;
+      padding-top: 100px;
+
+      &.col1 {
+        .p1 {
+          font-size: 18px;
+          font-weight: 400;
+          color: #3eabdc;
+          line-height: 25px;
+        }
+
+        .p2 {
+          font-size: 36px;
+          font-weight: 800;
+          color: #0e0e0e;
+          line-height: 48px;
+        }
+
+        .d1 {
+          background: rgba(62, 171, 220, 1);
+          width: 400px;
+          height: 2px;
+          margin: 20px 0;
+        }
+
+        .p3 {
+          margin-top: 60px;
+          font-size: 16px;
+          color: #0e0e0e;
+          line-height: 26px;
+        }
+      }
+
+      &.col2 {
+        margin-top: 10px;
+
+        .b1 {
+          width: 120px;
+          height: 120px;
+          background-color: #ebeef0;
+          padding: 25px 20px 21px;
+          text-align: center;
+
+          .t1 {
+            font-size: 24px;
+            font-weight: 800;
+            color: #0e0e0e;
+            line-height: 30px;
+          }
+        }
+
+        .p1 {
+          font-size: 18px;
+          font-weight: bold;
+          color: #0e0e0e;
+          line-height: 26px;
+          margin-top: 18px;
+        }
+
+        .p2 {
+          font-size: 14px;
+          color: #0e0e0e;
+          line-height: 18px;
+          margin-top: 7px;
         }
       }
     }

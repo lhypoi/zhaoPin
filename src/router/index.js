@@ -5,6 +5,7 @@ Vue.use(Router)
 
 /* Layout */
 import Layout from '@/layout'
+import BaseLayout from '@/views/baseLayout'
 
 /* Router Modules */
 import componentsRouter from './modules/components'
@@ -85,7 +86,27 @@ export const constantRoutes = [
   },
   {
     path: '/home1',
-    component: () => import('@/views/home1/index'),
+    component: BaseLayout,
+    redirect: '/home1/index',
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/home1/index'),
+        name: 'Documentation',
+      }
+    ]
+  },
+  {
+    path: '/home2',
+    component: BaseLayout,
+    redirect: '/home2/index',
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/home2/index'),
+        name: 'Documentation',
+      }
+    ]
   },
   {
     path: '/documentation',
