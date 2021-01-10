@@ -1,5 +1,5 @@
 <template>
-  <div style="padding-top: 120px">
+  <div style="padding-top: 120px" class="webPage">
     <div class="nav">
       <div class="navContent">
         <div class="navTop">
@@ -12,9 +12,11 @@
           <div class="navRight">
             <div class="workInfoBox">
               <div class="infoItem">
+                <i class="iconfont icon01yonghu"></i>
                 <span class="p2">微信：ReportJ888</span>
               </div>
               <div class="infoItem">
+                <i class="iconfont icon02duanxin"></i>
                 <span class="p2">工作时间：周一至周日</span>
               </div>
             </div>
@@ -78,6 +80,7 @@
             <div style="text-align: left; display: inline-block">
               <div class="p2">联系方式</div>
               <div class="p3">
+                <i class="iconfont icon01yonghu"></i>
                 <div class="p33">微信：ReportJ888</div>
                 <div class="p33">工作时间：周一至周日</div>
               </div>
@@ -92,6 +95,20 @@
       </div>
       <div class="copyRight">Dr.J Writer Studio @2011-2020 copyright</div>
     </div>
+    <div class="sideWechat">
+      <el-image :src="wechat2Img" fit="cover" style="width: 50px; height: 50px"
+        ><div slot="placeholder" class="emptyImg"
+      /></el-image>
+      <span class="p1"> 微信二维码 </span>
+      <br />
+      <el-image :src="wechatImg" fit="cover" style="width: 125px; height: 125px; margin: 0 0 10px 10px;"
+        ><div slot="placeholder" class="emptyImg"
+      /></el-image>
+    </div>
+    <el-backtop
+      target=".webPage"
+      style="background-color: #0282d3; color: #fff"
+    ></el-backtop>
   </div>
 </template>
 
@@ -100,6 +117,7 @@ const topLeftImg = require("@/assets/img/topLeft.png");
 const logoImg = require("@/assets/img/logo.png");
 const logo2Img = require("@/assets/img/logo2.png");
 const wechatImg = require("@/assets/img/wechat.png");
+const wechat2Img = require("@/assets/img/wechat2.png");
 
 export default {
   name: "BaseLayout",
@@ -110,6 +128,7 @@ export default {
       logoImg,
       logo2Img,
       wechatImg,
+      wechat2Img,
     };
   },
   computed: {
@@ -184,6 +203,14 @@ export default {
 
           .infoItem {
             position: relative;
+            display: flex;
+            align-items: center;
+
+            .iconfont {
+              color: #0282d3;
+              font-size: 33px;
+              margin-right: 12px;
+            }
 
             .p2 {
               font-size: 16px;
@@ -304,6 +331,15 @@ export default {
     .p3 {
       position: relative;
       margin: 30px 0;
+      padding-left: 40px;
+
+      .iconfont {
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 32px;
+        color: #fff;
+      }
 
       .p33 {
         font-size: 14px;
@@ -328,6 +364,43 @@ export default {
     font-size: 16px;
     font-weight: 400;
     color: #ffffff;
+  }
+}
+
+.sideWechat {
+  position: fixed;
+  z-index: 10;
+  top: 300px;
+  right: 0;
+  background: #007fb8;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  overflow: hidden;
+  height: 50px;
+  transition: 0.3s;
+  width: 50px;
+  cursor: pointer;
+
+  .p1 {
+    color: #fff;
+    line-height: 50px;
+    vertical-align: top;
+    margin-right: 10px;
+    transition: 0.3s;
+    overflow: hidden;
+    width: 0;
+    height: 50px;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  &:hover {
+    height: 193px;
+    width: 145px;
+
+    .p1 {
+      width: 80px;
+    }
   }
 }
 </style>

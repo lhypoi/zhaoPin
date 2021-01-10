@@ -25,6 +25,7 @@
           <el-row :gutter="30" style="height: 100%">
             <el-col :span="8" style="height: 100%">
               <div class="sec1BoxCol">
+                <i class="iconfont icon03gaoehuibao"></i>
                 <div class="p1">高额回报</div>
                 <div class="p2">
                   Dr.J Essay Mentor
@@ -34,7 +35,8 @@
             </el-col>
             <el-col :span="8" style="height: 100%">
               <div class="sec1BoxCol active">
-                <div class="p1">高额回报</div>
+                <i class="iconfont icon04zhishu"></i>
+                <div class="p1">优质资源</div>
                 <div class="p2">
                   我们还拥有大量高黏性，且优质的客群资源，同时我们对内部老师的组建也十分重视
                 </div>
@@ -42,6 +44,7 @@
             </el-col>
             <el-col :span="8" style="height: 100%">
               <div class="sec1BoxCol">
+                <i class="iconfont icon06hezuo"></i>
                 <div class="p1">一单一结</div>
                 <div class="p2">
                   我们始终保持诚信合作的理念，同时有着高额的项目提成率，一单一结，快速结款，价格透明.
@@ -116,15 +119,18 @@
           /></el-image>
           <div class="ct-tabs-title">
             <div class="ct-tab-title">
+              <i class="iconfont icon11xueliyaoqiu"></i>
               <h4>学历要求</h4>
               <p>国内高校985/211</p>
               <p>国外QS全球排名前200院校在读亦可</p>
             </div>
             <div class="ct-tab-title active">
+              <i class="iconfont icon09yingwenyaoqiu"></i>
               <h4>英文要求</h4>
               <p>Ielts7+,Toefl90+ Cet6-570+,Tem8+ 以上任意之一</p>
             </div>
             <div class="ct-tab-title">
+              <i class="iconfont icon10yuanchuangxiezuo"></i>
               <h4>原创写作</h4>
               <p>了解各类英文写作格式</p>
               <p>及引用规范</p>
@@ -249,29 +255,33 @@
             <el-col :span="12" style="height: 100%">
               <div class="sec1BoxCol col2">
                 <el-row :gutter="34">
-                  <el-col :span="6" style="text-align: center;">
+                  <el-col :span="6" style="text-align: center">
                     <div class="b1">
+                      <i class="iconfont icon14xinzizishu"></i>
                       <span class="t1"> 200+ </span>
                     </div>
                     <div class="p1">普通难度</div>
                     <div class="p2">千字200-300RMB</div>
                   </el-col>
-                  <el-col :span="6" style="text-align: center;">
+                  <el-col :span="6" style="text-align: center">
                     <div class="b1">
+                      <i class="iconfont icon14xinzizishu"></i>
                       <span class="t1"> 300+ </span>
                     </div>
                     <div class="p1">难度较大</div>
                     <div class="p2">千字300-500RMB</div>
                   </el-col>
-                  <el-col :span="6" style="text-align: center;">
+                  <el-col :span="6" style="text-align: center">
                     <div class="b1">
+                      <i class="iconfont icon14xinzizishu"></i>
                       <span class="t1"> 200+ </span>
                     </div>
                     <div class="p1">考试价格</div>
                     <div class="p2">根据难度、时间及成绩 600-2500 RMB</div>
                   </el-col>
-                  <el-col :span="6" style="text-align: center;">
+                  <el-col :span="6" style="text-align: center">
                     <div class="b1">
+                      <i class="iconfont icon14xinzizishu"></i>
                       <span class="t1"> 200+ </span>
                     </div>
                     <div class="p1">网课价格</div>
@@ -374,6 +384,15 @@ export default {
       padding: 30px 15px 20px 80px;
       cursor: pointer;
       transition: 0.3s;
+      position: relative;
+
+      .iconfont {
+        color: #0282d3;
+        font-size: 45px;
+        position: absolute;
+        left: 15px;
+        top: 20px;
+      }
 
       .p1 {
         font-size: 24px;
@@ -394,6 +413,10 @@ export default {
       &:hover {
         background: #0282d3;
         border-bottom: none;
+
+        .iconfont {
+          color: #fff;
+        }
       }
     }
   }
@@ -489,6 +512,11 @@ export default {
         text-align: center;
         position: relative;
 
+        .iconfont {
+          color: #34b8da;
+          font-size: 35px;
+        }
+
         h4 {
           margin-top: 2px;
           margin-bottom: 9px;
@@ -515,8 +543,13 @@ export default {
 
         &.active {
           z-index: 1;
+
           h4,
           p {
+            color: #fff;
+          }
+
+          .iconfont {
             color: #fff;
           }
         }
@@ -691,6 +724,11 @@ export default {
 
       &.col2 {
         margin-top: 10px;
+
+        .iconfont {
+          color: #0282d3;
+          font-size: 32px;
+        }
 
         .b1 {
           width: 120px;
