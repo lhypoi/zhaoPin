@@ -1,6 +1,6 @@
 import defaultSettings from '@/settings'
 
-const title = defaultSettings.title || 'Dr.J Essay Mentor'
+const title = defaultSettings.title || 'Dr.D Essay Mentor'
 
 export default function getPageTitle(pageTitle) {
   if (pageTitle) {

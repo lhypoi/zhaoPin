@@ -6,12 +6,12 @@
       /></el-image>
       <div class="pageSectionContent">
         <div class="sec1Box">
-          <div class="p1">Dr.J Essay Mentor</div>
+          <div class="p1">Dr.D Essay Mentor</div>
           <div class="p2">
-            诚聘各类学科英文论文导师<br />
-            工作自由，高提成率
+            全英最大教学辅导机构<br />
+            对症下药，高效拉分
           </div>
-          <div class="p3">JOIN US. CHANGE YOUR LIFE！</div>
+          <div class="p3">Chose us. Better future.</div>
           <el-button class="btn1" type="primary">了解更多</el-button>
         </div>
       </div>
@@ -26,29 +26,27 @@
             <el-col :span="8" style="height: 100%">
               <div class="sec1BoxCol">
                 <i class="iconfont icon03gaoehuibao"></i>
-                <div class="p1">高额回报</div>
+                <div class="p1">留学申请</div>
                 <div class="p2">
-                  Dr.J Essay Mentor
-                  不仅能让您取得丰厚的佣金报酬，还能够帮助您在学术研究上取得更好的成就
+                  除了貼切自身的寫作功力外，名校升學綠色通道也是獨家代理產品
                 </div>
               </div>
             </el-col>
             <el-col :span="8" style="height: 100%">
               <div class="sec1BoxCol active">
                 <i class="iconfont icon04zhishu"></i>
-                <div class="p1">优质资源</div>
+                <div class="p1">Online Course网课輔導</div>
                 <div class="p2">
-                  我们还拥有大量高黏性，且优质的客群资源，同时我们对内部老师的组建也十分重视
+                  强大的师资好和最佳的服務態度。保质保量，全程把控，homework，quiz，exam全部完美輔導完成！专业客服定期跟进，为您的留学生活保驾护航。
                 </div>
               </div>
             </el-col>
             <el-col :span="8" style="height: 100%">
               <div class="sec1BoxCol">
                 <i class="iconfont icon06hezuo"></i>
-                <div class="p1">一单一结</div>
+                <div class="p1">英文作文学术论文/文书修改润色服务</div>
                 <div class="p2">
-                  我们始终保持诚信合作的理念，同时有着高额的项目提成率，一单一结，快速结款，价格透明.
-                  诚信合作
+                  高质量，高效率的文章修改润色降重服务。按照顾客的要求，1v1的进行针对性修改。每位导师都会对文章的结构，语法，句式，以及逻辑和表达方式上进行精细修改并提供一些建设性意见，让顾客之后的写作变得更加完美，快速提升學習。
                 </div>
               </div>
             </el-col>
@@ -62,32 +60,20 @@
       /></el-image>
       <div class="pageSectionContent">
         <div class="sec1Box">
-          <div class="p1">Qualification requirements</div>
+          <div class="p1">About us</div>
           <div class="p2">
-            各类学科英文论文<br />
-            导师资质要求
+            关于我们
           </div>
           <div class="d1"></div>
           <div class="p3">
-            我们需要靠谱的、可以长期合作的留学生OR华人学霸．组织成立以来，
-            我们秉持著Take Care of your achievement，无论是客户还是老师，
-            我们都同样重视。
-          </div>
-          <div class="p3">
-            希望您可以处理客户紧急的学习问题，可以接大项目，必要时适当地
-            加班工作， 还有可以随时联系到本人，可以尽职尽责。尽可能的很有
-            耐心去解释一件事情。
-          </div>
-          <div class="p3">
-            许多事情说起来简单，执行起来需要很强的自律性，总之，希望合 作愉快！
-            教学是自由的，学术也是没有边界的。在这个平台，诗和 远方便触手可及。
+            Dr.D 教育辅导专家，被誉为”业界的最后的良心，是一个全英最优质的课业辅导机构, 始于2009年。拥有最坚强的G5师资,依照每个学生的条件和情况提供最适合的学习方案，凭借着”负责到底, 学生的事就是我们的事的理念”。在伦敦、曼城、格拉斯格等地，许许多多的学长姐在我们的协助下完成学业,光荣回国。
           </div>
           <div class="p4">
             <div class="ct-list-item">
               <div class="ct-list-icon"></div>
               <div class="ct-list-meta">
                 <div class="ct-list-desc">
-                  <b>联系我们</b> – 添加官方微信咨询详情
+                  <b>联系我们</b> – 添加官方微信咨询
                 </div>
               </div>
             </div>
@@ -95,7 +81,7 @@
               <div class="ct-list-icon"></div>
               <div class="ct-list-meta">
                 <div class="ct-list-desc">
-                  <b>投递简历</b> – 微信提交个人简历信息
+                  <b>快速評估</b> – 30分鐘內評估出最佳方案
                 </div>
               </div>
             </div>
@@ -103,7 +89,7 @@
               <div class="ct-list-icon"></div>
               <div class="ct-list-meta">
                 <div class="ct-list-desc">
-                  <b>录取通知</b> – 1- 2 个工作日审核通过
+                  <b>提前截稿</b> – 預留3- 5 个工作日完成最後的查重和優化
                 </div>
               </div>
             </div>
@@ -120,9 +106,9 @@
           <div class="ct-tabs-title">
             <div class="ct-tab-title">
               <i class="iconfont icon11xueliyaoqiu"></i>
-              <h4>学历要求</h4>
+              <h4>我們的團隊</h4>
               <p>国内高校985/211</p>
-              <p>国外QS全球排名前200院校在读亦可</p>
+              <p>国外QS全球排名前200院校以下任何之一</p>
             </div>
             <div class="ct-tab-title active">
               <i class="iconfont icon09yingwenyaoqiu"></i>
@@ -132,9 +118,7 @@
             <div class="ct-tab-title">
               <i class="iconfont icon10yuanchuangxiezuo"></i>
               <h4>原创写作</h4>
-              <p>了解各类英文写作格式</p>
-              <p>及引用规范</p>
-              <p>有长期写作经验者优先</p>
+              <p>百分之百原創，開啟學習不同維度的學習角度，快速提升學習效率</p>
             </div>
           </div>
         </div>
@@ -149,26 +133,18 @@
           <el-row :gutter="30" style="height: 100%">
             <el-col :span="12" style="height: 100%">
               <div class="sec1BoxCol col1">
-                <div class="p1">Dr.J Essay Mentor</div>
-                <div class="p2">关于我们</div>
+                <div class="p1">快速聯繫我們</div>
+                <div class="p2">如何快速的与我们进行联络</div>
                 <div class="d1"></div>
-                <div class="p4">Learn more about us</div>
+                <div class="p3">我们致力于为您提供最高质量的服务，如果您有任何关于您的订单或者其他问题，请联络我们微信24小时在线客服：Han80888Y（推荐）或者邮箱联系1491214174@qq.com</div>
+                <div class="p4">How to Contact us</div>
               </div>
             </el-col>
             <el-col :span="12" style="height: 100%">
               <div class="sec1BoxCol col2">
-                <div class="p1">即刻加入我们，让你的才华变现！</div>
+                <div class="p1">需要下单的顾客如何与我们联络</div>
                 <div class="p2">
-                  Dr.J Essay
-                  Mentor，成立于2005年，为国内外英文写作人才提供高薪优质的线上兼职资源。
-                </div>
-                <div class="p2">
-                  Dr.J Essay
-                  Mentor拥有数量庞大的任务单，包含Essay，Assignment，Exam，java、C语言、python计算机编程语言，留学申请文书等，为各专业的写作老师提供多元化的选择。目前，Dr.J
-                  Essay
-                  Mentor已与上千位老师合作达15年之久。作为一份兼职，时间灵活弹性，通常都能获得高于主业数倍的薪资！自成立以来，Dr.J
-                  Essay
-                  Mentor不断优化老师团队，欢迎各领域的优秀写作老师前来应聘。
+                  如果您是需要下单的顾客，请不要着急，我们歡迎您的拜訪，您可以選擇按下右下角綠色的小對話框和我們聯繫。 也可以直接搜一搜WECHAT和我們進一步諮詢。若線上客服在10分鐘内没有与您联系，请立即扫下方微信24小时在线服务号二维码，我们会在第一时间给您分配您的专属1对1的尊爵服務。
                 </div>
               </div>
             </el-col>
@@ -182,25 +158,19 @@
       /></el-image>
       <div class="pageSectionContent">
         <div class="sec1Box">
-          <div class="p1">Evaluation of our cooperative teachers</div>
+          <div class="p1">客户服务质量评价与反馈</div>
           <div class="d1"></div>
           <div class="p2">
-            15年来，Dr.J Writer
-            Studio为数千位优秀写作老师提供了高薪、稳定的兼职收入来源，
+            您的支持和满意是对我们服务质量的最好肯定，同时我们也是Dr.D 不断前进的动力
           </div>
-          <div class="p2">将有才变有财！多年来收获合作老师一致好评！</div>
           <el-row :gutter="30" style="height: 295px; margin-top: 20px">
             <el-col :span="12" style="height: 100%">
               <div class="b1">
                 <el-rate :value="5" style="text-align: right"> </el-rate>
-                <div class="p3">约克大学</div>
+                <div class="p3">David</div>
                 <div class="p4">
-                  我是2008年加入的Dr.J，是在网络上
-                  无意搜到的，没想到一开始接单就停
-                  不下来，越干越有劲，哈哈，可能是
-                  对钱的诱惑力吧！我木有抵抗力阿！
+                  圈子里他们家的口碑不错，态度负责，和之前遇到的一般小机构不同，一分钱一分货。
                 </div>
-                <div class="p5">英文专业写作老师</div>
                 <el-image class="g1" :src="p1Img" fit="cover" lazy
                   ><div slot="placeholder" class="emptyImg"
                 /></el-image>
@@ -209,14 +179,10 @@
             <el-col :span="12" style="height: 100%">
               <div class="b1">
                 <el-rate :value="5" style="text-align: right"> </el-rate>
-                <div class="p3">南京大学</div>
+                <div class="p3">Selina</div>
                 <div class="p4">
-                  我最初是在应聘网站上看到的，本身
-                  对于这一块有点反感，但是想着还不
-                  如赚点快外，就开始合作了，没想到
-                  现在兼职费是我平常上班的好几倍了。
+                  那时因为自身原因被警告要勒令开除，经过朋友介绍找到了他们，客服很有耐心而且把客户当成了朋友一样，谢谢Zoey 经理，帮我和学校争取权益,最后也让我顺利毕业了。
                 </div>
-                <div class="p5">会计专业写作老师</div>
                 <el-image class="g1" :src="p2Img" fit="cover" lazy
                   ><div slot="placeholder" class="emptyImg"
                 /></el-image>
@@ -241,15 +207,8 @@
           <el-row :gutter="80" style="height: 100%">
             <el-col :span="12" style="height: 100%">
               <div class="sec1BoxCol col1">
-                <div class="p1">A Chance To Change Your Life</div>
-                <div class="p2">Dr.J WRITER STUDIO的薪资</div>
+                <div class="p2">实时数据</div>
                 <div class="d1"></div>
-                <div class="p3">
-                  Dr.J Writer
-                  Studio实行分级定薪政策，根据订单难度、耗费精力时长、
-                  作业类别三个方面来提供不同的薪资待遇，确保每一份订单的薪资都是
-                  合理且让您满意的！
-                </div>
               </div>
             </el-col>
             <el-col :span="12" style="height: 100%">
@@ -258,34 +217,30 @@
                   <el-col :span="6" style="text-align: center">
                     <div class="b1">
                       <i class="iconfont icon14xinzizishu"></i>
-                      <span class="t1"> 200+ </span>
+                      <span class="t1"> 1150+ </span>
                     </div>
-                    <div class="p1">普通难度</div>
-                    <div class="p2">千字200-300RMB</div>
+                    <div class="p1">注册用户</div>
                   </el-col>
                   <el-col :span="6" style="text-align: center">
                     <div class="b1">
                       <i class="iconfont icon14xinzizishu"></i>
-                      <span class="t1"> 300+ </span>
+                      <span class="t1"> 7380+ </span>
                     </div>
-                    <div class="p1">难度较大</div>
-                    <div class="p2">千字300-500RMB</div>
+                    <div class="p1">已完成订单</div>
                   </el-col>
                   <el-col :span="6" style="text-align: center">
                     <div class="b1">
                       <i class="iconfont icon14xinzizishu"></i>
-                      <span class="t1"> 200+ </span>
+                      <span class="t1"> 90+ </span>
                     </div>
-                    <div class="p1">考试价格</div>
-                    <div class="p2">根据难度、时间及成绩 600-2500 RMB</div>
+                    <div class="p1">处理中订单</div>
                   </el-col>
                   <el-col :span="6" style="text-align: center">
                     <div class="b1">
                       <i class="iconfont icon14xinzizishu"></i>
-                      <span class="t1"> 200+ </span>
+                      <span class="t1"> 80+ </span>
                     </div>
-                    <div class="p1">网课价格</div>
-                    <div class="p2">根据成绩要求 1200-3000 RMB</div>
+                    <div class="p1">在线专家</div>
                   </el-col>
                 </el-row>
               </div>
@@ -373,7 +328,7 @@ export default {
   }
 }
 .sec2 {
-  height: 160px;
+  height: 230px;
 
   .sec1Box {
     height: 100%;
@@ -587,13 +542,21 @@ export default {
           margin-top: 20px;
         }
 
+        .p3 {
+          height: 16px;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 1.5;
+          margin-top: 20px;
+        }
+
         .p4 {
           height: 16px;
           font-size: 18px;
           font-weight: 400;
           color: #3eabdc;
           line-height: 1;
-          margin-top: 160px;
+          margin-top: 120px;
         }
       }
 

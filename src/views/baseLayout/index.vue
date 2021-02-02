@@ -13,7 +13,7 @@
             <div class="workInfoBox">
               <div class="infoItem">
                 <i class="iconfont icon01yonghu"></i>
-                <span class="p2">微信：ReportJ888</span>
+                <span class="p2">微信：han80888y</span>
               </div>
               <div class="infoItem">
                 <i class="iconfont icon02duanxin"></i>
@@ -51,7 +51,7 @@
                       $router.push('/home2/index');
                     }
                   "
-                  >资历要求</span
+                  >服務範圍</span
                 >
               </div>
             </div>
@@ -72,7 +72,7 @@
               ><div slot="placeholder" class="emptyImg"
             /></el-image>
             <div class="p1">
-              Dr.J Writer Studio，全网最大英文写手高薪兼职平台
+              Dr.D Writer Studio，全英最大教学辅导机构
             </div>
             <el-button class="btn1" type="primary">了解更多</el-button>
           </el-col>
@@ -81,7 +81,7 @@
               <div class="p2">联系方式</div>
               <div class="p3">
                 <i class="iconfont icon01yonghu"></i>
-                <div class="p33">微信：ReportJ888</div>
+                <div class="p33">微信：han80888y</div>
                 <div class="p33">工作时间：周一至周日</div>
               </div>
               <div class="p4">
@@ -93,7 +93,7 @@
           </el-col>
         </el-row>
       </div>
-      <div class="copyRight">Dr.J Writer Studio @2011-2020 copyright</div>
+      <div class="copyRight">Dr.D Writer Studio @2011-2020 copyright</div>
     </div>
     <div class="sideWechat">
       <el-image :src="wechat2Img" fit="cover" style="width: 50px; height: 50px"
