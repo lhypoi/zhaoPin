@@ -82,3 +82,10 @@
 .el-range-separator {
   box-sizing: content-box;
 }
+
+.el-menu-item,
+.el-submenu__title {
+  &:hover {
+    background-color: rgb(84,92,100) !important;
+  }
+}
