@@ -1,5 +1,5 @@
 <template>
-  <div style="padding-top: 120px" class="webPage">
+  <div style="padding-top: 84px" class="webPage">
     <div class="nav">
       <div class="navContent">
         <div class="navTop">
@@ -34,7 +34,9 @@
               </el-submenu>
               <el-submenu index="/x1">
                 <template slot="title">一站式留学申请</template>
-                <el-menu-item index="/x11">热门留学国家的差异或排名</el-menu-item>
+                <el-menu-item
+                  index="/x11"
+                >热门留学国家的差异或排名</el-menu-item>
                 <el-menu-item index="/x12">申请留学或细节</el-menu-item>
               </el-submenu>
               <el-submenu index="/x2">
@@ -53,9 +55,31 @@
       </keep-alive>
     </transition>
     <div class="footer">
-      <div class="contact">
+      <div class="getMore">
         <el-row style="width: 1200px; margin: 0 auto">
-          <el-col :span="12">
+          <el-col :span="12" class="moreLeft">
+            <div class="p1">了解更多</div>
+            <div class="p2">用心对待每一份订单</div>
+          </el-col>
+          <el-col :span="12" class="moreRight">
+            <div class="p1">我们的优势</div>
+            <div class="p2">
+              <div class="moreTag">专业</div>
+              <div class="moreTag">高效</div>
+              <div class="moreTag">1V1专属客服</div>
+              <div class="moreTag">7x24</div>
+              <div class="moreTag">英国G5师资</div>
+              <div class="moreTag">高品质</div>
+              <div class="moreTag">均分高</div>
+              <div class="moreTag">提分快</div>
+              <div class="moreTag">QSTop200+</div>
+            </div>
+          </el-col>
+        </el-row>
+      </div>
+      <div class="copyRight">
+        <el-row style="width: 1200px; margin: 0 auto">
+          <el-col :span="12" class="copyRightLeft">
             <el-image
               class="g1"
               :src="logo2Img"
@@ -66,34 +90,28 @@
               class="emptyImg"
             /></el-image>
             <div class="p1">
-              Dr.J Writer Studio，全网最大英文写手高薪兼职平台
+              EY安永是指 Ernst & Young Global Limited
+              的全球組織，也可指其中一個或多個成員機構，各成員機構都是獨立的法人
+              個體。Ernst & Young Global Limited
+              是英國一家擔保有限公司，並不向客戶提供服務。
             </div>
-            <el-button class="btn1" type="primary">了解更多</el-button>
           </el-col>
-          <el-col :span="12" style="text-align: center">
-            <div style="text-align: left; display: inline-block">
-              <div class="p2">联系方式</div>
-              <div class="p3">
-                <i class="iconfont icon01yonghu" />
-                <div class="p33">微信：ReportJ888</div>
-                <div class="p33">工作时间：周一至周日</div>
-              </div>
-              <div class="p4">
-                <el-image
-                  class="g2"
-                  :src="wechatImg"
-                  fit="cover"
-                  lazy
-                ><div
-                  slot="placeholder"
-                  class="emptyImg"
-                /></el-image>
-              </div>
+          <el-col :span="12" class="copyRightRight">
+            <div class="p1">
+              <el-link>与我们联系</el-link>
+              <el-link>Dr.j所在地</el-link>
+              <el-link>入口网站</el-link>
+              <el-link>网站地图</el-link>
+              <el-link>免责及隐私声明</el-link>
+            </div>
+            <div class="p2">
+              <i class="iconfont iconfacebook" />
+              <i class="iconfont icontuite1" />
+              <i class="iconfont iconyoutube" />
             </div>
           </el-col>
         </el-row>
       </div>
-      <div class="copyRight">Dr.J Writer Studio @2011-2020 copyright</div>
     </div>
     <div class="sideWechat">
       <el-image
@@ -195,6 +213,7 @@ export default {
         align-items: center;
         justify-content: flex-end;
         height: 100%;
+        overflow: hidden;
 
         .navMenu {
           .el-menu-item,
@@ -204,7 +223,7 @@ export default {
             border-bottom: none !important;
 
             &:hover {
-              background-color: rgb(84,92,100) !important;
+              background-color: rgb(84, 92, 100) !important;
             }
           }
         }
@@ -213,72 +232,130 @@ export default {
   }
 }
 .footer {
-  .contact {
-    height: 416px;
-    background-color: rgba(28, 58, 85, 1);
-    padding-top: 90px;
+  .getMore {
+    height: 380px;
+    background-color: #1a1a24;
+    color: #fff;
 
-    .g1 {
-      width: 315px;
-      height: 108px;
-    }
+    .moreLeft {
+      padding-top: 120px;
+      line-height: 1;
 
-    .p1 {
-      font-size: 16px;
-      font-weight: 400;
-      color: #ffffff;
-      margin: 30px 0;
-    }
-
-    .btn1 {
-      font-size: 20px;
-      height: 60px;
-      background: rgba(0, 79, 160, 1);
-      border-color: rgba(0, 79, 160, 1);
-    }
-
-    .p2 {
-      font-size: 18px;
-      font-weight: 800;
-      color: #ffffff;
-    }
-
-    .p3 {
-      position: relative;
-      margin: 30px 0;
-      padding-left: 40px;
-
-      .iconfont {
-        position: absolute;
-        left: 0;
-        top: 0;
-        font-size: 32px;
-        color: #fff;
+      .p1 {
+        font-size: 40px;
       }
 
-      .p33 {
-        font-size: 14px;
-        color: #333333;
-        line-height: 18px;
-        color: #fff;
+      .p2 {
+        margin-top: 20px;
+        font-size: 16px;
       }
     }
 
-    .g2 {
-      width: 121px;
-      height: 121px;
+    .moreRight {
+      padding-top: 120px;
+      padding-left: 20px;
+      line-height: 1;
+
+      .p1 {
+        font-size: 16px;
+      }
+
+      .p2 {
+        margin: -10px;
+        margin-top: 25px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .moreTag {
+          margin: 10px;
+          margin-top: 0;
+          padding: 7px 10px;
+          height: 31px;
+          border: 1px solid #656571;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+
+          &:hover {
+            background: #fff;
+            color: #1a1a24;
+            border-color: #fff;
+          }
+        }
+      }
     }
   }
 
   .copyRight {
-    background: rgba(14, 14, 14, 1);
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    font-weight: 400;
-    color: #ffffff;
+    height: 285px;
+
+    .copyRightLeft {
+      padding-top: 70px;
+
+      .g1 {
+        width: 352px;
+        height: 63px;
+      }
+
+      .p1 {
+        margin-top: 40px;
+        color: #80808b;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    .copyRightRight {
+      padding-top: 70px;
+      padding-left: 20px;
+
+      .p1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        margin: -5px;
+        margin-top: 0;
+
+        .el-link {
+          margin: 5px;
+          margin-top: 0;
+          color: #272730;
+          font-size: 16px;
+          padding-bottom: 4px;
+
+          &::after {
+            border-color: #272730;
+          }
+        }
+      }
+
+      .p2 {
+        margin-top: 95px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+
+        .iconfont {
+          margin-left: 10px;
+          width: 44px;
+          height: 44px;
+          border-radius: 44px;
+          border: 2px solid #E0E0E5;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+
+          &:nth-child(2n) {
+            background: #2E2E38;
+            color: #fff;
+            border-color: #2E2E38;
+          }
+        }
+      }
+    }
   }
 }
 
