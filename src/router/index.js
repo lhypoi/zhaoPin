@@ -74,7 +74,7 @@ export const constantRoutes = [
   {
     path: '/',
     component: Layout,
-    redirect: '/home1',
+    redirect: '/home3',
     children: [
       {
         path: 'dashboard',
@@ -96,21 +96,29 @@ export const constantRoutes = [
   //     }
   //   ]
   // },
+  // {
+  //   path: '/home2',
+  //   component: BaseLayout,
+  //   redirect: '/home2/index',
+  //   children: [
+  //     {
+  //       path: 'index',
+  //       component: () => import('@/views/home2/index'),
+  //       name: 'Documentation'
+  //     }
+  //   ]
+  // },
   {
-    path: '/home2',
+    path: '/home3',
     component: BaseLayout,
-    redirect: '/home2/index',
+    redirect: '/home3/index',
     children: [
       {
         path: 'index',
-        component: () => import('@/views/home2/index'),
+        component: () => import('@/views/home3/index'),
         name: 'Documentation'
       }
     ]
-  },
-  {
-    path: '/home1',
-    component: BaseLayout
   },
   {
     path: '/documentation',

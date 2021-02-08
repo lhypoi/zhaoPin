@@ -26,7 +26,7 @@
               text-color="#fff"
               active-text-color="#ffd04b"
             >
-              <el-menu-item index="/home1">首页</el-menu-item>
+              <el-menu-item index="/home3/index">首页</el-menu-item>
               <el-submenu index="/x">
                 <template slot="title">海外留学辅导</template>
                 <el-menu-item index="/home2/index">网课辅导</el-menu-item>
