@@ -74,7 +74,7 @@ export const constantRoutes = [
   {
     path: '/',
     component: Layout,
-    redirect: '/home3',
+    redirect: '/GuaranteedAdmission',
     children: [
       {
         path: 'dashboard',
@@ -116,6 +116,18 @@ export const constantRoutes = [
       {
         path: 'index',
         component: () => import('@/views/home3/index'),
+        name: 'Documentation'
+      }
+    ]
+  },
+  {
+    path: '/GuaranteedAdmission',
+    component: BaseLayout,
+    redirect: '/GuaranteedAdmission/index',
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/guaranteedAdmission/index'),
         name: 'Documentation'
       }
     ]
