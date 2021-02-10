@@ -56,6 +56,7 @@
                 :src="list2Img"
                 fit="cover"
                 lazy
+                @click="() => $router.push(`/GuaranteedAdmission`)"
               ><div
                 slot="placeholder"
                 class="emptyImg"
@@ -482,6 +483,7 @@ export default {
 
     .sec2Col {
       position: relative;
+
       .p1 {
         padding-left: 20px;
         font-size: 30px;
@@ -491,6 +493,7 @@ export default {
       .g1 {
         height: 769px;
         width: 100%;
+        cursor: pointer;
       }
 
       .b1 {
