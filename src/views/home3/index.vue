@@ -177,7 +177,7 @@
       <div class="pageSectionContent">
         <div class="sec1Box">
           <el-row>
-            <el-col :span="12">
+            <el-col :span="12" style="display: flex; justify-content: flex-end">
               <div class="round">
                 <el-image
                   class="g1"
@@ -189,53 +189,212 @@
                   class="emptyImg"
                 /></el-image>
                 <div class="subRound r1">
-                  <div class="subRoundContent">
-                    时效性
-                  </div>
+                  <div class="subRoundContent">时效性</div>
                 </div>
                 <div class="subRound r2">
-                  <div class="subRoundContent">
-                    及时反馈
-                  </div>
+                  <div class="subRoundContent">及时反馈</div>
                 </div>
                 <div class="subRound r3">
-                  <div class="subRoundContent">
-                    省心
-                  </div>
+                  <div class="subRoundContent">省心</div>
                 </div>
                 <div class="subRound r4">
-                  <div class="subRoundContent">
-                    专注
-                  </div>
+                  <div class="subRoundContent">专注</div>
                 </div>
                 <div class="subRound r5">
-                  <div class="subRoundContent">
-                    名师辅导
-                  </div>
+                  <div class="subRoundContent">名师辅导</div>
                 </div>
                 <div class="subRound r6">
-                  <div class="subRoundContent">
-                    海外院校
-                  </div>
+                  <div class="subRoundContent">海外院校</div>
                 </div>
                 <div class="subRound r7">
-                  <div class="subRoundContent">
-                    学术背景
-                  </div>
+                  <div class="subRoundContent">学术背景</div>
                 </div>
                 <div class="subRound r8">
-                  <div class="subRoundContent">
-                    迅速响应
-                  </div>
+                  <div class="subRoundContent">迅速响应</div>
                 </div>
                 <div class="subRound r9">
-                  <div class="subRoundContent">
-                    专业
-                  </div>
+                  <div class="subRoundContent">专业</div>
+                </div>
+              </div>
+            </el-col>
+            <el-col :span="12">
+              <div class="b1">
+                <div class="p1">
+                  COVID-19 Enterprise <br>
+                  Resilience Framework
+                </div>
+                <div class="p2">您的一站式论文解决中心</div>
+                <div class="p3">关于我们</div>
+                <div class="p4">属于自己的专属vip的客服，24小时与</div>
+                <div class="p4">按照您的要求， 尽量模仿您的二的文章</div>
+                <div class="p4">在您约定期限之前把写好的文章交</div>
+                <el-button class="btn1" size="medium" plain>了解更多</el-button>
+
+              </div>
+            </el-col>
+          </el-row>
+        </div>
+      </div>
+    </div>
+
+    <div class="pageSection sec6">
+      <div class="pageSectionContent">
+        <div class="sec1Box">
+          <div class="t1">发展历程</div>
+          <el-row :gutter="20">
+            <el-col :span="8">
+              <el-image
+                class="g1"
+                :src="list8Img"
+                fit="cover"
+                lazy
+              ><div
+                slot="placeholder"
+                class="emptyImg"
+              /></el-image>
+              <div class="p1">100余名专业师资团队近百位资深留学顾问</div>
+              <div class="p2">
+                500余名专业写手为您竭诚服务，我们的服务项目涵盖超过70种科目，
+                100%原创。支持多种在线交易方式。
+              </div>
+              <div class="p3">留学生英文论文辅导服务</div>
+            </el-col>
+            <el-col :span="8">
+              <el-image
+                class="g1"
+                :src="list9Img"
+                fit="cover"
+                lazy
+              ><div
+                slot="placeholder"
+                class="emptyImg"
+              /></el-image>
+              <div class="p1">
+                Dr.D 提供高质量，高效率的文章修改润色降重服务
+              </div>
+              <div class="p2">
+                按照顾客的要求，1v1的进行针对性修改。每位导师都会对文章的结构，语法，
+                句式，以及逻辑和表达方式上进行精细修改并提供一些建设性意见
+              </div>
+              <div class="p3">文章修改润色降重服务</div>
+            </el-col>
+            <el-col :span="8">
+              <div class="p4">R&D Writing Services 发展历程</div>
+              <div class="p5">
+                通过线下与朋友介绍，R&D创始人与几个小
+                伙伴开始向多伦多地区的同学提供代写服务...
+              </div>
+              <div class="p6">2010年-2012年</div>
+              <div class="p5">
+                筹划建立R&D定制写作机构；重建服务流程，
+                建立ESSAYCASE网站（1.0版本），通过...
+              </div>
+              <div class="p6">2012年</div>
+              <div class="p5">
+                用户突破500名，在加拿大、美国、中国三地
+                设立办公室，为客户提供7X24小时...
+              </div>
+              <div class="p6">2013年-至今</div>
+            </el-col>
+          </el-row>
+          <div style="text-align: center; margin-top: 10px;">
+            <el-button class="btn1" size="medium" plain>了解更多</el-button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pageSection sec7">
+      <div class="pageSectionContent">
+        <div class="sec1Box">
+          <div class="t1">客户反馈</div>
+          <el-row :gutter="20">
+            <el-col :span="8">
+              <div class="sec7ColBox">
+                <div class="b1">
+                  <div class="p1">Selina</div>
+                  <div class="p2">利兹大学</div>
+                  <el-image
+                    class="g1"
+                    :src="u1Img"
+                    fit="cover"
+                    lazy
+                  ><div
+                    slot="placeholder"
+                    class="emptyImg"
+                  /></el-image>
+                </div>
+                <div class="b2">
+                  那时因为自身原因被警告要勒令开除，经过朋友介绍找到了
+                  他们，客服很有耐心而且把客户当成了朋友一样，谢谢Zoey
+                  经理，帮我和学校争取权益,最后也让我顺利毕业了。
+                </div>
+                <div class="b3">
+                  <i class="iconfont iconqipao" />
+                  <i class="iconfont iconfenxiang-hudong" /> 10
+                  <i class="iconfont iconaixin" /> 5
+                </div>
+              </div>
+            </el-col>
+            <el-col :span="8">
+              <div class="sec7ColBox">
+                <div class="b1">
+                  <div class="p1">Stacey</div>
+                  <div class="p2">牛津大学</div>
+                  <el-image
+                    class="g1"
+                    :src="u2Img"
+                    fit="cover"
+                    lazy
+                  ><div
+                    slot="placeholder"
+                    class="emptyImg"
+                  /></el-image>
+                </div>
+                <div class="b2">
+                  本来以为自己可以在期限内做完，没想到记错了Due，
+                  发现时只剩三天，幸亏选择了Dr.D海外教育，在这么短的
+                  时间内协助我完成了作业，靠谱！
+                </div>
+                <div class="b3">
+                  <i class="iconfont iconqipao" />
+                  <i class="iconfont iconfenxiang-hudong" /> 12
+                  <i class="iconfont iconaixin" /> 7
+                </div>
+              </div>
+            </el-col>
+            <el-col :span="8">
+              <div class="sec7ColBox">
+                <div class="b1">
+                  <div class="p1">Kevin</div>
+                  <div class="p2">爱丁堡大学</div>
+                  <el-image
+                    class="g1"
+                    :src="u3Img"
+                    fit="cover"
+                    lazy
+                  ><div
+                    slot="placeholder"
+                    class="emptyImg"
+                  /></el-image>
+                </div>
+                <div class="b2">
+                  这门老师是出了名的刁钻，于是我找了一间辅导,没想到学
+                  校抓我去meeting, 在面临被开除的边缘我找到了Dr.D, 我
+                  才知道这行水实在太深了, 感谢工作室帮我和校方argue得
+                  到多一次resit的机会, 太感谢
+                </div>
+                <div class="b3">
+                  <i class="iconfont iconqipao" />
+                  <i class="iconfont iconfenxiang-hudong" /> 9
+                  <i class="iconfont iconaixin" /> 8
                 </div>
               </div>
             </el-col>
           </el-row>
+          <div style="text-align: center; margin-top: 30px;">
+            <el-button class="btn1" size="medium" plain>了解更多</el-button>
+          </div>
         </div>
       </div>
     </div>
@@ -251,6 +410,11 @@ const list4Img = require('@/assets/img/list4.png')
 const list5Img = require('@/assets/img/list5.png')
 const list6Img = require('@/assets/img/list6.png')
 const list7Img = require('@/assets/img/list7.png')
+const list8Img = require('@/assets/img/list8.png')
+const list9Img = require('@/assets/img/list9.png')
+const u1Img = require('@/assets/img/u1.png')
+const u2Img = require('@/assets/img/u2.png')
+const u3Img = require('@/assets/img/u3.png')
 
 export default {
   name: 'Home3',
@@ -264,7 +428,12 @@ export default {
       list4Img,
       list5Img,
       list6Img,
-      list7Img
+      list7Img,
+      list8Img,
+      list9Img,
+      u1Img,
+      u2Img,
+      u3Img
     }
   },
   created() {},
@@ -357,7 +526,7 @@ export default {
 
   .sec1Box {
     height: 100%;
-    color: #2E2E38;
+    color: #2e2e38;
     line-height: 1.5;
     padding-top: 110px;
     padding-bottom: 20px;
@@ -439,7 +608,7 @@ export default {
           width: 110px;
           height: 110px;
           border-radius: 110px;
-          background: #2E2E38;
+          background: #2e2e38;
           font-size: 18px;
           display: flex;
           justify-content: center;
@@ -450,13 +619,13 @@ export default {
           transition: 0.3s;
 
           &:hover {
-            background: #FFE600;
-            color: #2E2E38;
+            background: #ffe600;
+            color: #2e2e38;
 
             &::before {
-              content: '';
+              content: "";
               display: block;
-              border: 2px solid #FFE600;
+              border: 2px solid #ffe600;
               position: absolute;
               top: 50%;
               left: 50%;
@@ -539,6 +708,203 @@ export default {
           .subRoundContent {
             transform: rotate(-340deg);
           }
+        }
+      }
+    }
+
+    .b1 {
+      padding-left: 120px;
+      padding-top: 150px;
+
+      .p1 {
+        color: #ffe600;
+        font-size: 48px;
+        line-height: 55px;
+      }
+
+      .p2 {
+        font-size: 30px;
+        margin-top: 30px;
+      }
+
+      .p3 {
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .p4 {
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 0;
+          height: 0;
+          border: 8px solid transparent;
+          border-left: 8px solid #ffe600;
+        }
+      }
+
+      .btn1 {
+        margin-top: 40px;
+        padding: 20px 60px;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.sec6 {
+  height: 865px;
+
+  .sec1Box {
+    height: 100%;
+    line-height: 1.5;
+
+    .t1 {
+      padding-top: 60px;
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .g1 {
+      width: 100%;
+      height: 389px;
+
+      ::v-deep .el-image__inner {
+        object-fit: contain !important;
+      }
+    }
+
+    .p1 {
+      padding-top: 20px;
+      font-size: 20px;
+      padding-right: 20px;
+    }
+
+    .p2 {
+      margin-top: 10px;
+      font-size: 16px;
+      padding-right: 20px;
+    }
+
+    .p3 {
+      margin-top: 15px;
+      font-size: 16px;
+      padding-right: 20px;
+    }
+
+    .p4 {
+      font-size: 16px;
+      color: #747480;
+      margin-top: 200px;
+      padding-left: 20px;
+      margin-bottom: 30px;
+    }
+
+    .p5 {
+      font-size: 20px;
+      color: #2E2E38;
+      padding-left: 20px;
+      margin-top: 20px;
+    }
+
+    .p6 {
+      font-size: 14px;
+      color: #21212B;
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    .btn1 {
+      padding: 20px 60px;
+      font-size: 18px;
+    }
+  }
+}
+
+.sec7 {
+  height: 580px;
+
+  .sec1Box {
+    height: 100%;
+    line-height: 1.5;
+
+    .t1 {
+      padding: 50px 0 30px;
+      text-align: center;
+      color: #2E2E38;
+      font-size: 36px;
+    }
+
+    .btn1 {
+      padding: 20px 60px;
+      font-size: 18px;
+      background: #2E2E38;
+      color: #fff;
+    }
+
+    .sec7ColBox {
+      border: 1px dashed #9A9A9A;
+      border-radius: 5px;
+      padding: 40px 25px 20px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      height: 267px;
+
+      .b1 {
+        position: relative;
+        padding-left: 60px;
+
+        .g1 {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 40px;
+          height: 40px;
+        }
+
+        .p1 {
+          font-size: 18px;
+          line-height: 20px;
+          color: #2E2E38;
+        }
+
+        .p2 {
+          font-size: 18px;
+          line-height: 20px;
+          color: #627587;
+        }
+      }
+
+      .b2 {
+        font-size: 14px;
+        margin-top: 20px;
+        flex: 1;
+      }
+
+      .b3 {
+        display: flex;
+        align-items: center;
+
+        .iconqipao {
+          color: #3DA4E5;
+        }
+
+        .iconfenxiang-hudong {
+          color: #1ABE65;
+          margin-left: 15px;
+          margin-right: 5px;
+        }
+
+        .iconaixin {
+          color: #D73569;
+          margin-left: 15px;
+          margin-right: 5px;
         }
       }
     }
