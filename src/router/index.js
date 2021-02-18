@@ -133,6 +133,18 @@ export const constantRoutes = [
     ]
   },
   {
+    path: '/StudyAbroadAdvisory',
+    component: BaseLayout,
+    redirect: '/StudyAbroadAdvisory/index',
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/studyAbroadAdvisory/index'),
+        name: 'Documentation'
+      }
+    ]
+  },
+  {
     path: '/documentation',
     component: Layout,
     children: [
