@@ -16,7 +16,8 @@ const whiteList = [
   '/home3/index',
   '/GuaranteedAdmission/index',
   '/StudyAbroadAdvisory/index',
-  '/RepresentationOfInterests/index'
+  '/RepresentationOfInterests/index',
+  '/StudyInUK/index'
 ] // no redirect whitelist
 
 router.beforeEach(async(to, from, next) => {

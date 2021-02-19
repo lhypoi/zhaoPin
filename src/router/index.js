@@ -157,6 +157,18 @@ export const constantRoutes = [
     ]
   },
   {
+    path: '/StudyInUK',
+    component: BaseLayout,
+    redirect: '/StudyInUK/index',
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/studyInUK/index'),
+        name: 'Documentation'
+      }
+    ]
+  },
+  {
     path: '/documentation',
     component: Layout,
     children: [
