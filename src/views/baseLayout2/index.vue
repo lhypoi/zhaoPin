@@ -31,6 +31,7 @@
                 <template slot="title">海外留学辅导</template>
                 <el-menu-item index="/GuaranteedAdmission/index">保录升学</el-menu-item>
                 <el-menu-item index="/StudyAbroadAdvisory/index">名校保录</el-menu-item>
+                <el-menu-item index="/RepresentationOfInterests/index">权益申述</el-menu-item>
                 <el-menu-item index="/home2/index">网课辅导</el-menu-item>
                 <el-menu-item index="/xx">雅思/托福/GRE/Gmat</el-menu-item>
               </el-submenu>

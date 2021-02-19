@@ -145,6 +145,18 @@ export const constantRoutes = [
     ]
   },
   {
+    path: '/RepresentationOfInterests',
+    component: BaseLayout,
+    redirect: '/RepresentationOfInterests/index',
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/representationOfInterests/index'),
+        name: 'Documentation'
+      }
+    ]
+  },
+  {
     path: '/documentation',
     component: Layout,
     children: [
