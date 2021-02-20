@@ -169,6 +169,18 @@ export const constantRoutes = [
     ]
   },
   {
+    path: '/InformationList',
+    component: BaseLayout,
+    redirect: '/InformationList/index',
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/InformationList/index'),
+        name: 'Documentation'
+      }
+    ]
+  },
+  {
     path: '/documentation',
     component: Layout,
     children: [

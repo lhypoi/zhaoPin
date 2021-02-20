@@ -1,0 +1,461 @@
+<template>
+  <div>
+    <div class="pageSection sec1">
+      <div class="pageSectionContent">
+        <div class="sec1Box">
+          <el-row>
+            <el-col :span="16" class="sec1Col1">
+              <el-image class="g1" :src="list26Img" fit="cover" lazy
+                ><div slot="placeholder" class="emptyImg"
+              /></el-image>
+              <div class="p1">文化与社区</div>
+              <div class="p2">欢迎Teradat新任首席执行官史蒂夫·麦克米兰</div>
+              <div class="p3">
+                的董事会已任命史蒂夫麦克米伦担任下一任总裁兼首席执行官。从这篇临时总裁兼首席执行官Vic
+                Lund 的文章中了解更多信息. Lund 的文章中了解更多信息.
+              </div>
+              <div class="p4">2020年5月7日-1分钟读</div>
+            </el-col>
+            <el-col :span="8" class="sec1Col2">
+              <div class="b1">
+                <el-image class="g2" :src="list27Img" fit="cover" lazy
+                  ><div slot="placeholder" class="emptyImg"
+                /></el-image>
+                <div class="p5">技术趋势</div>
+                <div class="p6">导航汽车供应链后新冠肺炎</div>
+              </div>
+              <div class="b1">
+                <el-image class="g2" :src="list28Img" fit="cover" lazy
+                  ><div slot="placeholder" class="emptyImg"
+                /></el-image>
+                <div class="p5">技术趋势</div>
+                <div class="p6">所有的模型都是错误的 (但有些是有用的)</div>
+              </div>
+              <div class="b1">
+                <el-image class="g2" :src="list29Img" fit="cover" lazy
+                  ><div slot="placeholder" class="emptyImg"
+                /></el-image>
+                <div class="p5">技术趋势</div>
+                <div class="p6">
+                  在新冠肺炎大流行期间中国 如何使用先进的分析方法
+                </div>
+              </div>
+              <div class="b1">
+                <el-image class="g2" :src="list30Img" fit="cover" lazy
+                  ><div slot="placeholder" class="emptyImg"
+                /></el-image>
+                <div class="p5">技术趋势</div>
+                <div class="p6">利用Vantage风险分析技术， 建立早期预警系统</div>
+              </div>
+            </el-col>
+          </el-row>
+        </div>
+      </div>
+    </div>
+
+    <div class="pageSection sec2">
+      <div class="pageSectionContent">
+        <div class="sec1Box">
+          <el-row :gutter="30" class="sec2Row" type="flex">
+            <el-col :span="8" class="sec2Col">
+              <el-image class="g1" :src="list31Img" fit="cover" lazy
+                ><div slot="placeholder" class="emptyImg"
+              /></el-image>
+              <div class="p1">万物云</div>
+              <div class="p2">有利条件试验解决云数据分析用户</div>
+              <div class="p3">
+                有利条件试验为分析人员、开发人员和操作人员提供了
+                免费的、为期30天的云中TeradataVantage访问。
+              </div>
+              <div class="p4">2020年5月7日-1分钟读</div>
+            </el-col>
+            <el-col :span="8" class="sec2Col">
+              <el-image class="g1" :src="list32Img" fit="cover" lazy
+                ><div slot="placeholder" class="emptyImg"
+              /></el-image>
+              <div class="p1">业务分析</div>
+              <div class="p2">
+                数字支付分析对不断变化的偏好和新出现的价值 主张迅速作出反应
+              </div>
+              <div class="p3">
+                有利条件试验为分析人员、开发人员和操作人员提供了
+                免费的、为期30天的云中TeradataVantage访问。
+              </div>
+              <div class="p4">2021年2月1日-3分钟读</div>
+            </el-col>
+            <el-col :span="8" class="sec2Col">
+              <el-image class="g1" :src="list33Img" fit="cover" lazy
+                ><div slot="placeholder" class="emptyImg"
+              /></el-image>
+              <div class="p1">业务分析</div>
+              <div class="p2">关于数据策略的常规智慧的六大改进</div>
+              <div class="p3">
+                这篇文章突出了你已经知道的东西之间的区别&你真正需
+                要更具体的指导来创建一个成功的数据策略。
+              </div>
+              <div class="p4">2021年1月29日-7分钟</div>
+            </el-col>
+            <el-col :span="8" class="sec2Col">
+              <el-image class="g1" :src="list34Img" fit="cover" lazy
+                ><div slot="placeholder" class="emptyImg"
+              /></el-image>
+              <div class="p1">技术趋势</div>
+              <div class="p2">新冠肺炎有效应对大流行风险建模</div>
+              <div class="p3">
+                Teradat专家提出了一个风险模型来量化新冠肺炎的感染
+                风险和脆弱性，使用个人层面的人口统计和行为数据。
+              </div>
+              <div class="p4">2021年1月27日-4分钟</div>
+            </el-col>
+            <el-col :span="8" class="sec2Col">
+              <el-image class="g1" :src="list35Img" fit="cover" lazy
+                ><div slot="placeholder" class="emptyImg"
+              /></el-image>
+              <div class="p1">业务分析</div>
+              <div class="p2">零售和CPG中的大数据需要手术刀，而不是斧头</div>
+              <div class="p3">
+                为了满足客户不断变化的需求，首席商业官需要使用精确
+                的手术刀而不是钝斧在零售和CPG中使用大数据。
+              </div>
+              <div class="p4">2020年1月25日-1分钟读</div>
+            </el-col>
+            <el-col :span="8" class="sec2Col">
+              <el-image class="g1" :src="list36Img" fit="cover" lazy
+                ><div slot="placeholder" class="emptyImg"
+              /></el-image>
+              <div class="p1">业务分析</div>
+              <div class="p2">
+                在您的银行提供良好的客户体验的业务案例是什么？
+              </div>
+              <div class="p3">
+                大多数银行都在谈论如何发展良好的客户体验，但却不明
+                白投资带来的价值。了解银行解决这一问题所需的6项关 键能力。
+              </div>
+              <div class="p4">2020年6月7日-1分钟读</div>
+            </el-col>
+          </el-row>
+        </div>
+      </div>
+    </div>
+
+    <div class="pageSection sec3">
+      <div class="pageSectionContent">
+        <div class="sec1Box">
+          <div class="p1">了解更多资讯</div>
+          <div class="b1">
+            <el-row class="b1Row" :gutter="30">
+              <el-col :span="8">
+                <div class="b1Col">
+                  <el-image class="g1" :src="list23Img" fit="cover" lazy
+                    ><div slot="placeholder" class="emptyImg"
+                  /></el-image>
+                  <div class="p2">English thesis guidance</div>
+                  <div class="p3">
+                    英文论文辅导<br />
+                    全学科覆盖
+                  </div>
+                  <div class="p4">
+                    了解更多<i class="iconfont icon-_jiantou" />
+                  </div>
+                </div>
+              </el-col>
+              <el-col :span="8">
+                <div class="b1Col">
+                  <el-image class="g1" :src="list24Img" fit="cover" lazy
+                    ><div slot="placeholder" class="emptyImg"
+                  /></el-image>
+                  <div class="p2">Study abroad service</div>
+                  <div class="p3">
+                    留学申请文书<br />
+                    代写服务
+                  </div>
+                  <div class="p4">
+                    了解更多<i class="iconfont icon-_jiantou" />
+                  </div>
+                </div>
+              </el-col>
+              <el-col :span="8">
+                <div class="b1Col">
+                  <el-image class="g1" :src="list25Img" fit="cover" lazy
+                    ><div slot="placeholder" class="emptyImg"
+                  /></el-image>
+                  <div class="p2">Rights protection service</div>
+                  <div class="p3">
+                    留学权益<br />
+                    申述服务
+                  </div>
+                  <div class="p4">
+                    了解更多<i class="iconfont icon-_jiantou" />
+                  </div>
+                </div>
+              </el-col>
+            </el-row>
+          </div>
+          <div style="text-align: center; margin-top: 50px">
+            <el-button class="btn1" size="medium" plain>联系我们</el-button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+const list23Img = require("@/assets/img/list23.png");
+const list24Img = require("@/assets/img/list24.png");
+const list25Img = require("@/assets/img/list25.png");
+const list26Img = require("@/assets/img/list26.png");
+const list27Img = require("@/assets/img/list27.png");
+const list28Img = require("@/assets/img/list28.png");
+const list29Img = require("@/assets/img/list29.png");
+const list30Img = require("@/assets/img/list30.png");
+const list31Img = require("@/assets/img/list31.png");
+const list32Img = require("@/assets/img/list32.png");
+const list33Img = require("@/assets/img/list33.png");
+const list34Img = require("@/assets/img/list34.png");
+const list35Img = require("@/assets/img/list35.png");
+const list36Img = require("@/assets/img/list36.png");
+
+export default {
+  name: "InformationList",
+  props: {},
+  data() {
+    return {
+      list23Img,
+      list24Img,
+      list25Img,
+      list26Img,
+      list27Img,
+      list28Img,
+      list29Img,
+      list30Img,
+      list31Img,
+      list32Img,
+      list33Img,
+      list34Img,
+      list35Img,
+      list36Img,
+    };
+  },
+  created() {},
+  mounted() {},
+  methods: {},
+};
+</script>
+
+<style lang="scss" scoped>
+.sec1 {
+  height: auto;
+
+  .pageSectionContent {
+    position: relative;
+  }
+
+  .sec1Box {
+    height: 100%;
+    margin-top: 50px;
+    margin-bottom: 60px;
+
+    .sec1Col1 {
+      padding: 40px 40px 40px 0;
+
+      .g1 {
+        height: 291px;
+        width: 100%;
+      }
+
+      .p1 {
+        font-size: 14px;
+        font-weight: 500;
+        color: #0086bf;
+        margin-top: 30px;
+      }
+
+      .p2 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #2e2e38;
+        margin-top: 10px;
+      }
+
+      .p3 {
+        font-size: 14px;
+        font-weight: 300;
+        color: #2e2e38;
+        line-height: 1.8;
+        padding-right: 50px;
+        margin-top: 10px;
+      }
+
+      .p4 {
+        font-size: 11px;
+        font-weight: 300;
+        color: #2e2e38;
+        margin-top: 25px;
+      }
+    }
+
+    .sec1Col2 {
+      padding: 70px 50px 70px 20px;
+      border-left: 2px dashed rgba(237, 237, 237, 1);
+      margin-top: -25px;
+
+      .b1 {
+        margin-top: 25px;
+        padding-right: 50px;
+        position: relative;
+        padding-left: 120px;
+        height: 102px;
+
+        .g2 {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 102px;
+          height: 102px;
+        }
+
+        .p5 {
+          font-size: 14px;
+          font-weight: 500;
+          color: #0086bf;
+          padding-top: 10px;
+        }
+
+        .p6 {
+          font-size: 14px;
+          font-weight: 500;
+          color: #2e2e38;
+          margin-top: 8px;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}
+
+.sec2 {
+  height: auto;
+
+  .pageSectionContent {
+    position: relative;
+  }
+
+  .sec1Box {
+    height: 100%;
+
+    .sec2Row {
+      flex-wrap: wrap;
+
+      .sec2Col {
+        margin-bottom: 80px;
+
+        .g1 {
+          width: 100%;
+          height: 177px;
+        }
+
+        .p1 {
+          font-size: 14px;
+          font-weight: 500;
+          color: #0086bf;
+          margin-top: 25px;
+        }
+
+        .p2 {
+          font-size: 16px;
+          font-weight: 500;
+          color: #2e2e38;
+          margin-top: 18px;
+        }
+
+        .p3 {
+          font-size: 14px;
+          font-weight: 300;
+          color: #2e2e38;
+          line-height: 18px;
+          margin-top: 15px;
+        }
+
+        .p4 {
+          font-size: 11px;
+          font-weight: 300;
+          color: #2e2e38;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+.sec3 {
+  height: auto;
+
+  .pageSectionContent {
+    position: relative;
+  }
+
+  .sec1Box {
+    height: 100%;
+    margin-bottom: 60px;
+
+    .p1 {
+      padding: 50px 0;
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      color: #2e2e38;
+    }
+
+    .b1 {
+      .b1Row {
+        .b1Col {
+          height: 348px;
+          transition: 0.3s;
+          position: relative;
+          padding-left: 40px;
+          padding-top: 50px;
+
+          .g1 {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+          }
+
+          .p2 {
+            font-size: 14px;
+            color: #ffffff;
+            margin-bottom: 15px;
+          }
+
+          .p3 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffffff;
+            line-height: 34px;
+            margin-bottom: 50px;
+          }
+
+          .p4 {
+            font-size: 14px;
+            color: #ffc74e;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .btn1 {
+      padding: 20px 60px;
+      font-size: 18px;
+      background: #f37440;
+      color: #fff;
+    }
+  }
+}
+</style>
