@@ -181,6 +181,18 @@ export const constantRoutes = [
     ]
   },
   {
+    path: '/DissertationCorrection',
+    component: BaseLayout,
+    redirect: '/DissertationCorrection/index',
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/DissertationCorrection/index'),
+        name: 'Documentation'
+      }
+    ]
+  },
+  {
     path: '/documentation',
     component: Layout,
     children: [

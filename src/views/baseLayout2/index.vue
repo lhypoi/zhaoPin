@@ -34,6 +34,7 @@
                 <el-menu-item index="/RepresentationOfInterests/index">权益申述</el-menu-item>
                 <el-menu-item index="/StudyInUK/index">英国留学</el-menu-item>
                 <el-menu-item index="/InformationList/index">资讯页面</el-menu-item>
+                <el-menu-item index="/DissertationCorrection/index">论文批改润色</el-menu-item>
                 <!-- <el-menu-item index="/home2/index">网课辅导</el-menu-item> -->
                 <!-- <el-menu-item index="/xx">雅思/托福/GRE/Gmat</el-menu-item> -->
               </el-submenu>
