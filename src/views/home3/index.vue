@@ -472,7 +472,7 @@ export default {
 }
 
 .sec2 {
-  height: 900px;
+  height: 700px;
   margin-top: -180px;
   background: #282830;
 
@@ -491,7 +491,7 @@ export default {
       }
 
       .g1 {
-        height: 769px;
+        height: 569px;
         width: 100%;
         cursor: pointer;
       }
@@ -525,7 +525,7 @@ export default {
 }
 
 .sec3 {
-  height: 2200px;
+  height: 1600px;
 
   .sec1Box {
     height: 100%;
@@ -540,11 +540,11 @@ export default {
 
     .g1 {
       width: 100%;
-      height: 604px;
+      height: 404px;
     }
 
     .b1 {
-      padding-top: 100px;
+      padding-top: 30px;
 
       &.right {
         padding-left: 100px;
@@ -561,12 +561,12 @@ export default {
 
     .p2 {
       font-size: 30px;
-      margin-top: 50px;
+      margin-top: 30px;
     }
 
     .p3 {
       font-size: 18px;
-      margin-top: 50px;
+      margin-top: 30px;
     }
   }
 }
