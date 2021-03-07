@@ -30,6 +30,14 @@ router.beforeEach(async(to, from, next) => {
   // set page title
   document.title = getPageTitle(to.meta.title)
 
+  // 取消权限判定 S
+  if (whiteList) {
+    next()
+    return
+  }
+  // 取消权限判定 E
+
+
   // determine whether the user has logged in
   const hasToken = getToken()
 
