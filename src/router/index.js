@@ -193,6 +193,18 @@ export const constantRoutes = [
     ]
   },
   {
+    path: '/AbroadAtTopUniversities',
+    component: BaseLayout,
+    redirect: '/AbroadAtTopUniversities/index',
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/AbroadAtTopUniversities/index'),
+        name: 'Documentation'
+      }
+    ]
+  },
+  {
     path: '/documentation',
     component: Layout,
     children: [
