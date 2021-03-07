@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="pageSection sec1">
-      <el-image class="pageSectionImg" :src="sec1Img" fit="container" lazy
+      <el-image class="pageSectionImg" :src="sec1Img" fit="cover" lazy
         ><div slot="placeholder" class="emptyImg"
       /></el-image>
     </div>

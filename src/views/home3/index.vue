@@ -445,7 +445,7 @@ export default {
 
 <style lang="scss" scoped>
 .sec1 {
-  height: 950px;
+  height: calc(100vh - 20px);
 
   .sec1Box {
     height: 100%;
