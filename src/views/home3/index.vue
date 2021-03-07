@@ -1,20 +1,14 @@
 <template>
   <div>
     <div class="pageSection sec1">
-      <el-image
-        class="pageSectionImg"
-        :src="sec1Img"
-        fit="cover"
-        lazy
-      ><div
-        slot="placeholder"
-        class="emptyImg"
+      <el-image class="pageSectionImg" :src="sec1Img" fit="cover" lazy
+        ><div slot="placeholder" class="emptyImg"
       /></el-image>
       <div class="pageSectionContent">
         <div class="sec1Box">
           <div class="p1">论文辅导</div>
           <div class="p2">
-            定期更新的安永 COVID-19 <br>
+            定期更新的安永 COVID-19 <br />
             企业愿景详细
           </div>
           <div class="p3">
@@ -30,14 +24,8 @@
           <el-row :gutter="20">
             <el-col class="sec2Col" :span="8">
               <div class="p1">論文輔導Essay Assistance</div>
-              <el-image
-                class="g1"
-                :src="list1Img"
-                fit="cover"
-                lazy
-              ><div
-                slot="placeholder"
-                class="emptyImg"
+              <el-image class="g1" :src="list1Img" fit="cover" lazy
+                ><div slot="placeholder" class="emptyImg"
               /></el-image>
               <div class="b1">
                 <div class="p2">英文作文修改服务</div>
@@ -57,9 +45,7 @@
                 fit="cover"
                 lazy
                 @click="() => $router.push(`/GuaranteedAdmission`)"
-              ><div
-                slot="placeholder"
-                class="emptyImg"
+                ><div slot="placeholder" class="emptyImg"
               /></el-image>
               <div class="b1">
                 <div class="p2">留学申请文书代写服务</div>
@@ -68,19 +54,13 @@
                   和深度精修工作，所有完成文稿逻辑合理，重点表述正确突出。
                 </div>
                 <div class="p4">$ 30 起</div>
-                <div class="p5"><br></div>
+                <div class="p5"><br /></div>
               </div>
             </el-col>
             <el-col class="sec2Col" :span="8">
               <div class="p1">權益申訴Appeal</div>
-              <el-image
-                class="g1"
-                :src="list3Img"
-                fit="cover"
-                lazy
-              ><div
-                slot="placeholder"
-                class="emptyImg"
+              <el-image class="g1" :src="list3Img" fit="cover" lazy
+                ><div slot="placeholder" class="emptyImg"
               /></el-image>
               <div class="b1">
                 <div class="p2">Online Course网课代上服务</div>
@@ -102,14 +82,8 @@
         <div class="sec1Box">
           <el-row class="sec3Row">
             <el-col :span="12">
-              <el-image
-                class="g1"
-                :src="list4Img"
-                fit="cover"
-                lazy
-              ><div
-                slot="placeholder"
-                class="emptyImg"
+              <el-image class="g1" :src="list4Img" fit="cover" lazy
+                ><div slot="placeholder" class="emptyImg"
               /></el-image>
             </el-col>
             <el-col :span="12" class="b1 right">
@@ -133,27 +107,15 @@
               <div class="p3">了解更多</div>
             </el-col>
             <el-col :span="12">
-              <el-image
-                class="g1"
-                :src="list5Img"
-                fit="cover"
-                lazy
-              ><div
-                slot="placeholder"
-                class="emptyImg"
+              <el-image class="g1" :src="list5Img" fit="cover" lazy
+                ><div slot="placeholder" class="emptyImg"
               /></el-image>
             </el-col>
           </el-row>
           <el-row class="sec3Row">
             <el-col :span="12">
-              <el-image
-                class="g1"
-                :src="list6Img"
-                fit="cover"
-                lazy
-              ><div
-                slot="placeholder"
-                class="emptyImg"
+              <el-image class="g1" :src="list6Img" fit="cover" lazy
+                ><div slot="placeholder" class="emptyImg"
               /></el-image>
             </el-col>
             <el-col :span="12" class="b1 right">
@@ -171,7 +133,43 @@
     </div>
 
     <div class="pageSection sec4">
-      <!-- TODO:待做 -->
+      <el-image class="pageSectionImg" :src="list38Img" fit="cover" lazy
+        ><div slot="placeholder" class="emptyImg"
+      /></el-image>
+      <div class="pageSectionContent">
+        <div class="sec1Box">
+          <el-row :gutter="2" class="row">
+            <el-col :span="6" class="col">
+              <div class="b1">
+                <div class="p1">英国</div>
+                <div class="p3">了解更多</div>
+              </div>
+            </el-col>
+            <el-col :span="6" class="col">
+              <div class="b1">
+                <div class="p1">澳大利亚</div>
+                <div class="p2">
+                  近些年澳洲艺术留学的同学越来越多,不仅教育
+                  体系完善,人文气息浓厚深得艺术生的青睐。
+                </div>
+                <div class="p3">了解更多</div>
+              </div>
+            </el-col>
+            <el-col :span="6" class="col">
+              <div class="b1">
+                <div class="p1">香港</div>
+                <div class="p3">了解更多</div>
+              </div>
+            </el-col>
+            <el-col :span="6" class="col">
+              <div class="b1">
+                <div class="p1">美国</div>
+                <div class="p3">了解更多</div>
+              </div>
+            </el-col>
+          </el-row>
+        </div>
+      </div>
     </div>
 
     <div class="pageSection sec5">
@@ -180,57 +178,38 @@
           <el-row>
             <el-col :span="12" style="display: flex; justify-content: flex-end">
               <div class="round">
-                <el-image
-                  class="g1"
-                  :src="list7Img"
-                  fit="cover"
-                  lazy
-                ><div
-                  slot="placeholder"
-                  class="emptyImg"
+                <el-image class="g1" :src="list7Img" fit="cover" lazy
+                  ><div slot="placeholder" class="emptyImg"
                 /></el-image>
-                <div class="subRound r1">
-                  <div class="subRoundContent">时效性</div>
-                </div>
-                <div class="subRound r2">
-                  <div class="subRoundContent">及时反馈</div>
-                </div>
-                <div class="subRound r3">
-                  <div class="subRoundContent">省心</div>
-                </div>
-                <div class="subRound r4">
-                  <div class="subRoundContent">专注</div>
-                </div>
-                <div class="subRound r5">
-                  <div class="subRoundContent">名师辅导</div>
-                </div>
-                <div class="subRound r6">
-                  <div class="subRoundContent">海外院校</div>
-                </div>
-                <div class="subRound r7">
-                  <div class="subRoundContent">学术背景</div>
-                </div>
-                <div class="subRound r8">
-                  <div class="subRoundContent">迅速响应</div>
-                </div>
-                <div class="subRound r9">
-                  <div class="subRoundContent">专业</div>
+                <div
+                  v-for="(round, index) in roundList"
+                  :key="index"
+                  :class="`subRound r${index + 1}`"
+                  @click="() => (curRound = index)"
+                >
+                  <div
+                    :class="`subRoundContent${
+                      curRound === index ? ' active' : ''
+                    }`"
+                  >
+                    {{ round.title }}
+                  </div>
                 </div>
               </div>
             </el-col>
             <el-col :span="12">
               <div class="b1">
-                <div class="p1">
-                  COVID-19 Enterprise <br>
-                  Resilience Framework
+                <div class="p1">紧急申诉appeal</div>
+                <div class="p2">九大紧急申诉类型</div>
+                <div class="p3">{{ roundList[curRound].title }}</div>
+                <div
+                  v-for="(roundListItem, index) in roundList[curRound].list"
+                  :key="index"
+                  class="p4"
+                >
+                  {{ roundListItem }}
                 </div>
-                <div class="p2">您的一站式论文解决中心</div>
-                <div class="p3">关于我们</div>
-                <div class="p4">属于自己的专属vip的客服，24小时与</div>
-                <div class="p4">按照您的要求， 尽量模仿您的二的文章</div>
-                <div class="p4">在您约定期限之前把写好的文章交</div>
                 <el-button class="btn1" size="medium" plain>了解更多</el-button>
-
               </div>
             </el-col>
           </el-row>
@@ -244,14 +223,8 @@
           <div class="t1">发展历程</div>
           <el-row :gutter="20">
             <el-col :span="8">
-              <el-image
-                class="g1"
-                :src="list8Img"
-                fit="cover"
-                lazy
-              ><div
-                slot="placeholder"
-                class="emptyImg"
+              <el-image class="g1" :src="list8Img" fit="cover" lazy
+                ><div slot="placeholder" class="emptyImg"
               /></el-image>
               <div class="p1">100余名专业师资团队近百位资深留学顾问</div>
               <div class="p2">
@@ -261,14 +234,8 @@
               <div class="p3">留学生英文论文辅导服务</div>
             </el-col>
             <el-col :span="8">
-              <el-image
-                class="g1"
-                :src="list9Img"
-                fit="cover"
-                lazy
-              ><div
-                slot="placeholder"
-                class="emptyImg"
+              <el-image class="g1" :src="list9Img" fit="cover" lazy
+                ><div slot="placeholder" class="emptyImg"
               /></el-image>
               <div class="p1">
                 Dr.D 提供高质量，高效率的文章修改润色降重服务
@@ -298,7 +265,7 @@
               <div class="p6">2013年-至今</div>
             </el-col>
           </el-row>
-          <div style="text-align: center; margin-top: 10px;">
+          <div style="text-align: center; margin-top: 10px">
             <el-button class="btn1" size="medium" plain>了解更多</el-button>
           </div>
         </div>
@@ -315,14 +282,8 @@
                 <div class="b1">
                   <div class="p1">Selina</div>
                   <div class="p2">利兹大学</div>
-                  <el-image
-                    class="g1"
-                    :src="u1Img"
-                    fit="cover"
-                    lazy
-                  ><div
-                    slot="placeholder"
-                    class="emptyImg"
+                  <el-image class="g1" :src="u1Img" fit="cover" lazy
+                    ><div slot="placeholder" class="emptyImg"
                   /></el-image>
                 </div>
                 <div class="b2">
@@ -342,14 +303,8 @@
                 <div class="b1">
                   <div class="p1">Stacey</div>
                   <div class="p2">牛津大学</div>
-                  <el-image
-                    class="g1"
-                    :src="u2Img"
-                    fit="cover"
-                    lazy
-                  ><div
-                    slot="placeholder"
-                    class="emptyImg"
+                  <el-image class="g1" :src="u2Img" fit="cover" lazy
+                    ><div slot="placeholder" class="emptyImg"
                   /></el-image>
                 </div>
                 <div class="b2">
@@ -369,14 +324,8 @@
                 <div class="b1">
                   <div class="p1">Kevin</div>
                   <div class="p2">爱丁堡大学</div>
-                  <el-image
-                    class="g1"
-                    :src="u3Img"
-                    fit="cover"
-                    lazy
-                  ><div
-                    slot="placeholder"
-                    class="emptyImg"
+                  <el-image class="g1" :src="u3Img" fit="cover" lazy
+                    ><div slot="placeholder" class="emptyImg"
                   /></el-image>
                 </div>
                 <div class="b2">
@@ -393,7 +342,7 @@
               </div>
             </el-col>
           </el-row>
-          <div style="text-align: center; margin-top: 30px;">
+          <div style="text-align: center; margin-top: 30px">
             <el-button class="btn1" size="medium" plain>了解更多</el-button>
           </div>
         </div>
@@ -403,22 +352,23 @@
 </template>
 
 <script>
-const sec1Img = require('@/assets/img/bg1.png')
-const list1Img = require('@/assets/img/list1.png')
-const list2Img = require('@/assets/img/list2.png')
-const list3Img = require('@/assets/img/list3.png')
-const list4Img = require('@/assets/img/list4.png')
-const list5Img = require('@/assets/img/list5.png')
-const list6Img = require('@/assets/img/list6.png')
-const list7Img = require('@/assets/img/list7.png')
-const list8Img = require('@/assets/img/list8.png')
-const list9Img = require('@/assets/img/list9.png')
-const u1Img = require('@/assets/img/u1.png')
-const u2Img = require('@/assets/img/u2.png')
-const u3Img = require('@/assets/img/u3.png')
+const sec1Img = require("@/assets/img/bg1.png");
+const list1Img = require("@/assets/img/list1.png");
+const list2Img = require("@/assets/img/list2.png");
+const list3Img = require("@/assets/img/list3.png");
+const list4Img = require("@/assets/img/list4.png");
+const list5Img = require("@/assets/img/list5.png");
+const list6Img = require("@/assets/img/list6.png");
+const list7Img = require("@/assets/img/list7.png");
+const list8Img = require("@/assets/img/list8.png");
+const list9Img = require("@/assets/img/list9.png");
+const list38Img = require("@/assets/img/list38.png");
+const u1Img = require("@/assets/img/u1.png");
+const u2Img = require("@/assets/img/u2.png");
+const u3Img = require("@/assets/img/u3.png");
 
 export default {
-  name: 'Home3',
+  name: "Home3",
   props: {},
   data() {
     return {
@@ -432,15 +382,55 @@ export default {
       list7Img,
       list8Img,
       list9Img,
+      list38Img,
       u1Img,
       u2Img,
-      u3Img
-    }
+      u3Img,
+      roundList: [
+        {
+          title: "入學語言不達標",
+          list: ["專業老師輔導", "快速達目標門檻"],
+        },
+        {
+          title: "惡意低分",
+          list: ["无法正常毕业", "拿不到毕业证书和学位证书"],
+        },
+        {
+          title: "被懷疑學術不端",
+          list: ["涉嫌抄袭或作弊", "涉嫌学术造假等学术不诚信行为"],
+        },
+        {
+          title: "掛科想爭取軟過",
+          list: ["挂科太多或最终GPA低于要求", "导致被学校开除/劝退"],
+        },
+        {
+          title: "學分不夠",
+          list: ["单个学期修的学分低于学校要求", "学分不满足毕业要求"],
+        },
+        {
+          title: "相似度過高",
+          list: ["涉嫌参与抄袭或作弊", "涉嫌学术造假等学术不诚信行为"],
+        },
+        {
+          title: "無法面對家人",
+          list: ["留学被开除/无法毕业", "难以面对家人"],
+        },
+        {
+          title: "被學校開除",
+          list: ["重新获得学校接收", "可以继续留学完成学业"],
+        },
+        {
+          title: "保錄名校碩士",
+          list: ["直升英美加澳名校硕士", "拿名校硕士学位"],
+        },
+      ],
+      curRound: 0,
+    };
   },
   created() {},
   mounted() {},
-  methods: {}
-}
+  methods: {},
+};
 </script>
 
 <style lang="scss" scoped>
@@ -571,6 +561,66 @@ export default {
   }
 }
 
+.sec4 {
+  height: 647px;
+
+  .pageSectionContent {
+    position: relative;
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .sec1Box {
+    height: 100%;
+
+    .row {
+      height: 100%;
+
+      .col {
+        height: 100%;
+
+        .b1 {
+          background: rgba(0, 0, 0, 0.3);
+          height: 100%;
+          padding: 0 30px 0 70px;
+
+          .p1 {
+            padding-top: 450px;
+            font-size: 30px;
+            font-family: OPPOSans;
+            font-weight: 500;
+            color: #ffffff;
+            padding-bottom: 25px;
+          }
+
+          .p2 {
+            font-size: 16px;
+            font-family: OPPOSans;
+            font-weight: 300;
+            color: #ffffff;
+            line-height: 1.5;
+            opacity: 0.8;
+            padding-bottom: 10px;
+          }
+
+          .p3 {
+            font-size: 16px;
+            font-family: OPPOSans;
+            font-weight: 400;
+            color: #ffffff;
+            cursor: pointer;
+
+            &:hover {
+              color: rgb(255, 208, 75);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 .sec5 {
   height: 727px;
   background: #111111;
@@ -620,8 +670,11 @@ export default {
           margin-left: -55px;
           cursor: pointer;
           transition: 0.3s;
+          text-align: center;
+          padding: 11px;
 
-          &:hover {
+          &:hover,
+          &.active {
             background: #ffe600;
             color: #2e2e38;
 
@@ -810,14 +863,14 @@ export default {
 
     .p5 {
       font-size: 20px;
-      color: #2E2E38;
+      color: #2e2e38;
       padding-left: 20px;
       margin-top: 20px;
     }
 
     .p6 {
       font-size: 14px;
-      color: #21212B;
+      color: #21212b;
       padding-left: 20px;
       margin-top: 10px;
     }
@@ -839,19 +892,19 @@ export default {
     .t1 {
       padding: 50px 0 30px;
       text-align: center;
-      color: #2E2E38;
+      color: #2e2e38;
       font-size: 36px;
     }
 
     .btn1 {
       padding: 20px 60px;
       font-size: 18px;
-      background: #2E2E38;
+      background: #2e2e38;
       color: #fff;
     }
 
     .sec7ColBox {
-      border: 1px dashed #9A9A9A;
+      border: 1px dashed #9a9a9a;
       border-radius: 5px;
       padding: 40px 25px 20px;
       display: flex;
@@ -874,7 +927,7 @@ export default {
         .p1 {
           font-size: 18px;
           line-height: 20px;
-          color: #2E2E38;
+          color: #2e2e38;
         }
 
         .p2 {
@@ -895,17 +948,17 @@ export default {
         align-items: center;
 
         .iconqipao {
-          color: #3DA4E5;
+          color: #3da4e5;
         }
 
         .iconfenxiang-hudong {
-          color: #1ABE65;
+          color: #1abe65;
           margin-left: 15px;
           margin-right: 5px;
         }
 
         .iconaixin {
-          color: #D73569;
+          color: #d73569;
           margin-left: 15px;
           margin-right: 5px;
         }
