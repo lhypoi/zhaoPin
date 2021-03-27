@@ -32,7 +32,7 @@
                 <el-menu-item index="/DataComputerGeneration/index">数据计算机代做</el-menu-item>
                 <el-menu-item index="/FinanceAndBusinessStudies/index">金融商科代做</el-menu-item>
                 <el-menu-item index="/HumanitiesAndArtsAgency/index">人文艺术代做</el-menu-item>
-                <el-menu-item index="/x11">网课辅导</el-menu-item>
+                <el-menu-item index="/OnlineTutorials/index">网课辅导</el-menu-item>
                 <el-menu-item index="/x12">雅思托福/GRE/Gmat</el-menu-item>
                 <!-- <el-menu-item index="/GuaranteedAdmission/index">保录升学</el-menu-item> -->
                 <!-- <el-menu-item index="/DissertationCorrection/index">论文批改润色</el-menu-item> -->
@@ -70,7 +70,7 @@
     </transition>
     <div class="footer">
       <div class="getMore">
-        <el-row style="width: 1200px; margin: 0 auto">
+        <el-row style="width: 1400px; margin: 0 auto">
           <el-col :span="12" class="moreLeft">
             <div class="p1">了解更多</div>
             <div class="p2">用心对待每一份订单</div>
@@ -92,7 +92,7 @@
         </el-row>
       </div>
       <div class="copyRight">
-        <el-row style="width: 1200px; margin: 0 auto">
+        <el-row style="width: 1400px; margin: 0 auto">
           <el-col :span="12" class="copyRightLeft">
             <el-image
               class="g1"
@@ -200,7 +200,7 @@ export default {
   z-index: 10;
 
   .navContent {
-    width: 1200px;
+    width: 1400px;
     margin: 0 auto;
     position: relative;
     height: 100%;

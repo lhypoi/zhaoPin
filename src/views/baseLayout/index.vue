@@ -66,7 +66,7 @@
     </transition>
     <div class="footer">
       <div class="contact">
-        <el-row style="width: 1200px; margin: 0 auto">
+        <el-row style="width: 1400px; margin: 0 auto">
           <el-col :span="12">
             <el-image class="g1" :src="logo2Img" fit="cover" lazy
               ><div slot="placeholder" class="emptyImg"
@@ -158,7 +158,7 @@ export default {
   z-index: 10;
 
   .navContent {
-    width: 1200px;
+    width: 1400px;
     margin: 0 auto;
     position: relative;
     height: 100%;

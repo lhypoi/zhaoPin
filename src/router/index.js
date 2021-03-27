@@ -289,6 +289,18 @@ export const constantRoutes = [
     ]
   },
   {
+    path: '/OnlineTutorials',
+    component: BaseLayout,
+    redirect: '/OnlineTutorials/index',
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/OnlineTutorials/index'),
+        name: 'Documentation'
+      }
+    ]
+  },
+  {
     path: '/documentation',
     component: Layout,
     children: [
