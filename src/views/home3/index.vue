@@ -24,7 +24,12 @@
           <el-row :gutter="20">
             <el-col class="sec2Col" :span="8">
               <div class="p1">論文輔導Essay Assistance</div>
-              <el-image class="g1" :src="list1Img" fit="cover" lazy
+              <el-image
+                class="g1"
+                :src="list1Img"
+                fit="cover"
+                lazy
+                @click="$router.push('/DissertationRetouchingCoaching/index')"
                 ><div slot="placeholder" class="emptyImg"
               /></el-image>
               <div class="b1">
@@ -59,7 +64,12 @@
             </el-col>
             <el-col class="sec2Col" :span="8">
               <div class="p1">權益申訴Appeal</div>
-              <el-image class="g1" :src="list3Img" fit="cover" lazy
+              <el-image
+                class="g1"
+                :src="list3Img"
+                fit="cover"
+                lazy
+                @click="$router.push('/RepresentationOfInterests/index')"
                 ><div slot="placeholder" class="emptyImg"
               /></el-image>
               <div class="b1">
@@ -93,7 +103,12 @@
                 具备统计、金融、商业分析、工商管理、经济、Marketing等具备较强的
                 计算机编程能力，熟悉Python/C/C++/R/Java/VBA/SQL中任意
               </div>
-              <div class="p3">了解更多</div>
+              <div
+                class="p3"
+                @click="$router.push('/DataComputerGeneration/index')"
+              >
+                了解更多
+              </div>
             </el-col>
           </el-row>
           <el-row class="sec3Row">
@@ -104,7 +119,12 @@
                 具备统计、金融、商业分析、工商管理、经济、Marketing等具备较强的
                 计算机编程能力，熟悉Python/C/C++/R/Java/VBA/SQL中任意
               </div>
-              <div class="p3">了解更多</div>
+              <div
+                class="p3"
+                @click="$router.push('/FinanceAndBusinessStudies/index')"
+              >
+                了解更多
+              </div>
             </el-col>
             <el-col :span="12">
               <el-image class="g1" :src="list5Img" fit="cover" lazy
@@ -125,7 +145,12 @@
                 具备统计、金融、商业分析、工商管理、经济、Marketing等具备较强的
                 计算机编程能力，熟悉Python/C/C++/R/Java/VBA/SQL中任意
               </div>
-              <div class="p3">了解更多</div>
+              <div
+                class="p3"
+                @click="$router.push('/HumanitiesAndArtsAgency/index')"
+              >
+                了解更多
+              </div>
             </el-col>
           </el-row>
         </div>
@@ -137,7 +162,10 @@
         ><div slot="placeholder" class="emptyImg"
       /></el-image>
       <div class="pageSectionContent">
-        <div class="sec1Box">
+        <div
+          class="sec1Box"
+          @click="$router.push('/AbroadAtTopUniversities/index')"
+        >
           <el-row :gutter="2" class="row">
             <el-col :span="6" class="col">
               <div class="b1">
@@ -209,7 +237,13 @@
                 >
                   {{ roundListItem }}
                 </div>
-                <el-button class="btn1" size="medium" plain>了解更多</el-button>
+                <el-button
+                  class="btn1"
+                  size="medium"
+                  plain
+                  @click="$router.push('/RepresentationOfInterests/index')"
+                  >了解更多</el-button
+                >
               </div>
             </el-col>
           </el-row>
@@ -266,7 +300,7 @@
             </el-col>
           </el-row>
           <div style="text-align: center; margin-top: 10px">
-            <el-button class="btn1" size="medium" plain>了解更多</el-button>
+            <el-button class="btn1" size="medium" plain @click="$router.push('/InformationList/index')">了解更多</el-button>
           </div>
         </div>
       </div>
@@ -490,6 +524,8 @@ export default {
         position: absolute;
         bottom: 0;
         padding: 0 70px 40px 30px;
+        cursor: pointer;
+        pointer-events: none;
 
         .p2 {
           font-size: 20px;
@@ -557,6 +593,7 @@ export default {
     .p3 {
       font-size: 18px;
       margin-top: 30px;
+      cursor: pointer;
     }
   }
 }
@@ -576,9 +613,11 @@ export default {
 
     .row {
       height: 100%;
+      cursor: pointer;
 
       .col {
         height: 100%;
+        pointer-events: none;
 
         .b1 {
           background: rgba(0, 0, 0, 0.3);

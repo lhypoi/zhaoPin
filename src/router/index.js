@@ -205,6 +205,90 @@ export const constantRoutes = [
     ]
   },
   {
+    path: '/DataComputerGeneration',
+    component: BaseLayout,
+    redirect: '/DataComputerGeneration/index',
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/DataComputerGeneration/index'),
+        name: 'Documentation'
+      }
+    ]
+  },
+  {
+    path: '/FinanceAndBusinessStudies',
+    component: BaseLayout,
+    redirect: '/FinanceAndBusinessStudies/index',
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/FinanceAndBusinessStudies/index'),
+        name: 'Documentation'
+      }
+    ]
+  },
+  {
+    path: '/HumanitiesAndArtsAgency',
+    component: BaseLayout,
+    redirect: '/HumanitiesAndArtsAgency/index',
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/HumanitiesAndArtsAgency/index'),
+        name: 'Documentation'
+      }
+    ]
+  },
+  {
+    path: '/OverseasPreferredStudyInUK',
+    component: BaseLayout,
+    redirect: '/OverseasPreferredStudyInUK/index',
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/OverseasPreferredStudyInUK/index'),
+        name: 'Documentation'
+      }
+    ]
+  },
+  {
+    path: '/ApplicationForStudyAbroadAndDetails',
+    component: BaseLayout,
+    redirect: '/ApplicationForStudyAbroadAndDetails/index',
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/ApplicationForStudyAbroadAndDetails/index'),
+        name: 'Documentation'
+      }
+    ]
+  },
+  {
+    path: '/GreenChannelForEmergencyTransfers',
+    component: BaseLayout,
+    redirect: '/GreenChannelForEmergencyTransfers/index',
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/GreenChannelForEmergencyTransfers/index'),
+        name: 'Documentation'
+      }
+    ]
+  },
+  {
+    path: '/DissertationRetouchingCoaching',
+    component: BaseLayout,
+    redirect: '/DissertationRetouchingCoaching/index',
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/DissertationRetouchingCoaching/index'),
+        name: 'Documentation'
+      }
+    ]
+  },
+  {
     path: '/documentation',
     component: Layout,
     children: [

@@ -178,7 +178,7 @@ const list24Img = require('@/assets/img/list24.png')
 const list25Img = require('@/assets/img/list25.png')
 
 export default {
-  name: 'StudyAbroadAdvisory',
+  name: 'StudyInUK',
   props: {},
   data() {
     return {

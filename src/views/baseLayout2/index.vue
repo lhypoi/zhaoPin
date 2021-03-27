@@ -27,32 +27,37 @@
               active-text-color="#ffd04b"
             >
               <el-menu-item index="/home3/index">首页</el-menu-item>
-              <el-submenu index="/x">
-                <template slot="title">海外留学辅导</template>
-                <el-menu-item index="/GuaranteedAdmission/index">保录升学</el-menu-item>
-                <el-menu-item index="/StudyAbroadAdvisory/index">名校保录</el-menu-item>
-                <el-menu-item index="/RepresentationOfInterests/index">权益申述</el-menu-item>
-                <el-menu-item index="/StudyInUK/index">英国留学</el-menu-item>
-                <el-menu-item index="/InformationList/index">资讯页面</el-menu-item>
-                <el-menu-item index="/DissertationCorrection/index">论文批改润色</el-menu-item>
-                <!-- <el-menu-item index="/home2/index">网课辅导</el-menu-item> -->
-                <!-- <el-menu-item index="/xx">雅思/托福/GRE/Gmat</el-menu-item> -->
-              </el-submenu>
               <el-submenu index="/x1">
+                <template slot="title">海外留学辅导</template>
+                <el-menu-item index="/DataComputerGeneration/index">数据计算机代做</el-menu-item>
+                <el-menu-item index="/FinanceAndBusinessStudies/index">金融商科代做</el-menu-item>
+                <el-menu-item index="/HumanitiesAndArtsAgency/index">人文艺术代做</el-menu-item>
+                <el-menu-item index="/x11">网课辅导</el-menu-item>
+                <el-menu-item index="/x12">雅思托福/GRE/Gmat</el-menu-item>
+                <!-- <el-menu-item index="/GuaranteedAdmission/index">保录升学</el-menu-item> -->
+                <!-- <el-menu-item index="/DissertationCorrection/index">论文批改润色</el-menu-item> -->
+                <!-- <el-menu-item index="/StudyInUK/index">海外首选英国留学（原）</el-menu-item> -->
+              </el-submenu>
+              <el-submenu index="/x2">
                 <template slot="title">一站式留学申请</template>
                 <el-menu-item
                   index="/AbroadAtTopUniversities/index"
                 >英美港澳留学申请</el-menu-item>
+                <el-menu-item index="/StudyAbroadAdvisory/index">名校保录蓝色通道</el-menu-item>
+                <el-menu-item index="/OverseasPreferredStudyInUK/index">海外首选英国留学</el-menu-item>
                 <el-menu-item
-                  index="/x11"
-                >热门留学国家的差异或排名</el-menu-item>
-                <el-menu-item index="/x12">申请留学或细节</el-menu-item>
+                  index="/x21"
+                >热门留学国家的差异&排名</el-menu-item>
+                <el-menu-item index="/ApplicationForStudyAbroadAndDetails/index">申请留学&细节</el-menu-item>
               </el-submenu>
-              <el-submenu index="/x2">
+              <el-submenu index="/x3">
                 <template slot="title">求学救护站</template>
-                <el-menu-item index="/x21">紧急转学绿色通道</el-menu-item>
-                <el-menu-item index="/x22">升学前置作案top up</el-menu-item>
+                <el-menu-item index="/RepresentationOfInterests/index">紧急申述Appeal</el-menu-item>
+                <el-menu-item index="/GreenChannelForEmergencyTransfers/index">紧急转学绿色通道</el-menu-item>
+                <el-menu-item index="/x32">升学前置作案top up</el-menu-item>
+                <el-menu-item index="/x33">就业辅导</el-menu-item>
               </el-submenu>
+              <el-menu-item index="/InformationList/index">留学资讯</el-menu-item>
             </el-menu>
           </div>
         </div>
