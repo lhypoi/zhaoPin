@@ -39,7 +39,7 @@
                   为优质、高效、全方位的综合学术论文定制写作提供最坚实的
                 </div>
                 <div class="p4">￡12.5 起</div>
-                <div class="p5">1 page（250 words）/ 0.05 per word</div>
+                <div class="p5"><br /></div>
               </div>
             </el-col>
             <el-col class="sec2Col" :span="8">
@@ -98,10 +98,9 @@
             </el-col>
             <el-col :span="12" class="b1 right">
               <div class="p1">Data computer type</div>
-              <div class="p2">数据计算机简介</div>
+              <div class="p2">数据计算机辅导</div>
               <div class="p3">
-                具备统计、金融、商业分析、工商管理、经济、Marketing等具备较强的
-                计算机编程能力，熟悉Python/C/C++/R/Java/VBA/SQL中任意
+                数据计算机Assignment辅导，论文辅导，涵盖C/C++/JAVA/Python/、web、android、Data Analysys、Data Structure、 Algorithm、 Database、 Html/Js/Web,、Network,、Operating System,、Compiler,、Functional Programming…
               </div>
               <div
                 class="p3"
@@ -113,11 +112,10 @@
           </el-row>
           <el-row class="sec3Row">
             <el-col :span="12" class="b1 left">
-              <div class="p1">Financial Business</div>
-              <div class="p2">金融商業類簡介</div>
+              <div class="p1">Finance and business</div>
+              <div class="p2">金融商科类辅导</div>
               <div class="p3">
-                具备统计、金融、商业分析、工商管理、经济、Marketing等具备较强的
-                计算机编程能力，熟悉Python/C/C++/R/Java/VBA/SQL中任意
+                金融商科类辅导，assignment辅导，论文辅导，涵盖金融、市场营销、商业分析、统计、会计等…
               </div>
               <div
                 class="p3"
@@ -139,11 +137,10 @@
               /></el-image>
             </el-col>
             <el-col :span="12" class="b1 right">
-              <div class="p1">Data computer type</div>
-              <div class="p2">人文艺术类简介</div>
+              <div class="p1">Arts and humanities</div>
+              <div class="p2">人文艺术类辅导</div>
               <div class="p3">
-                具备统计、金融、商业分析、工商管理、经济、Marketing等具备较强的
-                计算机编程能力，熟悉Python/C/C++/R/Java/VBA/SQL中任意
+                人文艺术类专业assignment辅导，论文辅导，涵盖cad，3D.su建模，动画、视频、作品集…
               </div>
               <div
                 class="p3"
