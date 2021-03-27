@@ -18,11 +18,14 @@
           </div>
           <div class="p2"><i class="el-icon-notebook-2" />服务质量</div>
           <div class="p3">
-            保证honor code，代码原创。参考课程slide与笔记，不使用超纲代码。有test的必全过，有得分requirements的必全做。Bonus部分尽最大努力完成。我们也可以远程代写辅导，一步一步教你怎么做。
+            保证honor
+            code，代码原创。参考课程slide与笔记，不使用超纲代码。有test的必全过，有得分requirements的必全做。Bonus部分尽最大努力完成。我们也可以远程代写辅导，一步一步教你怎么做。
           </div>
           <div class="p2"><i class="el-icon-notebook-2" />代写范围及领域</div>
           <div class="p3">
-            C/C++/JAVA/Python/、web、android、Data Analysys、Data Structure、 Algorithm、 Database、 Html/Js/Web,、Network,、Operating System,、Compiler,、Functional Programming…
+            C/C++/JAVA/Python/、web、android、Data Analysys、Data Structure、
+            Algorithm、 Database、 Html/Js/Web,、Network,、Operating
+            System,、Compiler,、Functional Programming…
           </div>
         </div>
       </div>
@@ -40,9 +43,28 @@
             >
             <el-button class="btn2" size="medium" plain>仅修改</el-button>
           </div>
-          <el-image class="g1" :src="sec2Img" fit="cover" lazy
-            ><div slot="placeholder" class="emptyImg"
-          /></el-image>
+          <el-row :gutter="32" class="sec3Row">
+            <el-col :span="12" class="sec3Col">
+              <el-image class="g1" :src="sec2Img" fit="cover" lazy
+                ><div slot="placeholder" class="emptyImg"
+              /></el-image>
+            </el-col>
+            <el-col :span="12" class="sec3Col">
+              <el-image class="g1" :src="sec3Img" fit="cover" lazy
+                ><div slot="placeholder" class="emptyImg"
+              /></el-image>
+            </el-col>
+            <el-col :span="12" class="sec3Col">
+              <el-image class="g1" :src="sec5Img" fit="cover" lazy
+                ><div slot="placeholder" class="emptyImg"
+              /></el-image>
+            </el-col>
+            <el-col :span="12" class="sec3Col">
+              <el-image class="g1" :src="sec4Img" fit="cover" lazy
+                ><div slot="placeholder" class="emptyImg"
+              /></el-image>
+            </el-col>
+          </el-row>
         </div>
       </div>
     </div>
@@ -50,8 +72,11 @@
 </template>
 
 <script>
-const sec1Img = require("@/assets/img/bg7.png");
-const sec2Img = require("@/assets/img/bg8.png");
+const sec1Img = require("@/assets/img_new_master/bg1.png");
+const sec2Img = require("@/assets/img_new_master/bg2.png");
+const sec3Img = require("@/assets/img_new_master/bg3.png");
+const sec4Img = require("@/assets/img_new_master/bg4.png");
+const sec5Img = require("@/assets/img_new_master/bg5.png");
 
 // 数据计算机代做
 export default {
@@ -61,6 +86,9 @@ export default {
     return {
       sec1Img,
       sec2Img,
+      sec3Img,
+      sec4Img,
+      sec5Img,
     };
   },
   created() {},
@@ -71,7 +99,7 @@ export default {
 
 <style lang="scss" scoped>
 .sec1 {
-  height: 614px;
+  height: 620px;
 }
 
 .sec2 {
@@ -152,9 +180,16 @@ export default {
       margin-left: 40px;
     }
 
-    .g1 {
-      width: 100%;
-      height: 580px;
+    .sec3Row {
+      margin-top: -32px;
+
+      .sec3Col {
+        padding-top: 32px;
+        .g1 {
+          width: 100%;
+          height: 408px;
+        }
+      }
     }
   }
 }
