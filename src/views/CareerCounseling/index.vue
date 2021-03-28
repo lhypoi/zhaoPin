@@ -169,7 +169,7 @@
           <div class="sec4Row">
             <div class="col">
               <div class="imgBox">
-                <el-image class="g1" :src="sec4Img" fit="cover" lazy
+                <el-image class="g1" :src="sec39Img" fit="cover" lazy
                   ><div slot="placeholder" class="emptyImg"
                 /></el-image>
                 <div class="textBox">
@@ -185,7 +185,7 @@
             </div>
             <div class="col">
               <div class="imgBox">
-                <el-image class="g1" :src="sec4Img" fit="cover" lazy
+                <el-image class="g1" :src="sec40Img" fit="cover" lazy
                   ><div slot="placeholder" class="emptyImg"
                 /></el-image>
                 <div class="textBox">
@@ -200,7 +200,7 @@
             </div>
             <div class="col">
               <div class="imgBox">
-                <el-image class="g1" :src="sec4Img" fit="cover" lazy
+                <el-image class="g1" :src="sec41Img" fit="cover" lazy
                   ><div slot="placeholder" class="emptyImg"
                 /></el-image>
                 <div class="textBox">
@@ -282,6 +282,9 @@ const sec34Img = require("@/assets/img_new_master/bg34.png");
 const sec35Img = require("@/assets/img_new_master/bg35.png");
 const sec36Img = require("@/assets/img_new_master/bg36.png");
 const sec37Img = require("@/assets/img_new_master/bg37.png");
+const sec39Img = require("@/assets/img_new_master/bg39.png");
+const sec40Img = require("@/assets/img_new_master/bg40.png");
+const sec41Img = require("@/assets/img_new_master/bg41.png");
 
 // 就业辅导
 export default {
@@ -301,6 +304,9 @@ export default {
       sec35Img,
       sec36Img,
       sec37Img,
+      sec39Img,
+      sec40Img,
+      sec41Img
     };
   },
   created() {},

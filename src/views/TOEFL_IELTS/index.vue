@@ -127,7 +127,7 @@
 </template>
 
 <script>
-const sec1Img = require("@/assets/img_new_master/bg6.png");
+const sec1Img = require("@/assets/img_new_master/bg38.png");
 const sec19Img = require("@/assets/img_new_master/bg19.png");
 const sec20Img = require("@/assets/img_new_master/bg20.png");
 const sec21Img = require("@/assets/img_new_master/bg21.png");
