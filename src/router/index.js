@@ -325,6 +325,18 @@ export const constantRoutes = [
     ]
   },
   {
+    path: '/ContactUs',
+    component: BaseLayout,
+    redirect: '/ContactUs/index',
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/ContactUs/index'),
+        name: 'Documentation'
+      }
+    ]
+  },
+  {
     path: '/documentation',
     component: Layout,
     children: [

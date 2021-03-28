@@ -58,6 +58,7 @@
                 <el-menu-item index="/CareerCounseling/index">就业辅导</el-menu-item>
               </el-submenu>
               <el-menu-item index="/InformationList/index">留学资讯</el-menu-item>
+              <el-menu-item index="/ContactUs/index">联系我们</el-menu-item>
             </el-menu>
           </div>
         </div>
