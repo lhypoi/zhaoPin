@@ -55,7 +55,7 @@
                 <el-menu-item index="/RepresentationOfInterests/index">紧急申述Appeal</el-menu-item>
                 <el-menu-item index="/GreenChannelForEmergencyTransfers/index">紧急转学绿色通道</el-menu-item>
                 <el-menu-item index="/x32">升学前置作案top up</el-menu-item>
-                <el-menu-item index="/x33">就业辅导</el-menu-item>
+                <el-menu-item index="/CareerCounseling/index">就业辅导</el-menu-item>
               </el-submenu>
               <el-menu-item index="/InformationList/index">留学资讯</el-menu-item>
             </el-menu>

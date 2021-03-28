@@ -313,6 +313,18 @@ export const constantRoutes = [
     ]
   },
   {
+    path: '/CareerCounseling',
+    component: BaseLayout,
+    redirect: '/CareerCounseling/index',
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/CareerCounseling/index'),
+        name: 'Documentation'
+      }
+    ]
+  },
+  {
     path: '/documentation',
     component: Layout,
     children: [
