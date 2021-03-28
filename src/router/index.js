@@ -301,6 +301,18 @@ export const constantRoutes = [
     ]
   },
   {
+    path: '/TOEFL_IELTS',
+    component: BaseLayout,
+    redirect: '/TOEFL_IELTS/index',
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/TOEFL_IELTS/index'),
+        name: 'Documentation'
+      }
+    ]
+  },
+  {
     path: '/documentation',
     component: Layout,
     children: [

@@ -33,7 +33,7 @@
                 <el-menu-item index="/FinanceAndBusinessStudies/index">金融商科代做</el-menu-item>
                 <el-menu-item index="/HumanitiesAndArtsAgency/index">人文艺术代做</el-menu-item>
                 <el-menu-item index="/OnlineTutorials/index">网课辅导</el-menu-item>
-                <el-menu-item index="/x12">雅思托福/GRE/Gmat</el-menu-item>
+                <el-menu-item index="/TOEFL_IELTS/index">雅思托福/GRE/Gmat</el-menu-item>
                 <!-- <el-menu-item index="/GuaranteedAdmission/index">保录升学</el-menu-item> -->
                 <!-- <el-menu-item index="/DissertationCorrection/index">论文批改润色</el-menu-item> -->
                 <!-- <el-menu-item index="/StudyInUK/index">海外首选英国留学（原）</el-menu-item> -->
