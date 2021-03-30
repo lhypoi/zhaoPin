@@ -72,7 +72,7 @@
               ><div slot="placeholder" class="emptyImg"
             /></el-image>
             <div class="p1">
-              Dr.J Writer Studio，全网最大英文写手高薪兼职平台
+              Dr.D Writer Studio，全网最大英文写手高薪兼职平台
             </div>
             <el-button class="btn1" type="primary">了解更多</el-button>
           </el-col>
@@ -93,7 +93,7 @@
           </el-col>
         </el-row>
       </div>
-      <div class="copyRight">Dr.J Writer Studio @2011-2020 copyright</div>
+      <div class="copyRight">Dr.D Writer Studio @2011-2020 copyright</div>
     </div>
     <div class="sideWechat">
       <el-image :src="wechat2Img" fit="cover" style="width: 50px; height: 50px"

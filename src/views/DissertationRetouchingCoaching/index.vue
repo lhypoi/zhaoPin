@@ -100,8 +100,10 @@
                   <i class="iconfont iconshuju" />
                   <div class="p2">编程语言</div>
                   <div class="p3">
-                    声明式编程与DSL、函数式编程<br />
-                    C语言、大数据
+                    涵盖C/C++/JAVA/Python/、web、android、Data Analysys、Data
+                    Structure、 Algorithm、 Database、
+                    Html/Js/Web,、Network,、Operating
+                    System,、Compiler,、Functional Programming…
                   </div>
                 </div>
               </el-col>
@@ -110,18 +112,16 @@
                   <i class="iconfont iconyishushejichuanmei" />
                   <div class="p2">人文艺术</div>
                   <div class="p3">
-                    平面设计、雕塑、艺术装置<br />
-                    行为艺术
+                    平面设计、雕塑、艺术装置、行为艺术、cad，3D.su建模，动画
                   </div>
                 </div>
               </el-col>
               <el-col :span="8">
                 <div class="b1Col">
                   <i class="iconfont iconqixiangyi" />
-                  <div class="p2">气象学</div>
+                  <div class="p2">数据分析</div>
                   <div class="p3">
-                    气象站、高空气球、卫星云图、<br />
-                    雷达回波图
+                    R、Matlab、stata、python、Eview、数据挖掘等
                   </div>
                 </div>
               </el-col>
@@ -258,7 +258,7 @@ export default {
       list19Img,
       list20Img,
       list21Img,
-      list39Img
+      list39Img,
     };
   },
   created() {},

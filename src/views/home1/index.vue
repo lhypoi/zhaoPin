@@ -6,7 +6,7 @@
       /></el-image>
       <div class="pageSectionContent">
         <div class="sec1Box">
-          <div class="p1">Dr.J Essay Mentor</div>
+          <div class="p1">Dr.D Essay Mentor</div>
           <div class="p2">
             诚聘各类学科英文论文导师<br />
             工作自由，高提成率
@@ -28,7 +28,7 @@
                 <i class="iconfont icon03gaoehuibao"></i>
                 <div class="p1">高额回报</div>
                 <div class="p2">
-                  Dr.J Essay Mentor
+                  Dr.D Essay Mentor
                   不仅能让您取得丰厚的佣金报酬，还能够帮助您在学术研究上取得更好的成就
                 </div>
               </div>
@@ -149,7 +149,7 @@
           <el-row :gutter="30" style="height: 100%">
             <el-col :span="12" style="height: 100%">
               <div class="sec1BoxCol col1">
-                <div class="p1">Dr.J Essay Mentor</div>
+                <div class="p1">Dr.D Essay Mentor</div>
                 <div class="p2">关于我们</div>
                 <div class="d1"></div>
                 <div class="p4">Learn more about us</div>
@@ -159,14 +159,14 @@
               <div class="sec1BoxCol col2">
                 <div class="p1">即刻加入我们，让你的才华变现！</div>
                 <div class="p2">
-                  Dr.J Essay
+                  Dr.D Essay
                   Mentor，成立于2005年，为国内外英文写作人才提供高薪优质的线上兼职资源。
                 </div>
                 <div class="p2">
-                  Dr.J Essay
-                  Mentor拥有数量庞大的任务单，包含Essay，Assignment，Exam，java、C语言、python计算机编程语言，留学申请文书等，为各专业的写作老师提供多元化的选择。目前，Dr.J
+                  Dr.D Essay
+                  Mentor拥有数量庞大的任务单，包含Essay，Assignment，Exam，java、C语言、python计算机编程语言，留学申请文书等，为各专业的写作老师提供多元化的选择。目前，Dr.D
                   Essay
-                  Mentor已与上千位老师合作达15年之久。作为一份兼职，时间灵活弹性，通常都能获得高于主业数倍的薪资！自成立以来，Dr.J
+                  Mentor已与上千位老师合作达15年之久。作为一份兼职，时间灵活弹性，通常都能获得高于主业数倍的薪资！自成立以来，Dr.D
                   Essay
                   Mentor不断优化老师团队，欢迎各领域的优秀写作老师前来应聘。
                 </div>
@@ -185,7 +185,7 @@
           <div class="p1">Evaluation of our cooperative teachers</div>
           <div class="d1"></div>
           <div class="p2">
-            15年来，Dr.J Writer
+            15年来，Dr.D Writer
             Studio为数千位优秀写作老师提供了高薪、稳定的兼职收入来源，
           </div>
           <div class="p2">将有才变有财！多年来收获合作老师一致好评！</div>
@@ -195,7 +195,7 @@
                 <el-rate :value="5" style="text-align: right"> </el-rate>
                 <div class="p3">约克大学</div>
                 <div class="p4">
-                  我是2008年加入的Dr.J，是在网络上
+                  我是2008年加入的Dr.D，是在网络上
                   无意搜到的，没想到一开始接单就停
                   不下来，越干越有劲，哈哈，可能是
                   对钱的诱惑力吧！我木有抵抗力阿！
@@ -242,10 +242,10 @@
             <el-col :span="12" style="height: 100%">
               <div class="sec1BoxCol col1">
                 <div class="p1">A Chance To Change Your Life</div>
-                <div class="p2">Dr.J WRITER STUDIO的薪资</div>
+                <div class="p2">Dr.D WRITER STUDIO的薪资</div>
                 <div class="d1"></div>
                 <div class="p3">
-                  Dr.J Writer
+                  Dr.D Writer
                   Studio实行分级定薪政策，根据订单难度、耗费精力时长、
                   作业类别三个方面来提供不同的薪资待遇，确保每一份订单的薪资都是
                   合理且让您满意的！

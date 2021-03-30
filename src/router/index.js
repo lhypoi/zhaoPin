@@ -74,7 +74,7 @@ export const constantRoutes = [
   {
     path: '/',
     component: Layout,
-    redirect: '/GuaranteedAdmission',
+    redirect: '/home3/index',
     children: [
       {
         path: 'dashboard',

@@ -5,14 +5,8 @@
         <div class="navTop">
           <!-- logo -->
           <div class="navLeft">
-            <el-image
-              class="g1"
-              :src="logoImg"
-              fit="cover"
-              lazy
-            ><div
-              slot="placeholder"
-              class="emptyImg"
+            <el-image class="g1" :src="logoImg" fit="cover" lazy
+              ><div slot="placeholder" class="emptyImg"
             /></el-image>
           </div>
           <!-- 菜单 -->
@@ -29,35 +23,59 @@
               <el-menu-item index="/home3/index">首页</el-menu-item>
               <el-submenu index="/x1">
                 <template slot="title">海外留学辅导</template>
-                <el-menu-item index="/DataComputerGeneration/index">数据计算机代做</el-menu-item>
-                <el-menu-item index="/FinanceAndBusinessStudies/index">金融商科代做</el-menu-item>
-                <el-menu-item index="/HumanitiesAndArtsAgency/index">人文艺术代做</el-menu-item>
-                <el-menu-item index="/OnlineTutorials/index">网课辅导</el-menu-item>
-                <el-menu-item index="/TOEFL_IELTS/index">雅思托福/GRE/Gmat</el-menu-item>
+                <el-menu-item index="/DataComputerGeneration/index"
+                  >数据计算机代做</el-menu-item
+                >
+                <el-menu-item index="/FinanceAndBusinessStudies/index"
+                  >金融商科代做</el-menu-item
+                >
+                <el-menu-item index="/HumanitiesAndArtsAgency/index"
+                  >人文艺术代做</el-menu-item
+                >
+                <el-menu-item index="/OnlineTutorials/index"
+                  >网课辅导</el-menu-item
+                >
+                <el-menu-item index="/TOEFL_IELTS/index"
+                  >雅思托福/GRE/Gmat</el-menu-item
+                >
                 <!-- <el-menu-item index="/GuaranteedAdmission/index">保录升学</el-menu-item> -->
                 <!-- <el-menu-item index="/DissertationCorrection/index">论文批改润色</el-menu-item> -->
                 <!-- <el-menu-item index="/StudyInUK/index">海外首选英国留学（原）</el-menu-item> -->
               </el-submenu>
               <el-submenu index="/x2">
                 <template slot="title">一站式留学申请</template>
-                <el-menu-item
-                  index="/AbroadAtTopUniversities/index"
-                >英美港澳留学申请</el-menu-item>
-                <el-menu-item index="/StudyAbroadAdvisory/index">名校保录蓝色通道</el-menu-item>
-                <el-menu-item index="/OverseasPreferredStudyInUK/index">海外首选英国留学</el-menu-item>
-                <el-menu-item
-                  index="/x21"
-                >热门留学国家的差异&排名</el-menu-item>
-                <el-menu-item index="/ApplicationForStudyAbroadAndDetails/index">申请留学&细节</el-menu-item>
+                <el-menu-item index="/AbroadAtTopUniversities/index"
+                  >英美港澳留学申请</el-menu-item
+                >
+                <el-menu-item index="/StudyAbroadAdvisory/index"
+                  >名校保录蓝色通道</el-menu-item
+                >
+                <el-menu-item index="/OverseasPreferredStudyInUK/index"
+                  >海外首选英国留学</el-menu-item
+                >
+                <el-menu-item index="/x21"
+                  >热门留学国家的差异&排名</el-menu-item
+                >
+                <el-menu-item index="/ApplicationForStudyAbroadAndDetails/index"
+                  >申请留学&细节</el-menu-item
+                >
               </el-submenu>
               <el-submenu index="/x3">
                 <template slot="title">求学救护站</template>
-                <el-menu-item index="/RepresentationOfInterests/index">紧急申述Appeal</el-menu-item>
-                <el-menu-item index="/GreenChannelForEmergencyTransfers/index">紧急转学绿色通道</el-menu-item>
+                <el-menu-item index="/RepresentationOfInterests/index"
+                  >紧急申述Appeal</el-menu-item
+                >
+                <el-menu-item index="/GreenChannelForEmergencyTransfers/index"
+                  >紧急转学绿色通道</el-menu-item
+                >
                 <el-menu-item index="/x32">升学前置作案top up</el-menu-item>
-                <el-menu-item index="/CareerCounseling/index">就业辅导</el-menu-item>
+                <el-menu-item index="/CareerCounseling/index"
+                  >就业辅导</el-menu-item
+                >
               </el-submenu>
-              <el-menu-item index="/InformationList/index">留学资讯</el-menu-item>
+              <el-menu-item index="/InformationList/index"
+                >留学资讯</el-menu-item
+              >
               <el-menu-item index="/ContactUs/index">联系我们</el-menu-item>
             </el-menu>
           </div>
@@ -95,26 +113,18 @@
       <div class="copyRight">
         <el-row style="width: 1400px; margin: 0 auto">
           <el-col :span="12" class="copyRightLeft">
-            <el-image
-              class="g1"
-              :src="logo2Img"
-              fit="cover"
-              lazy
-            ><div
-              slot="placeholder"
-              class="emptyImg"
+            <el-image class="g1" :src="logo2Img" fit="cover" lazy
+              ><div slot="placeholder" class="emptyImg"
             /></el-image>
             <div class="p1">
-              EY安永是指 Ernst & Young Global Limited
-              的全球組織，也可指其中一個或多個成員機構，各成員機構都是獨立的法人
-              個體。Ernst & Young Global Limited
-              是英國一家擔保有限公司，並不向客戶提供服務。
+              Dr.D Global
+              Education的團隊來自全球，輔導老師在遍佈各個專業領域領域，目前在英美中皆設立了辦公室並提供7X27小時的在線服務。
             </div>
           </el-col>
           <el-col :span="12" class="copyRightRight">
             <div class="p1">
               <el-link>与我们联系</el-link>
-              <el-link>Dr.j所在地</el-link>
+              <el-link>Dr.D所在地</el-link>
               <el-link>入口网站</el-link>
               <el-link>网站地图</el-link>
               <el-link>免责及隐私声明</el-link>
@@ -129,23 +139,16 @@
       </div>
     </div>
     <div class="sideWechat">
-      <el-image
-        :src="wechat2Img"
-        fit="cover"
-        style="width: 50px; height: 50px"
-      ><div
-        slot="placeholder"
-        class="emptyImg"
+      <el-image :src="wechat2Img" fit="cover" style="width: 50px; height: 50px"
+        ><div slot="placeholder" class="emptyImg"
       /></el-image>
       <span class="p1"> 微信二维码 </span>
-      <br>
+      <br />
       <el-image
         :src="wechatImg"
         fit="cover"
         style="width: 125px; height: 125px; margin: 0 0 10px 10px"
-      ><div
-        slot="placeholder"
-        class="emptyImg"
+        ><div slot="placeholder" class="emptyImg"
       /></el-image>
     </div>
     <el-backtop
@@ -156,14 +159,14 @@
 </template>
 
 <script>
-const topLeftImg = require('@/assets/img/topLeft.png')
-const logoImg = require('@/assets/img/logo.png')
-const logo2Img = require('@/assets/img/logo2.png')
-const wechatImg = require('@/assets/img/wechat.png')
-const wechat2Img = require('@/assets/img/wechat2.png')
+const topLeftImg = require("@/assets/img/topLeft.png");
+const logoImg = require("@/assets/img/logo.png");
+const logo2Img = require("@/assets/img/logo2.png");
+const wechatImg = require("@/assets/img/wechat.png");
+const wechat2Img = require("@/assets/img/wechat2.png");
 
 export default {
-  name: 'BaseLayout',
+  name: "BaseLayout",
   props: {},
   data() {
     return {
@@ -171,23 +174,23 @@ export default {
       logoImg,
       logo2Img,
       wechatImg,
-      wechat2Img
-    }
+      wechat2Img,
+    };
   },
   computed: {
     cachedViews() {
-      return this.$store.state.tagsView.cachedViews
+      return this.$store.state.tagsView.cachedViews;
     },
     key() {
-      return this.$route.path
-    }
+      return this.$route.path;
+    },
   },
   created() {},
   mounted() {
-    console.log(this.$route.path)
+    console.log(this.$route.path);
   },
-  methods: {}
-}
+  methods: {},
+};
 </script>
 
 <style lang="scss" scoped>
@@ -357,16 +360,16 @@ export default {
           width: 44px;
           height: 44px;
           border-radius: 44px;
-          border: 2px solid #E0E0E5;
+          border: 2px solid #e0e0e5;
           display: flex;
           align-items: center;
           justify-content: center;
           cursor: pointer;
 
           &:nth-child(2n) {
-            background: #2E2E38;
+            background: #2e2e38;
             color: #fff;
-            border-color: #2E2E38;
+            border-color: #2e2e38;
           }
         }
       }

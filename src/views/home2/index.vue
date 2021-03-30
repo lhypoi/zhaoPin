@@ -15,7 +15,7 @@
         <div class="sec1Box">
           <div class="t1">
             <div class="t11">Welcome</div>
-            <h3 class="t12">Dr.J诚招各专业老师前来加盟</h3>
+            <h3 class="t12">Dr.D诚招各专业老师前来加盟</h3>
           </div>
           <div class="t2" style="padding-left: 60px">
             <p>
@@ -45,7 +45,7 @@
         <div class="sec1Box">
           <div class="t1">
             <div class="t11">Requires</div>
-            <h3 class="t12">Dr.J对老师的资历要求</h3>
+            <h3 class="t12">Dr.D对老师的资历要求</h3>
           </div>
           <div class="t2" style="padding-left: 60px">
             <p>&nbsp;</p>
@@ -103,7 +103,7 @@
             </el-col>
           </el-row>
         </div>
-        <div class="sec3Box">Dr.J想对老师们说：</div>
+        <div class="sec3Box">Dr.D想对老师们说：</div>
       </div>
     </div>
     <div class="pageSection sec9">
@@ -114,7 +114,7 @@
         <div class="sec1Box">
           <p>
             Note:
-            Dr.J對內部老師的組建无比重视，我们目前拥有大量高黏性的客群，我们不仅能让您取得丰厚的佣金报酬，还能够帮助您在学术研究上取得更好的成就，希望您能加入我们的团队，让我们一起携手共进。我们保持高额的项目提成率，一单一结，快速结款，价格透明。
+            Dr.D對內部老師的組建无比重视，我们目前拥有大量高黏性的客群，我们不仅能让您取得丰厚的佣金报酬，还能够帮助您在学术研究上取得更好的成就，希望您能加入我们的团队，让我们一起携手共进。我们保持高额的项目提成率，一单一结，快速结款，价格透明。
           </p>
           <p></p>
           <br />

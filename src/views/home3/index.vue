@@ -6,13 +6,17 @@
       /></el-image>
       <div class="pageSectionContent">
         <div class="sec1Box">
-          <div class="p1">论文辅导</div>
+          <div class="p1">
+            <!-- 论文辅导｜assignment 辅导｜保录升学｜紧急申诉Appeal -->
+            <br />
+          </div>
           <div class="p2">
-            定期更新的安永 COVID-19 <br />
-            企业愿景详细
+            雙語Tutor在線高端教育品牌 <br />
+            “D輔導”
           </div>
           <div class="p3">
-            企业愿景是组织在未来所能达到的一种状态的蓝图，阐述的是企业存在的最终目的。
+            留学生一站式辅导平台，為你的學業保駕護航。
+            <!-- <br> 留学生毕业论文指导，留学生就业指导课程，学业急救中心。 -->
           </div>
         </div>
       </div>
@@ -100,7 +104,10 @@
               <div class="p1">Data computer type</div>
               <div class="p2">数据计算机辅导</div>
               <div class="p3">
-                数据计算机Assignment辅导，论文辅导，涵盖C/C++/JAVA/Python/、web、android、Data Analysys、Data Structure、 Algorithm、 Database、 Html/Js/Web,、Network,、Operating System,、Compiler,、Functional Programming…
+                数据计算机Assignment辅导，论文辅导，涵盖C/C++/JAVA/Python/、web、android、Data
+                Analysys、Data Structure、 Algorithm、 Database、
+                Html/Js/Web,、Network,、Operating System,、Compiler,、Functional
+                Programming…
               </div>
               <div
                 class="p3"
@@ -269,7 +276,7 @@
                 ><div slot="placeholder" class="emptyImg"
               /></el-image>
               <div class="p1">
-                Dr.D 提供高质量，高效率的文章修改润色降重服务
+                Dr.D 提供高质量，高效率的文章润色降重服务
               </div>
               <div class="p2">
                 按照顾客的要求，1v1的进行针对性修改。每位导师都会对文章的结构，语法，
@@ -280,24 +287,27 @@
             <el-col :span="8">
               <div class="p4">R&D Writing Services 发展历程</div>
               <div class="p5">
-                通过线下与朋友介绍，R&D创始人与几个小
-                伙伴开始向多伦多地区的同学提供代写服务...
+                創始人D哥就讀於英國G5名校，對學術和教學有著瘋狂的熱誠，因緣際會與朋友創建了D輔導工作室，從英國倫敦開始發跡提供學習服务...
               </div>
-              <div class="p6">2010年-2012年</div>
+              <div class="p6">2010年-2015年</div>
               <div class="p5">
-                筹划建立R&D定制写作机构；重建服务流程，
-                建立ESSAYCASE网站（1.0版本），通过...
+                隨著業務增長，輔導類型從商業金融到數據分析，各種學科的學生都在這個平台快速的和對口老師溝通，一對一的快速學習解決了眾多留學生的痛點
               </div>
-              <div class="p6">2012年</div>
+              <div class="p6">2016年-2018年</div>
               <div class="p5">
-                用户突破500名，在加拿大、美国、中国三地
-                设立办公室，为客户提供7X24小时...
+                用户突破5000名，在英國、新加坡、中国三地设立了服務點，为客户提供7X24小时的輔導
               </div>
-              <div class="p6">2013年-至今</div>
+              <div class="p6">2019年- Nowadays .....</div>
             </el-col>
           </el-row>
           <div style="text-align: center; margin-top: 10px">
-            <el-button class="btn1" size="medium" plain @click="$router.push('/InformationList/index')">了解更多</el-button>
+            <el-button
+              class="btn1"
+              size="medium"
+              plain
+              @click="$router.push('/InformationList/index')"
+              >了解更多</el-button
+            >
           </div>
         </div>
       </div>
@@ -340,8 +350,7 @@
                 </div>
                 <div class="b2">
                   本来以为自己可以在期限内做完，没想到记错了Due，
-                  发现时只剩三天，幸亏选择了Dr.D海外教育，在这么短的
-                  时间内协助我完成了作业，靠谱！
+                  发现时只剩三天，幸亏选择了Dr.D海外教育，在这么短的时间内协助我完成了作业，靠谱！
                 </div>
                 <div class="b3">
                   <i class="iconfont iconqipao" />
@@ -362,8 +371,7 @@
                 <div class="b2">
                   这门老师是出了名的刁钻，于是我找了一间辅导,没想到学
                   校抓我去meeting, 在面临被开除的边缘我找到了Dr.D, 我
-                  才知道这行水实在太深了, 感谢工作室帮我和校方argue得
-                  到多一次resit的机会, 太感谢
+                  才知道这行水实在太深了, 感谢工作室帮我和校方argue得到多一次resit的机会, 太感谢
                 </div>
                 <div class="b3">
                   <i class="iconfont iconqipao" />
@@ -892,7 +900,7 @@ export default {
     .p4 {
       font-size: 16px;
       color: #747480;
-      margin-top: 200px;
+      margin-top: 120px;
       padding-left: 20px;
       margin-bottom: 30px;
     }

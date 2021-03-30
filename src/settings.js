@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Dr.J Essay Mentor',
+  title: 'Dr.D Essay Mentor',
 
   /**
    * @type {boolean} true | false
