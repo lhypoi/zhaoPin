@@ -11,7 +11,7 @@
         <div class="sec1Box">
           <div class="moduleTitle">
             <div class="moduleBgTitle">Financial Engineering</div>
-            <div class="moduleMainTitle">金融商科代做</div>
+            <div class="moduleMainTitle">金融商科辅导</div>
           </div>
           <div class="p1 normalP">
             最近有很多小伙伴私信我问什么是金融工程，想了解金融工程到底是学习什么？金融工程专业主要学习经济学、金融学、金融工程和风险管理方法与技能的基本训练，如果未来想当风投机构的投资人，享受一人之下万人之上的感受，那就一定得把这领域的基本功做好。最近有很多小伙伴私信我问什么是金融工程，想了解金融工程到底是学习什么？金融工程专业主要学习经济学、金融学、金融工程和风险管理方法与技能的基本训练，如果未来想当风投机构的投资人，享受一人之下万人之上的感受，那就一定得把这领域的基本功做好。
@@ -75,7 +75,7 @@ const sec1Img = require("@/assets/img_new_master/bg6.png");
 const sec7Img = require("@/assets/img_new_master/bg7.png");
 const sec8Img = require("@/assets/img_new_master/bg8.png");
 
-// 金融商科代做
+// 金融商科辅导
 export default {
   name: "FinanceAndBusinessStudies",
   props: {},

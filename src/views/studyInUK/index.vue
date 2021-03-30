@@ -130,7 +130,7 @@
                   </div>
                   <div class="p3">
                     留学申请文书<br>
-                    代写服务
+                    辅导服务
                   </div>
                   <div class="p4">
                     了解更多<i class="iconfont icon-_jiantou" />

@@ -57,7 +57,7 @@
                 ><div slot="placeholder" class="emptyImg"
               /></el-image>
               <div class="b1">
-                <div class="p2">留学申请文书代写服务</div>
+                <div class="p2">留学申请文书辅导服务</div>
                 <div class="p3">
                   根据所申请学校不同的背景和要求，有针对性进行文书写作
                   和深度精修工作，所有完成文稿逻辑合理，重点表述正确突出。

@@ -24,13 +24,13 @@
               <el-submenu index="/x1">
                 <template slot="title">海外留学辅导</template>
                 <el-menu-item index="/DataComputerGeneration/index"
-                  >数据计算机代做</el-menu-item
+                  >数据计算机辅导</el-menu-item
                 >
                 <el-menu-item index="/FinanceAndBusinessStudies/index"
-                  >金融商科代做</el-menu-item
+                  >金融商科辅导</el-menu-item
                 >
                 <el-menu-item index="/HumanitiesAndArtsAgency/index"
-                  >人文艺术代做</el-menu-item
+                  >人文艺术辅导</el-menu-item
                 >
                 <el-menu-item index="/OnlineTutorials/index"
                   >网课辅导</el-menu-item
