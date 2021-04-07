@@ -89,7 +89,7 @@
     </transition>
     <div class="footer">
       <div class="getMore">
-        <el-row style="width: 1400px; margin: 0 auto">
+        <el-row style="width: 1200px; margin: 0 auto">
           <el-col :span="12" class="moreLeft">
             <div class="p1">了解更多</div>
             <div class="p2">用心对待每一份订单</div>
@@ -111,7 +111,7 @@
         </el-row>
       </div>
       <div class="copyRight">
-        <el-row style="width: 1400px; margin: 0 auto">
+        <el-row style="width: 1200px; margin: 0 auto">
           <el-col :span="12" class="copyRightLeft">
             <el-image class="g1" :src="logo2Img" fit="cover" lazy
               ><div slot="placeholder" class="emptyImg"
@@ -204,7 +204,7 @@ export default {
   z-index: 10;
 
   .navContent {
-    width: 1400px;
+    width: 1200px;
     margin: 0 auto;
     position: relative;
     height: 100%;
