@@ -41,7 +41,7 @@
 </template>
 
 <script>
-const sec1Img = require("@/assets/img_new_master/bg38.jpg");
+const sec1Img = require("@/assets/img/bg3.png");
 const list23Img = require("@/assets/img/list23.png");
 const list24Img = require("@/assets/img/list24.png");
 const list25Img = require("@/assets/img/list25.png");
