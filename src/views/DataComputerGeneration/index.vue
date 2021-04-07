@@ -34,7 +34,7 @@
     <div class="pageSection sec3">
       <div class="pageSectionContent">
         <div class="sec1Box">
-          <div class="p1">英文论文批改润色案例</div>
+          <div class="p1">数据计算机案例</div>
           <div
             style="text-align: center; margin-top: 60px; margin-bottom: 30px"
           >

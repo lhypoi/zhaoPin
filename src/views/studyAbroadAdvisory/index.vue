@@ -224,7 +224,7 @@
             </div>
           </div>
           <div style="text-align: center; margin-top: 50px;">
-            <el-button class="btn1" size="medium" plain>联系我们</el-button>
+            <el-button class="btn1" size="medium" plain  @click="() => $router.push(`/ContactUs`)">联系我们</el-button>
           </div>
         </div>
       </div>
