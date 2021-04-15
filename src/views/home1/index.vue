@@ -12,7 +12,11 @@
             工作自由，高提成率
           </div>
           <div class="p3">JOIN US. CHANGE YOUR LIFE！</div>
-          <el-button class="btn1" type="primary">了解更多</el-button>
+          <el-button class="btn1" type="primary" @click="
+            () => {
+              $router.push('/home2/index');
+            }
+          ">了解更多</el-button>
         </div>
       </div>
     </div>
