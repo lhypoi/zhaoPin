@@ -4,7 +4,7 @@
       <el-image
         class="pageSectionImg"
         :src="sec1Img"
-        fit="cover"
+        fit="container"
         lazy
       ><div
         slot="placeholder"
@@ -346,15 +346,22 @@ export default {
 
 <style lang="scss" scoped>
 .sec1 {
-  height: 695px;
+  height: auto;
+
+  .pageSectionImg {
+    position: relative;
+    display: block;
+  }
 
   .sec1Box {
     height: 100%;
     color: #fff;
     line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     .p1 {
-      padding-top: 218px;
       font-size: 42px;
       color: #2E2E38;
       font-weight: bold;

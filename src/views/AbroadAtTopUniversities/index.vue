@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="pageSection sec1">
-      <el-image class="pageSectionImg" :src="sec1Img" fit="cover" lazy
+      <el-image class="pageSectionImg" :src="sec1Img" fit="container" lazy
         ><div slot="placeholder" class="emptyImg"
       /></el-image>
       <div class="pageSectionContent">
@@ -388,15 +388,22 @@ export default {
 
 <style lang="scss" scoped>
 .sec1 {
-  height: 615px;
+  height: auto;
+
+  .pageSectionImg {
+    position: relative;
+    display: block;
+  }
 
   .sec1Box {
     height: 100%;
     color: #fff;
     line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     .p1 {
-      padding-top: 195px;
       font-size: 42px;
       color: #fff;
       font-weight: bold;

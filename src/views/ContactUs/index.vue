@@ -66,7 +66,12 @@ export default {
 
 <style lang="scss" scoped>
 .sec1 {
-  height: 562px;
+  height: auto;
+
+  .pageSectionImg {
+    position: relative;
+    display: block;
+  }
 }
 
 .sec2 {
