@@ -2,11 +2,10 @@
   position: relative;
 
   .pageSectionImg {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    position: relative;
+    display: block;
+    min-height: 100px;
+    background: #c0c4cc;
   }
 
   .pageSectionContent {
@@ -79,5 +78,20 @@
   line-height: 38px;
   color: #333333;
   opacity: 1;
+}
+
+// 跑马灯分页器
+.el-carousel__indicator {
+  .el-carousel__button {
+    width: 70px;
+    height: 4px;
+    border-radius: 2px;
+  }
+
+  &.is-active {
+    .el-carousel__button {
+      background: #FFA600;
+    }
+  }
 }
 

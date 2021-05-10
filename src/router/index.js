@@ -336,6 +336,20 @@ export const constantRoutes = [
       }
     ]
   },
+  // 食品 S
+  {
+    path: '/Home',
+    component: BaseLayout,
+    redirect: '/Home/index',
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/food/Home/index'),
+        name: 'Documentation'
+      }
+    ]
+  },
+  // 食品 E
   {
     path: '/documentation',
     component: Layout,

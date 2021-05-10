@@ -13,7 +13,7 @@
             text-color="#333333"
             active-text-color="#E66717"
           >
-            <el-menu-item index="/home3/index">首页</el-menu-item>
+            <el-menu-item index="/Home/index">首页</el-menu-item>
             <el-menu-item index="/home3/index2">产品中心</el-menu-item>
             <el-menu-item index="/home3/index3">品牌实力</el-menu-item>
             <el-menu-item index="/home3/index4">关于展翠</el-menu-item>
