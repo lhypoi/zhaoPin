@@ -77,9 +77,9 @@
                 ><div slot="placeholder" class="emptyImg"
               /></el-image>
               <div class="b1">
-                <div class="p2">Online Course网课代上服务</div>
+                <div class="p2">Online Course网课辅导服务</div>
                 <div class="p3">
-                  代修服务。保质保量，代课老师全程把控，全部完美完成， 修不到C
+                  辅导服务。保质保量，辅导老师全程把控，全部完美完成， 修不到C
                   全额退款，一分钱不收！
                 </div>
                 <div class="p4">$ 120 起</div>
