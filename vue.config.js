@@ -2,6 +2,9 @@
 const path = require('path')
 const defaultSettings = require('./src/settings.js')
 
+const PrerenderSPAPlugin = require('prerender-spa-plugin')
+const Renderer = PrerenderSPAPlugin.PuppeteerRenderer
+
 function resolve(dir) {
   return path.join(__dirname, dir)
 }
@@ -24,7 +27,7 @@ module.exports = {
    * In most cases please use '/' !!!
    * Detail: https://cli.vuejs.org/config/#publicpath
    */
-  publicPath: './',
+  publicPath: '/zp/',
   outputDir: 'dist',
   assetsDir: 'static',
   lintOnSave: process.env.NODE_ENV === 'development',
@@ -46,7 +49,20 @@ module.exports = {
       alias: {
         '@': resolve('src')
       }
-    }
+    },
+    plugins: [
+      new PrerenderSPAPlugin({
+        staticDir: path.join(__dirname, 'dist'),
+        routes: ['/', '/home3/index'],
+        renderer: new Renderer({
+            inject: {
+                foo: 'bar'
+            },
+            headless: true,
+            renderAfterDocumentEvent: 'render-event'
+        })
+    })
+    ]
   },
   chainWebpack(config) {
     // it can improve the speed of the first screen, it is recommended to turn on preload
