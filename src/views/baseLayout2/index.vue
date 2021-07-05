@@ -20,7 +20,7 @@
               text-color="#fff"
               active-text-color="#ffd04b"
             >
-              <el-menu-item index="/home3/index">首页</el-menu-item>
+              <el-menu-item index="/">首页</el-menu-item>
               <el-submenu index="/x1">
                 <template slot="title">海外留学辅导</template>
                 <el-menu-item index="/DataComputerGeneration/index"
