@@ -73,9 +73,14 @@ export const constantRoutes = [
   },
   {
     path: '/',
-    component: Layout,
-    redirect: '/home1',
+    component: BaseLayout,
+    // redirect: '/home3/index',
     children: [
+      {
+        path: '',
+        component: () => import('@/views/home3/index'),
+        name: 'Documentation'
+      },
       {
         path: 'dashboard',
         component: () => import('@/views/dashboard/index'),
@@ -413,6 +418,7 @@ export const asyncRoutes = [
 ]
 
 const createRouter = () => new Router({
+  base: '/drd/',
   mode: 'history', // require service support
   // mode: 'hash', // require service support
   scrollBehavior: () => ({ y: 0 }),
