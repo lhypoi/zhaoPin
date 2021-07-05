@@ -4,19 +4,25 @@
       <div class="navContent">
         <div class="navTop">
           <div class="navLeft">
-            <el-image class="g1" :src="topLeftImg" fit="cover" lazy
-              ><div slot="placeholder" class="emptyImg"
+            <el-image
+              class="g1"
+              :src="topLeftImg"
+              fit="cover"
+              lazy
+            ><div
+              slot="placeholder"
+              class="emptyImg"
             /></el-image>
             <div class="p1">高效，优质，轻量化的学术平台</div>
           </div>
           <div class="navRight">
             <div class="workInfoBox">
               <div class="infoItem">
-                <i class="iconfont icon01yonghu"></i>
+                <i class="iconfont icon01yonghu" />
                 <span class="p2">微信：ReportJ888</span>
               </div>
               <div class="infoItem">
-                <i class="iconfont icon02duanxin"></i>
+                <i class="iconfont icon02duanxin" />
                 <span class="p2">工作时间：周一至周日</span>
               </div>
             </div>
@@ -24,8 +30,14 @@
         </div>
         <div class="navBottom">
           <div class="navLeft">
-            <el-image class="g1" :src="logoImg" fit="cover" lazy
-              ><div slot="placeholder" class="emptyImg"
+            <el-image
+              class="g1"
+              :src="logoImg"
+              fit="cover"
+              lazy
+            ><div
+              slot="placeholder"
+              class="emptyImg"
             /></el-image>
           </div>
           <div class="navRight">
@@ -33,14 +45,13 @@
               <div class="infoItem">
                 <span
                   class="p2"
-                  :class="$route.path === '/home1/index' ? 'active' : ''"
+                  :class="$route.path === '/' ? 'active' : ''"
                   @click="
                     () => {
-                      $router.push('/home1/index');
+                      $router.push('/');
                     }
                   "
-                  >首页</span
-                >
+                >首页</span>
               </div>
               <div class="infoItem">
                 <span
@@ -51,8 +62,7 @@
                       $router.push('/home2/index');
                     }
                   "
-                  >资历要求</span
-                >
+                >资历要求</span>
               </div>
             </div>
           </div>
@@ -68,8 +78,14 @@
       <div class="contact">
         <el-row style="width: 1200px; margin: 0 auto">
           <el-col :span="12">
-            <el-image class="g1" :src="logo2Img" fit="cover" lazy
-              ><div slot="placeholder" class="emptyImg"
+            <el-image
+              class="g1"
+              :src="logo2Img"
+              fit="cover"
+              lazy
+            ><div
+              slot="placeholder"
+              class="emptyImg"
             /></el-image>
             <div class="p1">
               Dr.J Writer Studio，全网最大英文写手高薪兼职平台
@@ -80,13 +96,19 @@
             <div style="text-align: left; display: inline-block">
               <div class="p2">联系方式</div>
               <div class="p3">
-                <i class="iconfont icon01yonghu"></i>
+                <i class="iconfont icon01yonghu" />
                 <div class="p33">微信：ReportJ888</div>
                 <div class="p33">工作时间：周一至周日</div>
               </div>
               <div class="p4">
-                <el-image class="g2" :src="wechatImg" fit="cover" lazy
-                  ><div slot="placeholder" class="emptyImg"
+                <el-image
+                  class="g2"
+                  :src="wechatImg"
+                  fit="cover"
+                  lazy
+                ><div
+                  slot="placeholder"
+                  class="emptyImg"
                 /></el-image>
               </div>
             </div>
@@ -96,31 +118,41 @@
       <div class="copyRight">Dr.J Writer Studio @2011-2020 copyright</div>
     </div>
     <div class="sideWechat">
-      <el-image :src="wechat2Img" fit="cover" style="width: 50px; height: 50px"
-        ><div slot="placeholder" class="emptyImg"
+      <el-image
+        :src="wechat2Img"
+        fit="cover"
+        style="width: 50px; height: 50px"
+      ><div
+        slot="placeholder"
+        class="emptyImg"
       /></el-image>
       <span class="p1"> 微信二维码 </span>
-      <br />
-      <el-image :src="wechatImg" fit="cover" style="width: 125px; height: 125px; margin: 0 0 10px 10px;"
-        ><div slot="placeholder" class="emptyImg"
+      <br>
+      <el-image
+        :src="wechatImg"
+        fit="cover"
+        style="width: 125px; height: 125px; margin: 0 0 10px 10px;"
+      ><div
+        slot="placeholder"
+        class="emptyImg"
       /></el-image>
     </div>
     <el-backtop
       target=".webPage"
       style="background-color: #0282d3; color: #fff"
-    ></el-backtop>
+    />
   </div>
 </template>
 
 <script>
-const topLeftImg = require("@/assets/img/topLeft.png");
-const logoImg = require("@/assets/img/logo.png");
-const logo2Img = require("@/assets/img/logo2.png");
-const wechatImg = require("@/assets/img/wechat.png");
-const wechat2Img = require("@/assets/img/wechat2.png");
+const topLeftImg = require('@/assets/img/topLeft.png')
+const logoImg = require('@/assets/img/logo.png')
+const logo2Img = require('@/assets/img/logo2.png')
+const wechatImg = require('@/assets/img/wechat.png')
+const wechat2Img = require('@/assets/img/wechat2.png')
 
 export default {
-  name: "BaseLayout",
+  name: 'BaseLayout',
   props: {},
   data() {
     return {
@@ -128,23 +160,23 @@ export default {
       logoImg,
       logo2Img,
       wechatImg,
-      wechat2Img,
-    };
+      wechat2Img
+    }
   },
   computed: {
     cachedViews() {
-      return this.$store.state.tagsView.cachedViews;
+      return this.$store.state.tagsView.cachedViews
     },
     key() {
-      return this.$route.path;
-    },
+      return this.$route.path
+    }
   },
   created() {},
   mounted() {
-    console.log(this.$route.path);
+    console.log(this.$route.path)
   },
-  methods: {},
-};
+  methods: {}
+}
 </script>
 
 <style lang="scss" scoped>

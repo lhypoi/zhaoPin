@@ -78,7 +78,7 @@ export const constantRoutes = [
     children: [
       {
         path: '',
-        component: () => import('@/views/home3/index'),
+        component: () => import('@/views/home1/index'),
         name: 'Documentation'
       },
       {
@@ -418,7 +418,7 @@ export const asyncRoutes = [
 ]
 
 const createRouter = () => new Router({
-  base: '/drd/',
+  base: '/drj/',
   mode: 'history', // require service support
   // mode: 'hash', // require service support
   scrollBehavior: () => ({ y: 0 }),
