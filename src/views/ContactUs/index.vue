@@ -1,8 +1,14 @@
 <template>
   <div>
     <div class="pageSection sec1">
-      <el-image class="pageSectionImg" :src="sec1Img" fit="container" lazy
-        ><div slot="placeholder" class="emptyImg"
+      <el-image
+        class="pageSectionImg"
+        :src="sec1Img"
+        fit="container"
+        lazy
+      ><div
+        slot="placeholder"
+        class="emptyImg"
       /></el-image>
     </div>
 
@@ -12,7 +18,7 @@
           <div class="contact_con">
             <div class="contact_tit">
               <h2>联系我们</h2>
-              <em></em>
+              <em />
               <h3
                 style="
                   font-size: 18px;
@@ -26,11 +32,10 @@
               </h3>
             </div>
             <div class="contact_txt">
-              伦敦总公司<br />电话 : 0754332752<br />邮箱
-              :florentians@livemail.tw<br />邮编 : E16 1AH<br />地址:UNIT G25
-              WATERFRONT STUDIOS 1 DOCK ROADROAD <br />工作时间: 9:00-22:00
-              (GMT) Mon-Fri<br /><br /><br />广州分公司<br />电话 : 18688001472
-              <br />邮箱 : florentians@livemail.tw<br />工作时间：9:00-22:00
+              伦敦总公司<br>电话 : 0754332752<br>邮编 : E16 1AH<br>地址:UNIT G25
+              WATERFRONT STUDIOS 1 DOCK ROADROAD <br>工作时间: 9:00-22:00
+              (GMT) Mon-Fri<br><br><br>广州分公司
+              <br>工作时间：9:00-22:00
               (GMT+8) Mon-Sun
             </div>
           </div>
@@ -41,27 +46,27 @@
 </template>
 
 <script>
-const sec1Img = require("@/assets/img/bg3.png");
-const list23Img = require("@/assets/img/list23.png");
-const list24Img = require("@/assets/img/list24.png");
-const list25Img = require("@/assets/img/list25.png");
+const sec1Img = require('@/assets/img/bg3.png')
+const list23Img = require('@/assets/img/list23.png')
+const list24Img = require('@/assets/img/list24.png')
+const list25Img = require('@/assets/img/list25.png')
 
 // 联系我们
 export default {
-  name: "ContactUs",
+  name: 'ContactUs',
   props: {},
   data() {
     return {
       sec1Img,
       list23Img,
       list24Img,
-      list25Img,
-    };
+      list25Img
+    }
   },
   created() {},
   mounted() {},
-  methods: {},
-};
+  methods: {}
+}
 </script>
 
 <style lang="scss" scoped>
