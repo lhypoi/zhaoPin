@@ -20,6 +20,8 @@ import './utils/error-log' // error log
 
 import * as filters from './filters' // global filters
 
+import 'tailwindcss/tailwind.css'
+
 /**
  * If you don't want to use mock-server
  * you want to use MockJs for mock api
@@ -49,8 +51,8 @@ new Vue({
   el: '#app',
   router,
   store,
-  render: h => h(App),
   mounted() {
     document.dispatchEvent(new Event('render-event'))
-  }
+  },
+  render: h => h(App)
 })
