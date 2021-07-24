@@ -77,9 +77,9 @@
                 ><div slot="placeholder" class="emptyImg"
               /></el-image>
               <div class="b1">
-                <div class="p2">Online Course网课代上服务</div>
+                <div class="p2">Online Course网课辅导服务</div>
                 <div class="p3">
-                  代修服务。保质保量，代课老师全程把控，全部完美完成， 修不到C
+                  辅导服务。保质保量，辅导老师全程把控，全部完美完成， 修不到C
                   全额退款，一分钱不收！
                 </div>
                 <div class="p4">$ 120 起</div>
@@ -275,9 +275,7 @@
               <el-image class="g1" :src="list9Img" fit="cover" lazy
                 ><div slot="placeholder" class="emptyImg"
               /></el-image>
-              <div class="p1">
-                Dr.D 提供高质量，高效率的文章润色降重服务
-              </div>
+              <div class="p1">Dr.D 提供高质量，高效率的文章润色降重服务</div>
               <div class="p2">
                 按照顾客的要求，1v1的进行针对性修改。每位导师都会对文章的结构，语法，
                 句式，以及逻辑和表达方式上进行精细修改并提供一些建设性意见
@@ -371,7 +369,8 @@
                 <div class="b2">
                   这门老师是出了名的刁钻，于是我找了一间辅导,没想到学
                   校抓我去meeting, 在面临被开除的边缘我找到了Dr.D, 我
-                  才知道这行水实在太深了, 感谢工作室帮我和校方argue得到多一次resit的机会, 太感谢
+                  才知道这行水实在太深了,
+                  感谢工作室帮我和校方argue得到多一次resit的机会, 太感谢
                 </div>
                 <div class="b3">
                   <i class="iconfont iconqipao" />
@@ -408,6 +407,19 @@ const u3Img = require("@/assets/img/u3.png");
 
 export default {
   name: "Home3",
+  metaInfo: {
+    title: "雙語Tutor在線高端教育品牌 D輔導",
+    meta: [
+      {
+        name: "keyWords",
+        content: "論文輔導, 保錄升學100%, 權益申訴Appeal",
+      },
+      {
+        name: "description",
+        content: "留学生一站式辅导平台，為你的學業保駕護航",
+      },
+    ],
+  },
   props: {},
   data() {
     return {

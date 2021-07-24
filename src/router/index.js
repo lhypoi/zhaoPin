@@ -73,9 +73,14 @@ export const constantRoutes = [
   },
   {
     path: '/',
-    component: Layout,
-    redirect: '/home3/index',
+    component: BaseLayout,
+    // redirect: '/home3/index',
     children: [
+      {
+        path: '',
+        component: () => import('@/views/home3/index'),
+        name: 'Documentation'
+      },
       {
         path: 'dashboard',
         component: () => import('@/views/dashboard/index'),
@@ -108,18 +113,6 @@ export const constantRoutes = [
   //     }
   //   ]
   // },
-  {
-    path: '/home3',
-    component: BaseLayout,
-    redirect: '/home3/index',
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/home3/index'),
-        name: 'Documentation'
-      }
-    ]
-  },
   {
     path: '/GuaranteedAdmission',
     component: BaseLayout,
@@ -655,8 +648,9 @@ export const asyncRoutes = [
 ]
 
 const createRouter = () => new Router({
-  // mode: 'history', // require service support
-  mode: 'hash', // require service support
+  base: '/drd/',
+  mode: 'history', // require service support
+  // mode: 'hash', // require service support
   scrollBehavior: () => ({ y: 0 }),
   routes: constantRoutes
 })
