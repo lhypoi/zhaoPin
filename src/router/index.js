@@ -5,7 +5,7 @@ Vue.use(Router)
 
 /* Layout */
 import Layout from '@/layout'
-import BaseLayout from '@/views/baseLayout3'
+import BaseLayout from '@/views/baseLayoutFood'
 
 /* Router Modules */
 import componentsRouter from './modules/components'
@@ -74,275 +74,26 @@ export const constantRoutes = [
   {
     path: '/',
     component: BaseLayout,
-    // redirect: '/home3/index',
     children: [
       {
         path: '',
         component: () => import('@/views/home3/index'),
-        name: 'Documentation'
+        name: 'home'
       },
       {
-        path: 'dashboard',
+        path: 'fd',
+        component: () => import('@/views/dashboard/index'),
+        name: 'Dashboard',
+        meta: { title: 'Dashboard', icon: 'dashboard', affix: true }
+      },
+      {
+        path: 'sx',
         component: () => import('@/views/dashboard/index'),
         name: 'Dashboard',
         meta: { title: 'Dashboard', icon: 'dashboard', affix: true }
       }
     ]
   },
-  // {
-  //   path: '/home1',
-  //   component: BaseLayout,
-  //   redirect: '/home1/index',
-  //   children: [
-  //     {
-  //       path: 'index',
-  //       component: () => import('@/views/home1/index'),
-  //       name: 'Documentation'
-  //     }
-  //   ]
-  // },
-  // {
-  //   path: '/home2',
-  //   component: BaseLayout,
-  //   redirect: '/home2/index',
-  //   children: [
-  //     {
-  //       path: 'index',
-  //       component: () => import('@/views/home2/index'),
-  //       name: 'Documentation'
-  //     }
-  //   ]
-  // },
-  {
-    path: '/GuaranteedAdmission',
-    component: BaseLayout,
-    redirect: '/GuaranteedAdmission/index',
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/guaranteedAdmission/index'),
-        name: 'Documentation'
-      }
-    ]
-  },
-  {
-    path: '/StudyAbroadAdvisory',
-    component: BaseLayout,
-    redirect: '/StudyAbroadAdvisory/index',
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/studyAbroadAdvisory/index'),
-        name: 'Documentation'
-      }
-    ]
-  },
-  {
-    path: '/RepresentationOfInterests',
-    component: BaseLayout,
-    redirect: '/RepresentationOfInterests/index',
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/representationOfInterests/index'),
-        name: 'Documentation'
-      }
-    ]
-  },
-  {
-    path: '/StudyInUK',
-    component: BaseLayout,
-    redirect: '/StudyInUK/index',
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/studyInUK/index'),
-        name: 'Documentation'
-      }
-    ]
-  },
-  {
-    path: '/InformationList',
-    component: BaseLayout,
-    redirect: '/InformationList/index',
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/InformationList/index'),
-        name: 'Documentation'
-      }
-    ]
-  },
-  {
-    path: '/DissertationCorrection',
-    component: BaseLayout,
-    redirect: '/DissertationCorrection/index',
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/DissertationCorrection/index'),
-        name: 'Documentation'
-      }
-    ]
-  },
-  {
-    path: '/AbroadAtTopUniversities',
-    component: BaseLayout,
-    redirect: '/AbroadAtTopUniversities/index',
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/AbroadAtTopUniversities/index'),
-        name: 'Documentation'
-      }
-    ]
-  },
-  {
-    path: '/DataComputerGeneration',
-    component: BaseLayout,
-    redirect: '/DataComputerGeneration/index',
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/DataComputerGeneration/index'),
-        name: 'Documentation'
-      }
-    ]
-  },
-  {
-    path: '/FinanceAndBusinessStudies',
-    component: BaseLayout,
-    redirect: '/FinanceAndBusinessStudies/index',
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/FinanceAndBusinessStudies/index'),
-        name: 'Documentation'
-      }
-    ]
-  },
-  {
-    path: '/HumanitiesAndArtsAgency',
-    component: BaseLayout,
-    redirect: '/HumanitiesAndArtsAgency/index',
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/HumanitiesAndArtsAgency/index'),
-        name: 'Documentation'
-      }
-    ]
-  },
-  {
-    path: '/OverseasPreferredStudyInUK',
-    component: BaseLayout,
-    redirect: '/OverseasPreferredStudyInUK/index',
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/OverseasPreferredStudyInUK/index'),
-        name: 'Documentation'
-      }
-    ]
-  },
-  {
-    path: '/ApplicationForStudyAbroadAndDetails',
-    component: BaseLayout,
-    redirect: '/ApplicationForStudyAbroadAndDetails/index',
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/ApplicationForStudyAbroadAndDetails/index'),
-        name: 'Documentation'
-      }
-    ]
-  },
-  {
-    path: '/GreenChannelForEmergencyTransfers',
-    component: BaseLayout,
-    redirect: '/GreenChannelForEmergencyTransfers/index',
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/GreenChannelForEmergencyTransfers/index'),
-        name: 'Documentation'
-      }
-    ]
-  },
-  {
-    path: '/DissertationRetouchingCoaching',
-    component: BaseLayout,
-    redirect: '/DissertationRetouchingCoaching/index',
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/DissertationRetouchingCoaching/index'),
-        name: 'Documentation'
-      }
-    ]
-  },
-  {
-    path: '/OnlineTutorials',
-    component: BaseLayout,
-    redirect: '/OnlineTutorials/index',
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/OnlineTutorials/index'),
-        name: 'Documentation'
-      }
-    ]
-  },
-  {
-    path: '/TOEFL_IELTS',
-    component: BaseLayout,
-    redirect: '/TOEFL_IELTS/index',
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/TOEFL_IELTS/index'),
-        name: 'Documentation'
-      }
-    ]
-  },
-  {
-    path: '/CareerCounseling',
-    component: BaseLayout,
-    redirect: '/CareerCounseling/index',
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/CareerCounseling/index'),
-        name: 'Documentation'
-      }
-    ]
-  },
-  {
-    path: '/ContactUs',
-    component: BaseLayout,
-    redirect: '/ContactUs/index',
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/ContactUs/index'),
-        name: 'Documentation'
-      }
-    ]
-  },
-  // 食品 S
-  {
-    path: '/Home',
-    component: BaseLayout,
-    redirect: '/Home/index',
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/food/Home/index'),
-        name: 'Documentation'
-      }
-    ]
-  },
-  // 食品 E
   {
     path: '/documentation',
     component: Layout,
@@ -352,33 +103,6 @@ export const constantRoutes = [
         component: () => import('@/views/documentation/index'),
         name: 'Documentation',
         meta: { title: 'Documentation', icon: 'documentation', affix: true }
-      }
-    ]
-  },
-  {
-    path: '/guide',
-    component: Layout,
-    redirect: '/guide/index',
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/guide/index'),
-        name: 'Guide',
-        meta: { title: 'Guide', icon: 'guide', noCache: true }
-      }
-    ]
-  },
-  {
-    path: '/profile',
-    component: Layout,
-    redirect: '/profile/index',
-    hidden: true,
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/profile/index'),
-        name: 'Profile',
-        meta: { title: 'Profile', icon: 'user', noCache: true }
       }
     ]
   }
