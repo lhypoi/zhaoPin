@@ -130,6 +130,28 @@
       </div>
       <div class="rounded-full py-3 px-6 text-blue-600 bg-gray-200 mx-auto w-40 text-center">查看更多</div>
     </div>
+    <!-- 发展历程 -->
+    <div class="bg-gray-100 pt-8 pb-2">
+      <div class="text-2xl text-black font-bold pl-5">
+        发展历程
+      </div>
+      <div class="text-base text-gray-400 font-bold mb-2 pl-5">
+        development path
+      </div>
+      <div class="flex flex-col">
+        <div
+          v-for="(img, imgIndex) in developList"
+          :key="imgIndex"
+          class="mb-5"
+        >
+          <el-image
+            :src="img.path"
+            fit="cover"
+            class="block w-full"
+          />
+        </div>
+      </div>
+    </div>
     <!-- 客户反馈 -->
     <div class="bg-gray-100 pt-8 pb-2">
       <div class="text-2xl text-black font-bold pl-5">
