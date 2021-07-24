@@ -1,5 +1,5 @@
 <template>
-  <div class="BaseLayoutFood">
+  <div class="baseLayoutDrdMobile">
     <!-- 导航 -->
     <div class="sticky top-0 bg-white h-11 flex items-center pl-4 pr-5 z-10 justify-between">
       <!-- 网站icon -->
@@ -56,7 +56,7 @@
 <script>
 
 export default {
-  name: 'BaseLayoutFood',
+  name: 'BaseLayoutDrdMobile',
   props: {},
   data() {
     return {

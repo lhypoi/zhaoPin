@@ -8,7 +8,10 @@ module.exports = {
   variants: {
     extend: {
       borderWidth: ['first'],
-      borderColor: ['first']
+      borderColor: ['first'],
+      margin: ['last'],
+      padding: ['even', 'odd'],
+      width: ['even', 'odd']
     }
   },
   plugins: []

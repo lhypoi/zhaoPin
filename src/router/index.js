@@ -5,7 +5,7 @@ Vue.use(Router)
 
 /* Layout */
 import Layout from '@/layout'
-import BaseLayout from '@/views/baseLayoutFood'
+import BaseLayout from '@/views/baseLayoutDrdMobile'
 
 /* Router Modules */
 import componentsRouter from './modules/components'
@@ -77,8 +77,8 @@ export const constantRoutes = [
     children: [
       {
         path: '',
-        component: () => import('@/views/home3/index'),
-        name: 'home'
+        component: () => import('@/views/drdMHome/index'),
+        name: 'drdMHome'
       },
       {
         path: 'fd',
