@@ -93,7 +93,7 @@ export default {
           title: '首页'
         },
         {
-          path: '/fd',
+          path: '/DissertationTutoring',
           title: '论文辅导'
         },
         {

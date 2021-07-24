@@ -81,10 +81,10 @@ export const constantRoutes = [
         name: 'drdMHome'
       },
       {
-        path: 'fd',
-        component: () => import('@/views/dashboard/index'),
-        name: 'Dashboard',
-        meta: { title: 'Dashboard', icon: 'dashboard', affix: true }
+        path: 'DissertationTutoring',
+        component: () => import('@/views/drdMDissertationTutoring/index'),
+        name: 'DissertationTutoring',
+        meta: { title: 'DissertationTutoring', icon: 'dashboard', affix: true }
       },
       {
         path: 'sx',
