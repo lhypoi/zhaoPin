@@ -50,20 +50,20 @@ module.exports = {
         '@': resolve('src')
       }
     },
-    plugins: [
+    plugins: process.env.NODE_ENV === 'development' ? [] : [
       new PrerenderSPAPlugin({
         staticDir: path.join(__dirname, 'dist'),
         outputDir: path.join(__dirname, '/dist/'),
         indexPath: path.join(__dirname, 'dist/drd/index.html'),
         routes: ['/drd'],
         renderer: new Renderer({
-            inject: {
-                foo: 'bar'
-            },
-            headless: true,
-            renderAfterDocumentEvent: 'render-event'
+          inject: {
+            foo: 'bar'
+          },
+          headless: true,
+          renderAfterDocumentEvent: 'render-event'
         })
-    })
+      })
     ]
   },
   chainWebpack(config) {
