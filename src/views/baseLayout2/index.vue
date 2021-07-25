@@ -146,19 +146,19 @@
                 :src="icon1Img"
                 fit="cover"
                 class="iconfont"
-                @click="jump('https://twitter.com/essay_mentor')"
+                @click="jump('https://www.instagram.com/dr.dessaymentor/')"
               />
               <el-image
                 :src="icon2Img"
                 fit="cover"
                 class="iconfont"
-                @click="jump('https://www.instagram.com/shuxi12345/')"
+                @click="jump('https://twitter.com/essay_mentor')"
               />
               <el-image
                 :src="icon3Img"
                 fit="cover"
                 class="iconfont"
-                @click="jump('https://www.facebook.com/DrD-Essay-Mentor-110929954605918')"
+                @click="jump('https://www.instagram.com/dr.dessaymentor/')"
               />
             </div>
           </el-col>
