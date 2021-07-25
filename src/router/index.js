@@ -97,6 +97,12 @@ export const constantRoutes = [
         component: () => import('@/views/drdMAppeal/index'),
         name: 'Appeal',
         meta: { title: 'Appeal', icon: 'dashboard', affix: true }
+      },
+      {
+        path: 'ContactUs',
+        component: () => import('@/views/drdMContactUs/index'),
+        name: 'ContactUs',
+        meta: { title: 'ContactUs', icon: 'dashboard', affix: true }
       }
     ]
   },

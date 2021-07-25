@@ -103,6 +103,10 @@ export default {
         {
           path: '/Appeal',
           title: '权益申诉'
+        },
+        {
+          path: '/ContactUs',
+          title: '联系我们'
         }
       ],
       moreList: [
