@@ -91,6 +91,12 @@ export const constantRoutes = [
         component: () => import('@/views/drdMGuaranteeAdmission/index'),
         name: 'GuaranteeAdmission',
         meta: { title: 'GuaranteeAdmission', icon: 'dashboard', affix: true }
+      },
+      {
+        path: 'Appeal',
+        component: () => import('@/views/drdMAppeal/index'),
+        name: 'Appeal',
+        meta: { title: 'Appeal', icon: 'dashboard', affix: true }
       }
     ]
   },

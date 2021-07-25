@@ -99,6 +99,10 @@ export default {
         {
           path: '/GuaranteeAdmission',
           title: '保录升学'
+        },
+        {
+          path: '/Appeal',
+          title: '权益申诉'
         }
       ],
       moreList: [
