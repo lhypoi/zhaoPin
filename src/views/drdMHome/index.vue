@@ -14,7 +14,7 @@
         v-for="(item, index) in modulePageList"
         :key="index"
       >
-        <div class="flex flex-col ml-auto mr-auto mt-4 w-72">
+        <div class="flex flex-col ml-auto mr-auto mt-4 w-72" @click="$router.push(item.router)">
           <el-image
             :src="item.imgPath"
             fit="cover"
@@ -128,7 +128,7 @@
           </div>
         </div>
       </div>
-      <div class="rounded-full py-3 px-6 text-blue-600 bg-gray-200 mx-auto w-40 text-center">查看更多</div>
+      <div class="rounded-full py-3 px-6 text-blue-600 bg-gray-200 mx-auto w-40 text-center" @click="$router.push('/Appeal')">查看更多</div>
     </div>
     <!-- 发展历程 -->
     <div class="bg-gray-100 pt-8 pb-2">
@@ -189,21 +189,24 @@ export default {
           title: '论文辅导Essay Assistance',
           sub: '英文作文修改服务',
           content: '强大的学术资源支撑+经验丰富的专家团队＋标准化的客户服为优质、高效、全方位的综合学术论文定制写作提供最坚实的',
-          price: '$12.5起'
+          price: '$12.5起',
+          router: '/DissertationTutoring'
         },
         {
           imgPath: require('@/assets/img_drd_mobile/homeNavP2.png'),
           title: '保录升学100% admitted',
           sub: '留学申请文书辅导',
           content: '根据所申请学校不同的背景和要求,有针对性进行文书写作和深度精修工作,所有完成文稿逻辑合理，重点表述正确突出。',
-          price: '$30起'
+          price: '$30起',
+          router: '/GuaranteeAdmission'
         },
         {
           imgPath: require('@/assets/img_drd_mobile/homeNavP3.png'),
           title: '权益申诉Appeal',
           sub: 'Online Course网课代上服务',
           content: '代修服务。保质保量，代课老师全程把控，全部完美完成，修不到C全额退款,一分钱不收!',
-          price: '$120起'
+          price: '$120起',
+          router: '/Appeal'
         }
       ],
       subjectList: [
