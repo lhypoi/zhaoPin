@@ -87,10 +87,10 @@ export const constantRoutes = [
         meta: { title: 'DissertationTutoring', icon: 'dashboard', affix: true }
       },
       {
-        path: 'sx',
-        component: () => import('@/views/dashboard/index'),
-        name: 'Dashboard',
-        meta: { title: 'Dashboard', icon: 'dashboard', affix: true }
+        path: 'GuaranteeAdmission',
+        component: () => import('@/views/drdMGuaranteeAdmission/index'),
+        name: 'GuaranteeAdmission',
+        meta: { title: 'GuaranteeAdmission', icon: 'dashboard', affix: true }
       }
     ]
   },

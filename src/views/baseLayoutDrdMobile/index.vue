@@ -97,7 +97,7 @@ export default {
           title: '论文辅导'
         },
         {
-          path: '/sx',
+          path: '/GuaranteeAdmission',
           title: '保录升学'
         }
       ],
