@@ -27,8 +27,8 @@ module.exports = {
    * In most cases please use '/' !!!
    * Detail: https://cli.vuejs.org/config/#publicpath
    */
-  publicPath: '/drd/',
-  outputDir: 'dist/drd/',
+  publicPath: '/drdM/',
+  outputDir: 'dist/drdM/',
   assetsDir: 'static',
   lintOnSave: process.env.NODE_ENV === 'development',
   productionSourceMap: false,
@@ -54,8 +54,8 @@ module.exports = {
       new PrerenderSPAPlugin({
         staticDir: path.join(__dirname, 'dist'),
         outputDir: path.join(__dirname, '/dist/'),
-        indexPath: path.join(__dirname, 'dist/drd/index.html'),
-        routes: ['/drd'],
+        indexPath: path.join(__dirname, 'dist/drdM/index.html'),
+        routes: ['/drdM'],
         renderer: new Renderer({
           inject: {
             foo: 'bar'
