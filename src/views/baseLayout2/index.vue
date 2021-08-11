@@ -96,9 +96,20 @@
     <div class="footer">
       <div class="getMore">
         <el-row style="width: 1200px; margin: 0 auto">
-          <el-col :span="12" class="moreLeft">
+          <el-col :span="5" class="moreLeft">
             <div class="p1">了解更多</div>
             <div class="p2">用心对待每一份订单</div>
+          </el-col>
+          <el-col :span="7" class="moreLeft">
+            <el-image
+              :src="wechatImg"
+              fit="cover"
+              style="width: 125px; height: 125px;"
+            ><div
+              slot="placeholder"
+              class="emptyImg"
+            /></el-image>
+            <div class="p2" style="margin-top: 10px;">扫码立即添加微信咨询</div>
           </el-col>
           <el-col :span="12" class="moreRight">
             <div class="p1">我们的优势</div>
@@ -422,10 +433,12 @@ export default {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   overflow: hidden;
-  height: 50px;
   transition: 0.3s;
-  width: 50px;
   cursor: pointer;
+  // height: 50px;
+  // width: 50px;
+  height: 193px;
+  width: 145px;
 
   .p1 {
     color: #fff;
@@ -434,19 +447,20 @@ export default {
     margin-right: 10px;
     transition: 0.3s;
     overflow: hidden;
-    width: 0;
     height: 50px;
     display: inline-block;
     white-space: nowrap;
+    // width: 0;
+    width: 80px;
   }
 
-  &:hover {
-    height: 193px;
-    width: 145px;
+  // &:hover {
+  //   height: 193px;
+  //   width: 145px;
 
-    .p1 {
-      width: 80px;
-    }
-  }
+  //   .p1 {
+  //     width: 80px;
+  //   }
+  // }
 }
 </style>
