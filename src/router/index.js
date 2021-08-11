@@ -384,7 +384,7 @@ export const asyncRoutes = [
 ]
 
 const createRouter = () => new Router({
-  base: '/drdM/',
+  base: '/food/',
   mode: 'history', // require service support
   // mode: 'hash', // require service support
   scrollBehavior: () => ({ y: 0 }),
