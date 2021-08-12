@@ -1,40 +1,82 @@
 <template>
   <div class="baseLayoutDrdMobile">
-    <!-- 导航 -->
-    <div class="sticky top-0 bg-white h-11 flex items-center pl-4 pr-5 z-10 justify-between">
-      <!-- 网站icon -->
-      <el-image
-        :src="require('@/assets/img_drd_mobile/nav.png')"
-        fit="cover"
-      />
-      <!-- 导航菜单 -->
-      <el-dropdown trigger="click">
-        <!-- 菜单图标 -->
-        <i
-          class="el-icon-s-operation text-xl"
-        />
-        <el-dropdown-menu slot="dropdown" class="p-0 border-r-0 rounded-md overflow-hidden shadow-md mb-0 navMenu">
-          <el-dropdown-item class="p-0">
-            <!-- 菜单列表 -->
+
+    <!-- food nav  2021/2/12-->
+    <!-- <div class="sticky top-0 bg-white text-#333333 h-11 flex items-center pl-4 pr-4 z-10 justify-between ">
+      <div trigger="click" class="" >首页</div>
+      <el-dropdown trigger="click">产品中心</el-dropdown>
+      <el-dropdown trigger="click">品牌实力</el-dropdown>
+        <el-dropdown trigger="click">
+        <h1 >关于展翠</h1>
+        <el-dropdown-menu slot="dropdown" class=" ml-14 p-0  rounded-sm shadow-md  navMenu">
+
             <el-menu
               :default-active="$route.path"
               router
+              background-color="#FFF5EF"
               text-color="#333333"
-              active-text-color="#333333"
+              active-text-color="#E66717"
             >
-              <!-- 菜单选项 -->
+
               <el-menu-item
                 v-for="(menu, index) in navMenuList"
                 :key="index"
                 :index="menu.path"
-                class="h-6 text-base pt-2 pb-2 border-t-2 border-gray-200 first:border-t-0 box-content"
-                :class="$route.path === menu.path ? 'bg-gray-200' : 'bg-white'"
+                class="h-6 text-base pt-2 pb-2 border-t-2  first:border-t-0 box-content"
+                :class="$route.path === menu.path ? 'bg-#FFF5EF' : 'bg-white'"
               >{{ menu.title }}</el-menu-item>
             </el-menu>
-          </el-dropdown-item>
         </el-dropdown-menu>
       </el-dropdown>
-    </div>
+
+      <el-dropdown>logo</el-dropdown>
+      <el-dropdown trigger="click">业务范围</el-dropdown>
+      <el-dropdown trigger="click">新闻中心</el-dropdown>
+      <el-dropdown trigger="click">联系我们</el-dropdown>
+    </div> -->
+
+    <!-- food nav2  2021/2/12 -->
+    <nav>
+      <div class=" sticky h-32 w-auto bg-while flex justify-around items-center ">
+        <ul class="inline-flex text-xl ml-11 leading-loose  space ">
+          <li><a class="px-4 " href="/">首页</a></li>
+          <li><a class="px-4 hover:text-orange" href="#">产品中心</a></li>
+          <li><a class="px-4 hover:text-orange" href="#">品牌实力</a></li>
+          <li>
+            <el-dropdown trigger="click">
+              <div class="px-4 text text-xl text-black ">关于展翠</div>
+              <el-dropdown-menu slot="dropdown" class="p-0 border-r-0 rounded-sm overflow-hidden shadow-md mb-0 navMenu">
+                <el-dropdown-item class="p-0 text-base">
+                  <el-menu
+                    :default-active="$route.path"
+                    router
+                    text-color="#666666"
+                    active-text-color="#E66717"
+                  >
+                    <el-menu-item
+                      v-for="(menu, index) in navMenuList"
+                      :key="index"
+                      :index="menu.path"
+                      class="h-6 text-base pt-2 pb-2 border-t-2 border-gray-200 first:border-t-0 box-content"
+                      :class="$route.path === menu.path ? 'bg-gray-200 && border-b-4 ' : 'bg-white'"
+                    >{{ menu.title }}</el-menu-item>
+                  </el-menu>
+                </el-dropdown-item>
+              </el-dropdown-menu>
+            </el-dropdown>
+          </li>
+          <el-image
+            :src="require('@/assets/img_food/logo.png')"
+            fit="cover"
+            class="logo_size"
+          />
+          <li><a class="px-4 hover:text-orange" href="#">业务范围</a></li>
+          <li><a class="px-4 hover:text-orange" href="#">新闻中心</a></li>
+          <li><a class="px-4 hover:text-orange" href="#">联系我们</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <!-- 页面内容 -->
     <transition name="fade-transform" mode="out-in">
       <keep-alive :include="cachedViews">
@@ -90,23 +132,19 @@ export default {
       navMenuList: [
         {
           path: '/',
-          title: '首页'
+          title: '公司简介'
         },
         {
           path: '/DissertationTutoring',
-          title: '论文辅导'
+          title: '品牌故事'
         },
         {
           path: '/GuaranteeAdmission',
-          title: '保录升学'
+          title: '企业文化'
         },
         {
           path: '/Appeal',
-          title: '权益申诉'
-        },
-        {
-          path: '/ContactUs',
-          title: '联系我们'
+          title: '视频中心'
         }
       ],
       moreList: [
@@ -167,13 +205,23 @@ export default {
 <style lang="scss">
 .navMenu {
   margin-top: 0 !important;
-
   .popper__arrow {
     display: none;
   }
 
   .el-menu-item:hover, .el-submenu__title:hover {
     background-color: #e5e7eb !important;
+
   }
+}
+.logo_size{
+  width: 123px;
+  height: 70px;
+  margin-left: 60px;
+  margin-right: 60px;
+  // vertical-align:bottom;
+}
+.space li{
+  padding-top: 10px;
 }
 </style>
