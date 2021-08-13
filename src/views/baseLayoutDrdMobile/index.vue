@@ -35,30 +35,37 @@
       <el-dropdown trigger="click">联系我们</el-dropdown>
     </div> -->
 
-    <!-- food nav2  2021/2/12 -->
-    <nav>
-      <div class=" sticky h-32 w-auto bg-while flex justify-around items-center ">
-        <ul class="inline-flex text-xl ml-11 leading-loose  space ">
+    <!-- food nav2  2021/2/12  由于没有用循环拿到对应索引值导致全部三角一起转动-->
+    <!-- <div class=" sticky top-0 bg-white h-32 z-10 bg-while flex justify-around items-center ">
+        <ul class="inline-flex text-xl leading-loose  space ">
           <li><a class="px-4 " href="/">首页</a></li>
-          <li><a class="px-4 hover:text-orange" href="#">产品中心</a></li>
-          <li><a class="px-4 hover:text-orange" href="#">品牌实力</a></li>
-          <li>
+          <li @click="navTab" :class="isActive==true? 'iconChange':''"><a class="px-4 arrow-icon" href="#">产品中心
+              <img src="@/assets/img_food/home/arrow-r.png" alt="">
+              </a>
+          </li>
+          <li @click="navTab" :class="isActive==true? 'iconChange':''"><a class="px-4 arrow-icon" href="#">品牌实力
+              <img src="@/assets/img_food/home/arrow-r.png" alt="">
+              </a>
+          </li>
+          <li class="arrow-icon" > <img src="@/assets/img_food/home/arrow-r.png" alt="">
             <el-dropdown trigger="click">
-              <div class="px-4 text text-xl text-black ">关于展翠</div>
+              <div class="px-4  text-xl text-black hover:text-firstTextC" @click="navTab" :class="isActive==true? 'iconChange':''">关于展翠
+              </div>
               <el-dropdown-menu slot="dropdown" class="p-0 border-r-0 rounded-sm overflow-hidden shadow-md mb-0 navMenu">
                 <el-dropdown-item class="p-0 text-base">
                   <el-menu
                     :default-active="$route.path"
                     router
-                    text-color="#666666"
+                    text-color="black"
                     active-text-color="#E66717"
+                    active-background-color="#E66717"
                   >
                     <el-menu-item
                       v-for="(menu, index) in navMenuList"
                       :key="index"
                       :index="menu.path"
-                      class="h-6 text-base pt-2 pb-2 border-t-2 border-gray-200 first:border-t-0 box-content"
-                      :class="$route.path === menu.path ? 'bg-gray-200 && border-b-4 ' : 'bg-white'"
+                      class="h-6 text-base pt-2 pb-2 border-t-2 border-white first:border-t-0 box-content"
+                      :class="$route.path === menu.path ? 'bg-firstBgc border-bottom:3px solid' : 'bg-white'"
                     >{{ menu.title }}</el-menu-item>
                   </el-menu>
                 </el-dropdown-item>
@@ -71,11 +78,81 @@
             class="logo_size"
           />
           <li><a class="px-4 hover:text-orange" href="#">业务范围</a></li>
-          <li><a class="px-4 hover:text-orange" href="#">新闻中心</a></li>
+          <li @click="navTab" :class="isActive==true? 'iconChange':''"><a class="px-4 hover:text-orange arrow-icon" href="#">新闻中心
+              <img src="@/assets/img_food/home/arrow-r.png" alt="">
+              </a>
+          </li>
           <li><a class="px-4 hover:text-orange" href="#">联系我们</a></li>
         </ul>
-      </div>
-    </nav>
+      </div> -->
+
+    <!-- food nav3 2021/2/13
+    刚想v-for循环拿索引值的时候发现我竟然一开始就没有用数组来创建li TAT~（流泪） 然后想着要不重新创一个，但是想到中间有个logo也不知道怎么在中间插进去
+    结果 0.0 我在每一个三角所在的li都装了点击事件。。。ballball浩瑜总不要被气到
+    还有“关于展翠”那里，字体颜色不知为何浅一些。。。我调的都没有效果。。  还有就是0.0 eslint好可怕
+    -->
+    <div class=" sticky top-0 bg-white h-32 z-10 bg-while flex justify-around items-center ">
+      <ul class="inline-flex text-xl leading-loose  space ">
+        <li><a class="px-4 " href="/">首页</a></li>
+        <li
+          :class="isActive1==true? 'iconChange':''"
+          @click="navTab1"
+        ><a class="px-4 arrow-icon" href="#">产品中心
+          <img src="@/assets/img_food/home/arrow-r.png" alt="">
+        </a>
+        </li>
+        <li
+          :class="isActive2==true? 'iconChange':''"
+          @click="navTab2"
+        ><a class="px-4 arrow-icon" href="#">品牌实力
+          <img src="@/assets/img_food/home/arrow-r.png" alt="">
+        </a>
+        </li>
+        <li
+          :class="isActive3==true? 'iconChange':''"
+          class="arrow-icon"
+          @click="navTab3"
+        > <div class="arrow-icon"><img src="@/assets/img_food/home/arrow-r.png" alt=""></div>
+          <el-dropdown trigger="click">
+            <div class="px-4  text-xl text-black hover:text-firstTextC">关于展翠
+            </div>
+            <el-dropdown-menu slot="dropdown" class="p-0 border-r-0 rounded-sm overflow-hidden shadow-md mb-0 navMenu">
+              <el-dropdown-item class="p-0 text-base">
+                <el-menu
+                  :default-active="$route.path"
+                  router
+                  text-color="black"
+                  active-text-color="#E66717"
+                  active-background-color="#E66717"
+                >
+                  <el-menu-item
+                    v-for="(menu, index) in navMenuList"
+                    :key="index"
+                    :index="menu.path"
+                    class="h-6 text-base pt-2 pb-2 border-t-2 border-white first:border-t-0 box-content"
+                    :class="$route.path === menu.path ? 'bg-firstBgc border-bottom:3px solid' : 'bg-white'"
+                  >{{ menu.title }}</el-menu-item>
+                </el-menu>
+              </el-dropdown-item>
+            </el-dropdown-menu>
+          </el-dropdown>
+        </li>
+        <el-image
+          :src="require('@/assets/img_food/logo.png')"
+          fit="cover"
+          class="logo_size"
+        />
+        <li><a class="px-4 hover:text-orange" href="#">业务范围</a></li>
+        <li
+          :class="isActive4==true? 'iconChange':''"
+          @click="navTab4"
+        ><a class="px-4 hover:text-orange arrow-icon" href="#">新闻中心
+          <img src="@/assets/img_food/home/arrow-r.png" alt="">
+        </a>
+        </li>
+        <li><a class="px-4 hover:text-orange" href="#">联系我们</a></li>
+      </ul>
+    </div>
 
     <!-- 页面内容 -->
     <transition name="fade-transform" mode="out-in">
@@ -129,6 +206,10 @@ export default {
   props: {},
   data() {
     return {
+      isActive1: false,
+      isActive2: false,
+      isActive3: false,
+      isActive4: false,
       navMenuList: [
         {
           path: '/',
@@ -198,7 +279,20 @@ export default {
   created() {},
   mounted() {
   },
-  methods: {}
+  methods: {
+    navTab1() {
+      this.isActive1 = !this.isActive1
+    },
+    navTab2() {
+      this.isActive2 = !this.isActive2
+    },
+    navTab3() {
+      this.isActive3 = !this.isActive3
+    },
+    navTab4() {
+      this.isActive4 = !this.isActive4
+    }
+  }
 }
 </script>
 
@@ -210,7 +304,7 @@ export default {
   }
 
   .el-menu-item:hover, .el-submenu__title:hover {
-    background-color: #e5e7eb !important;
+    background-color: #FFF5EF !important;
 
   }
 }
@@ -219,9 +313,33 @@ export default {
   height: 70px;
   margin-left: 60px;
   margin-right: 60px;
-  // vertical-align:bottom;
 }
 .space li{
+  position: relative;
   padding-top: 10px;
+  margin-left: 20px;
+}
+.arrow-icon img{
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  right: 0;
+  top: 23px;
+}
+
+.space li:hover{
+  color:#E66717 ;
+  border-bottom:3px solid #E66717;
+}
+
+// .arrow-icon::after{
+  // content: (@/assets/img_food/home/arrow-r.png);
+  // background: url(@/assets/img_food/home/arrow-r.png),no-repeat;
+// }
+.iconChange{
+  .arrow-icon img{
+    transform: rotate(90deg);
+  }
+
 }
 </style>

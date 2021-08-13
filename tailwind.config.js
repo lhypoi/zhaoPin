@@ -3,7 +3,17 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {}
+    extend: {
+      backgroundColor:theme=>({
+        ...theme('colors'),
+        'firstBgc':'#FFF5EF'
+      })
+    },
+    
+       textColor: theme => theme('colors'),
+       textColor: {
+         'firstTextC': '#E66717',
+       }
   },
   variants: {
     extend: {
