@@ -1,5 +1,7 @@
 <template>
   <div class="baseLayoutDrdMobile">
+    <!-- 导航菜单 -->
+    <FoodNav />
 
     <!-- food nav  2021/2/12-->
     <!-- <div class="sticky top-0 bg-white text-#333333 h-11 flex items-center pl-4 pr-4 z-10 justify-between ">
@@ -91,7 +93,7 @@
     结果 0.0 我在每一个三角所在的li都装了点击事件。。。ballball浩瑜总不要被气到
     还有“关于展翠”那里，字体颜色不知为何浅一些。。。我调的都没有效果。。  还有就是0.0 eslint好可怕
     -->
-    <div class=" sticky top-0 bg-white h-32 z-10 bg-while flex justify-around items-center ">
+    <!-- <div class=" sticky top-0 bg-white h-32 z-10 bg-while flex justify-around items-center ">
       <ul class="inline-flex text-xl leading-loose  space ">
         <li><a class="px-4 " href="/">首页</a></li>
         <li
@@ -152,7 +154,7 @@
         </li>
         <li><a class="px-4 hover:text-orange" href="#">联系我们</a></li>
       </ul>
-    </div>
+    </div> -->
 
     <!-- 页面内容 -->
     <transition name="fade-transform" mode="out-in">
@@ -200,9 +202,13 @@
 </template>
 
 <script>
+import FoodNav from './components/FoodNav'
 
 export default {
   name: 'BaseLayoutDrdMobile',
+  components: {
+    FoodNav
+  },
   props: {},
   data() {
     return {
