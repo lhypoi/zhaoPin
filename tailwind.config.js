@@ -7,7 +7,8 @@ module.exports = {
       backgroundColor:theme=>({
         ...theme('colors'),
         'firstBgc':'#FFF5EF',
-        'secondBgc':'#34333B'
+        'secondBgc':'#34333B',
+        'orange':'#E66717'
       })
     },
     
@@ -15,6 +16,8 @@ module.exports = {
        textColor: {
          'firstTextC': '#E66717',
          'sceondTextC': '#7D7C87',
+         'white':'#FFFFFF',
+         'grey':'#7D7C87'
        }
   },
   variants: {

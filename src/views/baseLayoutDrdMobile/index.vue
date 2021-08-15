@@ -157,11 +157,11 @@
     </div> -->
 
     <!-- 页面内容 -->
-    <!-- <transition name="fade-transform" mode="out-in">
+    <transition name="fade-transform" mode="out-in">
       <keep-alive :include="cachedViews">
         <router-view :key="key" />
       </keep-alive>
-    </transition> -->
+    </transition>
 
     <!-- 了解更多 -->
     <!-- <div class="px-4 pt-9 ">
@@ -201,7 +201,7 @@
     </div> -->
 
     <!-- 了解更多 —— food -->
-    <div class="footer">
+    <!-- <div class="footer">
       <div class=" h-16 bg-red-900" />
 
       <div class=" h-56 bg-secondBgc flex flex-row flex-wrap">
@@ -241,18 +241,22 @@
 
     </div>
 
-    <div class=" h-12 bg-secondBgc  text-center text-sceondTextC text-sm ">备案号：</div>
+    <div class=" h-12 bg-secondBgc  text-center text-sceondTextC text-sm ">备案号：</div> -->
+
+    <FoodFooter />
 
   </div>
 </template>
 
 <script>
 import FoodNav from './components/FoodNav'
+import FoodFooter from './components/FoodFooter'
 
 export default {
   name: 'BaseLayoutDrdMobile',
   components: {
-    FoodNav
+    FoodNav,
+    FoodFooter
   },
   props: {},
   data() {
