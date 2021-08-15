@@ -44,7 +44,7 @@
           <div
             v-for="(codeimg, imgIndex) in moreList2"
             :key="imgIndex"
-            class=" text-left mb-50"
+            class=" text-left mb-50 ml-12"
           >
             <div class="flex flex-row text-white">
               {{ codeimg.title }}
