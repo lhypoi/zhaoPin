@@ -162,9 +162,10 @@
         <router-view :key="key" />
       </keep-alive>
     </transition>
+
     <!-- 了解更多 -->
-    <div class="px-4 pt-9">
-      <div class="text-2xl text-black font-bold">
+    <!-- <div class="px-4 pt-9 ">
+      <div class="bg-seconBgc">
         了解更多
       </div>
       <div class="text-base text-gray-500">
@@ -188,26 +189,74 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- 页面底部 -->
-    <div class="h-32 pt-6 pl-10 pr-10 bg-gray-200">
+    <!-- <div class="h-32 pt-6 pl-10 pr-10 bg-gray-200">
       <div class="text-gray-400 text-sm mb-2">
         Copyright © Dr.D Global Education的团队 保留所有权 广ICP备09052756号-1
       </div>
       <div class="text-gray-400 text-sm">
         广公网安备 33010802117769号
       </div>
+    </div> -->
+
+    <!-- 了解更多 —— food -->
+    <!-- <div class="footer">
+      <div class=" h-16 bg-red-900" />
+
+      <div class=" h-56 bg-secondBgc flex flex-row flex-wrap">
+        <div class="flex items-center">
+          <div class=" bg-red-200 ml-64">
+            <div class="title ">展翠食品-专注糖果研发</div>
+            <div class="flex flex-row flex-wrap ">
+              <div
+                v-for="(img, imgIndex) in moreList"
+                :key="imgIndex"
+                class="w-1/2 text-left mb-5"
+              >
+                <div class="h-10 float-left items-left">
+                  <el-image
+                    :src="img.path"
+                    fit="cover"
+                    class="block w-10 mb-1 mx-auto"
+                  />
+                </div>
+                <div class="text-gray-500 text-sm h-10 leading-10 pl-3 ">
+                  {{ img.title }}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" bg-red-400 ml-9">
+            <div class="title ">展翠食品-专注糖果研发</div>
+          </div>
+          <div class=" bg-red-600 ml-9">
+            <div class="title ">展翠食品-专注糖果研发</div>
+          </div>
+          <div class=" bg-red-700 ml-9 mr-64">
+            <div class="title ">展翠食品-专注糖果研发</div>
+          </div>
+        </div>
+      </div>
+
     </div>
+
+    <div class=" h-12 bg-secondBgc  text-center text-sceondTextC text-sm ">备案号：</div> -->
+
+    <FoodFooter />
+
   </div>
 </template>
 
 <script>
 import FoodNav from './components/FoodNav'
+import FoodFooter from './components/FoodFooter'
 
 export default {
   name: 'BaseLayoutDrdMobile',
   components: {
-    FoodNav
+    FoodNav,
+    FoodFooter
   },
   props: {},
   data() {

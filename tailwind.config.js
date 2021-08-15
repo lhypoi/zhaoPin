@@ -6,13 +6,18 @@ module.exports = {
     extend: {
       backgroundColor:theme=>({
         ...theme('colors'),
-        'firstBgc':'#FFF5EF'
+        'firstBgc':'#FFF5EF',
+        'secondBgc':'#34333B',
+        'orange':'#E66717'
       })
     },
     
        textColor: theme => theme('colors'),
        textColor: {
          'firstTextC': '#E66717',
+         'sceondTextC': '#7D7C87',
+         'white':'#FFFFFF',
+         'grey':'#7D7C87'
        }
   },
   variants: {
