@@ -1,10 +1,11 @@
 <template>
   <div class="bg-secondBgc pt-16">
-    <!-- TODO:仅可能用必要的div实现布局，像这里的头部占位，在父级写padding-top就行 -->
+    <!-- 总的大盒子，顶部空余的地方不需要另外写一个盒子来占位，直接使用padding-top -->
+    <!-- container 使用mx-auto使得容器居中 -->
     <div class="footer container mx-auto">
-      <!-- TODO:通过flex + overflow 自适应布局，防止有些元素挤到下面去 -->
+      <!-- 通过flex + overflow 自适应布局，防止有些元素挤到下面去  align-middle将元素在父元素的高度居中-->
       <div class=" h-64 bg-secondBgc flex align-middle flex-row mt-0 overflow-hidden">
-        <!-- TODO:按设计稿，左边的信息应该是占 50% -->
+        <!-- 第一部分，占大盒子的一半宽w-1/2 -->
         <div class=" bg-secondBgc box1 w-1/2 pr-5">
           <div class="title text-white ">展翠食品-专注糖果研发</div>
           <div class=" w-6 h-1 bg-orange mb-7 mt-5" />
@@ -21,18 +22,18 @@
                   class="block w-10 mb-1 mr-4"
                 />
               </div>
-              <!-- TODO:label型的文字，确保显示完全 -->
+              <!-- whitespace-nowrap 防止文本在元素中被包裹 -->
               <div class=" text-grey text-sm h-10 leading-10 whitespace-nowrap">
                 {{ img.title }}
               </div>
-              <!-- TODO:内容型的文字，基于父容器剩下的宽度显示，溢出了用省略号显示，同时用html的title属性，是鼠标移上去可以显示全部文字 -->
+              <!-- overflow-ellipsis 用...来截断溢出文本  title属性：鼠标上去可显示全部内容 -->
               <div class=" text-10 h-10 leading-10 text-firstTextC font-bold overflow-ellipsis whitespace-nowrap overflow-hidden" :title="img.info">
                 {{ img.info }}
               </div>
             </div>
           </div>
         </div>
-        <!-- TODO:中间的信息比较短且不容易变，所以留 1/6 -->
+        <!-- 第二部分，占大盒子的1/6宽  -->
         <div class=" form bg-secondBgc w-1/6">
           <div class="title text-white">联系我们</div>
           <div class=" w-6 h-1 bg-orange mt-5" />
@@ -42,7 +43,7 @@
           <div><input type="text" placeholder="内容" class="bg-secondBgc"></div>
           <div><h1 class="">提交</h1></div>
         </div>
-        <!-- TODO:右边的三张图片占位比较多，所以留 1/3.并且靠右，自适应留出和中间盒子的间隙 -->
+        <!-- 第三部分，占大盒子的1/3，靠右显示，自适应流出与第二部分的间隙，而不是自己添加宽度 -->
         <div class=" bg-secondBgc flex flex-row justify-end w-1/3">
           <div
             v-for="(codeimg, imgIndex) in moreList2"
@@ -63,7 +64,7 @@
           </div>
         </div>
       </div>
-      <!-- TODO:这里有条边界线，挪进这里，可以借用父容器的宽度 -->
+      <!-- 边界线（设置border-t）跟着父盒子宽度变化，很多长宽不要自己给定值之后又缝缝补补，可用比例来规划大小，大小可根据内容自适应变化 -->
       <div class="h-10 mt-5 leading-10 bg-secondBgc text-center text-sceondTextC text-sm border-t border-gray-500 border-opacity-50">备案号：</div>
     </div>
   </div>
@@ -96,7 +97,7 @@ module.exports = {
         },
         {
           path: require('@/assets/img_food/home/more3.png'),
-          title: '中国·广东省'
+          title: '中国·广东省潮州市潮安县东凤镇展翠工业园'
         },
         {
           path: require('@/assets/img_food/home/more6.png'),
