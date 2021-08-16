@@ -1,7 +1,8 @@
 <template>
   <div class="drdMHome">
     <!-- 轮播图 -->
-    <el-carousel indicator-position="outside" height="830px">
+    <!-- TODO:1、自适应高度。2、滑动条的颜色需要研究下怎么按设计稿实现 -->
+    <el-carousel indicator-position="outside" height="40vw">
       <el-carousel-item
         v-for="(item, index) in modulePageList"
         :key="index"
@@ -17,12 +18,13 @@
     </el-carousel>
 
     <!-- food系列 -->
+    <!-- TODO:1、自适应宽度，且两侧的元素贴着边，这样和整体的页面边角是对齐的 -->
     <div class=" pt-20 flex justify-center align-middle ">
-      <div class="flex flex-row justify-between w-2/3 mt-6">
+      <div class="flex flex-row justify-between mt-6 container mx-auto">
         <div
           v-for="(appeal, imgIndex) in appealList"
           :key="imgIndex"
-          class=" flex-col mb-8  w-full grid justify-items-center"
+          class=" flex-col mb-8 grid justify-items-center"
         >
           <el-image
             :src="appeal.icon"
@@ -30,7 +32,7 @@
             class=" w-32 h-32 mb-4 ml-1/2  "
           />
           <div>
-            <div class=" text-4xl text-black  ">
+            <div class=" text-3xl text-black  ">
               {{ appeal.title }}
             </div>
           </div>
