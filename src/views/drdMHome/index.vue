@@ -44,15 +44,15 @@
         <div
           v-for="(img, imgIndex) in developList"
           :key="imgIndex"
-          class=" relative"
+          class=" relative flex items-center justify-center"
         >
           <el-image
             :src="img.path"
             fit="cover"
-            class=" w-full"
+            class=" w-full inline-block "
           />
           <!-- left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -->
-          <div class=" text-4xl text-black text-center absolute z-10 left-1/2 top-1/2 -ml-20 -mt-5  ">
+          <div class=" text-4xl text-black text-center absolute z-10  ">
             {{ img.title }}
           </div>
         </div>
