@@ -20,7 +20,7 @@
                 <button class=" " type="submit" />
               </form>
             </div>
-            <div class="flex items-center justify-center  mt-12">
+            <div class="flex items-center justify-center space-x-14  mt-12">
               <div class=" flex-1 rounded-full border-solid border-2 border-white h-16 ">软糖</div>
               <div class=" flex-1 rounded-full border-solid border-2 border-white h-16">棒棒糖</div>
               <div class=" flex-1 rounded-full border-solid border-2 border-white h-16">订制糖果</div>
