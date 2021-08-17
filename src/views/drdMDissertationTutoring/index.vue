@@ -1,111 +1,163 @@
 <template>
-  <div class="drdMDissertationTutoring">
+  <div class=" drdMDissertationTutoring">
+
     <!-- 头部大图 -->
     <div class="relative">
       <el-image
-        :src="require('@/assets/img_drd_mobile/fd/main.png')"
+        :src="require('@/assets/img_food/productCenter/bigP1.png')"
         fit="cover"
-        class="block"
+        class="relative z-0"
       />
-    </div>
-    <!-- 主描述 -->
-    <div class="px-4 py-10">
-      <div class="text-2xl text-black font-bold">
-        论文辅导各专业领域全覆盖
-      </div>
-      <div class="text-xs text-gray-400 mt-1">
-        THESIS TUTORING COVERS ALL PROFESSIONAL FIELDS
-      </div>
-      <div class="text-xl text-black font-bold mt-5">
-        论文级课程辅导
-      </div>
-      <div class="text-sm text-gray-500 mt-2">
-        Dr.D自2010年成立以来经历过非常多的考验。时间证明了我们的实力，证明了我们对专业的态度。选择我们，您就选择了放心!500余名专业写手为您竭诚服务，我们的服务项目涵盖超过70种科目，100%原创。支持多种在线交易方式。我们保证，每一份订单，我们都会用心去完成，做到百分之百通过。
-      </div>
-      <el-image
-        :src="require('@/assets/img_drd_mobile/fd/main2.png')"
-        fit="cover"
-        class="block mt-3"
-      />
-    </div>
-    <!-- 我们的服务 -->
-    <div class="px-4 pt-2 pb-4">
-      <div class="text-2xl text-black font-bold">
-        我们的服务
-      </div>
-      <div class="text-xs text-gray-400 mt-1">
-        OUR SERVICE
-      </div>
-      <div class="flex flex-row flex-wrap mt-6">
-        <div
-          v-for="(img, imgIndex) in serveList"
-          :key="imgIndex"
-          class="w-1/2 text-center mb-5 px-2"
-        >
-          <div class="flex items-center">
-            <el-image
-              :src="img.path"
-              fit="cover"
-              class="block w-full"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- 领域覆盖 -->
-    <div class="px-4 py-10 bg-gray-100 pb-1">
-      <div class="text-2xl text-black font-bold">
-        课程辅导个专业领域覆盖
-      </div>
-      <div class="text-sm text-gray-600 mt-1">
-        Curriculum counseling covers all professional fields
-      </div>
-      <div class="flex flex-row flex-wrap mt-4 mb-5">
-        <div
-          v-for="(img, imgIndex) in fieldList"
-          :key="imgIndex"
-          class="mb-5"
-        >
-          <div class="flex items-center">
-            <el-image
-              :src="img.path"
-              fit="cover"
-              class="block w-auto mr-2"
-            />
-            <div class="text-lg text-black font-bold">
-              {{ img.title }}
+      <div class="flex mt-20">
+        <div class="leftBox flex-none w-2/12" />
+        <div class="flex-grow">
+          <div class=" absolute top-48  w-1/3  ">
+            <div class="text-6xl text-orange1 mb-12">搜索你喜欢的糖果！</div>
+            <div class=" text-4xl text-white mb-12">享受美妙的感觉</div>
+            <div class="searchBar">
+              <form class=" h-16">
+                <input class=" " type="text" placeholder="请输入您想要的糖果">
+                <button class=" " type="submit" />
+              </form>
+            </div>
+            <div class="flex items-center justify-center  mt-12">
+              <div class=" flex-1 rounded-full border-solid border-2 border-white h-16 ">软糖</div>
+              <div class=" flex-1 rounded-full border-solid border-2 border-white h-16">棒棒糖</div>
+              <div class=" flex-1 rounded-full border-solid border-2 border-white h-16">订制糖果</div>
             </div>
           </div>
-          <div class="text-gray-800 text-sm mt-1">
-            {{ img.sub }}
-          </div>
+          <div class="rightBox flex-none w-2/12" />
         </div>
       </div>
     </div>
-    <!-- 专家团队 -->
-    <div class="pt-8">
-      <div class="text-2xl text-black font-bold px-4">
-        专家团队
-      </div>
-      <div class="text-base text-gray-600 mt-1 px-4">
-        Expert team
-      </div>
-      <div class="flex flex-row flex-wrap">
-        <div
-          v-for="(img, imgIndex) in jiaList"
-          :key="imgIndex"
-          class="w-full text-center"
-        >
-          <div class="flex items-center">
+
+    <!-- 左右留白盒子开始 -->
+    <div class="flex mt-20">
+      <div class="leftBox flex-none w-2/12 relative" />
+      <div class="flex-grow">
+
+        <!-- 选择糖果类型-->
+        <div>
+          <!-- 大标题 -->
+          <div class="flex justify-between">
+            <div class="left">
+              <div class=" text-4xl font-bold text-grey1">选择糖果类型</div>
+              <div class=" text-grey2">CHOOSE THE TYPE OF CANDY</div>
+            </div>
+            <div class="right flex flex-1 border-b-2 flex-row-reverse items-center ">
+              <div class="flex text-grey1"><div><img src="@/assets/img_food/productCenter/smallP1.png" class=" mr-3"></div>
+                CHOOSE THE TYPE OF CANDY</div>
+            </div>
+          </div>
+
+          <div class=" pt-20 flex justify-center align-middle ">
+            <div class="flex flex-row justify-between mt-6 container mx-auto">
+              <div
+                v-for="(appeal, imgIndex) in appealList"
+                :key="imgIndex"
+                class=" flex-col mb-8 grid justify-items-center"
+              >
+                <el-image
+                  :src="appeal.icon"
+                  fit="cover"
+                  class=" w-32 h-32 mb-4 ml-1/2  "
+                />
+                <div>
+                  <div class=" text-3xl text-black  ">
+                    {{ appeal.title }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="">
             <el-image
-              :src="img.path"
+              :src="require('@/assets/img_food/productCenter/bigP4.png')"
               fit="cover"
-              class="block w-full"
+              class="block mt-20"
             />
           </div>
         </div>
+
+        <!-- 定制糖果 -->
+        <div class="">
+          <!-- 大标题 -->
+          <div class="flex justify-between mt-32">
+
+            <div class="left">
+              <div class=" text-4xl font-bold text-grey1">订制糖果</div>
+              <div class=" text-grey2">CUSTOM CANDIES</div>
+            </div>
+            <div class="right flex flex-1 border-b-2 flex-row-reverse items-center ">
+              <div class="flex text-grey1"><div><img src="@/assets/img_food/productCenter/smallP1.png" class=" mr-3"></div>
+                订制你想要的糖果</div>
+            </div>
+          </div>
+
+          <div class="flex mt-12 relative">
+            <el-image
+              :src="require('@/assets/img_food/productCenter/bigP3.png')"
+              fit="cover"
+              class=" absolute w-1/3  z-0"
+            />
+            <div class=" w-1/3 flex-col flex items-center justify-center relative  ">
+              <div class=" w-2/3">
+                <div class=" mb-14 text-3xl font-bold">订制糖果</div>
+                <div class=" mb-8 text-sm">订制你自己想要的糖果类型：不同的糖果图案、不同的口味、不同的包装设计，定制出你自己梦想中的糖果！</div>
+                <div class="text-3xl font-bold">DIY不同的糖果</div>
+              </div>
+            </div>
+            <div><img src="@/assets/img_food/productCenter/smallP2.png" alt=""></div>
+            <div><img src="@/assets/img_food/productCenter/smallP2.png" alt=""></div>
+          </div>
+        </div>
+
+        <!-- 糖果系列选择 -->
+        <div>
+          <div class="flex justify-between mb-16">
+            <div class="left">
+              <div class=" text-4xl font-bold text-grey1">糖果系列选择</div>
+              <div class=" text-grey2">CANDY SERIES SELECTION</div>
+            </div>
+            <div class="right flex flex-1 border-b-2 flex-row-reverse items-center ">
+              <div class="flex text-grey1"><div><img src="@/assets/img_food/productCenter/smallP1.png" class=" mr-3"></div>
+                查看更多
+                <img src="@/assets/img_food/productCenter/halfArrow.png" class=" ml-1">
+              </div>
+            </div>
+          </div>
+
+          <el-carousel indicator-position="outside" height="20vw">
+            <el-carousel-item
+              v-for="(item, index) in modulePageList"
+              :key="index"
+            >
+              <div class="flex flex-col ml-auto mr-auto mt-4 w-full" @click="$router.push(item.router)">
+                <el-image
+                  :src="item.imgPath"
+                  fit="cover"
+                  class="block w1/3"
+                />
+              </div>
+            </el-carousel-item>
+          </el-carousel>
+        </div>
+
+        <!-- 尾部大图 -->
+        <div class=" mt-28 mb-32">
+          <div class=" relative flex items-center ">
+            <img src="@/assets/img_food/productCenter/bigP2.png" alt="">
+            <div class="wenzi absolute  right-7 text-right ">
+              <div class=" text-2xl">丰富的水果维生素</div>
+              <div class=" text-sceondTextC pt-3 pb-3">让每一颗都好像在吃水果一般<br>让你回味无穷</div>
+              <div>展翠用心打造健康食品</div>
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="rightBox flex-none w-2/12" />
     </div>
+    <!-- 左右留白盒子结束 -->
   </div>
 </template>
 
@@ -116,61 +168,35 @@ export default {
   props: {},
   data() {
     return {
-      serveList: [
+      appealList: [
         {
-          path: require('@/assets/img_drd_mobile/fd/serve1.png')
+          icon: require('@/assets/img_food/home/series1.png'),
+          title: '糖果系列'
         },
         {
-          path: require('@/assets/img_drd_mobile/fd/serve2.png')
+          icon: require('@/assets/img_food/home/series2.png'),
+          title: '燕麦系列'
         },
         {
-          path: require('@/assets/img_drd_mobile/fd/serve3.png')
+          icon: require('@/assets/img_food/home/series3.png'),
+          title: '佛手果系列'
         },
         {
-          path: require('@/assets/img_drd_mobile/fd/serve4.png')
+          icon: require('@/assets/img_food/home/series4.png'),
+          title: '巧克力系列'
+        },
+        {
+          icon: require('@/assets/img_food/home/series5.png'),
+          title: '饼干系列'
         }
+
       ],
-      fieldList: [
+      modulePageList: [
         {
-          path: require('@/assets/img_drd_mobile/fd/field1.png'),
-          title: '金融商科',
-          sub: '会计与金融、工商管理、市场营销、贸易经济、商业管理等'
+          imgPath: require('@/assets/img_food/productCenter/smallP2.png')
         },
         {
-          path: require('@/assets/img_drd_mobile/fd/field2.png'),
-          title: '编程语言',
-          sub: '涵盖C/C++/JAVA/Pythonl、web、android、Data Analysys、Data Structure.Algorithm、Database、Html/Js/Web,.Network,、Operating System,、Compiler,、Functional Programming...'
-        },
-        {
-          path: require('@/assets/img_drd_mobile/fd/field3.png'),
-          title: '人文艺术',
-          sub: '平面设计、雕塑、艺术装置、行为艺术、cad,3D.su建模，动画'
-        },
-        {
-          path: require('@/assets/img_drd_mobile/fd/field4.png'),
-          title: '数据分析',
-          sub: 'R、 Matlab、stata、python、Eview、数据挖掘等'
-        },
-        {
-          path: require('@/assets/img_drd_mobile/fd/field5.png'),
-          title: '土木工程学',
-          sub: '高建筑力学、结构力学、土木工程制图、CAD等'
-        },
-        {
-          path: require('@/assets/img_drd_mobile/fd/field6.png'),
-          title: '社会心理学',
-          sub: '运用实验、数据调研、数量分析、描述现象'
-        }
-      ],
-      jiaList: [
-        {
-          path: require('@/assets/img_drd_mobile/fd/jia1.png')
-        },
-        {
-          path: require('@/assets/img_drd_mobile/fd/jia2.png')
-        },
-        {
-          path: require('@/assets/img_drd_mobile/fd/jia3.png')
+          imgPath: require('@/assets/img_food/productCenter/smallP2.png')
         }
       ]
     }
@@ -186,5 +212,19 @@ export default {
 </script>
 
 <style lang="scss">
-
+        .searchBar input {
+            background: white;
+            width: 392px;
+            height: 69px;
+        }
+        .searchBar button {
+            background:#E66717;
+            width: 212px;
+            height: 69px;
+        }
+        .searchBar button:before {
+            content: "搜索";
+            font-size: 13px;
+            color: white;
+        }
 </style>
