@@ -15,9 +15,12 @@ module.exports = {
        textColor: theme => theme('colors'),
        textColor: {
          'firstTextC': '#E66717',
+         'orange1':'#FFAC05',
          'sceondTextC': '#7D7C87',
          'white':'#FFFFFF',
-         'grey':'#7D7C87'
+         'grey':'#7D7C87',
+         'grey1':'#333333',
+         'grey2':'#999999'
        }
   },
   variants: {
