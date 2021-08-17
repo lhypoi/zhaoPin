@@ -11,19 +11,22 @@
       <div class="flex mt-20">
         <div class="leftBox flex-none w-2/12" />
         <div class="flex-grow">
-          <div class=" absolute top-48  w-1/3  ">
-            <div class="text-6xl text-orange1 mb-12">搜索你喜欢的糖果！</div>
-            <div class=" text-4xl text-white mb-12">享受美妙的感觉</div>
+          <!-- TODO:测试的时候尽可能从1200px覆盖到1920px的体验 -->
+          <div class=" absolute top-0  w-2/3  h-full pt-10 2xl:pt-20">
+            <div class="text-5xl 2xl:text-6xl text-orange1 mb-10">搜索你喜欢的糖果！</div>
+            <div class=" text-3xl 2xl:text-4xl text-white mb-10">享受美妙的感觉</div>
             <div class="searchBar">
               <form class=" h-16">
-                <input class=" " type="text" placeholder="请输入您想要的糖果">
+                <!-- TODO:按钮文字缩进会好看些 -->
+                <input class="pl-5" type="text" placeholder="请输入您想要的糖果">
                 <button class=" " type="submit" />
               </form>
             </div>
-            <div class="flex items-center justify-center  mt-12">
-              <div class=" flex-1 rounded-full border-solid border-2 border-white h-16 ">软糖</div>
-              <div class=" flex-1 rounded-full border-solid border-2 border-white h-16">棒棒糖</div>
-              <div class=" flex-1 rounded-full border-solid border-2 border-white h-16">订制糖果</div>
+            <!-- TODO:这种按钮堆叠的场景，应该让按钮根据本身的文字自动撑开整个容器 -->
+            <div class="flex mt-12 -mx-4">
+              <div class="rounded-full border-solid border-2 border-white h-16 text-white text-xl flex items-center justify-center px-8 mx-4 cursor-pointer">软糖</div>
+              <div class="rounded-full border-solid border-2 border-white h-16 text-white text-xl flex items-center justify-center px-8 mx-4 cursor-pointer">棒棒糖</div>
+              <div class="rounded-full border-solid border-2 border-white h-16 text-white text-xl flex items-center justify-center px-8 mx-4 cursor-pointer">订制糖果</div>
             </div>
           </div>
           <div class="rightBox flex-none w-2/12" />
@@ -114,7 +117,7 @@
 
         <!-- 糖果系列选择 -->
         <div>
-          <div class="flex justify-between mb-16">
+          <div class="flex justify-between mb-12">
             <div class="left">
               <div class=" text-4xl font-bold text-grey1">糖果系列选择</div>
               <div class=" text-grey2">CANDY SERIES SELECTION</div>
@@ -127,17 +130,48 @@
             </div>
           </div>
 
-          <el-carousel indicator-position="outside" height="20vw">
+          <el-carousel indicator-position="outside" height="16vw">
             <el-carousel-item
               v-for="(item, index) in modulePageList"
               :key="index"
             >
-              <div class="flex flex-col ml-auto mr-auto mt-4 w-full" @click="$router.push(item.router)">
-                <el-image
-                  :src="item.imgPath"
-                  fit="cover"
-                  class="block w1/3"
-                />
+              <!-- TODO:考虑更广阔的场景，页数不定，最后一页不满三个，适配到手机端 -->
+              <div class="flex flex-row w-full h-full justify-between">
+                <!-- TODO:整套循环逻辑应该抽离出一个数据结构，像我写导航菜单那样，一个选项就是一个组件的概念 -->
+                <!-- 每页有三个选项的坑位，内部的元素可能不止一张图片，所以外层用一个div包着，而不是直接img -->
+                <div class="relative h-full pt-7" style="width: 20vw;" @click="$router.push(item.router)">
+                  <!-- 图片背景 -->
+                  <div class="relative w-full h-full">
+                    <el-image
+                      :src="item.imgPath"
+                      class="block absolute w-full h-full"
+                    />
+                  </div>
+                  <!-- 头部文字 -->
+                  <div class="absolute top-0 text-lg font-extrabold">糖果系列</div>
+                  <!-- 右下角文字 -->
+                  <div class="absolute right-0 bottom-0 bg-yellow-500 px-8 py-2 text-white text-lg rounded-tl-2xl rounded-br-2xl">水果软糖</div>
+                </div>
+                <div class="relative h-full pt-7" style="width: 20vw;" @click="$router.push(item.router)">
+                  <div class="relative w-full h-full">
+                    <el-image
+                      :src="item.imgPath"
+                      class="block absolute w-full h-full"
+                    />
+                  </div>
+                  <div class="absolute top-0 text-lg font-extrabold">糖果系列</div>
+                  <div class="absolute right-0 bottom-0 bg-yellow-500 px-8 py-2 text-white text-lg rounded-tl-2xl rounded-br-2xl">水果软糖</div>
+                </div>
+                <div class="relative h-full pt-7" style="width: 20vw;" @click="$router.push(item.router)">
+                  <div class="relative w-full h-full">
+                    <el-image
+                      :src="item.imgPath"
+                      class="block absolute w-full h-full"
+                    />
+                  </div>
+                  <div class="absolute top-0 text-lg font-extrabold">糖果系列</div>
+                  <div class="absolute right-0 bottom-0 bg-yellow-500 px-8 py-2 text-white text-lg rounded-tl-2xl rounded-br-2xl">水果软糖</div>
+                </div>
               </div>
             </el-carousel-item>
           </el-carousel>
