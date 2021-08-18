@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="slideShowCarousel">
     <el-carousel indicator-position="outside" height="25vw">
       <el-carousel-item
         v-for="(item, index) in slidePageList"
@@ -59,6 +59,13 @@ module.exports = {
 }
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+.slideShowCarousel {
+  ::v-deep {
+    .el-carousel__indicators {
+      text-align: right;
+      padding-right: 40px;
+    }
+  }
+}
 </style>
