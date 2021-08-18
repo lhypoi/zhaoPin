@@ -77,7 +77,7 @@ export default {
           children: [
             {
               title: '产品中心',
-              path: '/DissertationTutoring'
+              path: '/productCenter'
             },
             {
               title: '糖果系列',

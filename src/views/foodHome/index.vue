@@ -4,7 +4,7 @@
     <!-- TODO:1、自适应高度。2、滑动条的颜色需要研究下怎么按设计稿实现 -->
     <el-carousel indicator-position="outside" height="40vw">
       <el-carousel-item
-        v-for="(item, index) in modulePageList"
+        v-for="(item, index) in slidePageList"
         :key="index"
       >
         <div class="flex flex-col ml-auto mr-auto mt-4 w-full" @click="$router.push(item.router)">
@@ -19,32 +19,13 @@
 
     <!-- food系列 -->
     <!-- TODO:1、自适应宽度，且两侧的元素贴着边，这样和整体的页面边角是对齐的 -->
-    <div class=" pt-20 flex justify-center align-middle ">
-      <div class="flex flex-row justify-between mt-6 container mx-auto">
-        <div
-          v-for="(appeal, imgIndex) in appealList"
-          :key="imgIndex"
-          class=" flex-col mb-8 grid justify-items-center"
-        >
-          <el-image
-            :src="appeal.icon"
-            fit="cover"
-            class=" w-32 h-32 mb-4 ml-1/2  "
-          />
-          <div>
-            <div class=" text-3xl text-black  ">
-              {{ appeal.title }}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <SeriesTitle />
 
-    <!-- 发展历程 -->
+    <!-- 各系列大图展示 -->
     <div class="bg-gray-100 mt-32 mb-24">
       <div class="flex flex-col">
         <div
-          v-for="(img, imgIndex) in developList"
+          v-for="(img, imgIndex) in serieshowList"
           :key="imgIndex"
           class=" relative flex items-center justify-center"
         >
@@ -54,7 +35,7 @@
             class=" w-full inline-block "
           />
           <!-- left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -->
-          <div class=" text-4xl text-black text-center absolute z-10  ">
+          <div class=" text-4xl text-black text-center absolute  ">
             {{ img.title }}
           </div>
         </div>
@@ -65,13 +46,17 @@
 </template>
 
 <script>
+import SeriesTitle from '../../components/SeriesTitle/SeriesTitle.vue'
 
 export default {
   name: 'DrdMHome',
+  components: {
+    SeriesTitle
+  },
   props: {},
   data() {
     return {
-      modulePageList: [
+      slidePageList: [
         {
           imgPath: require('@/assets/img_food/home/1.png')
         },
@@ -80,7 +65,7 @@ export default {
         }
       ],
 
-      appealList: [
+      seriesList: [
         {
           icon: require('@/assets/img_food/home/series1.png'),
           title: '糖果系列'
@@ -103,7 +88,7 @@ export default {
         }
 
       ],
-      developList: [
+      serieshowList: [
         {
           path: require('@/assets/img_food/home/seriesP1.png'),
           title: '糖果系列'
