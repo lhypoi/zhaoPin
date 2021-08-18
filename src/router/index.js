@@ -77,14 +77,14 @@ export const constantRoutes = [
     children: [
       {
         path: '',
-        component: () => import('@/views/drdMHome/index'),
-        name: 'drdMHome'
+        component: () => import('@/views/foodHome/index'),
+        name: 'foodHome'
       },
       {
-        path: 'DissertationTutoring',
-        component: () => import('@/views/drdMDissertationTutoring/index'),
-        name: 'DissertationTutoring',
-        meta: { title: 'DissertationTutoring', icon: 'dashboard', affix: true }
+        path: 'productCenter',
+        component: () => import('@/views/productCenter/index'),
+        name: 'productCenter',
+        meta: { title: 'productCenter', icon: 'dashboard', affix: true }
       },
       {
         path: 'GuaranteeAdmission',

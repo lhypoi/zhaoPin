@@ -82,10 +82,12 @@
 
 // 跑马灯分页器
 .el-carousel__indicator {
+  right: 0px;
   .el-carousel__button {
     width: 70px;
     height: 4px;
     border-radius: 2px;
+    
   }
 
   &.is-active {
