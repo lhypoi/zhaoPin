@@ -1,7 +1,7 @@
 <template>
   <div class="drdMHome">
     <!-- 轮播图 -->
-    <!-- TODO:1、自适应高度。2、滑动条的颜色需要研究下怎么按设计稿实现 -->
+    <!-- 1、自适应高度。-->
     <el-carousel indicator-position="outside" height="40vw">
       <el-carousel-item
         v-for="(item, index) in slidePageList"
@@ -18,7 +18,7 @@
     </el-carousel>
 
     <!-- food系列 -->
-    <!-- TODO:1、自适应宽度，且两侧的元素贴着边，这样和整体的页面边角是对齐的 -->
+    <!-- :1、自适应宽度，且两侧的元素贴着边，这样和整体的页面边角是对齐的 -->
     <SeriesTitle />
 
     <!-- 各系列大图展示 -->

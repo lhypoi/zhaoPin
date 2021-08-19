@@ -20,7 +20,8 @@ module.exports = {
          'white':'#FFFFFF',
          'grey':'#7D7C87',
          'grey1':'#333333',
-         'grey2':'#999999'
+         'grey2':'#999999',
+         'coffee':'#452607'
        }
   },
   variants: {
