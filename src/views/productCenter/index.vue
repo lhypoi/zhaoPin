@@ -79,8 +79,6 @@
               <div class="text-3xl font-bold">DIY不同的糖果</div>
             </div>
           </div>
-          <!-- <div><img src="@/assets/img_food/productCenter/smallP2.png" alt=""></div>
-            <div><img src="@/assets/img_food/productCenter/smallP2.png" alt=""></div> -->
           <div class=" w-1/2"> <slideShow2 /> </div>
 
         </div>

@@ -81,11 +81,11 @@ export default {
             },
             {
               title: '糖果系列',
-              path: '/product/1'
+              path: '/product1Candy'
             },
             {
               title: '燕麦系列',
-              path: '/product/1'
+              path: '/product2Oat'
             },
             {
               title: '佛手果系列',
@@ -93,11 +93,11 @@ export default {
             },
             {
               title: '巧克力系列',
-              path: '/product/1'
+              path: '/product4Chocolate'
             },
             {
               title: '饼干系列',
-              path: '/product/1'
+              path: '/product5Biscuit'
             }
           ]
         },

@@ -54,10 +54,10 @@ module.exports = {
     return {
       slidePageList: [
         {
-          imgPath: require('@/assets/img_food/productCenter/smallP2.png')
+          imgPath: require('@/assets/img_food/candy/P1.png')
         },
         {
-          imgPath: require('@/assets/img_food/productCenter/smallP2.png')
+          imgPath: require('@/assets/img_food/candy/P1.png')
         }
       ]
     }
