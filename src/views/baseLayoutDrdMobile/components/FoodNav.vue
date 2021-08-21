@@ -82,6 +82,22 @@ export default {
             {
               title: '糖果系列',
               path: '/product/1'
+            },
+            {
+              title: '燕麦系列',
+              path: '/product/1'
+            },
+            {
+              title: '佛手果系列',
+              path: '/product3foShou'
+            },
+            {
+              title: '巧克力系列',
+              path: '/product/1'
+            },
+            {
+              title: '饼干系列',
+              path: '/product/1'
             }
           ]
         },

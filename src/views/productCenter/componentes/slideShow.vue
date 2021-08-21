@@ -5,9 +5,9 @@
         v-for="(item, index) in slidePageList"
         :key="index"
       >
-        <!-- TODO:考虑更广阔的场景，页数不定，最后一页不满三个，适配到手机端 -->
+        <!--考虑更广阔的场景，页数不定，最后一页不满三个，适配到手机端 -->
         <div class="flex flex-row w-full h-full justify-between">
-          <!-- TODO:整套循环逻辑应该抽离出一个数据结构，像我写导航菜单那样，一个选项就是一个组件的概念 -->
+          <!--整套循环逻辑应该抽离出一个数据结构，像我写导航菜单那样，一个选项就是一个组件的概念 -->
           <!-- 每页有三个选项的坑位，内部的元素可能不止一张图片，所以外层用一个div包着，而不是直接img -->
           <div class="relative h-full pt-7" style="width: 20vw;" @click="$router.push(item.router)">
             <!-- 图片背景 -->

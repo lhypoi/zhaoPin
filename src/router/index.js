@@ -87,10 +87,10 @@ export const constantRoutes = [
         meta: { title: 'productCenter', icon: 'dashboard', affix: true }
       },
       {
-        path: 'GuaranteeAdmission',
-        component: () => import('@/views/drdMGuaranteeAdmission/index'),
-        name: 'GuaranteeAdmission',
-        meta: { title: 'GuaranteeAdmission', icon: 'dashboard', affix: true }
+        path: 'product3foShou',
+        component: () => import('@/views/product3foShou/index'),
+        name: 'product3foShou',
+        meta: { title: 'product3foShou', icon: 'dashboard', affix: true }
       },
       {
         path: 'Appeal',
