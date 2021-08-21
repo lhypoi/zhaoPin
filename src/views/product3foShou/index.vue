@@ -1,7 +1,7 @@
 <template>
   <div class="foShouProduct3">
     <!-- 头部大图 -->
-    <div class="banner">
+    <div class="banner flex justify-center">
       <el-image
         :src="require('@/assets/img_food/foShou/banner.png')"
         fit="cover"

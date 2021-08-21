@@ -1,16 +1,18 @@
 <template>
   <div class="foShouProduct3">
     <!-- 头部大图 -->
-    <div class="banner relative flex items-center  ">
-      <el-image
-        :src="require('@/assets/img_food/productCenter/biscuitB.png')"
-        fit="cover"
-        class="z-0"
-      />
-      <div class=" absolute text-left pl-28">
-        <div class=" text-4xl text-white">SUNTREE</div>
-        <div class=" text-7xl text-white py-5">美味饼干</div>
-        <div class=" text-5xl text-white">浓香软滑的美味饼干</div>
+    <div class=" flex justify-center">
+      <div class="banner relative flex items-center  ">
+        <el-image
+          :src="require('@/assets/img_food/productCenter/biscuitB.png')"
+          fit="cover"
+          class="z-0"
+        />
+        <div class=" absolute text-left pl-28">
+          <div class=" text-4xl text-white">SUNTREE</div>
+          <div class=" text-7xl text-white py-5">美味饼干</div>
+          <div class=" text-5xl text-white">浓香软滑的美味饼干</div>
+        </div>
       </div>
     </div>
     <!-- 左右留白盒子开始 -->
