@@ -1,17 +1,23 @@
 <template>
   <div>
     <div class="pageSection sec1">
-      <el-image class="pageSectionImg" :src="sec1Img" fit="cover" lazy
-        ><div slot="placeholder" class="emptyImg"
+      <el-image
+        class="pageSectionImg"
+        :src="sec1Img"
+        fit="cover"
+        lazy
+      ><div
+        slot="placeholder"
+        class="emptyImg"
       /></el-image>
       <div class="pageSectionContent">
         <div class="sec1Box">
           <div class="p1">
             <!-- 论文辅导｜assignment 辅导｜保录升学｜紧急申诉Appeal -->
-            <br />
+            <br>
           </div>
           <div class="p2">
-            雙語Tutor在線高端教育品牌 <br />
+            雙語Tutor在線高端教育品牌 <br>
             “D輔導”
           </div>
           <div class="p3">
@@ -34,7 +40,9 @@
                 fit="cover"
                 lazy
                 @click="$router.push('/DissertationRetouchingCoaching/index')"
-                ><div slot="placeholder" class="emptyImg"
+              ><div
+                slot="placeholder"
+                class="emptyImg"
               /></el-image>
               <div class="b1">
                 <div class="p2">英文作文修改服务</div>
@@ -42,8 +50,8 @@
                   强大的学术资源支撑＋经验丰富的专家团队＋标准化的客户服
                   为优质、高效、全方位的综合学术论文定制写作提供最坚实的
                 </div>
-                <div class="p4">￡12.5 起</div>
-                <div class="p5"><br /></div>
+                <div class="p4">$ 12.5 起</div>
+                <div class="p5"><br></div>
               </div>
             </el-col>
             <el-col class="sec2Col" :span="8">
@@ -54,7 +62,9 @@
                 fit="cover"
                 lazy
                 @click="() => $router.push(`/GuaranteedAdmission`)"
-                ><div slot="placeholder" class="emptyImg"
+              ><div
+                slot="placeholder"
+                class="emptyImg"
               /></el-image>
               <div class="b1">
                 <div class="p2">留学申请文书辅导服务</div>
@@ -63,7 +73,7 @@
                   和深度精修工作，所有完成文稿逻辑合理，重点表述正确突出。
                 </div>
                 <div class="p4">$ 30 起</div>
-                <div class="p5"><br /></div>
+                <div class="p5"><br></div>
               </div>
             </el-col>
             <el-col class="sec2Col" :span="8">
@@ -73,8 +83,10 @@
                 :src="list3Img"
                 fit="cover"
                 lazy
-                @click="$router.push('/RepresentationOfInterests/index')"
-                ><div slot="placeholder" class="emptyImg"
+                @click="$router.push('/OnlineTutorials/index')"
+              ><div
+                slot="placeholder"
+                class="emptyImg"
               /></el-image>
               <div class="b1">
                 <div class="p2">Online Course网课辅导服务</div>
@@ -96,8 +108,14 @@
         <div class="sec1Box">
           <el-row class="sec3Row">
             <el-col :span="12">
-              <el-image class="g1" :src="list4Img" fit="cover" lazy
-                ><div slot="placeholder" class="emptyImg"
+              <el-image
+                class="g1"
+                :src="list4Img"
+                fit="cover"
+                lazy
+              ><div
+                slot="placeholder"
+                class="emptyImg"
               /></el-image>
             </el-col>
             <el-col :span="12" class="b1 right">
@@ -109,13 +127,9 @@
                 Html/Js/Web,、Network,、Operating System,、Compiler,、Functional
                 Programming…
               </div>
-              <div
-                class="p3"
-                @click="$router.push('/DataComputerGeneration/index')"
-              >
+              <el-button class="linkBtn" @click="$router.push('/DataComputerGeneration/index')">
                 了解更多
-              </div>
-            </el-col>
+              </el-button></el-col>
           </el-row>
           <el-row class="sec3Row">
             <el-col :span="12" class="b1 left">
@@ -124,23 +138,32 @@
               <div class="p3">
                 金融商科类辅导，assignment辅导，论文辅导，涵盖金融、市场营销、商业分析、统计、会计等…
               </div>
-              <div
-                class="p3"
-                @click="$router.push('/FinanceAndBusinessStudies/index')"
-              >
+              <el-button class="linkBtn" @click="$router.push('/FinanceAndBusinessStudies/index')">
                 了解更多
-              </div>
+              </el-button>
             </el-col>
             <el-col :span="12">
-              <el-image class="g1" :src="list5Img" fit="cover" lazy
-                ><div slot="placeholder" class="emptyImg"
+              <el-image
+                class="g1"
+                :src="list5Img"
+                fit="cover"
+                lazy
+              ><div
+                slot="placeholder"
+                class="emptyImg"
               /></el-image>
             </el-col>
           </el-row>
           <el-row class="sec3Row">
             <el-col :span="12">
-              <el-image class="g1" :src="list6Img" fit="cover" lazy
-                ><div slot="placeholder" class="emptyImg"
+              <el-image
+                class="g1"
+                :src="list6Img"
+                fit="cover"
+                lazy
+              ><div
+                slot="placeholder"
+                class="emptyImg"
               /></el-image>
             </el-col>
             <el-col :span="12" class="b1 right">
@@ -149,12 +172,9 @@
               <div class="p3">
                 人文艺术类专业assignment辅导，论文辅导，涵盖cad，3D.su建模，动画、视频、作品集…
               </div>
-              <div
-                class="p3"
-                @click="$router.push('/HumanitiesAndArtsAgency/index')"
-              >
+              <el-button class="linkBtn" @click="$router.push('/HumanitiesAndArtsAgency/index')">
                 了解更多
-              </div>
+              </el-button>
             </el-col>
           </el-row>
         </div>
@@ -162,8 +182,14 @@
     </div>
 
     <div class="pageSection sec4">
-      <el-image class="pageSectionImg" :src="list38Img" fit="cover" lazy
-        ><div slot="placeholder" class="emptyImg"
+      <el-image
+        class="pageSectionImg"
+        :src="list38Img"
+        fit="cover"
+        lazy
+      ><div
+        slot="placeholder"
+        class="emptyImg"
       /></el-image>
       <div class="pageSectionContent">
         <div
@@ -210,8 +236,14 @@
           <el-row>
             <el-col :span="12" style="display: flex; justify-content: flex-end">
               <div class="round">
-                <el-image class="g1" :src="list7Img" fit="cover" lazy
-                  ><div slot="placeholder" class="emptyImg"
+                <el-image
+                  class="g1"
+                  :src="list7Img"
+                  fit="cover"
+                  lazy
+                ><div
+                  slot="placeholder"
+                  class="emptyImg"
                 /></el-image>
                 <div
                   v-for="(round, index) in roundList"
@@ -246,8 +278,7 @@
                   size="medium"
                   plain
                   @click="$router.push('/RepresentationOfInterests/index')"
-                  >了解更多</el-button
-                >
+                >了解更多</el-button>
               </div>
             </el-col>
           </el-row>
@@ -261,8 +292,14 @@
           <div class="t1">发展历程</div>
           <el-row :gutter="20">
             <el-col :span="8">
-              <el-image class="g1" :src="list8Img" fit="cover" lazy
-                ><div slot="placeholder" class="emptyImg"
+              <el-image
+                class="g1"
+                :src="list8Img"
+                fit="cover"
+                lazy
+              ><div
+                slot="placeholder"
+                class="emptyImg"
               /></el-image>
               <div class="p1">100余名专业师资团队近百位资深留学顾问</div>
               <div class="p2">
@@ -272,8 +309,14 @@
               <div class="p3">留学生英文论文辅导服务</div>
             </el-col>
             <el-col :span="8">
-              <el-image class="g1" :src="list9Img" fit="cover" lazy
-                ><div slot="placeholder" class="emptyImg"
+              <el-image
+                class="g1"
+                :src="list9Img"
+                fit="cover"
+                lazy
+              ><div
+                slot="placeholder"
+                class="emptyImg"
               /></el-image>
               <div class="p1">Dr.D 提供高质量，高效率的文章润色降重服务</div>
               <div class="p2">
@@ -304,8 +347,7 @@
               size="medium"
               plain
               @click="$router.push('/InformationList/index')"
-              >了解更多</el-button
-            >
+            >了解更多</el-button>
           </div>
         </div>
       </div>
@@ -321,8 +363,14 @@
                 <div class="b1">
                   <div class="p1">Selina</div>
                   <div class="p2">利兹大学</div>
-                  <el-image class="g1" :src="u1Img" fit="cover" lazy
-                    ><div slot="placeholder" class="emptyImg"
+                  <el-image
+                    class="g1"
+                    :src="u1Img"
+                    fit="cover"
+                    lazy
+                  ><div
+                    slot="placeholder"
+                    class="emptyImg"
                   /></el-image>
                 </div>
                 <div class="b2">
@@ -342,8 +390,14 @@
                 <div class="b1">
                   <div class="p1">Stacey</div>
                   <div class="p2">牛津大学</div>
-                  <el-image class="g1" :src="u2Img" fit="cover" lazy
-                    ><div slot="placeholder" class="emptyImg"
+                  <el-image
+                    class="g1"
+                    :src="u2Img"
+                    fit="cover"
+                    lazy
+                  ><div
+                    slot="placeholder"
+                    class="emptyImg"
                   /></el-image>
                 </div>
                 <div class="b2">
@@ -362,8 +416,14 @@
                 <div class="b1">
                   <div class="p1">Kevin</div>
                   <div class="p2">爱丁堡大学</div>
-                  <el-image class="g1" :src="u3Img" fit="cover" lazy
-                    ><div slot="placeholder" class="emptyImg"
+                  <el-image
+                    class="g1"
+                    :src="u3Img"
+                    fit="cover"
+                    lazy
+                  ><div
+                    slot="placeholder"
+                    class="emptyImg"
                   /></el-image>
                 </div>
                 <div class="b2">
@@ -381,7 +441,7 @@
             </el-col>
           </el-row>
           <div style="text-align: center; margin-top: 30px">
-            <el-button class="btn1" size="medium" plain>了解更多</el-button>
+            <el-button class="btn1" size="medium" plain @click="$router.push('/DissertationRetouchingCoaching/index')">了解更多</el-button>
           </div>
         </div>
       </div>
@@ -390,35 +450,35 @@
 </template>
 
 <script>
-const sec1Img = require("@/assets/img/bg1.png");
-const list1Img = require("@/assets/img/list1.png");
-const list2Img = require("@/assets/img/list2.png");
-const list3Img = require("@/assets/img/list3.png");
-const list4Img = require("@/assets/img/list4.png");
-const list5Img = require("@/assets/img/list5.png");
-const list6Img = require("@/assets/img/list6.png");
-const list7Img = require("@/assets/img/list7.png");
-const list8Img = require("@/assets/img/list8.png");
-const list9Img = require("@/assets/img/list9.png");
-const list38Img = require("@/assets/img/list38.png");
-const u1Img = require("@/assets/img/u1.png");
-const u2Img = require("@/assets/img/u2.png");
-const u3Img = require("@/assets/img/u3.png");
+const sec1Img = require('@/assets/img/bg1.png')
+const list1Img = require('@/assets/img/list1.png')
+const list2Img = require('@/assets/img/list2.png')
+const list3Img = require('@/assets/img/list3.png')
+const list4Img = require('@/assets/img/list4.png')
+const list5Img = require('@/assets/img/list5.png')
+const list6Img = require('@/assets/img/list6.png')
+const list7Img = require('@/assets/img/list7.png')
+const list8Img = require('@/assets/img/list8.png')
+const list9Img = require('@/assets/img/list9.png')
+const list38Img = require('@/assets/img/list38.png')
+const u1Img = require('@/assets/img/u1.png')
+const u2Img = require('@/assets/img/u2.png')
+const u3Img = require('@/assets/img/u3.png')
 
 export default {
-  name: "Home3",
+  name: 'Home3',
   metaInfo: {
-    title: "雙語Tutor在線高端教育品牌 D輔導",
+    title: '雙語Tutor在線高端教育品牌 D輔導',
     meta: [
       {
-        name: "keyWords",
-        content: "論文輔導, 保錄升學100%, 權益申訴Appeal",
+        name: 'keyWords',
+        content: '論文輔導, 保錄升學100%, 權益申訴Appeal'
       },
       {
-        name: "description",
-        content: "留学生一站式辅导平台，為你的學業保駕護航",
-      },
-    ],
+        name: 'description',
+        content: '留学生一站式辅导平台，為你的學業保駕護航'
+      }
+    ]
   },
   props: {},
   data() {
@@ -439,49 +499,49 @@ export default {
       u3Img,
       roundList: [
         {
-          title: "入學語言不達標",
-          list: ["專業老師輔導", "快速達目標門檻"],
+          title: '入學語言不達標',
+          list: ['專業老師輔導', '快速達目標門檻']
         },
         {
-          title: "惡意低分",
-          list: ["无法正常毕业", "拿不到毕业证书和学位证书"],
+          title: '惡意低分',
+          list: ['无法正常毕业', '拿不到毕业证书和学位证书']
         },
         {
-          title: "被懷疑學術不端",
-          list: ["涉嫌抄袭或作弊", "涉嫌学术造假等学术不诚信行为"],
+          title: '被懷疑學術不端',
+          list: ['涉嫌抄袭或作弊', '涉嫌学术造假等学术不诚信行为']
         },
         {
-          title: "掛科想爭取軟過",
-          list: ["挂科太多或最终GPA低于要求", "导致被学校开除/劝退"],
+          title: '掛科想爭取軟過',
+          list: ['挂科太多或最终GPA低于要求', '导致被学校开除/劝退']
         },
         {
-          title: "學分不夠",
-          list: ["单个学期修的学分低于学校要求", "学分不满足毕业要求"],
+          title: '學分不夠',
+          list: ['单个学期修的学分低于学校要求', '学分不满足毕业要求']
         },
         {
-          title: "相似度過高",
-          list: ["涉嫌参与抄袭或作弊", "涉嫌学术造假等学术不诚信行为"],
+          title: '相似度過高',
+          list: ['涉嫌参与抄袭或作弊', '涉嫌学术造假等学术不诚信行为']
         },
         {
-          title: "無法面對家人",
-          list: ["留学被开除/无法毕业", "难以面对家人"],
+          title: '無法面對家人',
+          list: ['留学被开除/无法毕业', '难以面对家人']
         },
         {
-          title: "被學校開除",
-          list: ["重新获得学校接收", "可以继续留学完成学业"],
+          title: '被學校開除',
+          list: ['重新获得学校接收', '可以继续留学完成学业']
         },
         {
-          title: "保錄名校碩士",
-          list: ["直升英美加澳名校硕士", "拿名校硕士学位"],
-        },
+          title: '保錄名校碩士',
+          list: ['直升英美加澳名校硕士', '拿名校硕士学位']
+        }
       ],
-      curRound: 0,
-    };
+      curRound: 0
+    }
   },
   created() {},
   mounted() {},
-  methods: {},
-};
+  methods: {}
+}
 </script>
 
 <style lang="scss" scoped>
@@ -579,6 +639,12 @@ export default {
 
     .sec3Row {
       margin-bottom: 85px;
+
+      .linkBtn {
+        margin-top: 12px;
+        background: #2e2e38;
+        color: #fff;
+      }
     }
 
     .g1 {

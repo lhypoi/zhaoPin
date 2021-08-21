@@ -59,9 +59,9 @@
                 <el-menu-item
                   index="/OverseasPreferredStudyInUK/index"
                 >海外首选英国留学</el-menu-item>
-                <el-menu-item
+                <!-- <el-menu-item
                   index="/x21"
-                >热门留学国家的差异&排名</el-menu-item>
+                >热门留学国家的差异&排名</el-menu-item> -->
                 <el-menu-item
                   index="/ApplicationForStudyAbroadAndDetails/index"
                 >申请留学&细节</el-menu-item>
@@ -74,7 +74,7 @@
                 <el-menu-item
                   index="/GreenChannelForEmergencyTransfers/index"
                 >紧急转学绿色通道</el-menu-item>
-                <el-menu-item index="/x32">升学前置作案top up</el-menu-item>
+                <!-- <el-menu-item index="/x32">升学前置作案top up</el-menu-item> -->
                 <el-menu-item
                   index="/CareerCounseling/index"
                 >就业辅导</el-menu-item>
@@ -101,6 +101,7 @@
             <div class="p2">用心对待每一份订单</div>
           </el-col>
           <el-col :span="7" class="moreLeft">
+            <div style="font-size: 16px; margin-bottom: 25px;">扫码立即添加微信咨询</div>
             <el-image
               :src="wechatImg"
               fit="cover"
@@ -109,20 +110,19 @@
               slot="placeholder"
               class="emptyImg"
             /></el-image>
-            <div class="p2" style="margin-top: 10px;">扫码立即添加微信咨询</div>
           </el-col>
           <el-col :span="12" class="moreRight">
             <div class="p1">我们的优势</div>
             <div class="p2">
-              <div class="moreTag">专业</div>
-              <div class="moreTag">高效</div>
-              <div class="moreTag">1V1专属客服</div>
-              <div class="moreTag">7x24</div>
-              <div class="moreTag">英国G5师资</div>
-              <div class="moreTag">高品质</div>
-              <div class="moreTag">均分高</div>
-              <div class="moreTag">提分快</div>
-              <div class="moreTag">QSTop200+</div>
+              <div class="moreTag" @click="$router.push('/DissertationRetouchingCoaching/index')">专业</div>
+              <div class="moreTag" @click="$router.push('/DissertationRetouchingCoaching/index')">高效</div>
+              <div class="moreTag" @click="$router.push('/DissertationRetouchingCoaching/index')">1V1专属客服</div>
+              <div class="moreTag" @click="$router.push('/DissertationRetouchingCoaching/index')">7x24</div>
+              <div class="moreTag" @click="$router.push('/DissertationRetouchingCoaching/index')">英国G5师资</div>
+              <div class="moreTag" @click="$router.push('/DissertationRetouchingCoaching/index')">高品质</div>
+              <div class="moreTag" @click="$router.push('/DissertationRetouchingCoaching/index')">均分高</div>
+              <div class="moreTag" @click="$router.push('/DissertationRetouchingCoaching/index')">提分快</div>
+              <div class="moreTag" @click="$router.push('/DissertationRetouchingCoaching/index')">QSTop200+</div>
             </div>
           </el-col>
         </el-row>
@@ -146,11 +146,8 @@
           </el-col>
           <el-col :span="12" class="copyRightRight">
             <div class="p1">
-              <el-link>与我们联系</el-link>
-              <el-link>Dr.D所在地</el-link>
-              <el-link>入口网站</el-link>
-              <el-link>网站地图</el-link>
-              <el-link>免责及隐私声明</el-link>
+              <el-link @click="$router.push('/ContactUs/index')">与我们联系</el-link>
+              <el-link @click="$router.push('/ContactUs/index')">Dr.D所在地</el-link>
             </div>
             <div class="p2">
               <el-image

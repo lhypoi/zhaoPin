@@ -38,6 +38,17 @@
               <br>工作时间：9:00-22:00
               (GMT+8) Mon-Sun
             </div>
+            <div class="contact_txt">
+              <div style="margin-bottom: 5px;">扫码立即添加微信咨询</div>
+              <el-image
+                :src="wechatImg"
+                fit="cover"
+                style="width: 125px; height: 125px;"
+              ><div
+                slot="placeholder"
+                class="emptyImg"
+              /></el-image>
+            </div>
           </div>
         </div>
       </div>
@@ -50,6 +61,7 @@ const sec1Img = require('@/assets/img/bg3.png')
 const list23Img = require('@/assets/img/list23.png')
 const list24Img = require('@/assets/img/list24.png')
 const list25Img = require('@/assets/img/list25.png')
+const wechatImg = require('@/assets/img/wechat.png')
 
 // 联系我们
 export default {
@@ -60,7 +72,8 @@ export default {
       sec1Img,
       list23Img,
       list24Img,
-      list25Img
+      list25Img,
+      wechatImg
     }
   },
   created() {},

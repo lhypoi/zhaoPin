@@ -1,13 +1,19 @@
 <template>
   <div>
     <div class="pageSection sec1">
-      <el-image class="pageSectionImg" :src="sec1Img" fit="container" lazy
-        ><div slot="placeholder" class="emptyImg"
+      <el-image
+        class="pageSectionImg"
+        :src="sec1Img"
+        fit="container"
+        lazy
+      ><div
+        slot="placeholder"
+        class="emptyImg"
       /></el-image>
       <div class="pageSectionContent">
         <div class="sec1Box">
           <div class="p1">
-            论文辅导，课程辅导<br />
+            论文辅导，课程辅导<br>
             各专业领域全覆盖
           </div>
         </div>
@@ -19,8 +25,14 @@
         <div class="sec1Box">
           <div class="p1">论文辅导各专业领域全覆盖</div>
           <div class="b1">
-            <el-image class="g1" :src="list10Img" fit="cover" lazy
-              ><div slot="placeholder" class="emptyImg"
+            <el-image
+              class="g1"
+              :src="list10Img"
+              fit="cover"
+              lazy
+            ><div
+              slot="placeholder"
+              class="emptyImg"
             /></el-image>
             <div class="p2">论文及课程辅导</div>
             <div class="p3">
@@ -44,7 +56,7 @@
               <el-col :span="6" class="b1Col">
                 <div class="p2">一站式</div>
                 <div class="p3">
-                  留学规划，培训指导，<br />
+                  留学规划，培训指导，<br>
                   留学申请提供全程服务
                 </div>
                 <i class="iconfont iconyizhanshijiejuefangan" />
@@ -52,7 +64,7 @@
               <el-col :span="6" class="b1Col">
                 <div class="p2">一对一</div>
                 <div class="p3">
-                  私人课程或资深老师提供专属服务<br />
+                  私人课程或资深老师提供专属服务<br>
                   优化每项步骤
                 </div>
                 <i class="iconfont iconyonghu" />
@@ -60,7 +72,7 @@
               <el-col :span="6" class="b1Col">
                 <div class="p2">定制化</div>
                 <div class="p3">
-                  根据考生情况量身打造专属培训<br />
+                  根据考生情况量身打造专属培训<br>
                   辅导和申请方案
                 </div>
                 <i class="iconfont iconyiji-yingyongjianguan" />
@@ -68,7 +80,7 @@
               <el-col :span="6" class="b1Col">
                 <div class="p2">全程跟踪</div>
                 <div class="p3">
-                  整个留学期间专人跟进并及时<br />
+                  整个留学期间专人跟进并及时<br>
                   解决实际问题
                 </div>
                 <i class="iconfont iconzhengpinbaozhang-duigou" />
@@ -90,7 +102,7 @@
                   <i class="iconfont iconjinronghuobi35" />
                   <div class="p2">金融商科</div>
                   <div class="p3">
-                    会计与金融、工商管理、市场营销、<br />
+                    会计与金融、工商管理、市场营销、<br>
                     贸易经济、商业管理等
                   </div>
                 </div>
@@ -130,7 +142,7 @@
                   <i class="iconfont icontumuhejianzhu" />
                   <div class="p2">土木工程学</div>
                   <div class="p3">
-                    高建筑力学，结构力学，土木<br />
+                    高建筑力学，结构力学，土木<br>
                     工程制图，CAD等
                   </div>
                 </div>
@@ -140,7 +152,7 @@
                   <i class="iconfont iconshichangtiaocha" />
                   <div class="p2">社会心理学</div>
                   <div class="p3">
-                    运用实验、数据调研、<br />
+                    运用实验、数据调研、<br>
                     数量分析、描述现象
                   </div>
                 </div>
@@ -159,12 +171,18 @@
             <el-row class="b1Row" :gutter="8">
               <el-col :span="8">
                 <div class="b1Col">
-                  <el-image class="g1" :src="list11Img" fit="cover" lazy
-                    ><div slot="placeholder" class="emptyImg"
+                  <el-image
+                    class="g1"
+                    :src="list11Img"
+                    fit="cover"
+                    lazy
+                  ><div
+                    slot="placeholder"
+                    class="emptyImg"
                   /></el-image>
                   <div class="p2">Xiaoliu</div>
                   <div class="p3">
-                    澳洲新南威尔士大学<br />
+                    澳洲新南威尔士大学<br>
                     会计与金融学硕士
                   </div>
                   <div class="p4">“每个孩子都有无限的可能”</div>
@@ -172,12 +190,18 @@
               </el-col>
               <el-col :span="8">
                 <div class="b1Col">
-                  <el-image class="g1" :src="list12Img" fit="cover" lazy
-                    ><div slot="placeholder" class="emptyImg"
+                  <el-image
+                    class="g1"
+                    :src="list12Img"
+                    fit="cover"
+                    lazy
+                  ><div
+                    slot="placeholder"
+                    class="emptyImg"
                   /></el-image>
                   <div class="p2">Xiaoliu</div>
                   <div class="p3">
-                    圣地亚哥大学<br />
+                    圣地亚哥大学<br>
                     财务会计、审计学、财务报表分析
                   </div>
                   <div class="p4">“Youth means limitless possibilities. ”</div>
@@ -185,12 +209,18 @@
               </el-col>
               <el-col :span="8">
                 <div class="b1Col">
-                  <el-image class="g1" :src="list13Img" fit="cover" lazy
-                    ><div slot="placeholder" class="emptyImg"
+                  <el-image
+                    class="g1"
+                    :src="list13Img"
+                    fit="cover"
+                    lazy
+                  ><div
+                    slot="placeholder"
+                    class="emptyImg"
                   /></el-image>
                   <div class="p2">Xiaoliu</div>
                   <div class="p3">
-                    林肯大学<br />
+                    林肯大学<br>
                     市场营销Marketing
                   </div>
                   <div class="p4">“Youth means limitless possibilities. ”</div>
@@ -210,8 +240,14 @@
             <el-row class="b1Row" :gutter="16">
               <el-col :span="24">
                 <div class="b1Col">
-                  <el-image class="g1" :src="list39Img" fit="cover" lazy
-                    ><div slot="placeholder" class="emptyImg"
+                  <el-image
+                    class="g1"
+                    :src="list39Img"
+                    fit="cover"
+                    lazy
+                  ><div
+                    slot="placeholder"
+                    class="emptyImg"
                   /></el-image>
                 </div>
               </el-col>
@@ -224,24 +260,24 @@
 </template>
 
 <script>
-const sec1Img = require("@/assets/img/bg10.png");
-const list10Img = require("@/assets/img/list10.png");
-const list11Img = require("@/assets/img/list11.png");
-const list12Img = require("@/assets/img/list12.png");
-const list13Img = require("@/assets/img/list13.png");
-const list14Img = require("@/assets/img/list14.png");
-const list15Img = require("@/assets/img/list15.png");
-const list16Img = require("@/assets/img/list16.png");
-const list17Img = require("@/assets/img/list17.png");
-const list18Img = require("@/assets/img/list18.png");
-const list19Img = require("@/assets/img/list19.png");
-const list20Img = require("@/assets/img/list20.png");
-const list21Img = require("@/assets/img/list21.png");
-const list39Img = require("@/assets/img/list39.png");
+const sec1Img = require('@/assets/img/bg10.png')
+const list10Img = require('@/assets/img/list10.png')
+const list11Img = require('@/assets/img/list11.png')
+const list12Img = require('@/assets/img/list12.png')
+const list13Img = require('@/assets/img/list13.png')
+const list14Img = require('@/assets/img/list14.png')
+const list15Img = require('@/assets/img/list15.png')
+const list16Img = require('@/assets/img/list16.png')
+const list17Img = require('@/assets/img/list17.png')
+const list18Img = require('@/assets/img/list18.png')
+const list19Img = require('@/assets/img/list19.png')
+const list20Img = require('@/assets/img/list20.png')
+const list21Img = require('@/assets/img/list21.png')
+const list39Img = require('@/assets/img/list39.png')
 
 // 论文润色辅导
 export default {
-  name: "DissertationRetouchingCoaching",
+  name: 'DissertationRetouchingCoaching',
   props: {},
   data() {
     return {
@@ -258,27 +294,35 @@ export default {
       list19Img,
       list20Img,
       list21Img,
-      list39Img,
-    };
+      list39Img
+    }
   },
   created() {},
   mounted() {},
-  methods: {},
-};
+  methods: {}
+}
 </script>
 
 <style lang="scss" scoped>
 .sec1 {
-  height: calc(100vh - 180px);
+  height: auto;
+
+  .pageSectionImg {
+    position: relative;
+    display: block;
+  }
 
   .sec1Box {
     height: 100%;
     color: #fff;
     line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     .p1 {
-      padding-top: 260px;
-      font-size: 60px;
+      margin-top: 10vw;
+      font-size: 4vw;
     }
   }
 }
