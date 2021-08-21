@@ -93,16 +93,28 @@ export const constantRoutes = [
         meta: { title: 'product3foShou', icon: 'dashboard', affix: true }
       },
       {
-        path: 'Appeal',
-        component: () => import('@/views/drdMAppeal/index'),
-        name: 'Appeal',
-        meta: { title: 'Appeal', icon: 'dashboard', affix: true }
+        path: 'product4Chocolate',
+        component: () => import('@/views/product4Chocolate/index'),
+        name: 'product4Chocolate',
+        meta: { title: 'product4Chocolate', icon: 'dashboard', affix: true }
       },
       {
-        path: 'ContactUs',
-        component: () => import('@/views/drdMContactUs/index'),
-        name: 'ContactUs',
-        meta: { title: 'ContactUs', icon: 'dashboard', affix: true }
+        path: 'product5Biscuit',
+        component: () => import('@/views/product5Biscuit/index'),
+        name: 'product5Biscuit',
+        meta: { title: 'product5Biscuit', icon: 'dashboard', affix: true }
+      },
+      {
+        path: 'product1Candy',
+        component: () => import('@/views/product1Candy/index'),
+        name: 'product1Candy',
+        meta: { title: 'product1Candy', icon: 'dashboard', affix: true }
+      },
+      {
+        path: 'product2Oat',
+        component: () => import('@/views/product2Oat/index'),
+        name: 'product2Oat',
+        meta: { title: 'product2Oat', icon: 'dashboard', affix: true }
       }
     ]
   },

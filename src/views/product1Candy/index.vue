@@ -1,12 +1,17 @@
 <template>
   <div class="foShouProduct3">
     <!-- 头部大图 -->
-    <div class="banner flex justify-center">
+    <div class="banner relative flex items-center justify-center ">
       <el-image
-        :src="require('@/assets/img_food/foShou/banner.png')"
+        :src="require('@/assets/img_food/candy/banner.png')"
         fit="cover"
-        class=" z-0"
+        class="z-0"
       />
+      <div class=" absolute text-center">
+        <div class=" text-5xl text-black">Welcome you</div>
+        <div class=" text-4xl text-black font-bold py-5">丰富的水果维生素</div>
+        <div class=" text-7xl text-black font-bold">Rich in fruit vitamins</div>
+      </div>
     </div>
 
     <!-- 左右留白盒子开始 -->
@@ -38,34 +43,53 @@
             />
           </div>
         </div>
-        <div class="flex justify-center mt-32">
+        <div class="flex justify-center flex-wrap mt-32">
           <el-image
-            :src="require('@/assets/img_food/foShou/bigP1.png')"
+            :src="require('@/assets/img_food/candy/P1.png')"
             fit="cover"
             class=" z-0"
           />
-          <div class="centerP relative flex items-center justify-center">
-            <el-image
-              :src="require('@/assets/img_food/foShou/bigP3.png')"
-              fit="cover"
-              class="z-0"
-            />
-            <div class="wenzi1 absolute text-white ">
-              <div class=" text-2xl font-bold mb-2">佛手果系列</div>
-              <div>药食通用、热销款</div>
-            </div>
-          </div>
           <el-image
-            :src="require('@/assets/img_food/foShou/bigP2.png')"
+            :src="require('@/assets/img_food/candy/P2.png')"
+            fit="cover"
+            class=" z-0"
+          />
+          <el-image
+            :src="require('@/assets/img_food/candy/P3.png')"
+            fit="cover"
+            class=" z-0"
+          />
+          <el-image
+            :src="require('@/assets/img_food/candy/P4.png')"
+            fit="cover"
+            class=" z-0"
+          />
+          <el-image
+            :src="require('@/assets/img_food/candy/P5.png')"
+            fit="cover"
+            class=" z-0"
+          />
+          <el-image
+            :src="require('@/assets/img_food/candy/P6.png')"
+            fit="cover"
+            class=" z-0"
+          />
+          <el-image
+            :src="require('@/assets/img_food/candy/P7.png')"
+            fit="cover"
+            class=" z-0"
+          />
+          <el-image
+            :src="require('@/assets/img_food/candy/P8.png')"
             fit="cover"
             class=" z-0"
           />
         </div>
       </div>
 
-      <!-- 佛手果系列 -->
+      <!-- 糖果全系列 -->
       <div class="">
-        <Title><div slot="center">佛手果系列</div></Title>
+        <Title><div slot="center">糖果全系列 </div></Title>
         <div class="">
           <FoshouItem />
         </div>
