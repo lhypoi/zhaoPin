@@ -44,6 +44,7 @@
           </div>
         </div>
 
+        <!-- TODO:这里是flex布局的知识，可以去找些demo练练手 -->
         <div class="flex justify-end items-center  mt-32">
           <el-image
             :src="require('@/assets/img_food/chocolate/P4.png')"
@@ -53,32 +54,32 @@
           <el-image
             :src="require('@/assets/img_food/chocolate/P5.png')"
             fit="cover"
-            class=""
+            class="w-1/2"
           />
         </div>
         <div class="flex justify-star ">
           <el-image
             :src="require('@/assets/img_food/chocolate/P6.png')"
             fit="cover"
-            class=""
+            class="w-1/2"
           />
-          <div class=" flex flex-col ">
+          <div class=" flex flex-col items-stretch">
             <el-image
               :src="require('@/assets/img_food/chocolate/P1.png')"
               fit="cover"
-              class=" w-60"
+              class="h-1/2"
             />
             <el-image
               :src="require('@/assets/img_food/chocolate/P3.png')"
               fit="cover"
-              class=" w-60 "
+              class="h-1/2"
             />
           </div>
-          <div class="flex flex-col">
+          <div class="flex flex-coll items-stretch">
             <el-image
               :src="require('@/assets/img_food/chocolate/P2.png')"
               fit="cover"
-              class=" w-60 "
+              class="h-1/2"
             />
           </div>
         </div>
