@@ -107,23 +107,32 @@ export default {
           position: 'left',
           children: [
             {
-              title: '品牌实力',
-              path: '/pb/index1'
+              title: '科研品质',
+              path: '/Bquality'
             },
             {
-              title: '品牌实力',
-              path: '/pb/index2',
+              title: '出口国家',
+              path: '/BexportCountry'
+            },
+            {
+              title: '出口资质',
+              path: '/BexportQuality'
+            },
+            {
+              title: '展镇会',
+              path: '/Bexhibition'
+            },
+            {
+              title: '公司荣誉',
+              path: '/Bglory',
               children: [
                 {
-                  title: '品牌实力',
-                  path: '/pb/index21'
+                  title: '公司荣誉',
+                  path: '/Bglory'
                 }
               ]
-            },
-            {
-              title: '品牌实力',
-              path: '/pb/index3'
             }
+
           ]
         },
         {
@@ -132,7 +141,25 @@ export default {
           position: 'left',
           children: [
             {
-              title: '关于展翠',
+              title: '公司简介',
+              path: '/about/index'
+            },
+            {
+              title: '品牌故事',
+              path: '/about/index'
+            },
+            {
+              title: '企业文化',
+              path: '/about/index',
+              children: [
+                {
+                  title: '企业文化',
+                  path: '/pb/index21'
+                }
+              ]
+            },
+            {
+              title: '视频中心',
               path: '/about/index'
             }
           ]
@@ -148,7 +175,17 @@ export default {
           position: 'right',
           children: [
             {
-              title: '新闻中心',
+              title: '公司动态',
+              path: '/news/index',
+              children: [
+                {
+                  title: '详细查看',
+                  path: '/pb/index21'
+                }
+              ]
+            },
+            {
+              title: '行业资讯',
               path: '/news/index'
             }
           ]

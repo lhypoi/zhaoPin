@@ -5,7 +5,7 @@ Vue.use(Router)
 
 /* Layout */
 import Layout from '@/layout'
-import BaseLayout from '@/views/baseLayoutDrdMobile'
+import BaseLayout from '@/views/baseLayoutFood'
 
 /* Router Modules */
 import componentsRouter from './modules/components'
@@ -115,6 +115,36 @@ export const constantRoutes = [
         component: () => import('@/views/product2Oat/index'),
         name: 'product2Oat',
         meta: { title: 'product2Oat', icon: 'dashboard', affix: true }
+      },
+      {
+        path: 'Bglory',
+        component: () => import ('@/views/Bglory/index'),
+        name: 'Bglory',
+        meta: { title: 'Bglory', icon: 'dashboard', affix: true }
+      },
+      {
+        path: 'Bexhibition',
+        component: () => import ('@/views/Bexhibition/index'),
+        name: 'Bexhibition',
+        meta: { title: 'Bexhibition', icon: 'Bexhibition', affix: true }
+      },
+      {
+        path: 'BexportCountry',
+        component: () => import ('@/views/BexportCountry/index'),
+        name: 'BexportCountry',
+        meta: { title: 'BexportCountry', icon: 'dashboard', affix: true }
+      },
+      {
+        path: 'BexportQuality',
+        component: () => import ('@/views/BexportQuality/index'),
+        name: 'BexportQuality',
+        meta: { title: 'BexportQuality', icon: 'dashboard', affix: true }
+      },
+      {
+        path: 'Bquality',
+        component: () => import ('@/views/Bquality/index'),
+        name: 'Bquality',
+        meta: { title: 'Bquality', icon: 'dashboard', affix: true }
       }
     ]
   },
