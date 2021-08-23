@@ -43,7 +43,7 @@
             />
           </div>
         </div>
-
+        <!--这里是flex布局的知识，可以去找些demo练练手 -->
         <div class="flex justify-end items-center  mt-32">
           <el-image
             :src="require('@/assets/img_food/chocolate/P4.png')"
@@ -53,46 +53,48 @@
           <el-image
             :src="require('@/assets/img_food/chocolate/P5.png')"
             fit="cover"
-            class=""
+            class=" w-1/2"
           />
-        </div>
-        <div class="flex justify-star ">
-          <el-image
-            :src="require('@/assets/img_food/chocolate/P6.png')"
-            fit="cover"
-            class=""
-          />
-          <div class=" flex flex-col ">
+          <div class="flex justify-star ">
             <el-image
-              :src="require('@/assets/img_food/chocolate/P1.png')"
+              :src="require('@/assets/img_food/chocolate/P6.png')"
               fit="cover"
-              class=" w-60"
+              class=" w-1/2"
             />
-            <el-image
-              :src="require('@/assets/img_food/chocolate/P3.png')"
-              fit="cover"
-              class=" w-60 "
-            />
+            <div class=" flex flex-col ">
+              <el-image
+                :src="require('@/assets/img_food/chocolate/P1.png')"
+                fit="cover"
+                class="h-1/2 w-60"
+              />
+              <el-image
+                :src="require('@/assets/img_food/chocolate/P3.png')"
+                fit="cover"
+                class=" w-60 "
+              />
+            </div>
+            <div class="flex flex-col">
+              <el-image
+                :src="require('@/assets/img_food/chocolate/P2.png')"
+                fit="cover"
+                class=" w-60 "
+              />
+              <el-image
+                :src="require('@/assets/img_food/chocolate/P2.png')"
+                fit="cover"
+                class=" h-1/2"
+              />
+            </div>
           </div>
-          <div class="flex flex-col">
-            <el-image
-              :src="require('@/assets/img_food/chocolate/P2.png')"
-              fit="cover"
-              class=" w-60 "
-            />
-          </div>
-        </div>
-      </div>
-
-      <!-- 巧克力系列 -->
-      <div class="">
-        <Title><div slot="center">巧克力系列</div></Title>
-        <div class="">
-          <FoshouItem />
         </div>
 
-        <!-- 分页器 -->
-        <PageBar class=" mb-32" />
+        <!-- 巧克力系列 -->
+        <div class="mb-20">
+          <Title><div slot="center">巧克力系列</div></Title>
+          <div class="">
+            <ChocolateItem />
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -102,22 +104,18 @@
 import SeriesTitle from '../../components/SeriesTitle/SeriesTitle.vue'
 
 import Title from './componentes/title.vue'
-import FoshouItem from './componentes/foshouItem.vue'
-import PageBar from './componentes/pageBar.vue'
+import ChocolateItem from './componentes/chocolateItem.vue'
 
 export default {
   name: 'ChocolateProduct4',
   components: {
     Title,
     SeriesTitle,
-    FoshouItem,
-    PageBar
+    ChocolateItem
   }
 }
 </script>
 
 <style scoped>
-.el-pagination.is-background{
 
-}
 </style>

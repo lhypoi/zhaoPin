@@ -67,11 +67,10 @@
       <div class="">
         <Title><div slot="center">佛手果系列</div></Title>
         <div class="">
+          <!-- 这里简单的引用了佛手果列表的业务组件，交互逻辑放在业务组件内部实现 -->
           <FoshouItem />
         </div>
 
-        <!-- 分页器 -->
-        <PageBar class=" mb-32" />
       </div>
     </div>
   </div>
@@ -82,21 +81,18 @@ import SeriesTitle from '../../components/SeriesTitle/SeriesTitle.vue'
 
 import Title from './componentes/title.vue'
 import FoshouItem from './componentes/foshouItem.vue'
-import PageBar from './componentes/pageBar.vue'
 
 export default {
   name: 'FoShouProduct3',
   components: {
     Title,
     SeriesTitle,
-    FoshouItem,
-    PageBar
+    FoshouItem
+
   }
 }
 </script>
 
 <style scoped>
-.el-pagination.is-background{
 
-}
 </style>

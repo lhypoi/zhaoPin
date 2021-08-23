@@ -74,14 +74,11 @@
       </div>
 
       <!-- 燕麦全系列 -->
-      <div class="">
+      <div class="mb-20">
         <Title><div slot="center">燕麦全系列</div></Title>
         <div class="">
-          <FoshouItem />
+          <OatItem />
         </div>
-
-        <!-- 分页器 -->
-        <PageBar class=" mb-32" />
       </div>
     </div>
   </div>
@@ -91,22 +88,18 @@
 import SeriesTitle from '../../components/SeriesTitle/SeriesTitle.vue'
 
 import Title from './componentes/title.vue'
-import FoshouItem from './componentes/foshouItem.vue'
-import PageBar from './componentes/pageBar.vue'
+import OatItem from './componentes/oatItem.vue'
 
 export default {
   name: 'FoShouProduct3',
   components: {
     Title,
     SeriesTitle,
-    FoshouItem,
-    PageBar
+    OatItem
   }
 }
 </script>
 
 <style scoped>
-.el-pagination.is-background{
 
-}
 </style>

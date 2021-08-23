@@ -119,7 +119,7 @@ export default {
               path: '/BexportQuality'
             },
             {
-              title: '展镇会',
+              title: '展销会',
               path: '/Bexhibition'
             },
             {

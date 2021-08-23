@@ -1,5 +1,5 @@
 <template>
-  <div class="foShouProduct3">
+  <div class="biscuitProduct3">
     <!-- 头部大图 -->
     <div class=" flex justify-center">
       <div class="banner relative flex items-center  ">
@@ -47,14 +47,11 @@
       </div>
 
       <!-- 饼干系列 -->
-      <div class="">
+      <div class="mb-20">
         <Title><div slot="center">饼干系列</div></Title>
         <div class="">
-          <FoshouItem />
+          <BiscuitItem />
         </div>
-
-        <!-- 分页器 -->
-        <PageBar class=" mb-32" />
       </div>
     </div>
   </div>
@@ -64,22 +61,19 @@
 import SeriesTitle from '../../components/SeriesTitle/SeriesTitle.vue'
 
 import Title from './componentes/title.vue'
-import FoshouItem from './componentes/foshouItem.vue'
-import PageBar from './componentes/pageBar.vue'
+import BiscuitItem from './componentes/biscuitItem.vue'
 
 export default {
-  name: 'FoShouProduct3',
+  name: 'BiscuitProduct3',
   components: {
     Title,
     SeriesTitle,
-    FoshouItem,
-    PageBar
+    BiscuitItem
+
   }
 }
 </script>
 
 <style scoped>
-.el-pagination.is-background{
 
-}
 </style>
