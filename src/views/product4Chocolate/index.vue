@@ -53,38 +53,33 @@
           <el-image
             :src="require('@/assets/img_food/chocolate/P5.png')"
             fit="cover"
-            class=" w-1/2"
+            class="w-1/2"
           />
-          <div class="flex justify-star ">
+        </div>
+        <div class="flex justify-star ">
+          <el-image
+            :src="require('@/assets/img_food/chocolate/P6.png')"
+            fit="cover"
+            class="w-1/2"
+          />
+          <div class=" flex flex-col items-stretch">
             <el-image
-              :src="require('@/assets/img_food/chocolate/P6.png')"
+              :src="require('@/assets/img_food/chocolate/P1.png')"
               fit="cover"
-              class=" w-1/2"
+              class="h-1/2"
             />
-            <div class=" flex flex-col ">
-              <el-image
-                :src="require('@/assets/img_food/chocolate/P1.png')"
-                fit="cover"
-                class="h-1/2 w-60"
-              />
-              <el-image
-                :src="require('@/assets/img_food/chocolate/P3.png')"
-                fit="cover"
-                class=" w-60 "
-              />
-            </div>
-            <div class="flex flex-col">
-              <el-image
-                :src="require('@/assets/img_food/chocolate/P2.png')"
-                fit="cover"
-                class=" w-60 "
-              />
-              <el-image
-                :src="require('@/assets/img_food/chocolate/P2.png')"
-                fit="cover"
-                class=" h-1/2"
-              />
-            </div>
+            <el-image
+              :src="require('@/assets/img_food/chocolate/P3.png')"
+              fit="cover"
+              class="h-1/2"
+            />
+          </div>
+          <div class="flex flex-coll items-stretch">
+            <el-image
+              :src="require('@/assets/img_food/chocolate/P2.png')"
+              fit="cover"
+              class="h-1/2"
+            />
           </div>
         </div>
 
