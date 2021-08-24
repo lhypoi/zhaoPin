@@ -43,7 +43,8 @@
             />
           </div>
         </div>
-        <!--这里是flex布局的知识，可以去找些demo练练手 -->
+
+        <!-- TODO:这里是flex布局的知识，可以去找些demo练练手 -->
         <div class="flex justify-end items-center  mt-32">
           <el-image
             :src="require('@/assets/img_food/chocolate/P4.png')"

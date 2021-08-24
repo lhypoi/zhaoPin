@@ -2,7 +2,7 @@
   <div>
     <div class="flex content-between flex-wrap ">
       <div
-        v-for="(item,index) in showOatList"
+        v-for="(item,index) in showFoShouList"
         :key="index"
         class="flex flex-col w-1/6  border-gray-200 border-solid border-2 mx-14 mt-12 "
       >
@@ -23,7 +23,7 @@
     <!-- 分页器 -->
     <FoodPagination
       class="mt-4"
-      :total="oatList.length"
+      :total="foShouList.length"
       :current-page="currentPage"
       @current-change="handleCurrentChange"
     />
@@ -39,20 +39,21 @@ export default {
   },
   data: function() {
     return {
-      oatList: [],
+      foShouList: [],
       currentPage: 0,
       pageSize: 8
     }
   },
   computed: {
-    showOatList() {
+    // TODO:这里的食品列表是一个业务块，分页组件是伴随它的，应该在这里使用，因为分页这些参数不应该是外层的整体页面组件关心的
+    showFoShouList() {
       const skipNum = (this.currentPage - 1) * this.pageSize
-      const showOatList = (skipNum + this.pageSize >= this.oatList.length) ? this.oatList.slice(skipNum, this.oatList.length) : this.oatList.slice(skipNum, skipNum + this.pageSize)
-      return showOatList
+      const showFoShouList = (skipNum + this.pageSize >= this.foShouList.length) ? this.foShouList.slice(skipNum, this.foShouList.length) : this.foShouList.slice(skipNum, skipNum + this.pageSize)
+      return showFoShouList
     }
   },
   mounted() {
-    this.oatList = new Array(14).fill(
+    this.foShouList = new Array(14).fill(
       {
         imgPath: require('@/assets/img_food/foShou/jietu2.png'),
         price: '50.00'
