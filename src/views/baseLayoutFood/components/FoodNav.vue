@@ -119,7 +119,7 @@ export default {
               path: '/BexportQuality'
             },
             {
-              title: '展镇会',
+              title: '展销会',
               path: '/Bexhibition'
             },
             {
@@ -142,25 +142,25 @@ export default {
           children: [
             {
               title: '公司简介',
-              path: '/about/index'
+              path: '/cIntro'
             },
             {
               title: '品牌故事',
-              path: '/about/index'
+              path: '/cStory'
             },
             {
               title: '企业文化',
-              path: '/about/index',
+              path: '/cCulture',
               children: [
                 {
                   title: '企业文化',
-                  path: '/pb/index21'
+                  path: '/cCulture'
                 }
               ]
             },
             {
               title: '视频中心',
-              path: '/about/index'
+              path: '/cVideoCenter'
             }
           ]
         },

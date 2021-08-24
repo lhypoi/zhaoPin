@@ -1,5 +1,5 @@
 <template>
-  <div class="foShouProduct3">
+  <div class="candyProduct1">
     <!-- 头部大图 -->
     <div class="banner relative flex items-center justify-center ">
       <el-image
@@ -27,7 +27,7 @@
         <Title><div slot="center">制作过程</div></Title>
         <div class="flex mt-20 justify-center">
           <div class="wenzi flex-col w-1/5 justify-start ">
-            <div class=" text-4xl text-coffee font-bold">回味不同的美味</div>
+            <div class=" text-4xl text-coffee font-bold">糖果制作过程</div>
             <div class=" text-2xl text-coffee font-bold py-6">美食美客</div>
             <div class=" text-base">一份关注、一段追溯、一个瞬间、一幕场景。一闻回
               亿......酸甜苦辣、喜怒哀乐、味道人生</div>
@@ -88,14 +88,11 @@
       </div>
 
       <!-- 糖果全系列 -->
-      <div class="">
+      <div class=" mb-20">
         <Title><div slot="center">糖果全系列 </div></Title>
         <div class="">
-          <FoshouItem />
+          <CandyItem />
         </div>
-
-        <!-- 分页器 -->
-        <PageBar class=" mb-32" />
       </div>
     </div>
   </div>
@@ -105,22 +102,18 @@
 import SeriesTitle from '../../components/SeriesTitle/SeriesTitle.vue'
 
 import Title from './componentes/title.vue'
-import FoshouItem from './componentes/foshouItem.vue'
-import PageBar from './componentes/pageBar.vue'
+import CandyItem from './componentes/candyItem.vue'
 
 export default {
-  name: 'FoShouProduct3',
+  name: 'CandyProduct1',
   components: {
     Title,
     SeriesTitle,
-    FoshouItem,
-    PageBar
+    CandyItem
   }
 }
 </script>
 
 <style scoped>
-.el-pagination.is-background{
 
-}
 </style>

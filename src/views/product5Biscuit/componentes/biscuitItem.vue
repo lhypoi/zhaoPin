@@ -2,7 +2,7 @@
   <div>
     <div class="flex content-between flex-wrap ">
       <div
-        v-for="(item,index) in showFoShouList"
+        v-for="(item,index) in showBiscuitList"
         :key="index"
         class="flex flex-col w-1/6  border-gray-200 border-solid border-2 mx-14 mt-12 "
       >
@@ -23,7 +23,7 @@
     <!-- 分页器 -->
     <FoodPagination
       class="mt-4"
-      :total="foShouList.length"
+      :total="biscuitList.length"
       :current-page="currentPage"
       @current-change="handleCurrentChange"
     />
@@ -39,20 +39,20 @@ export default {
   },
   data: function() {
     return {
-      foShouList: [],
+      biscuitList: [],
       currentPage: 0,
       pageSize: 8
     }
   },
   computed: {
-    showFoShouList() {
+    showBiscuitList() {
       const skipNum = (this.currentPage - 1) * this.pageSize
-      const showFoShouList = (skipNum + this.pageSize >= this.foShouList.length) ? this.foShouList.slice(skipNum, this.foShouList.length) : this.foShouList.slice(skipNum, skipNum + this.pageSize)
-      return showFoShouList
+      const showBiscuitList = (skipNum + this.pageSize >= this.biscuitList.length) ? this.biscuitList.slice(skipNum, this.biscuitList.length) : this.biscuitList.slice(skipNum, skipNum + this.pageSize)
+      return showBiscuitList
     }
   },
   mounted() {
-    this.foShouList = new Array(14).fill(
+    this.biscuitList = new Array(14).fill(
       {
         imgPath: require('@/assets/img_food/foShou/jietu2.png'),
         price: '50.00'

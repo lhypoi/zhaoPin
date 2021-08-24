@@ -44,7 +44,6 @@
           </div>
         </div>
 
-        <!-- TODO:这里是flex布局的知识，可以去找些demo练练手 -->
         <div class="flex justify-end items-center  mt-32">
           <el-image
             :src="require('@/assets/img_food/chocolate/P4.png')"
@@ -83,17 +82,14 @@
             />
           </div>
         </div>
-      </div>
 
-      <!-- 巧克力系列 -->
-      <div class="">
-        <Title><div slot="center">巧克力系列</div></Title>
-        <div class="">
-          <FoshouItem />
+        <!-- 巧克力系列 -->
+        <div class="mb-20">
+          <Title><div slot="center">巧克力系列</div></Title>
+          <div class="">
+            <ChocolateItem />
+          </div>
         </div>
-
-        <!-- 分页器 -->
-        <PageBar class=" mb-32" />
       </div>
     </div>
   </div>
@@ -103,22 +99,18 @@
 import SeriesTitle from '../../components/SeriesTitle/SeriesTitle.vue'
 
 import Title from './componentes/title.vue'
-import FoshouItem from './componentes/foshouItem.vue'
-import PageBar from './componentes/pageBar.vue'
+import ChocolateItem from './componentes/chocolateItem.vue'
 
 export default {
   name: 'ChocolateProduct4',
   components: {
     Title,
     SeriesTitle,
-    FoshouItem,
-    PageBar
+    ChocolateItem
   }
 }
 </script>
 
 <style scoped>
-.el-pagination.is-background{
 
-}
 </style>
