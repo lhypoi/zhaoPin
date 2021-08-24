@@ -45,7 +45,6 @@ export default {
     }
   },
   computed: {
-    // TODO:这里的食品列表是一个业务块，分页组件是伴随它的，应该在这里使用，因为分页这些参数不应该是外层的整体页面组件关心的
     showFoShouList() {
       const skipNum = (this.currentPage - 1) * this.pageSize
       const showFoShouList = (skipNum + this.pageSize >= this.foShouList.length) ? this.foShouList.slice(skipNum, this.foShouList.length) : this.foShouList.slice(skipNum, skipNum + this.pageSize)

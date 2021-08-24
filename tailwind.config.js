@@ -21,8 +21,13 @@ module.exports = {
          'grey':'#7D7C87',
          'grey1':'#333333',
          'grey2':'#999999',
+         'grey3':'#666666',
          'coffee':'#452607'
-       }
+       },
+
+       borderColor: theme => ({
+        'orange': '#E66717',
+       })
   },
   variants: {
     extend: {

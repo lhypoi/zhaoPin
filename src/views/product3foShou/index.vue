@@ -67,7 +67,6 @@
       <div class="mb-20">
         <Title><div slot="center">佛手果系列</div></Title>
         <div class="">
-          <!-- TODO:这里简单的引用了佛手果列表的业务组件，交互逻辑放在业务组件内部实现 -->
           <FoshouItem />
         </div>
       </div>

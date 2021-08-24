@@ -145,6 +145,30 @@ export const constantRoutes = [
         component: () => import ('@/views/Bquality/index'),
         name: 'Bquality',
         meta: { title: 'Bquality', icon: 'dashboard', affix: true }
+      },
+      {
+        path: 'cIntro',
+        component: () => import ('@/views/cIntro/index'),
+        name: 'cIntro',
+        meta: { title: 'cIntro', icon: 'dashboard', affix: true }
+      },
+      {
+        path: 'cCulture',
+        component: () => import ('@/views/cCulture/index'),
+        name: 'cCulture',
+        meta: { title: 'cCulture', icon: 'dashboard', affix: true }
+      },
+      {
+        path: 'cStory',
+        component: () => import ('@/views/cStory/index'),
+        name: 'cStory',
+        meta: { title: 'cStory', icon: 'dashboard', affix: true }
+      },
+      {
+        path: 'cVideoCenter',
+        component: () => import ('@/views/cVideoCenter/index'),
+        name: 'cVideoCenter',
+        meta: { title: 'cVideoCenter', icon: 'dashboard', affix: true }
       }
     ]
   },
