@@ -74,14 +74,33 @@
         </div>
       </div>
 
+      <div
+        v-for="(story,index) in storyList"
+        :key="index"
+        class=""
+      >
+        <StoryList>
+          <div slot="year">{{ story.year }}</div>
+          <div slot="bg">
+            <el-image
+              :src="story.imgPath"
+              fit="cover"
+            />
+          </div>
+        </StoryList>
+      </div>
+
     </div>
   </div>
 </template>
 
 <script>
+import StoryList from './component/storyList.vue'
+
 export default {
   name: 'CStory',
   components: {
+    StoryList
   },
   data() {
     return {
@@ -97,6 +116,32 @@ export default {
         },
         {
           imgPath: require('@/assets/img_food/about/icon/组 420.png')
+        }
+      ],
+      storyList: [
+        {
+          imgPath: require('@/assets/img_food/about/组 782.png'),
+          year: '1989年'
+        },
+        {
+          imgPath: require('@/assets/img_food/about/组 781.png'),
+          year: '1990年'
+        },
+        {
+          imgPath: require('@/assets/img_food/about/组 783.png'),
+          year: '1996年'
+        },
+        {
+          imgPath: require('@/assets/img_food/about/组 783.png'),
+          year: '2010年'
+        },
+        {
+          imgPath: require('@/assets/img_food/about/组 784.png'),
+          year: '2013年'
+        },
+        {
+          imgPath: require('@/assets/img_food/about/组 784.png'),
+          year: '2020年'
         }
       ]
     }
