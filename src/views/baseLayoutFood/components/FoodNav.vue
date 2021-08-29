@@ -124,13 +124,7 @@ export default {
             },
             {
               title: '公司荣誉',
-              path: '/Bglory',
-              children: [
-                {
-                  title: '公司荣誉',
-                  path: '/Bglory'
-                }
-              ]
+              path: '/Bglory'
             }
 
           ]
@@ -150,13 +144,7 @@ export default {
             },
             {
               title: '企业文化',
-              path: '/cCulture',
-              children: [
-                {
-                  title: '企业文化',
-                  path: '/cCulture'
-                }
-              ]
+              path: '/cCulture'
             },
             {
               title: '视频中心',
