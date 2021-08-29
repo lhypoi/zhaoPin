@@ -1,21 +1,24 @@
 <template>
   <div>
-    <div class="flex content-between flex-wrap ">
+    <!-- TODO:利用padding和父亲的-margin去实现每个小盒子间的间距 -->
+    <div class="flex content-between flex-wrap -mx-4">
       <div
         v-for="(item,index) in showFoShouList"
         :key="index"
-        class="flex flex-col w-1/6  border-gray-200 border-solid border-2 mx-14 mt-12 "
+        class=" w-1/4 px-4 mt-8 "
       >
-        <div class=" border-gray-200 border-solid border-b-2 flex flex-col items-center justify-center">
-          <el-image
-            :src="item.imgPath"
-            class=" w-full relative"
-            style="height: 20vw;"
-          />
-        </div>
-        <div class="h-24 flex flex-col items-center justify-center">
-          <div class=" text-base font-bold ">单价</div>
-          <div class="text-2xl font-bold text-orange1 mt-1">￥{{ item.price }}</div>
+        <div class="flex flex-col border-solid border-2 border-gray-200">
+          <div class=" border-gray-200 border-solid border-b-2 flex flex-col items-center justify-center">
+            <el-image
+              :src="item.imgPath"
+              class=" w-full relative"
+              style="height: 20vw;"
+            />
+          </div>
+          <div class="h-24 flex flex-col items-center justify-center">
+            <div class=" text-base font-bold ">单价</div>
+            <div class="text-2xl font-bold text-orange1 mt-1">￥{{ item.price }}</div>
+          </div>
         </div>
       </div>
     </div>
