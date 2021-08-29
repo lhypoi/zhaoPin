@@ -16,6 +16,7 @@ module.exports = {
       textColor: {
         'firstTextC': '#E66717',
         'orange1': '#FFAC05',
+        'orange': '#E66717',
         'sceondTextC': '#7D7C87',
         'white': '#FFFFFF',
         'grey': '#7D7C87',

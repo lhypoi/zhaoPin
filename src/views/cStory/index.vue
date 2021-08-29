@@ -68,9 +68,17 @@
         <div class=" text-7xl">企业发展历程</div>
         <div class=" text-xl mt-2 mb-11">精准研发产品+深层贸易服务</div>
         <div class=" border-b-8 border-red-400 mb-20" />
-        <div class=" mb-16">
-          <div class=" text-4xl">展翠发展历程</div>
-          <div class=" text-lg">Development History of Zhancui</div>
+        <div class=" mb-16 flex">
+          <div class="flex items-center relative">
+            <div class="text-orange text-8xl" style="font: icon;">&#x2B22;</div>
+            <div class="absolute left-0 right-0 top-0 bottom-0 flex items-center justify-center">
+              <i class="iconfont iconclock text-white text-4xl" />
+            </div>
+          </div>
+          <div class="pl-5 flex flex-col justify-between py-2">
+            <div class=" text-4xl">展翠发展历程</div>
+            <div class=" text-lg">Development History of Zhancui</div>
+          </div>
         </div>
       </div>
 
