@@ -32,21 +32,21 @@
     </div>
 
     <!-- 公司荣誉照片展示 -->
-    <div class="gloryShow">
-      <div class=" flex justify-center items-center text-4xl font-bold mt-32">公司荣誉</div>
-      <div class=" pt-20 flex justify-center align-middle ">
-        <div class="flex flex-row justify-between flex-wrap mt-6 container mx-auto">
+    <div class="gloryShow pt-20 pb-20 bg-gray-100">
+      <div class=" flex justify-center items-center text-4xl font-bold">公司荣誉</div>
+      <div class=" pt-10 flex justify-center mx-auto">
+        <div class="flex flex-row justify-between flex-wrap mt-6 container -mx-2">
           <div
             v-for="(glory, imgIndex) in gloryShowList"
             :key="imgIndex"
-            class=" flex-col mb-8 grid justify-items-center relative "
+            class=" flex-col w-1/3  justify-items-center relative px-2 pb-4"
           >
             <el-image
               :src="glory.imgPath"
               fit="cover"
               class=" w-full h-full"
             />
-            <div class=" text-grey2 text-3xl text-center px-14 absolute bottom-14 ">
+            <div class=" text-grey2 text-2xl text-center px-14 absolute bottom-14 ">
               {{ glory.info }}
             </div>
           </div>
