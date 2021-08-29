@@ -24,8 +24,8 @@
       <!-- 历年广交会 -->
       <div>
         <div class=" flex items-center justify-center text-4xl font-bold mb-28 mt-24 ">历年广交会</div>
-        <div class=" flex justify-between">
-          <div class=" mb-12 flex flex-col space-y-16">
+        <div class=" flex justify-between mx-8">
+          <div class=" mb-12 flex flex-col space-y-8 px-4">
             <el-image
               :src="require('@/assets/img_food/brandStrength/exhibition/蒙版组 184.png')"
               fit="cover"
@@ -58,7 +58,7 @@
             />
           </div>
 
-          <div class=" mb-12 flex flex-col space-y-16 mt-36">
+          <div class=" mb-12 flex flex-col space-y-8 mt-36 px-4">
             <el-image
               :src="require('@/assets/img_food/brandStrength/exhibition/蒙版组 190.png')"
               fit="cover"
@@ -91,7 +91,7 @@
             />
           </div>
 
-          <div class=" mb-12 flex flex-col space-y-16 mt-10">
+          <div class=" mb-12 flex flex-col space-y-8 mt-10 px-4">
             <el-image
               :src="require('@/assets/img_food/brandStrength/exhibition/蒙版组 196.png')"
               fit="cover"
@@ -124,7 +124,7 @@
             />
           </div>
 
-          <div class=" mb-12 flex flex-col space-y-16 mt-52">
+          <div class=" mb-12 flex flex-col space-y-8 mt-52 px-4">
             <el-image
               :src="require('@/assets/img_food/brandStrength/exhibition/蒙版组 203.png')"
               fit="cover"
