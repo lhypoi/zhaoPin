@@ -74,21 +74,21 @@
 
       <!-- 工作环境 -->
       <div class=" flex mt-48">
-        <div class=" flex flex-col mt-20 ">
+        <div class=" flex flex-col mt-20 flex-auto whitespace-nowrap">
           <div class=" mb-12 text-4xl font-bold">工作环境</div>
           <div class=" text-xl font-bold">我们的公司的生产车间的环境</div>
         </div>
 
-        <div class=" flex flex-wrap justify-between ml-36">
+        <div class=" flex flex-wrap justify-between ml-5">
           <div
             v-for="(img, imgIndex) in workPlaceList"
             :key="imgIndex"
-            class=""
+            class="w-1/3 px-4"
           >
             <el-image
               :src="img.imgPath"
               fit="cover"
-              class=" mb-14 "
+              class="w-full mb-14 "
             />
           </div>
         </div>
@@ -161,13 +161,13 @@
           <div class=" text-4xl font-bold">生产设备</div>
           <div class=" text-xl font-bold w-1/5">我们的公司的生产车间的机械都是自动化生产的，做到自动化。</div>
         </div>
-        <div class="flex justify-between">
+        <div class="flex justify-between -mx-2">
           <el-image
             :src="require('@/assets/img_food/brandStrength/quality/蒙版组 162.png')"
             fit="cover"
-            class=" "
+            class="px-2"
           />
-          <div class=" flex flex-col justify-between">
+          <div class=" flex flex-col justify-between px-2">
             <el-image
               :src="require('@/assets/img_food/brandStrength/quality/蒙版组 163.png')"
               fit="cover"
@@ -179,7 +179,7 @@
               class=" "
             />
           </div>
-          <div class=" flex flex-col justify-between">
+          <div class=" flex flex-col justify-between px-2">
             <el-image
               :src="require('@/assets/img_food/brandStrength/quality/蒙版组 165.png')"
               fit="cover"
