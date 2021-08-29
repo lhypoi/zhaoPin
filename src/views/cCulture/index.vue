@@ -52,7 +52,7 @@
         </div>
       </div>
 
-      <div class=" mt-40 flex justify-between items-center border-b-4">
+      <div class=" mt-40 flex justify-between items-center">
         <div class=" flex flex-col ">
           <div class=" text-6xl">品牌定位</div>
           <div class=" text-xl my-11">专注糖果研发</div>
@@ -68,27 +68,27 @@
         </div>
       </div>
 
-      <div class="relative">
+      <div class="relative flex">
         <el-image
           :src="require('@/assets/img_food/about/蒙版组 250.png')"
           fit="cover"
           class=""
         />
 
-        <div class=" absolute flex flex-col text-white right-16 top-16">
-          <div class=" text-5xl mt-3">展翠价值观</div>
+        <div class=" absolute flex flex-col text-white right-16 top-10">
+          <div class=" text-4xl">展翠价值观</div>
           <div class=" border-b-4 border-white mt-5" />
-          <div class=" mt-9">
-            <div class=" text-2xl">志于高远</div>
-            <div class=" text-base mt-3">展翠不仅确立了自身的发展蓝湖，更以让全球的人尝到糖果的美味</div>
+          <div class=" mt-6">
+            <div class=" text-xl font-bold">志于高远</div>
+            <div class=" text-base mt-1">展翠不仅确立了自身的发展蓝湖，更以让全球的人尝到糖果的美味</div>
           </div>
-          <div class=" mt-9">
-            <div class=" text-2xl">行于仁德</div>
-            <div class=" text-base mt-3">立世以德，行事已仁，大道无疆</div>
+          <div class=" mt-6">
+            <div class=" text-xl font-bold">行于仁德</div>
+            <div class=" text-base mt-1">立世以德，行事已仁，大道无疆</div>
           </div>
-          <div class=" mt-9">
-            <div class=" text-2xl">成于精艺</div>
-            <div class=" text-base mt-3">展翠以精于专业，成就展翠为永恒追求的目标，致力于打造最具
+          <div class=" mt-6">
+            <div class=" text-xl font-bold">成于精艺</div>
+            <div class=" text-base mt-1">展翠以精于专业，成就展翠为永恒追求的目标，致力于打造最具
               有价值的糖果品牌</div>
           </div>
         </div>
