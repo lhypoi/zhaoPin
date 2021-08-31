@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- TODO:利用padding和父亲的-margin去实现每个小盒子间的间距 -->
     <div class="flex content-between flex-wrap -mx-4">
       <div
         v-for="(item,index) in showFoShouList"

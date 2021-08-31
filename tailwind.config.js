@@ -3,7 +3,6 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    // TODO：这里的调整要谨慎，细看官方文档，确保写的每一句全局规则都是在自己把握范围内的
     extend: {
       backgroundColor: {
         'firstBgc': '#FFF5EF',

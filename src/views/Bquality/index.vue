@@ -1,79 +1,79 @@
 <template>
   <div class="quality">
 
-    <div class="container mx-auto">
-      <!-- 导航图标 -->
-      <div>
-        <div class=" pt-20 flex justify-center align-middle ">
-          <div class="flex flex-row justify-between mt-6 container mx-auto ">
-            <div
-              v-for="(img, imgIndex) in BrandNavList"
-              :key="imgIndex"
-              class=" flex-col mb-8 grid justify-items-center"
-            >
-              <el-image
-                :src="img.imgPath"
-                fit="cover"
-                class=" mb-4 ml-1/2  "
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 研发环境 -->
-      <div class="">
-        <div class=" flex items-center justify-center text-4xl font-bold mb-16">研发环境</div>
-        <!-- 整个大盒子 -->
-        <div class="flex flex-col items-center">
-          <!-- 上面大盒子 -->
-          <div class=" flex space-x-5 ">
-            <!-- 上左图片 -->
+    <!-- 导航图标 -->
+    <div>
+      <div class=" pt-20 flex justify-center align-middle ">
+        <div class="flex flex-row justify-between mt-6 container mx-auto ">
+          <div
+            v-for="(img, imgIndex) in BrandNavList"
+            :key="imgIndex"
+            class=" flex-col mb-8 grid justify-items-center"
+          >
             <el-image
-              :src="require('@/assets/img_food/brandStrength/quality/蒙版组 234.png')"
+              :src="img.imgPath"
               fit="cover"
-              class=""
-            />
-            <!-- 上中内容 -->
-            <div>
-              <el-image
-                :src="require('@/assets/img_food/brandStrength/quality/蒙版组 230.png')"
-                fit="cover"
-                class=""
-              />
-              <div class=" flex-col flex items-center justify-center h-1/2">
-                <div class=" text-4xl font-bold mb-8">研发环境</div>
-                <div class=" text-base font-bold">给与我们研究人员最高的研究环境</div>
-              </div>
-            </div>
-            <!-- 上右图片 -->
-            <el-image
-              :src="require('@/assets/img_food/brandStrength/quality/蒙版组 241.png')"
-              fit="cover"
-              class=""
-            />
-          </div>
-
-          <!-- 下面大盒子 -->
-          <div class="flex space-x-7 mt-6">
-            <!-- 下左图片 -->
-            <el-image
-              :src="require('@/assets/img_food/brandStrength/quality/蒙版组 231.png')"
-              fit="cover"
-              class=""
-            />
-            <!-- 下右图片 -->
-            <el-image
-              :src="require('@/assets/img_food/brandStrength/quality/蒙版组 232.png')"
-              fit="cover"
-              class=" "
+              class=" mb-4 ml-1/2 "
             />
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- 工作环境 -->
-      <div class=" flex mt-48">
+    <!-- 研发环境 -->
+    <div class="">
+      <div class=" flex items-center justify-center text-4xl font-bold mb-16">研发环境</div>
+      <!-- 整个大盒子 -->
+      <div class="flex flex-col items-center">
+        <!-- 上面大盒子 -->
+        <div class=" flex space-x-5 ">
+          <!-- 上左图片 -->
+          <el-image
+            :src="require('@/assets/img_food/brandStrength/quality/蒙版组 234.png')"
+            fit="cover"
+            class=""
+          />
+          <!-- 上中内容 -->
+          <div>
+            <el-image
+              :src="require('@/assets/img_food/brandStrength/quality/蒙版组 230.png')"
+              fit="cover"
+              class=""
+            />
+            <div class=" flex-col flex items-center justify-center h-1/2">
+              <div class=" text-4xl font-bold mb-8">研发环境</div>
+              <div class=" text-base font-bold">给与我们研究人员最高的研究环境</div>
+            </div>
+          </div>
+          <!-- 上右图片 -->
+          <el-image
+            :src="require('@/assets/img_food/brandStrength/quality/蒙版组 241.png')"
+            fit="cover"
+            class=""
+          />
+        </div>
+
+        <!-- 下面大盒子 -->
+        <div class="flex space-x-7 mt-6">
+          <!-- 下左图片 -->
+          <el-image
+            :src="require('@/assets/img_food/brandStrength/quality/蒙版组 231.png')"
+            fit="cover"
+            class=""
+          />
+          <!-- 下右图片 -->
+          <el-image
+            :src="require('@/assets/img_food/brandStrength/quality/蒙版组 232.png')"
+            fit="cover"
+            class=" "
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- 工作环境 -->
+    <div class=" mt-48 bg-gray-100">
+      <div class="flex  container mx-auto">
         <div class=" flex flex-col mt-20 flex-auto whitespace-nowrap">
           <div class=" mb-12 text-4xl font-bold">工作环境</div>
           <div class=" text-xl font-bold">我们的公司的生产车间的环境</div>
@@ -93,73 +93,75 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- 公司展厅 -->
+    <!-- 公司展厅 -->
+    <div class="container mx-auto">
+      <div class=" flex items-center justify-center text-4xl font-bold mb-28 mt-52">公司展厅</div>
       <div>
-        <div class=" flex items-center justify-center text-4xl font-bold mb-28 mt-52">公司展厅</div>
-        <div>
-          <div class=" mb-12 flex justify-between">
-            <div class=" space-y-14">
-              <el-image
-                :src="require('@/assets/img_food/brandStrength/quality/蒙版组 167.png')"
-                fit="cover"
-                class=" "
-              />
-              <el-image
-                :src="require('@/assets/img_food/brandStrength/quality/蒙版组 168.png')"
-                fit="cover"
-                class=" "
-              />
-            </div>
-
-            <div class="space-y-14 mt-36">
-              <el-image
-                :src="require('@/assets/img_food/brandStrength/quality/蒙版组 169.png')"
-                fit="cover"
-                class=" "
-              />
-              <el-image
-                :src="require('@/assets/img_food/brandStrength/quality/蒙版组 170.png')"
-                fit="cover"
-                class=" "
-              />
-            </div>
-
-            <div class="space-y-14 mt-10">
-              <el-image
-                :src="require('@/assets/img_food/brandStrength/quality/蒙版组 171.png')"
-                fit="cover"
-                class=" "
-              />
-              <el-image
-                :src="require('@/assets/img_food/brandStrength/quality/蒙版组 172.png')"
-                fit="cover"
-                class=" "
-              />
-            </div>
-
-            <div class="space-y-14 mt-52">
-              <el-image
-                :src="require('@/assets/img_food/brandStrength/quality/蒙版组 173.png')"
-                fit="cover"
-                class=" "
-              />
-              <el-image
-                :src="require('@/assets/img_food/brandStrength/quality/蒙版组 174.png')"
-                fit="cover"
-                class=" "
-              />
-            </div>
-
+        <div class=" mb-12 flex justify-between">
+          <div class=" space-y-14">
+            <el-image
+              :src="require('@/assets/img_food/brandStrength/quality/蒙版组 167.png')"
+              fit="cover"
+              class=" "
+            />
+            <el-image
+              :src="require('@/assets/img_food/brandStrength/quality/蒙版组 168.png')"
+              fit="cover"
+              class=" "
+            />
           </div>
+
+          <div class="space-y-14 mt-36">
+            <el-image
+              :src="require('@/assets/img_food/brandStrength/quality/蒙版组 169.png')"
+              fit="cover"
+              class=" "
+            />
+            <el-image
+              :src="require('@/assets/img_food/brandStrength/quality/蒙版组 170.png')"
+              fit="cover"
+              class=" "
+            />
+          </div>
+
+          <div class="space-y-14 mt-10">
+            <el-image
+              :src="require('@/assets/img_food/brandStrength/quality/蒙版组 171.png')"
+              fit="cover"
+              class=" "
+            />
+            <el-image
+              :src="require('@/assets/img_food/brandStrength/quality/蒙版组 172.png')"
+              fit="cover"
+              class=" "
+            />
+          </div>
+
+          <div class="space-y-14 mt-52">
+            <el-image
+              :src="require('@/assets/img_food/brandStrength/quality/蒙版组 173.png')"
+              fit="cover"
+              class=" "
+            />
+            <el-image
+              :src="require('@/assets/img_food/brandStrength/quality/蒙版组 174.png')"
+              fit="cover"
+              class=" "
+            />
+          </div>
+
         </div>
       </div>
+    </div>
 
-      <!-- 生产设备 -->
-      <div class=" mb-32">
-        <div class=" mb-20 mt-60">
+    <!-- 生产设备 -->
+    <div class="bg-gray-100 pb-32 pt-20">
+      <div class="  container mx-auto">
+        <div class=" mb-9 ">
           <div class=" text-4xl font-bold">生产设备</div>
-          <div class=" text-xl font-bold w-1/5">我们的公司的生产车间的机械都是自动化生产的，做到自动化。</div>
+          <div class=" text-xl font-bold w-1/5 py-3">我们的公司的生产车间的机械都是自动化生产的，做到自动化。</div>
         </div>
         <div class="flex justify-between -mx-2">
           <el-image
@@ -194,6 +196,7 @@
         </div>
       </div>
     </div>
+
   </div>
 </template>
 
