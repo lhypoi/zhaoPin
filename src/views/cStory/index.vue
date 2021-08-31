@@ -95,6 +95,8 @@
               fit="cover"
             />
           </div>
+          <div slot="title" class=" text-2xl font-bold">{{ story.title }}</div>
+          <div slot="info" class=" w-2/4 text-xl tracking-widest leading-loose">{{ story.info }}</div>
         </StoryList>
       </div>
 
@@ -129,29 +131,42 @@ export default {
       storyList: [
         {
           imgPath: require('@/assets/img_food/about/组 782.png'),
-          year: '1989年'
+          year: '1989年',
+          title: '初始创业阶段(1989年——1990年)',
+          info: '秉承潮汕人“不服输、不怕吃苦”的奋斗精神，心中怀着一个信念，坚定不移地完成了创业起步，成立展翠凉果厂！'
         },
         {
           imgPath: require('@/assets/img_food/about/组 781.png'),
-          year: '1990年'
+          year: '1990年',
+          title: '茁壮成长阶段（1990年——1996年）',
+          info: '展翠充分发挥自身优势，将满满诚意汇聚产品中，用心细作，使得展翠稳步发展。'
         },
         {
           imgPath: require('@/assets/img_food/about/组 783.png'),
-          year: '1996年'
+          year: '1996年',
+          title: '发展壮大阶段（1996年——2010年）',
+          info: '展翠不断修炼“内功”，经过反复摸索、研究；展翠摸索出绿色、健康食品产业的发展道路，展翠再一次刷新发展速度！'
         },
         {
           imgPath: require('@/assets/img_food/about/组 783.png'),
-          year: '2010年'
+          year: '2010年',
+          title: '体制改革阶段（2010年以后）',
+          info: '公司股份制改革，广东展翠食品股份有限公司正式成立，标志着展翠发展史上新的里程碑。'
         },
         {
           imgPath: require('@/assets/img_food/about/组 784.png'),
-          year: '2013年'
+          year: '2013年',
+          title: '2013年新的开始、新厂区、新面貌',
+          info: '荣获“广东省直通车服务重点企业” 广东省工程技术研究中心成立 新厂区，新面貌， 以崭新精神迎接新的挑战'
         },
         {
           imgPath: require('@/assets/img_food/about/组 784.png'),
-          year: '2020年'
+          year: '2020年',
+          title: '展望未来、成就的今天、双赢的明天',
+          info: '我们将坚持以“产品和市场为导向、安全和质量为核心”，走自主研发为主的产品和技术创新之路，不断提高技术和产品研发能力，进一步发展成为集休闲食品开发、生产、销售于一体，能够满足全球各个地区消费者偏好，为客户提供一站式采购服务的休闲食品生产企业。 展翠，凤凰展翅，余音绕梁； 展翠成就的今天，必将是未来辉煌的基础，共创和谐，双赢的明天。'
         }
       ]
+
     }
   }
 }

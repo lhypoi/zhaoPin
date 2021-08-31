@@ -14,17 +14,15 @@
       <slot name="bg" />
       <!-- 标题 -->
 
-      <div class=" absolute top-4 left-5 flex">
+      <div class=" absolute top-5 left-5 flex">
         <div class=" border-l-8 border-orange pr-3 " />
         <slot name="title" />
-        标题
       </div>
 
       <div class=" absolute top-5 border-b-2 border-orange" />
 
       <!-- 信息介绍 -->
-      <div class="absolute top-28 left-12">
-        信息
+      <div class="absolute top-20 left-12">
         <slot name="info" />
       </div>
     </div>

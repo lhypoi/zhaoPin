@@ -29,6 +29,8 @@
                 class="block absolute w-full h-full"
               />
             </div>
+            <!-- 图片 -->
+
             <!-- 信息文字 -->
             <div class="absolute left-12 bottom-52 text-lg">巧克力私人订制款</div>
             <!-- 标题文字 -->

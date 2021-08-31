@@ -29,7 +29,7 @@
         </div>
         <div class=" flex flex-col justify-center  ">
           <div class=" text-4xl font-bold text-center mb-14">展翠有限公司</div>
-          <div class=" text-2xl text-left mx-24 mb-20">广东展翠食品股份有限公司建有近85000平方米的食品产业园，公司产品近300个品种，产品远销亚太、美洲、中东、非洲以及欧洲等多个国家和地区，具有强大的产品输出能力,能满足全球品牌的一站式采购需求。
+          <div class=" text-2xl text-left mx-24 mb-20 tracking-widest leading-loose">广东展翠食品股份有限公司建有近85000平方米的食品产业园，公司产品近300个品种，产品远销亚太、美洲、中东、非洲以及欧洲等多个国家和地区，具有强大的产品输出能力,能满足全球品牌的一站式采购需求。
           </div>
         </div>
       </div>

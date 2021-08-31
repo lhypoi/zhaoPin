@@ -9,8 +9,8 @@
           class="z-0"
         />
         <div class=" absolute items-center">
-          <div class=" text-9xl font-bold text-white">品牌使命</div>
-          <div class=" text-sm font-bold text-white py-5 text-center">把美味带给世界上每一个你</div>
+          <div class=" text-9xl font-bold text-white tracking-widest">品牌使命</div>
+          <div class=" text-sm font-bold text-white py-5 text-center tracking-widest">把美味带给世界上每一个你</div>
         </div>
       </div>
     </div>
