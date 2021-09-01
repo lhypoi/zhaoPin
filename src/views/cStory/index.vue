@@ -64,10 +64,10 @@
     <div class="container mx-auto">
 
       <!-- 企业发展历程 -->
-      <div class=" mt-48">
+      <div class=" mt-36">
         <div class=" text-7xl font-bold">企业发展历程</div>
         <div class=" text-xl mt-2 mb-11 tracking-widest leading-loose">精准研发产品+深层贸易服务</div>
-        <div class=" border-b-8 border-red-400 mb-20" />
+        <div class=" border-b-8 border-orange mb-20" />
         <div class=" mb-16 flex">
           <div class="flex items-center relative">
             <div class="text-orange text-8xl" style="font: icon;">&#x2B22;</div>

@@ -10,7 +10,11 @@
         />
         <div class=" absolute items-center">
           <div class=" text-9xl font-bold text-white tracking-widest">品牌使命</div>
-          <div class=" text-sm font-bold text-white py-5 text-center tracking-widest">把美味带给世界上每一个你</div>
+          <div class=" flex items-center justify-center py-8 ">
+            <div class=" border-b-2 border-white w-20 mx-5" />
+            <div class=" text-sm font-bold text-white text-center tracking-widest">把美味带给世界上每一个你</div>
+            <div class=" border-b-2 border-white w-20 mx-5" />
+          </div>
         </div>
       </div>
     </div>
