@@ -169,6 +169,36 @@ export const constantRoutes = [
         component: () => import ('@/views/cVideoCenter/index'),
         name: 'cVideoCenter',
         meta: { title: 'cVideoCenter', icon: 'dashboard', affix: true }
+      },
+      {
+        path: 'ScopeOfServices',
+        component: () => import ('@/views/ScopeOfServices/index'),
+        name: 'ScopeOfServices',
+        meta: { title: 'ScopeOfServices', icon: 'dashboard', affix: true }
+      },
+      {
+        path: 'newsDetail',
+        component: () => import ('@/views/newsDetail/index'),
+        name: 'newsDetail',
+        meta: { title: 'newsDetail', icon: 'dashboard', affix: true }
+      },
+      {
+        path: 'newsOfIndustry',
+        component: () => import ('@/views/newsOfIndustry/index'),
+        name: 'newsOfIndustry',
+        meta: { title: 'newsOfIndustry', icon: 'dashboard', affix: true }
+      },
+      {
+        path: 'newsCompany',
+        component: () => import ('@/views/newsCompany/index'),
+        name: 'newsCompany',
+        meta: { title: 'newsCompany', icon: 'dashboard', affix: true }
+      },
+      {
+        path: 'contactUsFood',
+        component: () => import ('@/views/contactUsFood/index'),
+        name: 'contactUsFood',
+        meta: { title: 'contactUsFood', icon: 'dashboard', affix: true }
       }
     ]
   },

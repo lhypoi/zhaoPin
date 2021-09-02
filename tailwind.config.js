@@ -22,7 +22,8 @@ module.exports = {
         'grey1': '#333333',
         'grey2': '#999999',
         'grey3': '#666666',
-        'coffee': '#452607'
+        'coffee': '#452607',
+        'lightblue':'#80B8EB'
       }
     }
   },
