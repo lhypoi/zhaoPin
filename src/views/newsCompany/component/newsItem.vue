@@ -5,23 +5,17 @@
       :key="index"
       class=" mb-5"
     >
-      <div class=" bg-white py-6 pl-11 pr-8">
-        <div class="">
-          <div class=" text-grey3">{{ item.title }}</div>
-        </div>
-        <div class=" flex py-1">
-          <div class=" bg-orange items-center justify-center text-white px-1 ">官方新闻</div>
-          <div class="flex items-center justify-center pl-2 text-grey2">{{ item.date }}</div>
-        </div>
-        <div class=" text-grey2">
-          {{ item.info }}
-        </div>
-        <div class=" flex justify-end">
-          <div class=" text-lightblue">阅读全文</div>
+      <div class=" flex items-center bg-white py-6 pl-6 pr-8">
+        <div>
           <el-image
-            :src="require('@/assets/img_food/news/组 363.png')"
-            class=" pl-1"
+            :src="require('@/assets/img_food/news/company/蒙版组 209.png')"
+            fit="cover"
           />
+        </div>
+        <div class="flex flex-col pl-7 ">
+          <div class=" text-xl text-grey1 font-bold">第十二届广交会</div>
+          <div class=" text-sm text-grey2 pt-3 pb-6">时间：2021-03-12</div>
+          <div class=" text-xl text-grey2 ">新的一场广交会的开始预示着新的挑战来临</div>
         </div>
       </div>
     </div>
