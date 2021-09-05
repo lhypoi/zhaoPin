@@ -44,12 +44,32 @@
         </div>
       </div>
 
-      <!-- 底部图片 -->
-      <div class="flex items-center justify-center mt-24 mb-52">
+    </div>
+    <!-- 底部图片 -->
+    <div class=" flex justify-center  pt-20 pb-48 bg-gray-100">
+      <div class="banner relative flex items-center justify-center  ">
         <el-image
           :src="require('@/assets/img_food/brandStrength/exportCountry/组 324.png')"
           fit="cover"
         />
+        <div class=" w-3/4 absolute text-white text-center flex justify-between ">
+          <div class="">
+            <div class=" text-4xl">1996年</div>
+            <div class=" text-lg">成立于</div>
+          </div>
+          <div class="">
+            <div class=" text-4xl">200+</div>
+            <div class=" text-lg">食品品种</div>
+          </div>
+          <div class="">
+            <div class=" text-4xl">80+</div>
+            <div class=" text-lg">远销全球国家和地区</div>
+          </div>
+          <div class="">
+            <div class=" text-4xl">500强</div>
+            <div class=" text-lg">广东企业</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

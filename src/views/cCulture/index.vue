@@ -9,8 +9,12 @@
           class="z-0"
         />
         <div class=" absolute items-center">
-          <div class=" text-9xl font-bold text-white">品牌使命</div>
-          <div class=" text-sm font-bold text-white py-5 text-center">把美味带给世界上每一个你</div>
+          <div class=" text-9xl font-bold text-white tracking-widest">品牌使命</div>
+          <div class=" flex items-center justify-center py-8 ">
+            <div class=" border-b-2 border-white w-20 mx-5" />
+            <div class=" text-sm font-bold text-white text-center tracking-widest">把美味带给世界上每一个你</div>
+            <div class=" border-b-2 border-white w-20 mx-5" />
+          </div>
         </div>
       </div>
     </div>
@@ -45,20 +49,36 @@
           />
         </div>
         <div class=" flex flex-col ">
-          <div class=" text-6xl">品牌愿景</div>
-          <div class=" text-xl my-11">振兴中国糖果制造业，打造专业糖果品牌</div>
+          <div class=" flex justify-between items-center">
+            <div class="">
+              <div class=" text-6xl relative pt-10">品牌愿景
+                <div class=" absolute top-0 right-24"><i class="iconfont icon-round text-orange text-6xl" /></div>
+              </div>
+              <div class=" text-xl text-grey3 my-11">振兴中国糖果制造业，打造专业糖果品牌</div>
+            </div>
+            <div class=" text-gray-200 text-8xl font-bold">01</div>
+          </div>
           <div class=" border-b-4 " />
-          <div class=" text-7xl mt-9">Brand vision</div>
+          <div class=" text-7xl text-grey3 mt-9">Brand vision</div>
         </div>
       </div>
 
-      <div class=" mt-40 flex justify-between items-center">
+      <div class=" mt-40 flex justify-between items-center border-b-4 mb-48">
+
         <div class=" flex flex-col ">
-          <div class=" text-6xl">品牌定位</div>
-          <div class=" text-xl my-11">专注糖果研发</div>
+          <div class=" flex justify-between items-center">
+            <div class="">
+              <div class=" text-6xl relative pt-10">品牌定位
+                <div class=" absolute top-0 left-52"><i class="iconfont icon-round text-orange text-6xl" /></div>
+              </div>
+              <div class=" text-xl text-grey3 my-11">专注糖果研发</div>
+            </div>
+            <div class=" text-gray-200 text-8xl font-bold">02</div>
+          </div>
           <div class=" border-b-4 " />
-          <div class=" text-7xl mt-9">Brand Positioning</div>
+          <div class=" text-7xl text-grey3 mt-9">Brand positioning</div>
         </div>
+
         <div>
           <el-image
             :src="require('@/assets/img_food/about/logo.png')"

@@ -154,7 +154,7 @@ export default {
         },
         {
           title: '业务范围',
-          path: '/field',
+          path: '/ScopeOfServices',
           position: 'right'
         },
         {
@@ -164,23 +164,27 @@ export default {
           children: [
             {
               title: '公司动态',
-              path: '/news/index',
+              path: '/newsDetail',
               children: [
                 {
-                  title: '详细查看',
-                  path: '/pb/index21'
+                  title: '公司动态',
+                  path: '/newsCompany'
+                },
+                {
+                  title: '详情查看',
+                  path: '/newsDetail'
                 }
               ]
             },
             {
-              title: '行业资讯',
-              path: '/news/index'
+              title: '行业动态',
+              path: '/newsOfIndustry'
             }
           ]
         },
         {
           title: '联系我们',
-          path: '/chat',
+          path: '/contactUsFood',
           position: 'right'
         }
       ]
