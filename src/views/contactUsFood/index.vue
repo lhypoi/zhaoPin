@@ -17,7 +17,8 @@
       </div>
       <!-- 中间联系方式 -->
       <div class="flex flex-col items-center justify-center   ">
-        <div class="bg-white w-1/2">
+        <!-- TODO:如何实现下边的盒子往上踩一些高度 -->
+        <div class="bg-white w-1/2 -mt-20 z-10">
           <div class=" flex justify-start border-b-2 py-14 ">
             <div class=" flex flex-col w-1/2 pl-12 border-r-2 ">
               <div>
