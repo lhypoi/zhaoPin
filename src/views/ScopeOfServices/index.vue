@@ -27,7 +27,7 @@
     <div class="container mx-auto mt-16">
       <div class=" flex  justify-center items-stretch">
         <el-image
-          :src="require('@/assets/img_food/service/ODM流程图.png')"
+          :src="require('@/assets/img_food/service/组 1066.png')"
           fit="cover"
           class=" w-auto"
         />

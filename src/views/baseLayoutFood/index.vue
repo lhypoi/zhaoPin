@@ -1,7 +1,7 @@
 <template>
   <div class="baseLayoutFood">
     <!-- 导航菜单 -->
-    <FoodNav />
+    <FoodNav class=" z-30" />
 
     <!-- 页面内容 -->
     <transition name="fade-transform" mode="out-in">
@@ -10,7 +10,7 @@
       </keep-alive>
     </transition>
 
-    <FoodFooter />
+    <FoodFooter class=" z-30" />
 
   </div>
 </template>
