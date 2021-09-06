@@ -14,11 +14,11 @@
       </div>
       <!-- 中间联系方式 -->
       <div class="flex flex-col items-center justify-center relative mb-64">
-        <div class="w-1/2 bottom-52 z-10 absolute text-left">
+        <div class="w-full max-w-screen-lg bottom-52 z-10 absolute text-left">
           <div class=" text-5xl font-bold text-white">联系我们</div>
           <div class=" text-2xl text-white py-5 tracking-widest">找到自己喜欢的或者有任何建议就联系我们吧！</div>
         </div>
-        <div class="bg-white w-1/2 -top-20 z-10 absolute">
+        <div class="bg-white w-full max-w-screen-lg -top-20 z-10 absolute">
           <div class=" flex justify-start border-b-2 py-14 ">
             <div class=" flex flex-col w-1/2 pl-12 border-r-2 ">
               <div>
@@ -102,17 +102,17 @@
     </div>
 
     <!-- 联系我们 -->
-    <div class=" flex flex-col items-center justify-center pb-12 pt-16">
+    <div class="max-w-screen-lg mx-auto flex flex-col items-center justify-center pb-12 pt-16">
       <div class=" flex flex-col items-center">
         <div class=" text-gray-300 text-4xl">联系我们</div>
         <div class=" text-gray-300 py-3">contact us</div>
         <div class=" border-b-4 w-6" />
       </div>
-      <div class=" pt-16">
-        <div class=" flex items-center justify-between pb-12">
-          <div><input type="text" placeholder="姓名：" class=" border-b-2 outline-none mr-24 "></div>
-          <div><input type="text" placeholder="电话：" class="border-b-2 outline-none mr-24"></div>
-          <div><input type="text" placeholder="邮件：" class="border-b-2 outline-none"></div>
+      <div class="w-full pt-16 overflow-hidden">
+        <div class=" flex items-center justify-between pb-12 -mx-8">
+          <div class="w-1/3 px-8"><input type="text" placeholder="姓名：" class=" border-b-2 outline-none w-full"></div>
+          <div class="w-1/3 px-8"><input type="text" placeholder="电话：" class="border-b-2 outline-none w-full"></div>
+          <div class="w-1/3 px-8"><input type="text" placeholder="邮件：" class="border-b-2 outline-none w-full"></div>
         </div>
         <div><input type="text" placeholder="留言：" class="border-b-2 w-full outline-none"></div>
         <div class=" flex justify-center pt-12">
