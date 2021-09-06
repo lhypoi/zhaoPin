@@ -1,10 +1,11 @@
 <template>
   <div class="newsDetail bg-gray-100 ">
 
-    <div class=" container mx-auto flex ">
+    <div class=" container mx-auto flex w-2/3 ">
       <div
         v-for="(item,index) in newsList"
         :key="index"
+        class=" w-2/3"
       >
         <div class="boxleft bg-white mt-14 mr-6 px-4">
           <div class="flex pt-11">
@@ -27,23 +28,9 @@
           </div>
         </div>
       </div>
-      <div class="boxright mt-14">
+      <div class="boxright mt-14 w-1/3">
         <div class=" bg-white mb-8 py-3 pl-3 text-grey2">上篇：第十一届广交会</div>
-        <div class=" mb-8">
-          <el-image
-            :src="require('@/assets/img_food/news/company/蒙版组 209.png')"
-            fit="cover"
-            class=" w-full h-full"
-          />
-          <el-image
-            :src="require('@/assets/img_food/news/company/蒙版组 209.png')"
-            fit="cover"
-            class=" w-full h-full"
-          />
-        </div>
-
         <NewsList />
-
         <div class=" bg-white mt-8 py-3 pl-3 text-grey2">下篇：第十三届广交会</div>
       </div>
     </div>

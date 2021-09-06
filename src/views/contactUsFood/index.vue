@@ -1,24 +1,24 @@
 <template>
   <div class="ScopeOfServices">
-    <div class=" relative bg-gray-100 pb-28 ">
+    <div class=" relative bg-gray-100 pb-28  ">
       <!-- 头部大图 -->
-      <div class=" flex flex-col justify-center">
+      <div class=" flex flex-col justify-center items-center">
         <div class="banner relative flex items-center  ">
           <el-image
             :src="require('@/assets/img_food/contact/banner.png')"
             fit="cover"
             class="z-0"
           />
-          <div class=" absolute text-left pl-28">
-            <div class=" text-6xl text-white">联系我们</div>
-            <div class=" text-4xl text-white py-5 tracking-widest">找到自己喜欢的或者有任何建议就联系我们吧！</div>
-          </div>
+
         </div>
       </div>
       <!-- 中间联系方式 -->
-      <div class="flex flex-col items-center justify-center   ">
-        <!-- TODO:如何实现下边的盒子往上踩一些高度 -->
-        <div class="bg-white w-1/2 -mt-20 z-10">
+      <div class="flex flex-col items-center justify-center relative mb-64">
+        <div class="w-1/2 bottom-52 z-10 absolute text-left">
+          <div class=" text-5xl font-bold text-white">联系我们</div>
+          <div class=" text-2xl text-white py-5 tracking-widest">找到自己喜欢的或者有任何建议就联系我们吧！</div>
+        </div>
+        <div class="bg-white w-1/2 -top-20 z-10 absolute">
           <div class=" flex justify-start border-b-2 py-14 ">
             <div class=" flex flex-col w-1/2 pl-12 border-r-2 ">
               <div>
@@ -46,7 +46,7 @@
             </div>
           </div>
 
-          <div class=" flex justify-between py-9">
+          <div class=" flex justify-between py-9 pr-12">
             <div class=" flex items-center w-1/3 pl-12">
               <div class=" mr-2">
                 <el-image
