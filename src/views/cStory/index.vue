@@ -96,7 +96,7 @@
             />
           </div>
           <div slot="title" class=" text-2xl font-bold">{{ story.title }}</div>
-          <div slot="info" class=" w-2/4 text-xl tracking-widest leading-loose">{{ story.info }}</div>
+          <div slot="info" class="text-xl tracking-widest leading-loose">{{ story.info }}</div>
         </StoryList>
       </div>
 
