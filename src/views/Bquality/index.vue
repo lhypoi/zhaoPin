@@ -3,17 +3,17 @@
 
     <!-- 导航图标 -->
     <div>
-      <div class=" pt-20 flex justify-center align-middle ">
-        <div class="flex justify-between mt-6 container mx-auto max-w-screen-lg ">
+      <div class=" pt-20 flex justify-center align-middle mx-auto max-w-screen-lg overflow-hidden">
+        <div class="flex justify-between mt-6 -mx-7">
           <div
             v-for="(img, imgIndex) in BrandNavList"
             :key="imgIndex"
-            class="iconNav mb-8  justify-items-center"
+            class="mb-8 justify-items-center px-7"
           >
             <el-image
               :src="img.imgPath"
               fit="cover"
-              class=" mb-4 pr-7 mr-7"
+              class=" mb-4"
             />
           </div>
         </div>
@@ -252,10 +252,4 @@ export default {
 </script>
 
 <style scoped>
-.iconNav:last-child{
-  margin: 0 !important;
-  padding: 0 !important;
-  margin-right: 0px !important;
-  background-color: cadetblue;
-}
 </style>
