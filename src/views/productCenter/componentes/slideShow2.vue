@@ -14,7 +14,7 @@
               />
               <el-image
                 :src="require('@/assets/img_food/productCenter/jietu3.png')"
-                class="block absolute pt-7 pl-7 "
+                class="block absolute px-5 pt-5 cursor-pointer "
               />
             </div>
             <!-- 信息文字 -->
@@ -33,7 +33,7 @@
               />
               <el-image
                 :src="require('@/assets/img_food/productCenter/jietu3.png')"
-                class="block absolute pt-7 pl-7 "
+                class="block absolute px-5 pt-5 cursor-pointer "
               />
             </div>
             <!-- 信息文字 -->

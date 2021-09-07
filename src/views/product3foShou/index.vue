@@ -10,7 +10,7 @@
     </div>
 
     <!-- 左右留白盒子开始 -->
-    <div class="container mx-auto">
+    <div class="container mx-auto max-w-screen-lg">
       <!-- 各种系列 -->
       <div>
         <Title><div slot="center">各种系列</div></Title>
@@ -21,7 +21,7 @@
       <div class="">
         <Title><div slot="center">制作过程</div></Title>
         <div class="flex mt-20 justify-center">
-          <div class="wenzi flex-col w-1/5 justify-start ">
+          <div class="wenzi flex-col w-2/5 justify-start ">
             <div class=" text-4xl text-coffee font-bold">回味不同的美味</div>
             <div class=" text-2xl text-coffee font-bold py-6">美食美客</div>
             <div class=" text-base">一份关注、一段追溯、一个瞬间、一幕场景。一闻回
@@ -30,7 +30,7 @@
               <div class="rounded-full bg-gray-200 text-grey1 text-base h-8 font-bold  flex items-center justify-center px-8 mx-4 cursor-pointer">超多美味</div>
             </div>
           </div>
-          <div class="vidio ml-9 w-2/5 ">
+          <div class="vidio ml-9 w-3/5 ">
             <el-image
               :src="require('@/assets/img_food/foShou/jietu4.png')"
               class=" w-full "

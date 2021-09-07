@@ -1,11 +1,11 @@
 <template>
   <div class="exhibition">
 
-    <div class="container mx-auto">
+    <div class="container mx-auto max-w-screen-lg">
       <!-- 导航图标 -->
       <div>
         <div class=" pt-20 flex justify-center align-middle ">
-          <div class="flex flex-row justify-between mt-6 container mx-auto ">
+          <div class="flex flex-row justify-between mt-6 container mx-auto max-w-screen-lg ">
             <div
               v-for="(img, imgIndex) in BrandNavList"
               :key="imgIndex"
@@ -14,7 +14,7 @@
               <el-image
                 :src="img.imgPath"
                 fit="cover"
-                class=" mb-4 ml-1/2  "
+                class=" mb-4 ml-1/2 mr-7  "
               />
             </div>
           </div>

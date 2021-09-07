@@ -1,7 +1,7 @@
 <template>
   <div class="newsDetail bg-gray-100 ">
 
-    <div class=" container mx-auto flex w-2/3 ">
+    <div class=" container mx-auto flex w-2/3 max-w-screen-lg ">
       <div
         v-for="(item,index) in newsList"
         :key="index"

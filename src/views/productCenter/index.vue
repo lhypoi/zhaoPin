@@ -9,38 +9,33 @@
           fit="cover"
           class="relative z-0"
         />
-        <div class="flex mt-20">
-          <div class="leftBox flex-none w-2/12" />
-          <div class="flex-grow">
-
-            <div class=" absolute top-0  w-2/3  h-full pt-10 2xl:pt-20">
-              <div class="text-5xl 2xl:text-6xl text-orange1 mb-10">搜索你喜欢的糖果！</div>
-              <div class=" text-3xl 2xl:text-4xl text-white mb-10">享受美妙的感觉</div>
-              <div class="searchBar">
-                <form class=" h-16">
-
-                  <input class="pl-5" type="text" placeholder="请输入您想要的糖果">
-                  <button class=" " type="submit" />
-                </form>
-              </div>
-              <!--这种按钮堆叠的场景，应该让按钮根据本身的文字自动撑开整个容器 -->
-              <div class="flex mt-12 -mx-4">
-                <div class="rounded-full border-solid border-2 border-white h-16 text-white text-xl flex items-center justify-center px-8 mx-4 cursor-pointer">软糖</div>
-                <div class="rounded-full border-solid border-2 border-white h-16 text-white text-xl flex items-center justify-center px-8 mx-4 cursor-pointer">棒棒糖</div>
-                <div class="rounded-full border-solid border-2 border-white h-16 text-white text-xl flex items-center justify-center px-8 mx-4 cursor-pointer">订制糖果</div>
-              </div>
+        <div class="flex mt-20  container mx-auto max-w-screen-lg">
+          <!-- <div class="leftBox flex-none w-2/12" /> -->
+          <!-- <div class="flex-grow"> -->
+          <div class=" absolute top-0 w-2/3 h-full pt-10 2xl:pt-20">
+            <div class="text-5xl 2xl:text-6xl text-orange1 mb-10">搜索你喜欢的糖果！</div>
+            <div class=" text-3xl 2xl:text-4xl text-white mb-10">享受美妙的感觉</div>
+            <div class="searchBar">
+              <form class=" h-16">
+                <input class="pl-5" type="text" placeholder="请输入您想要的糖果">
+                <button class=" " type="submit" />
+              </form>
             </div>
-            <div class="rightBox flex-none w-2/12" />
+            <!--这种按钮堆叠的场景，应该让按钮根据本身的文字自动撑开整个容器 -->
+            <div class="flex mt-12 -mx-4">
+              <div class="rounded-full border-solid border-2 border-white h-16 text-white text-xl flex items-center justify-center px-8 mx-4 cursor-pointer">软糖</div>
+              <div class="rounded-full border-solid border-2 border-white h-16 text-white text-xl flex items-center justify-center px-8 mx-4 cursor-pointer">棒棒糖</div>
+              <div class="rounded-full border-solid border-2 border-white h-16 text-white text-xl flex items-center justify-center px-8 mx-4 cursor-pointer">订制糖果</div>
+            </div>
           </div>
+          <div class="rightBox flex-none w-2/12" />
+          <!-- </div> -->
         </div>
       </div>
     </div>
 
     <!-- 左右留白盒子开始 -->
-    <div class=" container mx-auto ">
-      <!-- <div class="leftBox flex-none w-2/12 relative" /> -->
-      <!-- <div class="flex-grow"> -->
-
+    <div class=" max-w-screen-lg container mx-auto">
       <!-- 选择糖果类型-->
       <div class="mt-20">
         <titleNav0>
