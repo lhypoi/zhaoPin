@@ -10,7 +10,7 @@
           <div class=" border-gray-200 border-solid border-b-2 flex flex-col items-center justify-center">
             <el-image
               :src="item.imgPath"
-              class=" w-full relative"
+              class=" w-full relative cursor-pointer"
               style="height: 20vw;"
             />
           </div>

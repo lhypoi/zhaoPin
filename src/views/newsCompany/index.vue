@@ -1,6 +1,6 @@
 <template>
   <div class="companyNews bg-gray-100 pb-6 ">
-    <div class="container mx-auto">
+    <div class="container mx-auto max-w-screen-lg">
       <!-- 头部图片展 -->
       <div class="pt-14 flex justify-center">
         <div class="">

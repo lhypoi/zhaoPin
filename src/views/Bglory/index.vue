@@ -14,8 +14,8 @@
 
     <!-- 导航图标 -->
     <div>
-      <div class=" pt-20 flex justify-center align-middle ">
-        <div class="flex flex-row justify-between mt-6 container mx-auto">
+      <div class=" pt-20 flex justify-center align-middle max ">
+        <div class="flex flex-row justify-between mt-6 container mx-auto max-w-screen-lg">
           <div
             v-for="(img, imgIndex) in BrandNavList"
             :key="imgIndex"
@@ -24,7 +24,7 @@
             <el-image
               :src="img.imgPath"
               fit="cover"
-              class=" mb-4 ml-1/2  "
+              class=" mb-4 ml-1/2 mr-7  "
             />
           </div>
         </div>
@@ -33,21 +33,23 @@
 
     <!-- 公司荣誉照片展示 -->
     <div class="gloryShow pt-20 pb-20 bg-gray-100">
-      <div class=" flex justify-center items-center text-4xl font-bold">公司荣誉</div>
-      <div class=" pt-10 flex justify-center mx-auto">
-        <div class="flex flex-row justify-between flex-wrap mt-6 container -mx-2">
-          <div
-            v-for="(glory, imgIndex) in gloryShowList"
-            :key="imgIndex"
-            class=" flex-col w-1/3  justify-items-center relative px-2 pb-4"
-          >
-            <el-image
-              :src="glory.imgPath"
-              fit="cover"
-              class=" w-full h-full"
-            />
-            <div class=" text-grey2 text-2xl text-center px-14 absolute bottom-14 ">
-              {{ glory.info }}
+      <div class=" max-w-screen-lg container mx-auto">
+        <div class=" flex justify-center items-center text-4xl font-bold">公司荣誉</div>
+        <div class=" pt-10 flex justify-center mx-auto">
+          <div class="flex flex-row justify-between flex-wrap mt-6 container -mx-2">
+            <div
+              v-for="(glory, imgIndex) in gloryShowList"
+              :key="imgIndex"
+              class=" flex-col w-1/3  justify-items-center relative px-2 pb-4"
+            >
+              <el-image
+                :src="glory.imgPath"
+                fit="cover"
+                class=" w-full h-full"
+              />
+              <div class=" text-grey2 text-2xl text-center px-14 absolute bottom-10 ">
+                {{ glory.info }}
+              </div>
             </div>
           </div>
         </div>

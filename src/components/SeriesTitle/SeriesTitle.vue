@@ -4,15 +4,15 @@
       <div
         v-for="(series, imgIndex) in seriesList"
         :key="imgIndex"
-        class=" flex-col mb-8 grid justify-items-center"
+        class=" flex-col grid justify-items-center cursor-pointer"
       >
         <el-image
           :src="series.icon"
           fit="cover"
-          class=" w-32 h-32 mb-4 ml-1/2  "
+          class="mb-4 "
         />
         <div>
-          <div class=" text-3xl text-black  ">
+          <div class=" text-3xl text-black ">
             {{ series.title }}
           </div>
         </div>

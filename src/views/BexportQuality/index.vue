@@ -1,11 +1,11 @@
 <template>
   <div class="glory">
 
-    <div class="container mx-auto">
+    <div class="container mx-auto max-w-screen-lg">
       <!-- 导航图标 -->
       <div>
         <div class=" pt-20 flex justify-center align-middle ">
-          <div class="flex flex-row justify-between mt-6 container mx-auto ">
+          <div class="flex flex-row justify-between mt-6 container mx-auto max-w-screen-lg ">
             <div
               v-for="(img, imgIndex) in BrandNavList"
               :key="imgIndex"
@@ -14,7 +14,7 @@
               <el-image
                 :src="img.imgPath"
                 fit="cover"
-                class=" mb-4 ml-1/2  "
+                class=" mb-4 ml-1/2 mr-7  "
               />
             </div>
           </div>
@@ -47,7 +47,7 @@
     </div>
     <!-- 底部图片 -->
     <div class=" flex justify-center  pt-20 pb-48 bg-gray-100">
-      <div class="banner relative flex items-center justify-center  ">
+      <div class="banner relative flex items-center justify-center max-w-screen-lg  ">
         <el-image
           :src="require('@/assets/img_food/brandStrength/exportCountry/组 324.png')"
           fit="cover"

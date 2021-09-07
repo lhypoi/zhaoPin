@@ -33,7 +33,8 @@ module.exports = {
       borderColor: ['first'],
       margin: ['last'],
       padding: ['even', 'odd'],
-      width: ['even', 'odd']
+      width: ['even', 'odd'],
+      cursor:['hover']
     }
   },
   plugins: []

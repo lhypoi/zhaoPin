@@ -4,16 +4,16 @@
     <!-- 导航图标 -->
     <div>
       <div class=" pt-20 flex justify-center align-middle ">
-        <div class="flex flex-row justify-between mt-6 container mx-auto ">
+        <div class="flex justify-between mt-6 container mx-auto max-w-screen-lg ">
           <div
             v-for="(img, imgIndex) in BrandNavList"
             :key="imgIndex"
-            class=" flex-col mb-8 grid justify-items-center"
+            class="iconNav mb-8  justify-items-center"
           >
             <el-image
               :src="img.imgPath"
               fit="cover"
-              class=" mb-4 ml-1/2 "
+              class=" mb-4 pr-7 mr-7"
             />
           </div>
         </div>
@@ -21,7 +21,7 @@
     </div>
 
     <!-- 研发环境 -->
-    <div class="">
+    <div class=" max-w-screen-lg container mx-auto ">
       <div class=" flex items-center justify-center text-4xl font-bold mb-16">研发环境</div>
       <!-- 整个大盒子 -->
       <div class="flex flex-col items-center">
@@ -73,7 +73,7 @@
 
     <!-- 工作环境 -->
     <div class=" mt-48 bg-gray-100">
-      <div class="flex  container mx-auto">
+      <div class="flex  container mx-auto max-w-screen-lg">
         <div class=" flex flex-col mt-20 flex-auto whitespace-nowrap">
           <div class=" mb-12 text-4xl font-bold">工作环境</div>
           <div class=" text-xl font-bold">我们的公司的生产车间的环境</div>
@@ -96,11 +96,11 @@
     </div>
 
     <!-- 公司展厅 -->
-    <div class="container mx-auto">
+    <div class="container mx-auto max-w-screen-lg">
       <div class=" flex items-center justify-center text-4xl font-bold mb-28 mt-52">公司展厅</div>
       <div>
         <div class=" mb-12 flex justify-between">
-          <div class=" space-y-14">
+          <div class=" space-y-14 pr-10">
             <el-image
               :src="require('@/assets/img_food/brandStrength/quality/蒙版组 167.png')"
               fit="cover"
@@ -113,7 +113,7 @@
             />
           </div>
 
-          <div class="space-y-14 mt-36">
+          <div class="space-y-14 mt-36 pr-10">
             <el-image
               :src="require('@/assets/img_food/brandStrength/quality/蒙版组 169.png')"
               fit="cover"
@@ -126,7 +126,7 @@
             />
           </div>
 
-          <div class="space-y-14 mt-10">
+          <div class="space-y-14 mt-10 pr-10">
             <el-image
               :src="require('@/assets/img_food/brandStrength/quality/蒙版组 171.png')"
               fit="cover"
@@ -158,7 +158,7 @@
 
     <!-- 生产设备 -->
     <div class="bg-gray-100 pb-32 pt-20">
-      <div class="  container mx-auto">
+      <div class="  container mx-auto max-w-screen-lg">
         <div class=" mb-9 ">
           <div class=" text-4xl font-bold">生产设备</div>
           <div class=" text-xl font-bold w-1/5 py-3">我们的公司的生产车间的机械都是自动化生产的，做到自动化。</div>
@@ -251,6 +251,8 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
-
+<style scoped>
+.iconNav:last-child{
+  margin-right: 0;
+}
 </style>

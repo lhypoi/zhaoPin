@@ -129,8 +129,11 @@
         <div class="text-gray-300 py-3">map</div>
         <div class=" border-b-4 w-6" />
       </div>
-      <div>
-        地图
+      <div class=" flex items-center justify-center py-12">
+        <el-image
+          :src="require('@/assets/img_food/contact/map.png')"
+          fit="cover"
+        />
       </div>
     </div>
   </div>

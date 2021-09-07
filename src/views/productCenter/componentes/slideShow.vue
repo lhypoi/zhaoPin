@@ -11,7 +11,7 @@
           <!-- 每页有三个选项的坑位，内部的元素可能不止一张图片，所以外层用一个div包着，而不是直接img -->
           <div class="relative h-full pt-7" style="width: 20vw;" @click="$router.push(item.router)">
             <!-- 图片背景 -->
-            <div class="relative w-full h-full">
+            <div class="relative w-full h-full cursor-pointer">
               <el-image
                 :src="item.imgPath"
                 class="block absolute w-full h-full"
@@ -23,7 +23,7 @@
             <div class="absolute right-0 bottom-0 bg-yellow-500 px-8 py-2 text-white text-lg rounded-tl-2xl rounded-br-2xl">水果软糖</div>
           </div>
           <div class="relative h-full pt-7" style="width: 20vw;" @click="$router.push(item.router)">
-            <div class="relative w-full h-full">
+            <div class="relative w-full h-full cursor-pointer">
               <el-image
                 :src="item.imgPath"
                 class="block absolute w-full h-full"
@@ -33,7 +33,7 @@
             <div class="absolute right-0 bottom-0 bg-yellow-500 px-8 py-2 text-white text-lg rounded-tl-2xl rounded-br-2xl">水果软糖</div>
           </div>
           <div class="relative h-full pt-7" style="width: 20vw;" @click="$router.push(item.router)">
-            <div class="relative w-full h-full">
+            <div class="relative w-full h-full cursor-pointer">
               <el-image
                 :src="item.imgPath"
                 class="block absolute w-full h-full"

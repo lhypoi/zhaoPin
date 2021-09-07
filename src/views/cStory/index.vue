@@ -44,7 +44,7 @@
     <!-- 导航图标 -->
     <div>
       <div class=" pt-20 flex justify-center align-middle ">
-        <div class="flex flex-row justify-between mt-6 container mx-auto">
+        <div class="flex flex-row justify-between mt-6 container mx-auto max-w-screen-lg">
           <div
             v-for="(img, imgIndex) in BrandNavList"
             :key="imgIndex"
@@ -53,7 +53,7 @@
             <el-image
               :src="img.imgPath"
               fit="cover"
-              class=" mb-4 ml-1/2  "
+              class=" mb-4 ml-1/2  mr-7 "
             />
           </div>
         </div>
@@ -61,7 +61,7 @@
     </div>
 
     <!-- 左右留白盒子开始 -->
-    <div class="container mx-auto">
+    <div class="container mx-auto max-w-screen-lg">
 
       <!-- 企业发展历程 -->
       <div class=" mt-36">

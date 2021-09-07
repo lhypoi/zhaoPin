@@ -15,7 +15,7 @@
 
     <!-- OEM代工业务流程 -->
     <div class="bg-gray-100 ">
-      <div class=" container mx-auto pt-16 flex items-center justify-center">
+      <div class=" container mx-auto pt-16 flex items-center justify-center max-w-screen-lg">
         <el-image
           :src="require('@/assets/img_food/service/组 1026.png')"
           fit="cover"
@@ -24,7 +24,7 @@
     </div>
 
     <!-- ODM代工业务流程 -->
-    <div class="container mx-auto mt-16">
+    <div class="container mx-auto mt-16 max-w-screen-lg">
       <div class=" flex  justify-center items-stretch">
         <el-image
           :src="require('@/assets/img_food/service/组 1066.png')"
