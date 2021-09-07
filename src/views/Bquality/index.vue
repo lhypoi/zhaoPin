@@ -253,6 +253,9 @@ export default {
 
 <style scoped>
 .iconNav:last-child{
-  margin-right: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  margin-right: 0px !important;
+  background-color: cadetblue;
 }
 </style>
