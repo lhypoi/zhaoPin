@@ -60,9 +60,9 @@
           <el-image
             :src="require('@/assets/img_food/chocolate/P6.png')"
             fit="cover"
-            class="w-1/2"
+            class="w-1/2 elImgRight"
           />
-          <div class=" flex flex-col items-stretch">
+          <div class=" flex flex-col items-stretch w-1/4">
             <el-image
               :src="require('@/assets/img_food/chocolate/P1.png')"
               fit="cover"
@@ -74,11 +74,11 @@
               class="h-1/2"
             />
           </div>
-          <div class="flex flex-coll items-stretch">
+          <div class="flex flex-coll items-stretch w-1/4">
             <el-image
               :src="require('@/assets/img_food/chocolate/P2.png')"
               fit="cover"
-              class="h-1/2"
+              class="h-1/2 w-full"
             />
           </div>
         </div>
@@ -111,6 +111,10 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+.elImgRight {
+  ::v-deep .el-image__inner {
+    object-position: right;
+  }
+}
 </style>
