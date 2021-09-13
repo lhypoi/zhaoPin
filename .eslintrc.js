@@ -9,6 +9,9 @@ module.exports = {
     node: true,
     es6: true,
   },
+  globals: {
+    BMap: true
+  },
   extends: ['plugin:vue/recommended', 'eslint:recommended'],
 
   // add your custom rules here
