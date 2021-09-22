@@ -86,6 +86,7 @@
         <titleNav>
           <div slot="leftTop">糖果系列选择</div>
           <div slot="leftBottom">CANDY SERIES SELECTION</div>
+          <div slot="more" @click="gocandy"> 查看更多</div>
         </titleNav>
         <slideShow />
       </div>
@@ -95,6 +96,7 @@
         <titleNav>
           <div slot="leftTop">燕麦系列选择</div>
           <div slot="leftBottom">OATS SERIES SELECTION</div>
+          <div slot="more" @click="gooat"> 查看更多</div>
         </titleNav>
         <slideShow />
       </div>
@@ -104,6 +106,7 @@
         <titleNav>
           <div slot="leftTop">燕麦系列选择</div>
           <div slot="leftBottom">OATS SERIES SELECTION</div>
+          <div slot="more" @click="gofoshou"> 查看更多</div>
         </titleNav>
         <slideShow />
       </div>
@@ -113,6 +116,7 @@
         <titleNav>
           <div slot="leftTop">巧克力系列选择</div>
           <div slot="leftBottom">CHOCOLATE SERIES SELECTION</div>
+          <div slot="more" @click="gochocolate"> 查看更多</div>
         </titleNav>
         <slideShow />
       </div>
@@ -122,6 +126,7 @@
         <titleNav>
           <div slot="leftTop">饼干系列选择</div>
           <div slot="leftBottom">BISCUIT SERIES SELECTION</div>
+          <div slot="more" @click="gobiscuit"> 查看更多</div>
         </titleNav>
         <slideShow />
       </div>
@@ -195,16 +200,29 @@ export default {
         {
           imgPath: require('@/assets/img_food/productCenter/smallP2.png')
         }
-      ]
+      ],
+      msg: 'hh'
     }
   },
-  computed: {
+  methods: {
+    gocandy() {
+      // console.log(this.msg);
+      this.$router.push('product1Candy')
+    },
+    gooat() {
+      this.$router.push('product2Oat')
+    },
+    gofoshou() {
+      this.$router.push('product3foShou')
+    },
+    gochocolate() {
+      this.$router.push('product4Chocolate')
+    },
+    gobiscuit() {
+      this.$router.push('product5Biscuit')
+    }
 
-  },
-  created() {},
-  mounted() {
-  },
-  methods: {}
+  }
 }
 </script>
 

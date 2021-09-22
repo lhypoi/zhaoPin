@@ -7,7 +7,7 @@
       </div>
       <div class="right flex flex-1 border-b-2 flex-row-reverse items-center ">
         <div class="flex text-grey1 cursor-pointer"><div><img src="@/assets/img_food/productCenter/smallP1.png" class=" mr-3"></div>
-          查看更多
+          <slot name="more" />
           <img src="@/assets/img_food/productCenter/halfArrow.png" class=" ml-1">
         </div>
       </div>
