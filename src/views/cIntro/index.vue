@@ -4,7 +4,7 @@
     <div class=" flex justify-center">
       <div class="banner relative flex items-center  ">
         <el-image
-          :src="require('@/assets/img_food/about/蒙版组 98.png')"
+          :src="require('@/assets/img_food/about/蒙版组 289.png')"
           fit="cover"
           class="z-0"
         />

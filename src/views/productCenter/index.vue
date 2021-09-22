@@ -5,7 +5,7 @@
     <div class="flex justify-center">
       <div class="relative ">
         <el-image
-          :src="require('@/assets/img_food/productCenter/bigP1.png')"
+          :src="require('@/assets/img_food/productCenter/蒙版组 254.png')"
           fit="cover"
           class="relative z-0"
         />

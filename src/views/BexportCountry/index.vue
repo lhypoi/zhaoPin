@@ -3,7 +3,7 @@
     <!-- 头部大图 -->
     <div class="banner flex items-center justify-center ">
       <el-image
-        :src="require('@/assets/img_food/brandStrength/exportCountry/组 323.png')"
+        :src="require('@/assets/img_food/brandStrength/exportCountry/蒙版组 294.png')"
         fit="cover"
         class="z-0"
       />

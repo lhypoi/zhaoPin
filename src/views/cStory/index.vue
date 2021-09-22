@@ -1,14 +1,14 @@
 <template>
   <div class="cStory">
     <!-- 头部大图 -->
-    <div class=" flex justify-center">
+    <div class=" flex justify-center ">
       <div class="banner relative flex items-center justify-center  ">
         <el-image
-          :src="require('@/assets/img_food/about/蒙版组 99.png')"
+          :src="require('@/assets/img_food/about/蒙版组 291.png')"
           fit="cover"
           class="z-0"
         />
-        <div class=" absolute bottom-96  pl-28 text-center">
+        <div class=" absolute bottom-96  pl-28 text-center ">
           <div class=" text-7xl text-white">关于展翠的</div>
           <div class=" text-7xl text-white py-5">品牌故事发展</div>
         </div>

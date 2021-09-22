@@ -3,7 +3,7 @@
     <!-- 头部大图 -->
     <div class="banner relative flex items-center justify-center ">
       <el-image
-        :src="require('@/assets/img_food/brandStrength/glory/banner.png')"
+        :src="require('@/assets/img_food/brandStrength/glory/组 1091.png')"
         fit="cover"
         class="z-0"
       />

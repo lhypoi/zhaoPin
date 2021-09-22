@@ -1,5 +1,5 @@
 <template>
-  <div class="drdMHome">
+  <div class="foodMHome">
     <!-- 轮播图 -->
     <!-- 1、自适应高度。-->
     <el-carousel indicator-position="outside" height="40vw">
@@ -60,10 +60,10 @@ export default {
     return {
       slidePageList: [
         {
-          imgPath: require('@/assets/img_food/home/1.png')
+          imgPath: require('@/assets/img_food/home/组 1088.png')
         },
         {
-          imgPath: require('@/assets/img_food/home/slideshow1.png')
+          imgPath: require('@/assets/img_food/home/组 1088.png')
         }
       ],
 
@@ -92,23 +92,23 @@ export default {
       ],
       serieshowList: [
         {
-          path: require('@/assets/img_food/home/seriesP1.png'),
+          path: require('@/assets/img_food/home/组 1082.png'),
           title: '糖果系列'
         },
         {
-          path: require('@/assets/img_food/home/seriesP2.png'),
+          path: require('@/assets/img_food/home/组 1083.png'),
           title: '燕麦系列'
         },
         {
-          path: require('@/assets/img_food/home/seriesP3.png'),
+          path: require('@/assets/img_food/home/组 1084.png'),
           title: '佛手果系列'
         },
         {
-          path: require('@/assets/img_food/home/seriesP4.png'),
+          path: require('@/assets/img_food/home/组 1085.png'),
           title: '巧克力系列'
         },
         {
-          path: require('@/assets/img_food/home/seriesP5.png'),
+          path: require('@/assets/img_food/home/组 1086.png'),
           title: '饼干系列'
         }
       ]
