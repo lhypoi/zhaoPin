@@ -1,18 +1,29 @@
 <template>
-  <div class="drdMHome">
+  <div class="foodMHome">
     <!-- 轮播图 -->
     <!-- 1、自适应高度。-->
-    <el-carousel indicator-position="outside" height="40vw">
+    <el-carousel indicator-position="outside" height="31vw">
       <el-carousel-item
         v-for="(item, index) in slidePageList"
         :key="index"
       >
-        <div class="flex flex-col ml-auto mr-auto mt-4 w-full" @click="$router.push(item.router)">
-          <el-image
-            :src="item.imgPath"
-            fit="cover"
-            class="block w-full h-full"
-          />
+        <div class=" relative flex justify-center text-center">
+          <div class="flex flex-col absolute ml-auto mr-auto w-full" @click="$router.push(item.router)">
+            <el-image
+              :src="item.imgPath"
+              fit="cover"
+              class="block w-full h-full"
+            />
+          </div>
+          <div class="absolute top-32 text-white font-bold text-5xl space-y-10">
+            <div>OEM/ODM</div>
+            <div>休闲食品一站式定制</div>
+            <div class=" flex space-x-12">
+              <div>专业研发设计团队全 </div>
+              <div>自动化生产设备</div>
+              <div>进出口资质齐全</div>
+            </div>
+          </div>
         </div>
       </el-carousel-item>
     </el-carousel>
@@ -54,16 +65,17 @@ export default {
   name: 'DrdMHome',
   components: {
     SeriesTitle
+
   },
   props: {},
   data() {
     return {
       slidePageList: [
         {
-          imgPath: require('@/assets/img_food/home/1.png')
+          imgPath: require('@/assets/img_food/home/组 1088.png')
         },
         {
-          imgPath: require('@/assets/img_food/home/slideshow1.png')
+          imgPath: require('@/assets/img_food/home/组 1088.png')
         }
       ],
 
@@ -92,23 +104,23 @@ export default {
       ],
       serieshowList: [
         {
-          path: require('@/assets/img_food/home/seriesP1.png'),
+          path: require('@/assets/img_food/home/组 1082.png'),
           title: '糖果系列'
         },
         {
-          path: require('@/assets/img_food/home/seriesP2.png'),
+          path: require('@/assets/img_food/home/组 1083.png'),
           title: '燕麦系列'
         },
         {
-          path: require('@/assets/img_food/home/seriesP3.png'),
+          path: require('@/assets/img_food/home/组 1084.png'),
           title: '佛手果系列'
         },
         {
-          path: require('@/assets/img_food/home/seriesP4.png'),
+          path: require('@/assets/img_food/home/组 1085.png'),
           title: '巧克力系列'
         },
         {
-          path: require('@/assets/img_food/home/seriesP5.png'),
+          path: require('@/assets/img_food/home/组 1086.png'),
           title: '饼干系列'
         }
       ]
