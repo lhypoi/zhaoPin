@@ -5,7 +5,7 @@
       <el-image
         :src="require('@/assets/img_food/candy/蒙版组 285.png')"
         fit="cover"
-        class="z-0"
+        class="z-0 BP"
       />
       <div class=" absolute text-center">
         <div class=" text-5xl text-black">Welcome you</div>
@@ -136,5 +136,7 @@ export default {
 </script>
 
 <style scoped>
-
+.BP{
+  height: 64vh ;
+}
 </style>

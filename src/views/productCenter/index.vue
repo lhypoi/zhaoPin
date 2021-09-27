@@ -7,7 +7,7 @@
         <el-image
           :src="require('@/assets/img_food/productCenter/蒙版组 254.png')"
           fit="cover"
-          class="relative z-0"
+          class="relative z-0 BP"
         />
         <div class="flex mt-20  container mx-auto max-w-screen-lg">
           <!-- <div class="leftBox flex-none w-2/12" /> -->
@@ -241,5 +241,8 @@ export default {
             content: "搜索";
             font-size: 13px;
             color: white;
+        }
+        .BP{
+          height: 64vh ;
         }
 </style>

@@ -6,7 +6,7 @@
         <el-image
           :src="require('@/assets/img_food/about/蒙版组 289.png')"
           fit="cover"
-          class="z-0"
+          class="BP"
         />
         <div class=" absolute text-left pl-28">
           <div class=" text-4xl text-white">SUNTREE</div>
@@ -82,5 +82,7 @@ export default {
 </script>
 
 <style scoped>
-
+.BP{
+  height: 64vh ;
+}
 </style>

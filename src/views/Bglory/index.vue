@@ -5,7 +5,7 @@
       <el-image
         :src="require('@/assets/img_food/brandStrength/glory/组 1091.png')"
         fit="cover"
-        class="z-0"
+        class="BP"
       />
       <div class=" absolute text-center">
         <div class=" text-5xl text-white font-bold">公司荣耀</div>
@@ -186,6 +186,8 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
-
+<style  scoped>
+.BP{
+  height: 64vh ;
+}
 </style>

@@ -5,7 +5,7 @@
       <el-image
         :src="require('@/assets/img_food/brandStrength/exportCountry/蒙版组 294.png')"
         fit="cover"
-        class="z-0"
+        class="BP"
       />
     </div>
 
@@ -96,6 +96,8 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
-
+<style scoped>
+.BP{
+  height: 64vh ;
+}
 </style>

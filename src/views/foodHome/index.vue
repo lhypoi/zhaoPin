@@ -2,7 +2,7 @@
   <div class="foodMHome">
     <!-- 轮播图 -->
     <!-- 1、自适应高度。-->
-    <el-carousel indicator-position="outside" height="31vw">
+    <el-carousel indicator-position="outside" height="64vh">
       <el-carousel-item
         v-for="(item, index) in slidePageList"
         :key="index"
@@ -40,14 +40,13 @@
         <div
           v-for="(img, imgIndex) in serieshowList"
           :key="imgIndex"
-          class=" relative flex items-center justify-center cursor-pointer"
+          class=" relative flex items-center justify-center cursor-pointer "
         >
           <el-image
             :src="img.path"
             fit="cover"
-            class=" w-full inline-block "
+            class=" w-full inline-block BP"
           />
-          <!-- left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -->
           <div class=" text-4xl text-black text-center absolute  ">
             {{ img.title }}
           </div>
@@ -137,5 +136,7 @@ export default {
 </script>
 
 <style lang="scss">
-
+.BP{
+  height: 64vh ;
+}
 </style>

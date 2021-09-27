@@ -6,7 +6,7 @@
         <el-image
           :src="require('@/assets/img_food/about/组 1090.png')"
           fit="cover"
-          class="z-0"
+          class="BP"
         />
         <div class=" absolute items-center">
           <div class=" text-9xl font-bold text-white tracking-widest">品牌使命</div>
@@ -93,6 +93,7 @@
       <el-image
         :src="require('@/assets/img_food/about/蒙版组 293.png')"
         fit="cover"
+        class="BP"
       />
       <div class=" absolute flex flex-col text-white right-16 top-20">
         <div class=" text-5xl font-bold tracking-widest">展翠价值观</div>
@@ -144,5 +145,7 @@ export default {
 </script>
 
 <style scoped>
-
+.BP{
+  height: 64vh ;
+}
 </style>

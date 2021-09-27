@@ -5,7 +5,7 @@
       <el-image
         :src="require('@/assets/img_food/chocolate/组 1127.png')"
         fit="cover"
-        class="z-0"
+        class="BP"
       />
       <div class=" absolute text-center">
         <div class=" text-5xl text-white">SUNTREE</div>
@@ -116,5 +116,8 @@ export default {
   ::v-deep .el-image__inner {
     object-position: right;
   }
+}
+.BP{
+  height: 64vh ;
 }
 </style>

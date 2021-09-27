@@ -5,6 +5,7 @@
       <el-image
         :src="require('@/assets/img_food/service/组 1092.png')"
         fit="cover"
+        class="BP"
       />
       <div class=" absolute text-center pl-28">
         <div class=" text-6xl text-white">关于展翠的</div>
@@ -63,5 +64,7 @@ export default {
 </script>
 
 <style scoped>
-
+.BP{
+  height: 64vh ;
+}
 </style>

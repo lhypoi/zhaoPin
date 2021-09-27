@@ -1,11 +1,11 @@
 <template>
   <div class="foShouProduct3">
     <!-- 头部大图 -->
-    <div class="banner flex justify-center">
+    <div class="banner flex items-center justify-center">
       <el-image
         :src="require('@/assets/img_food/foShou/蒙版组 286.png')"
         fit="cover"
-        class=" z-0"
+        class="BP"
       />
     </div>
 
@@ -91,5 +91,7 @@ export default {
 </script>
 
 <style scoped>
-
+.BP{
+  height: 64vh ;
+}
 </style>

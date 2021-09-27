@@ -7,7 +7,7 @@
           <el-image
             :src="require('@/assets/img_food/contact/蒙版组 297.png')"
             fit="cover"
-            class="z-0"
+            class="z-0 BP"
           />
 
         </div>
@@ -216,6 +216,9 @@ export default {
 </script>
 
 <style scoped>
+.BP{
+  height: 64vh ;
+}
 .baidumap {
     width: 1000px;
     height: 500px;

@@ -6,13 +6,13 @@
         <el-image
           :src="require('@/assets/img_food/about/蒙版组 291.png')"
           fit="cover"
-          class="z-0"
+          class="BP"
         />
-        <div class=" absolute bottom-96  pl-28 text-center ">
+        <div class=" absolute bottom-56 text-center ">
           <div class=" text-7xl text-white">关于展翠的</div>
           <div class=" text-7xl text-white py-5">品牌故事发展</div>
         </div>
-        <div class=" w-3/4 absolute bottom-60 text-white text-center flex justify-between ">
+        <div class=" w-3/4 absolute bottom-28 text-white text-center flex justify-between ">
           <div class="">
             <div class=" text-4xl">1996年</div>
             <div class=" text-lg">成立于</div>
@@ -173,5 +173,7 @@ export default {
 </script>
 
 <style scoped>
-
+.BP{
+  height: 64vh ;
+}
 </style>
