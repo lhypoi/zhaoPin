@@ -9,6 +9,7 @@ import './styles/element-variables.scss'
 import enLang from 'element-ui/lib/locale/lang/en'// 如果使用中文语言包请默认支持，无需额外引入，请删除该依赖
 
 import '@/styles/index.scss' // global css
+import './styles/font_2837958_6kiihze18no/iconfont' //  图标js文件引入
 
 import App from './App'
 import store from './store'
@@ -26,7 +27,7 @@ import VueI18n from 'vue-i18n'
 Vue.use(VueI18n)
 
 const i18n = new VueI18n({
-  locale: 'en', // 语言标识
+  locale: 'zh', // 语言标识
   messages: {
     'zh': require('./common/lang/zh'),
     'en': require('./common/lang/en')

@@ -9,13 +9,12 @@
             <div
               v-for="(img, imgIndex) in BrandNavList"
               :key="imgIndex"
-              class=" flex-col mb-8 grid justify-items-center"
+              class="mb-8 justify-items-center px-7 relative flex justify-center "
             >
-              <el-image
-                :src="img.imgPath"
-                fit="cover"
-                class=" mb-4 ml-1/2 mr-7  "
-              />
+              <svg class="icon  block w-40 h-20 mb-4 " aria-hidden="true">
+                <use :xlink:href="img.imgPath" />
+              </svg>
+              <div class=" absolute top-7 left-24 text-gray-400 text-sm font-bold w-20  ">{{ img.name }}</div>
             </div>
           </div>
         </div>
@@ -83,82 +82,7 @@ export default {
   },
   data() {
     return {
-      BrandNavList: [
-        {
-          imgPath: require('@/assets/img_food/brandStrength/icon/410.png')
-        },
-        {
-          imgPath: require('@/assets/img_food/brandStrength/icon/组 411.png')
-        },
-        {
-          imgPath: require('@/assets/img_food/brandStrength/icon/组 417.png')
-        },
-        {
-          imgPath: require('@/assets/img_food/brandStrength/icon/组 413.png')
-        },
-        {
-          imgPath: require('@/assets/img_food/brandStrength/icon/组 414.png')
-        }
-      ]
-      // safetyShow: [
-      //   {
-      //     imgPath: require('@/assets/img_food/brandStrength/exportQua/P1.png'),
-      //     info: '美国FDA认证'
-      //   },
-      //   {
-      //     imgPath: require('@/assets/img_food/brandStrength/exportQua/P2.png'),
-      //     info: '英国BRC认证'
-      //   },
-      //   {
-      //     imgPath: require('@/assets/img_food/brandStrength/exportQua/P3.png'),
-      //     info: 'PCQI  FSPCA认证'
-      //   },
-      //   {
-      //     imgPath: require('@/assets/img_food/brandStrength/exportQua/P4.png'),
-      //     info: 'BSCI 验厂证明'
-      //   },
-      //   {
-      //     imgPath: require('@/assets/img_food/brandStrength/exportQua/P5.png'),
-      //     info: 'HACCP认证'
-      //   },
-      //   {
-      //     imgPath: require('@/assets/img_food/brandStrength/exportQua/P6.png'),
-      //     info: 'HALAL清真产品认证'
-      //   },
-      //   {
-      //     imgPath: require('@/assets/img_food/brandStrength/exportQua/P7.png'),
-      //     info: 'ISO 45001认证'
-      //   },
-      //   {
-      //     imgPath: require('@/assets/img_food/brandStrength/exportQua/P8.png'),
-      //     info: 'ISO 9001认证'
-      //   },
-      //   {
-      //     imgPath: require('@/assets/img_food/brandStrength/exportQua/P9.png'),
-      //     info: 'iso14001认证'
-      //   },
-      //   {
-      //     imgPath: require('@/assets/img_food/brandStrength/exportQua/P10.png'),
-      //     info: 'ISO 22000认证'
-      //   },
-      //   {
-      //     imgPath: require('@/assets/img_food/brandStrength/exportQua/P11.png'),
-      //     info: '出入境检验报检'
-      //   },
-      //   {
-      //     imgPath: require('@/assets/img_food/brandStrength/exportQua/P12.png'),
-      //     info: '对外贸易经营备案'
-      //   },
-      //   {
-      //     imgPath: require('@/assets/img_food/brandStrength/exportQua/P13.png'),
-      //     info: '海关报关登记'
-      //   },
-      //   {
-      //     imgPath: require('@/assets/img_food/brandStrength/exportQua/P14.png'),
-      //     info: '海关高级认证企业证书'
-      //   }
 
-      // ]
     }
   },
   computed: {
@@ -219,6 +143,30 @@ export default {
         {
           imgPath: require('@/assets/img_food/brandStrength/exportQua/P14.png'),
           info: this.$t('m.i23')
+        }
+      ]
+    },
+    BrandNavList() {
+      return [
+        {
+          imgPath: '#icon-a-huaban14',
+          name: this.$t('m.r1')
+        },
+        {
+          imgPath: '#icon-a-huaban15',
+          name: this.$t('m.r2')
+        },
+        {
+          imgPath: '#icon-a-huaban20',
+          name: this.$t('m.r3')
+        },
+        {
+          imgPath: '#icon-a-huaban17',
+          name: this.$t('m.r4')
+        },
+        {
+          imgPath: '#icon-a-huaban18',
+          name: this.$t('m.r5')
         }
       ]
     }

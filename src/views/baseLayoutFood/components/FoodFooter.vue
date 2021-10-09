@@ -13,14 +13,12 @@
             <div
               v-for="(img, imgIndex) in moreList"
               :key="imgIndex"
-              class="w-1/2 text-left mb-5 flex"
+              class="w-1/2 text-left mb-5 flex "
             >
-              <div class="h-10 float-left items-left">
-                <el-image
-                  :src="img.path"
-                  fit="cover"
-                  class="block w-10 mb-1 mr-4"
-                />
+              <div class="h-10 float-left items-left  ">
+                <svg class="icon block w-10 h-10 mr-4 " aria-hidden="true">
+                  <use :xlink:href="img.path" />
+                </svg>
               </div>
               <!-- whitespace-nowrap 防止文本在元素中被包裹 -->
               <div class=" text-grey text-sm h-10 leading-10 whitespace-nowrap">
@@ -81,31 +79,31 @@ module.exports = {
     moreList() {
       return [
         {
-          path: require('@/assets/img_food/home/more1.png'),
+          path: '#icon-a-huaban24',
           title: this.$t('m.p2'),
           info: '86-768-5420886'
         },
         {
-          path: require('@/assets/img_food/home/more4.png'),
+          path: '#icon-a-huaban30',
           title: this.$t('m.p5'),
           info: '515634'
         },
         {
-          path: require('@/assets/img_food/home/more2.png'),
+          path: '#icon-a-huaban24',
           title: this.$t('m.p2'),
           info: '86-768-5425799'
         },
         {
-          path: require('@/assets/img_food/home/more5.png'),
+          path: '#icon-a-huaban31',
           title: this.$t('m.p6'),
           info: '86-768-5420281'
         },
         {
-          path: require('@/assets/img_food/home/more3.png'),
+          path: '#icon-a-huaban29',
           title: this.$t('m.p4')
         },
         {
-          path: require('@/assets/img_food/home/more6.png'),
+          path: '#icon-a-huaban32',
           title: this.$t('m.p7'),
           info: 'marketing@zhancui.cn'
         }

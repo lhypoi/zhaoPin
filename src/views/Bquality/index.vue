@@ -4,17 +4,16 @@
     <!-- 导航图标 -->
     <div>
       <div class=" pt-20 flex justify-center align-middle mx-auto max-w-screen-lg overflow-hidden">
-        <div class="flex justify-between mt-6 -mx-7">
+        <div class="flex justify-between  mt-6 -mx-7">
           <div
             v-for="(img, imgIndex) in BrandNavList"
             :key="imgIndex"
-            class="mb-8 justify-items-center px-7"
+            class="mb-8 justify-items-center px-7 relative flex justify-center "
           >
-            <el-image
-              :src="img.imgPath"
-              fit="cover"
-              class=" mb-4"
-            />
+            <svg class="icon  block w-40 h-20 mb-4 " aria-hidden="true">
+              <use :xlink:href="img.imgPath" />
+            </svg>
+            <div class=" absolute top-7 left-24 text-gray-400 text-sm font-bold w-20 ">{{ img.name }}</div>
           </div>
         </div>
       </div>
@@ -208,23 +207,7 @@ export default {
   },
   data() {
     return {
-      BrandNavList: [
-        {
-          imgPath: require('@/assets/img_food/brandStrength/icon/组 419.png')
-        },
-        {
-          imgPath: require('@/assets/img_food/brandStrength/icon/组 411.png')
-        },
-        {
-          imgPath: require('@/assets/img_food/brandStrength/icon/组 412.png')
-        },
-        {
-          imgPath: require('@/assets/img_food/brandStrength/icon/组 413.png')
-        },
-        {
-          imgPath: require('@/assets/img_food/brandStrength/icon/410.png')
-        }
-      ],
+
       workPlaceList: [
         {
           imgPath: require('@/assets/img_food/brandStrength/quality/蒙版组 175.png')
@@ -246,6 +229,32 @@ export default {
         }
       ]
 
+    }
+  },
+  computed: {
+    BrandNavList() {
+      return [
+        {
+          imgPath: '#icon-a-huaban23',
+          name: this.$t('m.r1')
+        },
+        {
+          imgPath: '#icon-a-huaban15',
+          name: this.$t('m.r2')
+        },
+        {
+          imgPath: '#icon-a-huaban16',
+          name: this.$t('m.r3')
+        },
+        {
+          imgPath: '#icon-a-huaban17',
+          name: this.$t('m.r4')
+        },
+        {
+          imgPath: '#icon-a-huaban18',
+          name: this.$t('m.r5')
+        }
+      ]
     }
   }
 }

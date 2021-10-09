@@ -48,13 +48,12 @@
           <div
             v-for="(img, imgIndex) in BrandNavList"
             :key="imgIndex"
-            class=" flex-col mb-8 grid justify-items-center"
+            class=" flex-col mb-8 grid justify-items-center relative"
           >
-            <el-image
-              :src="img.imgPath"
-              fit="cover"
-              class=" mb-4 ml-1/2  mr-7 "
-            />
+            <svg class="icon  block w-40 h-20 mb-4 ml-1/2  mr-7 " aria-hidden="true">
+              <use :xlink:href="img.imgPath" />
+            </svg>
+            <div class=" absolute top-7 left-16 text-gray-400 text-sm font-bold w-20 ">{{ img.name }}</div>
           </div>
         </div>
       </div>
@@ -114,20 +113,6 @@ export default {
   },
   data() {
     return {
-      BrandNavList: [
-        {
-          imgPath: require('@/assets/img_food/about/icon/组 423.png')
-        },
-        {
-          imgPath: require('@/assets/img_food/about/icon/组 426.png')
-        },
-        {
-          imgPath: require('@/assets/img_food/about/icon/组 421.png')
-        },
-        {
-          imgPath: require('@/assets/img_food/about/icon/组 420.png')
-        }
-      ]
 
     }
   },
@@ -169,6 +154,26 @@ export default {
           year: this.$t('m.k29'),
           title: this.$t('m.k30'),
           info: this.$t('m.k31')
+        }
+      ]
+    },
+    BrandNavList() {
+      return [
+        {
+          imgPath: '#icon-a-huaban6',
+          name: this.$t('m.q1')
+        },
+        {
+          imgPath: '#icon-a-huaban11',
+          name: this.$t('m.q2')
+        },
+        {
+          imgPath: '#icon-a-huaban8',
+          name: this.$t('m.q3')
+        },
+        {
+          imgPath: '#icon-a-huaban10',
+          name: this.$t('m.q4')
         }
       ]
     }

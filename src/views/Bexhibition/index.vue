@@ -9,13 +9,12 @@
             <div
               v-for="(img, imgIndex) in BrandNavList"
               :key="imgIndex"
-              class=" flex-col mb-8 grid justify-items-center"
+              class="mb-8 justify-items-center px-7 relative flex justify-center "
             >
-              <el-image
-                :src="img.imgPath"
-                fit="cover"
-                class=" mb-4 ml-1/2 mr-7  "
-              />
+              <svg class="icon  block w-40 h-20 mb-4 " aria-hidden="true">
+                <use :xlink:href="img.imgPath" />
+              </svg>
+              <div class=" absolute top-7 left-24 text-gray-400 font-bold text-sm w-20 ">{{ img.name }}</div>
             </div>
           </div>
         </div>
@@ -171,24 +170,33 @@ export default {
   },
   data() {
     return {
-      BrandNavList: [
+
+    }
+  },
+  computed: {
+    BrandNavList() {
+      return [
         {
-          imgPath: require('@/assets/img_food/brandStrength/icon/组 419.png')
+          imgPath: '#icon-a-huaban14',
+          name: this.$t('m.r1')
         },
         {
-          imgPath: require('@/assets/img_food/brandStrength/icon/组 411.png')
+          imgPath: '#icon-a-huaban15',
+          name: this.$t('m.r2')
         },
         {
-          imgPath: require('@/assets/img_food/brandStrength/icon/组 412.png')
+          imgPath: '#icon-a-huaban16',
+          name: this.$t('m.r3')
         },
         {
-          imgPath: require('@/assets/img_food/brandStrength/icon/组 413.png')
+          imgPath: '#icon-a-huaban21',
+          name: this.$t('m.r4')
         },
         {
-          imgPath: require('@/assets/img_food/brandStrength/icon/410.png')
+          imgPath: '#icon-a-huaban18',
+          name: this.$t('m.r5')
         }
       ]
-
     }
   }
 }

@@ -284,5 +284,18 @@ export const m = {
   p13: 'submit',
   p14: 'Tmall QR code',
   p15: 'Wechat QR code',
-  p16: 'record number：'
+  p16: 'record number：',
+
+  // 关于展翠导航
+  q1: 'Company Profile',
+  q2: 'Brand story',
+  q3: 'company culture',
+  q4: 'Video Center',
+
+  // 品牌实力导航
+  r1: 'Research quality',
+  r2: 'Export country',
+  r3: 'Export qualification',
+  r4: 'International Fair',
+  r5: 'Company honor'
 }
