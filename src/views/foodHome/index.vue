@@ -15,13 +15,13 @@
               class="block w-full h-full"
             />
           </div>
-          <div class="absolute top-32 text-white font-bold text-5xl space-y-10">
+          <div class="absolute top-32 text-white font-bold text-2xl space-y-10">
             <div>OEM/ODM</div>
-            <div>休闲食品一站式定制</div>
+            <div>{{ $t('m.a1') }}</div>
             <div class=" flex space-x-12">
-              <div>专业研发设计团队全 </div>
-              <div>自动化生产设备</div>
-              <div>进出口资质齐全</div>
+              <div>{{ $t('m.a2') }}</div>
+              <div>{{ $t('m.a3') }}</div>
+              <div>{{ $t('m.a4') }}</div>
             </div>
           </div>
         </div>
@@ -76,57 +76,34 @@ export default {
         {
           imgPath: require('@/assets/img_food/home/组 1088.png')
         }
-      ],
-
-      seriesList: [
-        {
-          icon: require('@/assets/img_food/home/series1.png'),
-          title: '糖果系列'
-        },
-        {
-          icon: require('@/assets/img_food/home/series2.png'),
-          title: '燕麦系列'
-        },
-        {
-          icon: require('@/assets/img_food/home/series3.png'),
-          title: '佛手果系列'
-        },
-        {
-          icon: require('@/assets/img_food/home/series4.png'),
-          title: '巧克力系列'
-        },
-        {
-          icon: require('@/assets/img_food/home/series5.png'),
-          title: '饼干系列'
-        }
-
-      ],
-      serieshowList: [
-        {
-          path: require('@/assets/img_food/home/组 1082.png'),
-          title: '糖果系列'
-        },
-        {
-          path: require('@/assets/img_food/home/组 1083.png'),
-          title: '燕麦系列'
-        },
-        {
-          path: require('@/assets/img_food/home/组 1084.png'),
-          title: '佛手果系列'
-        },
-        {
-          path: require('@/assets/img_food/home/组 1085.png'),
-          title: '巧克力系列'
-        },
-        {
-          path: require('@/assets/img_food/home/组 1086.png'),
-          title: '饼干系列'
-        }
       ]
     }
   },
   computed: {
-
+    serieshowList() {
+      return [
+        {
+          path: require('@/assets/img_food/home/组 1082.png'),
+          title: this.$t('m.a5')
+        },
+        {
+          path: require('@/assets/img_food/home/组 1083.png'),
+          title: this.$t('m.a6')
+        },
+        {
+          path: require('@/assets/img_food/home/组 1084.png'),
+          title: this.$t('m.a7')
+        },
+        {
+          path: require('@/assets/img_food/home/组 1085.png'),
+          title: this.$t('m.a8')
+        },
+        {
+          path: require('@/assets/img_food/home/组 1086.png'),
+          title: this.$t('m.a9')
+        }
+      ]
+    }
   },
   created() {},
   mounted() {

@@ -7,10 +7,21 @@
         fit="cover"
         class="BP"
       />
-      <div class=" absolute text-center pl-28">
-        <div class=" text-6xl text-white">关于展翠的</div>
-        <div class=" text-6xl text-white py-5 tracking-widest">业务范围</div>
+      <div class=" absolute text-center ">
+        <div class=" text-6xl text-white">{{ $t('m.l15') }}</div>
+        <div class=" text-6xl text-white py-5 tracking-widest">{{ $t('m.l155') }}</div>
         <div />
+      </div>
+      <div class=" w-3/4 absolute bottom-20 text-white text-center flex justify-center space-x-32  ">
+        <div class="">
+          <div class=" text-3xl">OEM</div>
+          <div class=" text-base">代工</div>
+        </div>
+        <div class="">
+          <div class=" text-3xl">ODM</div>
+          <div class=" text-base">贴牌</div>
+        </div>
+
       </div>
     </div>
 

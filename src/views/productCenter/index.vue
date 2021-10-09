@@ -13,19 +13,19 @@
           <!-- <div class="leftBox flex-none w-2/12" /> -->
           <!-- <div class="flex-grow"> -->
           <div class=" absolute top-0 w-2/3 h-full pt-10 2xl:pt-20">
-            <div class="text-5xl 2xl:text-6xl text-orange1 mb-10">搜索你喜欢的糖果！</div>
-            <div class=" text-3xl 2xl:text-4xl text-white mb-10">享受美妙的感觉</div>
+            <div class="text-5xl 2xl:text-6xl text-orange1 mb-10">{{ $t('m.b1') }}</div>
+            <div class=" text-3xl 2xl:text-4xl text-white mb-10">{{ $t('m.b2') }}</div>
             <div class="searchBar">
               <form class=" h-16">
-                <input class="pl-5" type="text" placeholder="请输入您想要的糖果">
-                <button class=" " type="submit" />
+                <input class="pl-5" type="text" :placeholder="$t('m.b3')">
+                <button class=" text-sm text-white" type="submit">{{ $t('m.b4') }}</button>
               </form>
             </div>
             <!--这种按钮堆叠的场景，应该让按钮根据本身的文字自动撑开整个容器 -->
             <div class="flex mt-12 -mx-4">
-              <div class="rounded-full border-solid border-2 border-white h-16 text-white text-xl flex items-center justify-center px-8 mx-4 cursor-pointer">软糖</div>
-              <div class="rounded-full border-solid border-2 border-white h-16 text-white text-xl flex items-center justify-center px-8 mx-4 cursor-pointer">棒棒糖</div>
-              <div class="rounded-full border-solid border-2 border-white h-16 text-white text-xl flex items-center justify-center px-8 mx-4 cursor-pointer">订制糖果</div>
+              <div class="rounded-full border-solid border-2 border-white h-16 text-white text-xl flex items-center justify-center px-8 mx-4 cursor-pointer">{{ $t('m.b5') }}</div>
+              <div class="rounded-full border-solid border-2 border-white h-16 text-white text-xl flex items-center justify-center px-8 mx-4 cursor-pointer">{{ $t('m.b6') }}</div>
+              <div class="rounded-full border-solid border-2 border-white h-16 text-white text-xl flex items-center justify-center px-8 mx-4 cursor-pointer">{{ $t('m.b7') }}</div>
             </div>
           </div>
           <div class="rightBox flex-none w-2/12" />
@@ -39,7 +39,7 @@
       <!-- 选择糖果类型-->
       <div class="mt-20">
         <titleNav0>
-          <div slot="leftTop">选择糖果类型</div>
+          <div slot="leftTop">{{ $t('m.b8') }}</div>
           <div slot="leftBottom">CHOOSE THE TYPE OF CANDY</div>
           <div slot="right">CHOOSE THE TYPE OF CANDY</div>
         </titleNav0>
@@ -58,9 +58,9 @@
       <!-- 订制糖果 -->
       <div class=" mt-32">
         <titleNav0>
-          <div slot="leftTop">订制糖果</div>
+          <div slot="leftTop">{{ $t('m.b7') }}</div>
           <div slot="leftBottom">CUSTOM CANDY</div>
-          <div slot="right">订制你想要的糖果</div>
+          <div slot="right">{{ $t('m.b10') }}</div>
         </titleNav0>
 
         <div class="flex mt-12 relative">
@@ -71,9 +71,9 @@
           />
           <div class=" w-1/2 flex-col flex items-center justify-center relative  ">
             <div class=" w-1/2">
-              <div class=" mb-14 text-3xl font-bold">订制糖果</div>
-              <div class=" mb-8 text-sm">订制你自己想要的糖果类型：不同的糖果图案、不同的口味、不同的包装设计，定制出你自己梦想中的糖果！</div>
-              <div class="text-3xl font-bold">DIY不同的糖果</div>
+              <div class=" mb-14 text-3xl font-bold">{{ $t('m.b9') }}</div>
+              <div class=" mb-8 text-sm">{{ $t('m.b11') }}</div>
+              <div class="text-3xl font-bold">{{ $t('m.b12') }}</div>
             </div>
           </div>
           <div class=" w-1/2"> <slideShow2 /> </div>
@@ -84,9 +84,9 @@
       <!-- 糖果系列选择 -->
       <div class=" mt-28">
         <titleNav>
-          <div slot="leftTop">糖果系列选择</div>
+          <div slot="leftTop">{{ $t('m.b17') }}</div>
           <div slot="leftBottom">CANDY SERIES SELECTION</div>
-          <div slot="more" @click="gocandy"> 查看更多</div>
+          <div slot="more" @click="gocandy"> {{ $t('m.b18') }}</div>
         </titleNav>
         <slideShow />
       </div>
@@ -94,9 +94,9 @@
       <!-- 燕麦系列选择 -->
       <div class=" mt-28">
         <titleNav>
-          <div slot="leftTop">燕麦系列选择</div>
+          <div slot="leftTop">{{ $t('m.b19') }}</div>
           <div slot="leftBottom">OATS SERIES SELECTION</div>
-          <div slot="more" @click="gooat"> 查看更多</div>
+          <div slot="more" @click="gooat"> {{ $t('m.b18') }}</div>
         </titleNav>
         <slideShow />
       </div>
@@ -104,9 +104,9 @@
       <!-- 佛手果系列选择 -->
       <div class=" mt-28">
         <titleNav>
-          <div slot="leftTop">燕麦系列选择</div>
+          <div slot="leftTop">{{ $t('m.b20') }}</div>
           <div slot="leftBottom">OATS SERIES SELECTION</div>
-          <div slot="more" @click="gofoshou"> 查看更多</div>
+          <div slot="more" @click="gofoshou"> {{ $t('m.b18') }}</div>
         </titleNav>
         <slideShow />
       </div>
@@ -114,9 +114,9 @@
       <!-- 巧克力系列选择 -->
       <div class=" mt-28">
         <titleNav>
-          <div slot="leftTop">巧克力系列选择</div>
+          <div slot="leftTop">{{ $t('m.b21') }}</div>
           <div slot="leftBottom">CHOCOLATE SERIES SELECTION</div>
-          <div slot="more" @click="gochocolate"> 查看更多</div>
+          <div slot="more" @click="gochocolate"> {{ $t('m.b18') }}</div>
         </titleNav>
         <slideShow />
       </div>
@@ -124,9 +124,9 @@
       <!-- 饼干系列选择 -->
       <div class=" mt-28">
         <titleNav>
-          <div slot="leftTop">饼干系列选择</div>
+          <div slot="leftTop">{{ $t('m.b22') }}</div>
           <div slot="leftBottom">BISCUIT SERIES SELECTION</div>
-          <div slot="more" @click="gobiscuit"> 查看更多</div>
+          <div slot="more" @click="gobiscuit"> {{ $t('m.b18') }}</div>
         </titleNav>
         <slideShow />
       </div>
@@ -136,9 +136,9 @@
         <div class=" relative flex items-center ">
           <img src="@/assets/img_food/productCenter/bigP2.png" class="w-full" alt="">
           <div class="wenzi absolute  right-7 text-right ">
-            <div class=" text-2xl">丰富的水果维生素</div>
-            <div class=" text-sceondTextC pt-3 pb-3">让每一颗都好像在吃水果一般<br>让你回味无穷</div>
-            <div>展翠用心打造健康食品</div>
+            <div class=" text-2xl">{{ $t('m.b23') }}</div>
+            <div class=" text-sceondTextC pt-3 pb-3">{{ $t('m.b24') }}<br>{{ $t('m.b25') }}</div>
+            <div>{{ $t('m.b26') }}</div>
           </div>
         </div>
       </div>
@@ -238,10 +238,12 @@ export default {
             height: 69px;
         }
         .searchBar button:before {
-            content: "搜索";
+            // content: "搜索";
             font-size: 13px;
             color: white;
         }
+         .suf:after { content: attr(data-suffix) }
+
         .BP{
           height: 64vh ;
         }

@@ -23,7 +23,7 @@
 
       <!-- 历年广交会 -->
       <div>
-        <div class=" flex items-center justify-center text-4xl font-bold mb-28 mt-24 ">历年广交会</div>
+        <div class=" flex items-center justify-center text-4xl font-bold mb-28 mt-24 ">{{ $t('m.j') }}</div>
         <div class=" flex justify-between mx-8">
           <div class=" mb-12 flex flex-col space-y-8 px-4">
             <el-image

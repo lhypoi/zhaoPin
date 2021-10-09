@@ -13,9 +13,9 @@
           />
         </div>
         <div class="flex flex-col pl-7 ">
-          <div class=" text-xl text-grey1 font-bold">第十二届广交会</div>
-          <div class=" text-sm text-grey2 pt-3 pb-6">时间：2021-03-12</div>
-          <div class=" text-xl text-grey2 ">新的一场广交会的开始预示着新的挑战来临</div>
+          <div class=" text-xl text-grey1 font-bold">{{ $t('m.m2') }}</div>
+          <div class=" text-sm text-grey2 pt-3 pb-6">{{ $t('m.m3') }}</div>
+          <div class=" text-xl text-grey2 ">{{ $t('m.m4') }}</div>
         </div>
       </div>
     </div>

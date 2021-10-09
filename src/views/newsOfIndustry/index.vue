@@ -3,7 +3,7 @@
     <div class=" container mx-auto pt-14 max-w-screen-lg">
       <div class=" flex pb-10">
         <div class=" border-l-4 border-orange mr-3" />
-        <div class=" text-3xl font-bold">行业动态</div>
+        <div class=" text-3xl font-bold">{{ $t('m.m10') }}</div>
       </div>
       <div class=" ">
         <NewsItem />

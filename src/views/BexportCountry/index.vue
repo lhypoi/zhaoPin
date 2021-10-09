@@ -28,9 +28,8 @@
           </div>
         </div>
         <div class=" flex flex-col justify-center  ">
-          <div class=" text-4xl font-bold text-center mb-14">展翠有限公司</div>
-          <div class=" text-2xl text-left mx-24 mb-20 tracking-widest leading-loose">广东展翠食品股份有限公司建有近85000平方米的食品产业园，公司产品近300个品种，产品远销亚太、美洲、中东、非洲以及欧洲等多个国家和地区，具有强大的产品输出能力,能满足全球品牌的一站式采购需求。
-          </div>
+          <div class=" text-4xl font-bold text-center mb-14">{{ $t('m.i1') }}</div>
+          <div class=" text-2xl text-left mx-24 mb-20 tracking-widest leading-loose">{{ $t('m.i2') }}</div>
         </div>
       </div>
 
@@ -44,20 +43,20 @@
         />
         <div class=" w-3/4 absolute text-white text-center flex justify-between ">
           <div class="">
-            <div class=" text-4xl">1996年</div>
-            <div class=" text-lg">成立于</div>
+            <div class=" text-3xl">{{ $t('m.i4') }}</div>
+            <div class=" text-base">{{ $t('m.i5') }}</div>
           </div>
           <div class="">
-            <div class=" text-4xl">200+</div>
-            <div class=" text-lg">食品品种</div>
+            <div class=" text-3xl">200+</div>
+            <div class=" text-baseg">{{ $t('m.i6') }}</div>
           </div>
           <div class="">
-            <div class=" text-4xl">80+</div>
-            <div class=" text-lg">远销全球国家和地区</div>
+            <div class=" text-3xl">80+</div>
+            <div class=" text-base">{{ $t('m.i7') }}</div>
           </div>
           <div class="">
-            <div class=" text-4xl">500强</div>
-            <div class=" text-lg">广东企业</div>
+            <div class=" text-3xl">{{ $t('m.i8') }}</div>
+            <div class=" text-base">{{ $t('m.i9') }}</div>
           </div>
         </div>
       </div>

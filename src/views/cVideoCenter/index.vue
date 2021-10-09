@@ -24,7 +24,7 @@
 
         <div class="container mx-auto px-28 flex max-w-screen-lg">
 
-          <div class="flex flex-col justify-between pb-16">
+          <div class="flex flex-col justify-between pb-16 w-1/6">
             <div>
               <el-image
                 :src="require('@/assets/img_food/logo.png')"
@@ -70,14 +70,18 @@ export default {
         {
           imgPath: require('@/assets/img_food/about/icon/组 424.png')
         }
-      ],
-      videoList: [
+      ]
+    }
+  },
+  computed: {
+    videoList() {
+      return [
         {
-          title: '展翠宣传视频',
+          title: this.$t('m.l13'),
           imgPath: require('@/assets/img_food/about/视频1.png')
         },
         {
-          title: '软糖车间',
+          title: this.$t('m.l14'),
           imgPath: require('@/assets/img_food/about/视频2.png')
         }
       ]

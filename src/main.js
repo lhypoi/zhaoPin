@@ -21,6 +21,17 @@ import './utils/error-log' // error log
 import * as filters from './filters' // global filters
 
 import 'tailwindcss/tailwind.css'
+import VueI18n from 'vue-i18n'
+
+Vue.use(VueI18n)
+
+const i18n = new VueI18n({
+  locale: 'en', // 语言标识
+  messages: {
+    'zh': require('./common/lang/zh'),
+    'en': require('./common/lang/en')
+  }
+})
 
 /**
  * If you don't want to use mock-server
@@ -51,6 +62,7 @@ new Vue({
   el: '#app',
   router,
   store,
+  i18n,
   mounted() {
     document.dispatchEvent(new Event('render-event'))
   },

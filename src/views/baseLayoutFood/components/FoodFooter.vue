@@ -7,7 +7,7 @@
       <div class=" h-64 bg-secondBgc flex align-middle flex-row mt-0 overflow-hidden">
         <!-- 第一部分，占大盒子的一半宽w-1/2 -->
         <div class=" bg-secondBgc box1 w-1/2 pr-5">
-          <div class="title text-white ">展翠食品-专注糖果研发</div>
+          <div class="title text-white ">{{ $t('m.p1') }}</div>
           <div class=" w-6 h-1 bg-orange mb-7 mt-5" />
           <div class="flex flex-row flex-wrap ">
             <div
@@ -35,12 +35,12 @@
         </div>
         <!-- 第二部分，占大盒子的1/6宽  -->
         <div class=" form bg-secondBgc w-1/6">
-          <div class="title text-white">联系我们</div>
+          <div class="title text-white">{{ $t('m.p8') }}</div>
           <div class=" w-6 h-1 bg-orange mt-5" />
-          <div><input type="text" placeholder="姓名" class="bg-secondBgc"></div>
-          <div><input type="text" placeholder="邮箱" class="bg-secondBgc"></div>
-          <div><input type="text" placeholder="电话" class="bg-secondBgc"></div>
-          <div><input type="text" placeholder="内容" class="bg-secondBgc"></div>
+          <div><input type="text" :placeholder="$t('m.p9')" class="bg-secondBgc"></div>
+          <div><input type="text" :placeholder="$t('m.p10')" class="bg-secondBgc"></div>
+          <div><input type="text" :placeholder="$t('m.p11')" class="bg-secondBgc"></div>
+          <div><input type="text" :placeholder="$t('m.p12')" class="bg-secondBgc"></div>
           <div><h1 class="">提交</h1></div>
         </div>
         <!-- 第三部分，占大盒子的1/3，靠右显示，自适应流出与第二部分的间隙，而不是自己添加宽度 -->
@@ -74,45 +74,52 @@
 module.exports = {
   data: function() {
     return {
-      moreList: [
+
+    }
+  },
+  computed: {
+    moreList() {
+      return [
         {
           path: require('@/assets/img_food/home/more1.png'),
-          title: '咨询热线 ：',
+          title: this.$t('m.p2'),
           info: '86-768-5420886'
         },
         {
           path: require('@/assets/img_food/home/more4.png'),
-          title: '邮箱 ：',
+          title: this.$t('m.p5'),
           info: '515634'
         },
         {
           path: require('@/assets/img_food/home/more2.png'),
-          title: '热线查询：',
+          title: this.$t('m.p2'),
           info: '86-768-5425799'
         },
         {
           path: require('@/assets/img_food/home/more5.png'),
-          title: '传真：',
+          title: this.$t('m.p6'),
           info: '86-768-5420281'
         },
         {
           path: require('@/assets/img_food/home/more3.png'),
-          title: '中国·广东省潮州市潮安县东凤镇展翠工业园'
+          title: this.$t('m.p4')
         },
         {
           path: require('@/assets/img_food/home/more6.png'),
-          title: '邮箱：',
+          title: this.$t('m.p7'),
           info: 'marketing@zhancui.cn'
         }
-      ],
-      moreList2: [
+      ]
+    },
+    moreList2() {
+      return [
         {
           path: require('@/assets/img_food/home/code1.png'),
-          title: '天猫二维码'
+          title: this.$t('m.p14')
         },
         {
           path: require('@/assets/img_food/home/code1.png'),
-          title: '微信二维码'
+          title: this.$t('m.p15')
         },
         {
           path: require('@/assets/img_food/home/code1.png'),
