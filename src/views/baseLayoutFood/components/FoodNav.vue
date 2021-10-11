@@ -63,134 +63,145 @@ export default {
   props: {},
   data() {
     return {
-      // 导航菜单的数据
-      navMenu: [
+
+    }
+  },
+  computed: {
+    // 导航菜单的数据
+    navMenu() {
+      return [
         {
-          title: '首页',
+          title: this.$t('m.o1'),
           path: '/',
           position: 'left'
         },
         {
-          title: '产品中心',
+          title: this.$t('m.o2'),
           path: '/product',
           position: 'left',
           children: [
             {
-              title: '产品中心',
+              title: this.$t('m.o2'),
               path: '/productCenter'
             },
             {
-              title: '糖果系列',
+              title: this.$t('m.o3'),
               path: '/product1Candy'
             },
             {
-              title: '燕麦系列',
+              title: this.$t('m.o4'),
               path: '/product2Oat'
             },
             {
-              title: '佛手果系列',
+              title: this.$t('m.o5'),
               path: '/product3foShou'
             },
             {
-              title: '巧克力系列',
+              title: this.$t('m.o6'),
               path: '/product4Chocolate'
             },
             {
-              title: '饼干系列',
+              title: this.$t('m.o7'),
               path: '/product5Biscuit'
             }
           ]
         },
         {
-          title: '品牌实力',
+          title: this.$t('m.o8'),
           path: '/pb',
           position: 'left',
           children: [
             {
-              title: '科研品质',
+              title: this.$t('m.o9'),
               path: '/Bquality'
             },
             {
-              title: '出口国家',
+              title: this.$t('m.o10'),
               path: '/BexportCountry'
             },
             {
-              title: '出口资质',
+              title: this.$t('m.o11'),
               path: '/BexportQuality'
             },
             {
-              title: '展销会',
+              title: this.$t('m.o12'),
               path: '/Bexhibition'
             },
             {
-              title: '公司荣誉',
+              title: this.$t('m.o13'),
               path: '/Bglory'
             }
 
           ]
         },
         {
-          title: '关于展翠',
+          title: this.$t('m.o14'),
           path: '/about',
           position: 'left',
           children: [
             {
-              title: '公司简介',
+              title: this.$t('m.o15'),
               path: '/cIntro'
             },
             {
-              title: '品牌故事',
+              title: this.$t('m.o16'),
               path: '/cStory'
             },
             {
-              title: '企业文化',
+              title: this.$t('m.o17'),
               path: '/cCulture'
             },
             {
-              title: '视频中心',
+              title: this.$t('m.o18'),
               path: '/cVideoCenter'
             }
           ]
         },
         {
-          title: '业务范围',
+          title: this.$t('m.o19'),
           path: '/ScopeOfServices',
           position: 'right'
         },
         {
-          title: '新闻中心',
+          title: this.$t('m.o20'),
           path: '/news',
           position: 'right',
           children: [
             {
-              title: '公司动态',
+              title: this.$t('m.o21'),
               path: '/newsDetail',
               children: [
                 {
-                  title: '公司动态',
+                  title: this.$t('m.o21'),
                   path: '/newsCompany'
                 },
                 {
-                  title: '详情查看',
+                  title: this.$t('m.o22'),
                   path: '/newsDetail'
                 }
               ]
             },
             {
-              title: '行业动态',
+              title: this.$t('m.o23'),
               path: '/newsOfIndustry'
             }
           ]
         },
         {
-          title: '联系我们',
+          title: this.$t('m.o24'),
           path: '/contactUsFood',
           position: 'right'
         }
+        // {
+        //   title: '切换语言',
+        //   path: '',
+        //   position: 'right',
+        //   methods:{
+
+        //   }
+        // }
       ]
-    }
-  },
-  computed: {
+    },
     // 左侧菜单
     leftNavMenu() {
       return this.navMenu.filter(menu => menu.position === 'left')

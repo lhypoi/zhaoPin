@@ -5,7 +5,7 @@
       <el-image
         :src="require('@/assets/img_food/brandStrength/exportCountry/蒙版组 294.png')"
         fit="cover"
-        class="z-0"
+        class="BP"
       />
     </div>
 
@@ -17,20 +17,18 @@
             <div
               v-for="(img, imgIndex) in BrandNavList"
               :key="imgIndex"
-              class=" flex-col mb-8 grid justify-items-center"
+              class="mb-8 justify-items-center px-7 relative flex justify-center "
             >
-              <el-image
-                :src="img.imgPath"
-                fit="cover"
-                class=" mb-4 ml-1/2  mr-7 "
-              />
+              <svg class="icon  block w-40 h-20 mb-4 " aria-hidden="true">
+                <use :xlink:href="img.imgPath" />
+              </svg>
+              <div class=" absolute top-7 left-24 text-gray-400 text-sm font-bold w-20   ">{{ img.name }}</div>
             </div>
           </div>
         </div>
         <div class=" flex flex-col justify-center  ">
-          <div class=" text-4xl font-bold text-center mb-14">展翠有限公司</div>
-          <div class=" text-2xl text-left mx-24 mb-20 tracking-widest leading-loose">广东展翠食品股份有限公司建有近85000平方米的食品产业园，公司产品近300个品种，产品远销亚太、美洲、中东、非洲以及欧洲等多个国家和地区，具有强大的产品输出能力,能满足全球品牌的一站式采购需求。
-          </div>
+          <div class=" text-4xl font-bold text-center mb-14">{{ $t('m.i1') }}</div>
+          <div class=" text-2xl text-left mx-24 mb-20 tracking-widest leading-loose">{{ $t('m.i2') }}</div>
         </div>
       </div>
 
@@ -44,20 +42,20 @@
         />
         <div class=" w-3/4 absolute text-white text-center flex justify-between ">
           <div class="">
-            <div class=" text-4xl">1996年</div>
-            <div class=" text-lg">成立于</div>
+            <div class=" text-3xl">{{ $t('m.i4') }}</div>
+            <div class=" text-base">{{ $t('m.i5') }}</div>
           </div>
           <div class="">
-            <div class=" text-4xl">200+</div>
-            <div class=" text-lg">食品品种</div>
+            <div class=" text-3xl">200+</div>
+            <div class=" text-baseg">{{ $t('m.i6') }}</div>
           </div>
           <div class="">
-            <div class=" text-4xl">80+</div>
-            <div class=" text-lg">远销全球国家和地区</div>
+            <div class=" text-3xl">80+</div>
+            <div class=" text-base">{{ $t('m.i7') }}</div>
           </div>
           <div class="">
-            <div class=" text-4xl">500强</div>
-            <div class=" text-lg">广东企业</div>
+            <div class=" text-3xl">{{ $t('m.i8') }}</div>
+            <div class=" text-base">{{ $t('m.i9') }}</div>
           </div>
         </div>
       </div>
@@ -73,29 +71,40 @@ export default {
   },
   data() {
     return {
-      BrandNavList: [
+
+    }
+  },
+  computed: {
+    BrandNavList() {
+      return [
         {
-          imgPath: require('@/assets/img_food/brandStrength/icon/410.png')
+          imgPath: '#icon-a-huaban14',
+          name: this.$t('m.r1')
         },
         {
-          imgPath: require('@/assets/img_food/brandStrength/icon/组 418.png')
+          imgPath: '#icon-a-huaban19',
+          name: this.$t('m.r2')
         },
         {
-          imgPath: require('@/assets/img_food/brandStrength/icon/组 412.png')
+          imgPath: '#icon-a-huaban16',
+          name: this.$t('m.r3')
         },
         {
-          imgPath: require('@/assets/img_food/brandStrength/icon/组 413.png')
+          imgPath: '#icon-a-huaban17',
+          name: this.$t('m.r4')
         },
         {
-          imgPath: require('@/assets/img_food/brandStrength/icon/组 414.png')
+          imgPath: '#icon-a-huaban18',
+          name: this.$t('m.r5')
         }
       ]
-
     }
   }
 }
 </script>
 
-<style lang="stylus" scoped>
-
+<style scoped>
+.BP{
+  height: 64vh ;
+}
 </style>

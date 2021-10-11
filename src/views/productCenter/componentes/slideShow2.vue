@@ -18,11 +18,11 @@
               />
             </div>
             <!-- 信息文字 -->
-            <div class="absolute left-12 bottom-32 text-sm">DIY出你自己想要的糖果</div>
+            <div class="absolute left-12 bottom-40 text-sm">{{ $t('m.b13') }}</div>
             <!-- 标题文字 -->
-            <div class="absolute left-12 bottom-24 text-base text-orange1 font-extrabold">展翠食品</div>
+            <div class="absolute left-12 bottom-32 text-base text-orange1 font-extrabold">{{ $t('m.b14') }}</div>
             <!-- 虚线框文字 -->
-            <div class="absolute left-12 bottom-12 text-sceondTextC text-sm px-5 py-2 border-dashed rounded-lg border-2 border-gray-400 cursor-pointer">定制你专属糖果</div>
+            <div class="absolute left-12 right-16 bottom-10 text-sceondTextC text-sm px-5 py-2 border-dashed rounded-3xl border-2 border-gray-400 cursor-pointer">{{ $t('m.b15') }}</div>
           </div>
 
           <div class="relative h-full pt-7" style="width: 20vw;" @click="$router.push(item.router)">
@@ -37,11 +37,11 @@
               />
             </div>
             <!-- 信息文字 -->
-            <div class="absolute left-12 bottom-32 text-sm">巧克力私人订制款</div>
+            <div class="absolute left-12 bottom-40 text-sm">{{ $t('m.b16') }}</div>
             <!-- 标题文字 -->
-            <div class="absolute left-12 bottom-24 text-base text-orange1 font-extrabold">展翠食品</div>
+            <div class="absolute left-12 bottom-32 text-base text-orange1 font-extrabold">{{ $t('m.b14') }}</div>
             <!-- 虚线框文字 -->
-            <div class="absolute left-12 bottom-12 text-sceondTextC text-sm px-5 py-2 border-dashed rounded-lg border-2 border-gray-400 cursor-pointer">定制你专属糖果</div>
+            <div class="absolute left-12 right-16 bottom-10 text-sceondTextC text-sm px-5 py-2 border-dashed rounded-3xl border-2 border-gray-400 cursor-pointer">{{ $t('m.b15') }}</div>
           </div>
         </div>
       </el-carousel-item>

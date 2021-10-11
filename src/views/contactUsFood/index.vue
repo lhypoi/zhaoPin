@@ -7,16 +7,16 @@
           <el-image
             :src="require('@/assets/img_food/contact/蒙版组 297.png')"
             fit="cover"
-            class="z-0"
+            class="z-0 BP"
           />
 
         </div>
       </div>
       <!-- 中间联系方式 -->
       <div class="flex flex-col items-center justify-center relative mb-64">
-        <div class="w-full max-w-screen-lg bottom-52 z-10 absolute text-left">
-          <div class=" text-5xl font-bold text-white">联系我们</div>
-          <div class=" text-2xl text-white py-5 tracking-widest">找到自己喜欢的或者有任何建议就联系我们吧！</div>
+        <div class="w-full max-w-screen-lg bottom-52 z-10 absolute text-left pr-80">
+          <div class=" text-5xl font-bold text-white">{{ $t('m.n1') }}</div>
+          <div class=" text-2xl text-white py-5 tracking-widest">{{ $t('m.n2') }}</div>
         </div>
         <div class="bg-white w-full max-w-screen-lg -top-20 z-10 absolute">
           <div class=" flex justify-start border-b-2 py-14 ">
@@ -30,7 +30,7 @@
               <div class=" text-2xl font-bold">
                 (0086)18688001472
               </div>
-              <div>总经理电话</div>
+              <div>{{ $t('m.n3') }}</div>
             </div>
             <div class=" flex flex-col w-1/2 pl-12">
               <div>
@@ -42,7 +42,7 @@
               <div class=" text-2xl font-bold">
                 (0086)18688001472
               </div>
-              <div>总经理电话</div>
+              <div>{{ $t('m.n3') }}</div>
             </div>
           </div>
 
@@ -55,11 +55,11 @@
                 />
               </div>
               <div class=" flex flex-col">
-                <div>
-                  中国·广东省
+                <div class=" font-bold">
+                  {{ $t('m.n5') }}
                 </div>
                 <div>
-                  潮州市潮安县东凤镇展翠工业园
+                  {{ $t('m.n6') }}
                 </div>
               </div>
             </div>
@@ -71,8 +71,8 @@
                 />
               </div>
               <div class=" flex flex-col">
-                <div>
-                  公司传真
+                <div class=" font-bold">
+                  {{ $t('m.n7') }}
                 </div>
                 <div>
                   86-768-5420281
@@ -87,8 +87,8 @@
                 />
               </div>
               <div class=" flex flex-col">
-                <div>
-                  公司邮箱
+                <div class=" font-bold">
+                  {{ $t('m.n8') }}
                 </div>
                 <div>
                   marketing@zhancui.cn
@@ -104,7 +104,7 @@
     <!-- 联系我们 -->
     <div class="max-w-screen-lg mx-auto flex flex-col items-center justify-center pb-12 pt-16">
       <div class=" flex flex-col items-center">
-        <div class=" text-gray-300 text-4xl">联系我们</div>
+        <div class=" text-gray-300 text-4xl">{{ $t('m.n1') }}</div>
         <div class=" text-gray-300 py-3">contact us</div>
         <div class=" border-b-4 w-6" />
       </div>
@@ -116,7 +116,7 @@
         </div>
         <div><input type="text" placeholder="留言：" class="border-b-2 w-full outline-none"></div>
         <div class=" flex justify-center pt-12">
-          <div class=" mr-10 px-12 py-2 border-2"><button><h1 class="">提交</h1></button></div>
+          <div class=" mr-10 px-12 py-2 border-2"><button><h1 class="">{{ $t('m.n9') }}</h1></button></div>
           <div class="px-12 py-2 bg-blue-400 text-white"><button><h1 class="">重置</h1></button></div>
         </div>
       </div>
@@ -125,8 +125,8 @@
     <!-- 地图 -->
     <div class="pt-16">
       <div class=" flex flex-col items-center">
-        <div class="text-gray-300 text-4xl">地图</div>
-        <div class="text-gray-300 py-3">map</div>
+        <div class="text-gray-300 text-4xl">{{ $t('m.n10') }}</div>
+        <div class="text-gray-300 py-3">{{ $t('m.n11') }}</div>
         <div class=" border-b-4 w-6" />
       </div>
       <!-- <div class=" flex items-center justify-center py-12">
@@ -216,6 +216,9 @@ export default {
 </script>
 
 <style scoped>
+.BP{
+  height: 64vh ;
+}
 .baidumap {
     width: 1000px;
     height: 500px;

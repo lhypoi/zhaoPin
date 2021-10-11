@@ -5,10 +5,10 @@
       <el-image
         :src="require('@/assets/img_food/brandStrength/glory/组 1091.png')"
         fit="cover"
-        class="z-0"
+        class="BP"
       />
       <div class=" absolute text-center">
-        <div class=" text-5xl text-white font-bold">公司荣耀</div>
+        <div class=" text-5xl text-white font-bold">{{ $t('m.j0') }}</div>
       </div>
     </div>
 
@@ -19,13 +19,12 @@
           <div
             v-for="(img, imgIndex) in BrandNavList"
             :key="imgIndex"
-            class=" flex-col mb-8 grid justify-items-center"
+            class="mb-8 justify-items-center px-7 relative flex justify-center "
           >
-            <el-image
-              :src="img.imgPath"
-              fit="cover"
-              class=" mb-4 ml-1/2 mr-7  "
-            />
+            <svg class="icon  block w-40 h-20 mb-4 " aria-hidden="true">
+              <use :xlink:href="img.imgPath" />
+            </svg>
+            <div class=" absolute top-7 left-24 text-gray-400 font-bold text-sm w-20 ">{{ img.name }}</div>
           </div>
         </div>
       </div>
@@ -34,7 +33,7 @@
     <!-- 公司荣誉照片展示 -->
     <div class="gloryShow pt-20 pb-20 bg-gray-100">
       <div class=" max-w-screen-lg container mx-auto">
-        <div class=" flex justify-center items-center text-4xl font-bold">公司荣誉</div>
+        <div class=" flex justify-center items-center text-4xl font-bold">{{ $t('m.j0') }}</div>
         <div class=" pt-10 flex justify-center mx-auto">
           <div class="flex flex-row justify-between flex-wrap mt-6 container -mx-2">
             <div
@@ -47,7 +46,7 @@
                 fit="cover"
                 class=" w-full h-full"
               />
-              <div class=" text-grey2 text-2xl text-center px-14 absolute bottom-10 ">
+              <div class=" text-grey2 text-base text-center px-14 absolute bottom-10 ">
                 {{ glory.info }}
               </div>
             </div>
@@ -66,119 +65,132 @@ export default {
   },
   data() {
     return {
-      BrandNavList: [
-        {
-          imgPath: require('@/assets/img_food/brandStrength/icon/410.png')
-        },
-        {
-          imgPath: require('@/assets/img_food/brandStrength/icon/组 411.png')
-        },
-        {
-          imgPath: require('@/assets/img_food/brandStrength/icon/组 412.png')
-        },
-        {
-          imgPath: require('@/assets/img_food/brandStrength/icon/组 413.png')
-        },
-        {
-          imgPath: require('@/assets/img_food/brandStrength/icon/组 415.png')
-        }
-      ],
-      gloryShowList: [
+
+    }
+  },
+  computed: {
+    gloryShowList() {
+      return [
         {
           imgPath: require('@/assets/img_food/brandStrength/glory/组 821.png'),
-          info: '1999-第十一届中国新技术新产品博览会金奖'
+          info: this.$t('m.j1')
         },
         {
           imgPath: require('@/assets/img_food/brandStrength/glory/组 822.png'),
-          info: '2007-2010产品质量国家免检'
+          info: this.$t('m.j2')
         },
         {
           imgPath: require('@/assets/img_food/brandStrength/glory/组 823.png'),
-          info: '2010-2011-500强'
+          info: this.$t('m.j3')
         },
         {
           imgPath: require('@/assets/img_food/brandStrength/glory/组 824.png'),
-          info: '2013-广东省糖果食品（展翠）工程技术研发中心'
+          info: this.$t('m.j4')
         },
         {
           imgPath: require('@/assets/img_food/brandStrength/glory/组 825.png'),
-          info: '2015-2016“四梁八柱”工程民营大企业'
+          info: this.$t('m.j5')
         },
         {
           imgPath: require('@/assets/img_food/brandStrength/glory/组 826.png'),
-          info: '2016-潮州市生态茶园'
+          info: this.$t('m.j6')
         },
         {
           imgPath: require('@/assets/img_food/brandStrength/glory/组 827.png'),
-          info: '广东手信称号'
+          info: this.$t('m.j7')
         },
         {
           imgPath: require('@/assets/img_food/brandStrength/glory/组 828.png'),
-          info: '2016-农业现代化国家重点龙头企业'
+          info: this.$t('m.j77')
         },
         {
           imgPath: require('@/assets/img_food/brandStrength/glory/组 829.png'),
-          info: '2017-2019中国质量诚信企业'
+          info: this.$t('m.j777')
         },
         {
           imgPath: require('@/assets/img_food/brandStrength/glory/组 830.png'),
-          info: '2017广东创新型企业'
+          info: this.$t('m.j7777')
         },
         {
           imgPath: require('@/assets/img_food/brandStrength/glory/组 831.png'),
-          info: '2018-12省级非物质文化遗产'
+          info: this.$t('m.j8')
         },
         {
           imgPath: require('@/assets/img_food/brandStrength/glory/组 832.png'),
-          info: '2018-2020广东省新型研发机构'
+          info: this.$t('m.j9')
         },
         {
           imgPath: require('@/assets/img_food/brandStrength/glory/组 833.png'),
-          info: '2018-2021潮州十大名优系列'
+          info: this.$t('m.j10')
         },
         {
           imgPath: require('@/assets/img_food/brandStrength/glory/组 834.png'),
-          info: '2018-2021高新技术企业'
+          info: this.$t('m.j11')
         },
         {
           imgPath: require('@/assets/img_food/brandStrength/glory/组 835.png'),
-          info: '2018-创税五十强企业'
+          info: this.$t('m.j12')
         },
         {
           imgPath: require('@/assets/img_food/brandStrength/glory/组 836.png'),
-          info: '国家糖果加工技术研发专业中心'
+          info: this.$t('m.j13')
         },
         {
           imgPath: require('@/assets/img_food/brandStrength/glory/组 837.png'),
-          info: '国家糖果加工研发专业中心'
+          info: this.$t('m.j14')
         },
         {
           imgPath: require('@/assets/img_food/brandStrength/glory/组 838.png'),
-          info: '2018-市政建设贡献奖'
+          info: this.$t('m.j15')
         },
         {
           imgPath: require('@/assets/img_food/brandStrength/glory/组 839.png'),
-          info: '2018-四梁八柱名营企业'
+          info: this.$t('m.j16')
         },
         {
           imgPath: require('@/assets/img_food/brandStrength/glory/组 840.png'),
-          info: '2019-2020广东名果'
+          info: this.$t('m.j17')
         },
         {
           imgPath: require('@/assets/img_food/brandStrength/glory/组 841.png'),
-          info: '2019-潮州十大手信'
+          info: this.$t('m.j18')
         },
         {
           imgPath: require('@/assets/img_food/brandStrength/glory/组 842.png'),
-          info: '2019-大众喜爱食品品牌'
+          info: this.$t('m.j19')
         },
         {
           imgPath: require('@/assets/img_food/brandStrength/glory/组 843.png'),
-          info: '2019海关认证企业证书'
+          info: this.$t('m.j20')
         },
         {
           imgPath: require('@/assets/img_food/brandStrength/glory/组 844.png'),
-          info: '2019-全国工人先锋号'
+          info: this.$t('m.j21')
+        }
+
+      ]
+    },
+    BrandNavList() {
+      return [
+        {
+          imgPath: '#icon-a-huaban14',
+          name: this.$t('m.r1')
+        },
+        {
+          imgPath: '#icon-a-huaban15',
+          name: this.$t('m.r2')
+        },
+        {
+          imgPath: '#icon-a-huaban16',
+          name: this.$t('m.r3')
+        },
+        {
+          imgPath: '#icon-a-huaban17',
+          name: this.$t('m.r4')
+        },
+        {
+          imgPath: '#icon-a-huaban22',
+          name: this.$t('m.r5')
         }
       ]
     }
@@ -186,6 +198,8 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
-
+<style  scoped>
+.BP{
+  height: 64vh ;
+}
 </style>

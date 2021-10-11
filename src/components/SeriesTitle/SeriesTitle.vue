@@ -6,13 +6,11 @@
         :key="imgIndex"
         class=" flex-col grid justify-items-center cursor-pointer"
       >
-        <el-image
-          :src="series.icon"
-          fit="cover"
-          class="mb-4 "
-        />
+        <svg class="icon block w-20 h-20 mb-4 " aria-hidden="true">
+          <use :xlink:href="series.icon" />
+        </svg>
         <div>
-          <div class=" text-3xl text-black ">
+          <div class=" text-2xl text-black ">
             {{ series.title }}
           </div>
         </div>
@@ -25,26 +23,31 @@
 module.exports = {
   data: function() {
     return {
-      seriesList: [
+
+    }
+  },
+  computed: {
+    seriesList() {
+      return [
         {
-          icon: require('@/assets/img_food/home/series1.png'),
-          title: '糖果系列'
+          icon: '#icon-a-huaban1',
+          title: this.$t('m.a5')
         },
         {
-          icon: require('@/assets/img_food/home/series2.png'),
-          title: '燕麦系列'
+          icon: '#icon-a-huaban2',
+          title: this.$t('m.a6')
         },
         {
-          icon: require('@/assets/img_food/home/series3.png'),
-          title: '佛手果系列'
+          icon: '#icon-a-huaban3',
+          title: this.$t('m.a7')
         },
         {
-          icon: require('@/assets/img_food/home/series4.png'),
-          title: '巧克力系列'
+          icon: '#icon-a-huaban4',
+          title: this.$t('m.a8')
         },
         {
-          icon: require('@/assets/img_food/home/series5.png'),
-          title: '饼干系列'
+          icon: '#icon-a-huaban5',
+          title: this.$t('m.a9')
         }
       ]
     }

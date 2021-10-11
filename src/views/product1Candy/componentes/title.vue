@@ -1,9 +1,10 @@
 <template>
-  <div>
-    <div class="flex items-center justify-center mt-32">
-      <div class=" w-32 border-b-2 border-gray-200" />
-      <div class=" text-4xl font-bold px-6"><slot name="center" /></div>
-      <div class=" w-32 border-b-2 border-gray-200" />
+  <div class=" mt-16">
+    <div class=" flex items-center justify-center text-3xl font-bold"><slot name="top" /></div>
+    <div class="flex items-center justify-center">
+      <div class=" w-full  border-b-2 border-gray-200" />
+      <div class=" text-xl font-bold px-6 text-orange1 w-full text-center "><slot name="center" /></div>
+      <div class=" w-full  border-b-2 border-gray-200" />
     </div>
   </div>
 </template>

@@ -18,7 +18,7 @@
               />
             </div>
             <!-- 头部文字 -->
-            <div class="absolute top-0 text-lg font-extrabold">糖果系列</div>
+            <div class="absolute top-0 text-lg font-extrabold">{{ $t('m.a5') }}</div>
             <!-- 右下角文字 -->
             <div class="absolute right-0 bottom-0 bg-yellow-500 px-8 py-2 text-white text-lg rounded-tl-2xl rounded-br-2xl">水果软糖</div>
           </div>
@@ -29,7 +29,7 @@
                 class="block absolute w-full h-full"
               />
             </div>
-            <div class="absolute top-0 text-lg font-extrabold">糖果系列</div>
+            <div class="absolute top-0 text-lg font-extrabold">{{ $t('m.a5') }}</div>
             <div class="absolute right-0 bottom-0 bg-yellow-500 px-8 py-2 text-white text-lg rounded-tl-2xl rounded-br-2xl">水果软糖</div>
           </div>
           <div class="relative h-full pt-7" style="width: 20vw;" @click="$router.push(item.router)">
@@ -39,7 +39,7 @@
                 class="block absolute w-full h-full"
               />
             </div>
-            <div class="absolute top-0 text-lg font-extrabold">糖果系列</div>
+            <div class="absolute top-0 text-lg font-extrabold">{{ $t('m.a5') }}</div>
             <div class="absolute right-0 bottom-0 bg-yellow-500 px-8 py-2 text-white text-lg rounded-tl-2xl rounded-br-2xl">水果软糖</div>
           </div>
         </div>

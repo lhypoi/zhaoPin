@@ -11,11 +11,11 @@
             <div class=" text-grey3">{{ item.title }}</div>
           </div>
           <div class=" flex py-1">
-            <div class=" bg-orange items-center justify-center text-white px-1 ">官方新闻</div>
+            <div class=" bg-orange items-center justify-center text-white px-1 ">{{ $t('m.m7') }}</div>
             <div class="flex items-center justify-center pl-2 text-grey2">{{ item.date }}</div>
           </div>
           <div class=" flex justify-end">
-            <div class=" text-lightblue">阅读全文</div>
+            <div class=" text-lightblue">{{ $t('m.m8') }}</div>
             <el-image
               :src="require('@/assets/img_food/news/组 363.png')"
               class=" pl-1"
@@ -35,9 +35,14 @@ export default {
   },
   data: function() {
     return {
-      newsList: [
+
+    }
+  },
+  computed: {
+    newsList() {
+      return [
         {
-          title: '第十二届广交会',
+          title: this.$t('m.m2'),
           date: '2021-03-12'
         }
       ]

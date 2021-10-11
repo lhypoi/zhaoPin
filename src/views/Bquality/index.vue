@@ -4,17 +4,16 @@
     <!-- 导航图标 -->
     <div>
       <div class=" pt-20 flex justify-center align-middle mx-auto max-w-screen-lg overflow-hidden">
-        <div class="flex justify-between mt-6 -mx-7">
+        <div class="flex justify-between  mt-6 -mx-7">
           <div
             v-for="(img, imgIndex) in BrandNavList"
             :key="imgIndex"
-            class="mb-8 justify-items-center px-7"
+            class="mb-8 justify-items-center px-7 relative flex justify-center "
           >
-            <el-image
-              :src="img.imgPath"
-              fit="cover"
-              class=" mb-4"
-            />
+            <svg class="icon  block w-40 h-20 mb-4 " aria-hidden="true">
+              <use :xlink:href="img.imgPath" />
+            </svg>
+            <div class=" absolute top-7 left-24 text-gray-400 text-sm font-bold w-20 ">{{ img.name }}</div>
           </div>
         </div>
       </div>
@@ -22,7 +21,7 @@
 
     <!-- 研发环境 -->
     <div class=" max-w-screen-lg container mx-auto ">
-      <div class=" flex items-center justify-center text-4xl font-bold mb-16">研发环境</div>
+      <div class=" flex items-center justify-center text-4xl font-bold mb-16">{{ $t('m.h1') }}</div>
       <!-- 整个大盒子 -->
       <div class="flex flex-col items-center">
         <!-- 上面大盒子 -->
@@ -41,8 +40,8 @@
               class=""
             />
             <div class=" flex-col flex items-center justify-center h-1/2">
-              <div class=" text-4xl font-bold mb-8">研发环境</div>
-              <div class=" text-base font-bold">给与我们研究人员最高的研究环境</div>
+              <div class=" text-3xl font-bold mb-8">{{ $t('m.h1') }}</div>
+              <div class=" text-base font-bold">{{ $t('m.h2') }}</div>
             </div>
           </div>
           <!-- 上右图片 -->
@@ -74,9 +73,9 @@
     <!-- 工作环境 -->
     <div class=" mt-48 bg-gray-100">
       <div class="flex  container mx-auto max-w-screen-lg">
-        <div class=" flex flex-col mt-20 flex-auto whitespace-nowrap">
-          <div class=" mb-12 text-4xl font-bold">工作环境</div>
-          <div class=" text-xl font-bold">我们的公司的生产车间的环境</div>
+        <div class=" flex flex-col mt-20 flex-auto w-2/3 ">
+          <div class=" mb-12 text-4xl font-bold">{{ $t('m.h3') }}</div>
+          <div class=" text-xl font-bold">{{ $t('m.h4') }}</div>
         </div>
 
         <div class=" flex flex-wrap justify-between ml-5">
@@ -97,7 +96,7 @@
 
     <!-- 公司展厅 -->
     <div class="container mx-auto max-w-screen-lg">
-      <div class=" flex items-center justify-center text-4xl font-bold mb-28 mt-52">公司展厅</div>
+      <div class=" flex items-center justify-center text-4xl font-bold mb-28 mt-52">{{ $t('m.h5') }}</div>
       <div>
         <div class=" mb-12 flex justify-between">
           <div class=" space-y-14 pr-10">
@@ -159,9 +158,9 @@
     <!-- 生产设备 -->
     <div class="bg-gray-100 pb-32 pt-20">
       <div class="  container mx-auto max-w-screen-lg">
-        <div class=" mb-9 ">
-          <div class=" text-4xl font-bold">生产设备</div>
-          <div class=" text-xl font-bold w-1/5 py-3">我们的公司的生产车间的机械都是自动化生产的，做到自动化。</div>
+        <div class=" mb-9 whitespace-nowrap ">
+          <div class=" text-4xl font-bold">{{ $t('m.h6') }}</div>
+          <div class=" text-xl font-bold w-1/5 py-3">{{ $t('m.h7') }}</div>
         </div>
         <div class="flex justify-between -mx-2">
           <el-image
@@ -208,23 +207,7 @@ export default {
   },
   data() {
     return {
-      BrandNavList: [
-        {
-          imgPath: require('@/assets/img_food/brandStrength/icon/组 419.png')
-        },
-        {
-          imgPath: require('@/assets/img_food/brandStrength/icon/组 411.png')
-        },
-        {
-          imgPath: require('@/assets/img_food/brandStrength/icon/组 412.png')
-        },
-        {
-          imgPath: require('@/assets/img_food/brandStrength/icon/组 413.png')
-        },
-        {
-          imgPath: require('@/assets/img_food/brandStrength/icon/410.png')
-        }
-      ],
+
       workPlaceList: [
         {
           imgPath: require('@/assets/img_food/brandStrength/quality/蒙版组 175.png')
@@ -246,6 +229,32 @@ export default {
         }
       ]
 
+    }
+  },
+  computed: {
+    BrandNavList() {
+      return [
+        {
+          imgPath: '#icon-a-huaban23',
+          name: this.$t('m.r1')
+        },
+        {
+          imgPath: '#icon-a-huaban15',
+          name: this.$t('m.r2')
+        },
+        {
+          imgPath: '#icon-a-huaban16',
+          name: this.$t('m.r3')
+        },
+        {
+          imgPath: '#icon-a-huaban17',
+          name: this.$t('m.r4')
+        },
+        {
+          imgPath: '#icon-a-huaban18',
+          name: this.$t('m.r5')
+        }
+      ]
     }
   }
 }
