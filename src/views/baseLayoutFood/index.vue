@@ -5,7 +5,11 @@
       <div>
         <FoodNav class=" z-30" />
       </div>
-      <div class=" flex justify-center items-center text-xl font-bold pl-6 cursor-pointer" @click="change">{{ $t('m.Languageswitch') }}</div>
+      <div
+        class=" flex justify-center items-center font-bold pl-6 cursor-pointer"
+        :class="$i18n.locale === 'en' ? 'text-base' : 'text-xl'"
+        @click="change"
+      >{{ $t('m.Languageswitch') }}</div>
     </div>
 
     <!-- 页面内容 -->
