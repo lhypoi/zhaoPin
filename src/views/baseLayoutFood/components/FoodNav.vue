@@ -43,11 +43,13 @@ export default {
       render() {
         const menus = this.menus
         const path = this.$route.path
+        const i18nClass = this.$i18n.locale === 'en' ? 'enFoodNavMenu' : ''
         // 自适应匹配当前路由
         return (
           <el-menu
             mode='horizontal'
             class='foodNavMenu'
+            class={`foodNavMenu ${i18nClass}`}
             background-color='#fff'
             text-color='#333333'
             active-text-color='#E66717'
@@ -245,6 +247,17 @@ export default {
   .el-submenu.is-active  .el-submenu__title {
     font-size: 28px !important;
     background: #fff !important;
+  }
+
+  &.enFoodNavMenu {
+    .el-menu-item,
+    .el-submenu .el-submenu__title {
+      font-size: 16px;
+    }
+    .el-menu-item.is-active,
+    .el-submenu.is-active  .el-submenu__title {
+      font-size: 18px !important;
+    }
   }
 }
 
