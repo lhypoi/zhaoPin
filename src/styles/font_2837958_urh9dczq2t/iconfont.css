@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2837958 */
+  src: url('iconfont.woff2?t=1634027763597') format('woff2'),
+       url('iconfont.woff?t=1634027763597') format('woff'),
+       url('iconfont.ttf?t=1634027763597') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-a-huaban11:before {
+  content: "\e621";
+}
+
+.icon-a-huaban8:before {
+  content: "\e622";
+}
+
+.icon-a-huaban10:before {
+  content: "\e623";
+}
+
+.icon-a-huaban2:before {
+  content: "\e624";
+}
+
+.icon-a-huaban15:before {
+  content: "\e625";
+}
+
+.icon-a-huaban14:before {
+  content: "\e626";
+}
+
+.icon-a-huaban13:before {
+  content: "\e627";
+}
+
+.icon-a-huaban12:before {
+  content: "\e628";
+}
+
+.icon-a-huaban7:before {
+  content: "\e629";
+}
+
+.icon-a-huaban27:before {
+  content: "\e62a";
+}
+
+.icon-a-huaban6:before {
+  content: "\e62b";
+}
+
+.icon-a-huaban26:before {
+  content: "\e62c";
+}
+
+.icon-a-huaban24:before {
+  content: "\e62d";
+}
+
+.icon-a-huaban23:before {
+  content: "\e62e";
+}
+
+.icon-a-huaban9:before {
+  content: "\e62f";
+}
+
+.icon-a-huaban29:before {
+  content: "\e630";
+}
+
+.icon-a-huaban18:before {
+  content: "\e631";
+}
+
+.icon-a-huaban28:before {
+  content: "\e632";
+}
+
+.icon-a-huaban30:before {
+  content: "\e633";
+}
+
+.icon-a-huaban25:before {
+  content: "\e634";
+}
+
+.icon-a-huaban19:before {
+  content: "\e635";
+}
+
+.icon-a-huaban31:before {
+  content: "\e636";
+}
+
+.icon-a-huaban16:before {
+  content: "\e637";
+}
+
+.icon-a-huaban22:before {
+  content: "\e638";
+}
+
+.icon-a-huaban3:before {
+  content: "\e639";
+}
+
+.icon-a-huaban5:before {
+  content: "\e63a";
+}
+
+.icon-a-huaban32:before {
+  content: "\e63b";
+}
+
+.icon-a-huaban21:before {
+  content: "\e63c";
+}
+
+.icon-a-huaban1:before {
+  content: "\e63d";
+}
+
+.icon-a-huaban17:before {
+  content: "\e63e";
+}
+
+.icon-a-huaban4:before {
+  content: "\e63f";
+}
+
+.icon-a-huaban20:before {
+  content: "\e640";
+}
+

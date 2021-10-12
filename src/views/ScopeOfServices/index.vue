@@ -26,23 +26,45 @@
     </div>
 
     <!-- OEM代工业务流程 -->
-    <div class="bg-gray-100 ">
-      <div class=" container mx-auto pt-16 flex items-center justify-center max-w-screen-lg">
-        <el-image
-          :src="require('@/assets/img_food/service/组 1026.png')"
-          fit="cover"
-        />
+    <div class="bg-gray-100 py-10 ">
+      <div class=" relative container mx-auto pt-16 flex items-center justify-center max-w-screen-lg">
+        <div>
+          <el-image
+            :src="require('@/assets/img_food/service/组 1728.png')"
+            fit="cover"
+            class=" relative"
+          />
+          <div class=" absolute top-10 flex">
+            <div class=" text-3xl pr-3">{{ $t('m.l16') }}</div>
+            <el-image
+              :src="require('@/assets/img_food/service/组 1732.png')"
+              fit="cover"
+              class=" "
+            />
+          </div>
+        </div>
+
       </div>
     </div>
 
     <!-- ODM代工业务流程 -->
     <div class="container mx-auto mt-16 max-w-screen-lg">
-      <div class=" flex  justify-center items-stretch">
-        <el-image
-          :src="require('@/assets/img_food/service/组 1066.png')"
-          fit="cover"
-          class=" w-auto"
-        />
+      <div class=" relative py-10 flex  justify-center items-stretch">
+        <div>
+          <el-image
+            :src="require('@/assets/img_food/service/组 1729.png')"
+            fit="cover"
+            class=" w-auto"
+          />
+          <div class=" absolute top-5 flex">
+            <div class=" text-3xl pr-3">{{ $t('m.l17') }}</div>
+            <el-image
+              :src="require('@/assets/img_food/service/组 1732.png')"
+              fit="cover"
+              class=" "
+            />
+          </div>
+        </div>
       </div>
     </div>
   </div>
