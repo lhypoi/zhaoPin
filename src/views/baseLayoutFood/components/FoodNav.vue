@@ -253,7 +253,6 @@ export default {
     .el-submenu .el-submenu__title {
       font-size: 16px;
     }
-
     .el-menu-item.is-active,
     .el-submenu.is-active  .el-submenu__title {
       font-size: 18px !important;
