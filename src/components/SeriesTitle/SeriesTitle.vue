@@ -5,6 +5,7 @@
         v-for="(series, imgIndex) in seriesList"
         :key="imgIndex"
         class=" flex-col grid justify-items-center cursor-pointer"
+        @click="$router.push(series.router)"
       >
         <svg class="icon block w-20 h-20 mb-4 " aria-hidden="true">
           <use :xlink:href="series.icon" />
@@ -31,23 +32,28 @@ module.exports = {
       return [
         {
           icon: '#icon-a-huaban1',
-          title: this.$t('m.a5')
+          title: this.$t('m.a5'),
+          router: 'product1Candy'
         },
         {
           icon: '#icon-a-huaban2',
-          title: this.$t('m.a6')
+          title: this.$t('m.a6'),
+          router: 'product2Oat'
         },
         {
           icon: '#icon-a-huaban3',
-          title: this.$t('m.a7')
+          title: this.$t('m.a7'),
+          router: 'product3foShou'
         },
         {
           icon: '#icon-a-huaban4',
-          title: this.$t('m.a8')
+          title: this.$t('m.a8'),
+          router: 'product4Chocolate'
         },
         {
           icon: '#icon-a-huaban5',
-          title: this.$t('m.a9')
+          title: this.$t('m.a9'),
+          router: 'product5Biscuit'
         }
       ]
     }
