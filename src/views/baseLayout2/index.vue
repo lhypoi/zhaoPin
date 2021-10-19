@@ -141,7 +141,7 @@
             /></el-image>
             <div class="p1">
               Dr.D Global
-              Education的團隊來自全球，輔導老師在遍佈各個專業領域領域，目前在英美中皆設立了辦公室並提供7X27小時的在線服務。
+              Education的團隊來自全球，輔導老師在遍佈各個專業領域領域，目前在英美中皆設立了辦公室並提供7X24小時的在線服務。
             </div>
           </el-col>
           <el-col :span="12" class="copyRightRight">
@@ -154,7 +154,7 @@
                 :src="icon1Img"
                 fit="cover"
                 class="iconfont"
-                @click="jump('https://www.instagram.com/dr.dessaymentor/')"
+                @click="jump(' https://www.facebook.com/DrD-Essay-Mentor-710127086453596')"
               />
               <el-image
                 :src="icon2Img"
@@ -206,9 +206,9 @@ const logoImg = require('@/assets/img/logo.png')
 const logo2Img = require('@/assets/img/logo2.png')
 const wechatImg = require('@/assets/img/wechat.png')
 const wechat2Img = require('@/assets/img/wechat2.png')
-const icon1Img = require('@/assets/img_new_master/icon1.png')
-const icon2Img = require('@/assets/img_new_master/icon2.png')
-const icon3Img = require('@/assets/img_new_master/icon3.png')
+const icon1Img = require('@/assets/img_new_master/icon5.png')
+const icon2Img = require('@/assets/img_new_master/icon6.png')
+const icon3Img = require('@/assets/img_new_master/icon4.png')
 
 export default {
   name: 'BaseLayout',
