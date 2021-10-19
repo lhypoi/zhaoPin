@@ -27,9 +27,7 @@ module.exports = {
    * In most cases please use '/' !!!
    * Detail: https://cli.vuejs.org/config/#publicpath
    */
-  // publicPath: process.env.NODE_ENV === 'production'? './': '/',
-  // publicPath: '/food/',
-  publicPath: './',
+  publicPath: '/food/',
   outputDir: 'dist/food/',
   assetsDir: 'static',
   lintOnSave: process.env.NODE_ENV === 'development',
@@ -97,7 +95,7 @@ module.exports = {
       .use('svg-sprite-loader')
       .loader('svg-sprite-loader')
       .options({
-        symbolId: 'icon-[name]',
+        symbolId: 'icon-[name]'
       })
       .end()
 
