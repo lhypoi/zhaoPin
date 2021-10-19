@@ -21,7 +21,7 @@
             :key="imgIndex"
             class="mb-12 justify-items-center px-7 relative flex justify-center "
           >
-            <svg class="icon  block w-40 h-20  " aria-hidden="true">
+            <svg class="icon  block w-40 h-20 " aria-hidden="true">
               <use :xlink:href="img.imgPath" />
             </svg>
             <div class=" absolute h-full flex flex-row items-center -ml-1 left-24 text-gray-400 font-bold text-sm w-20 ">{{ img.name }}</div>

@@ -48,7 +48,6 @@ export default {
         return (
           <el-menu
             mode='horizontal'
-            class='foodNavMenu'
             class={`foodNavMenu ${i18nClass}`}
             background-color='#fff'
             text-color='#333333'
