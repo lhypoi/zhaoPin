@@ -41,6 +41,7 @@
           v-for="(img, imgIndex) in serieshowList"
           :key="imgIndex"
           class=" relative flex items-center justify-center cursor-pointer "
+          @click="$router.push(img.router)"
         >
           <el-image
             :src="img.path"
@@ -72,9 +73,6 @@ export default {
       slidePageList: [
         {
           imgPath: require('@/assets/img_food/home/组 1088.png')
-        },
-        {
-          imgPath: require('@/assets/img_food/home/组 1088.png')
         }
       ]
     }
@@ -84,23 +82,28 @@ export default {
       return [
         {
           path: require('@/assets/img_food/home/组 1082.png'),
-          title: this.$t('m.a5')
+          title: this.$t('m.a5'),
+          router: 'product1Candy'
         },
         {
           path: require('@/assets/img_food/home/组 1083.png'),
-          title: this.$t('m.a6')
+          title: this.$t('m.a6'),
+          router: 'product2Oat'
         },
         {
           path: require('@/assets/img_food/home/组 1084.png'),
-          title: this.$t('m.a7')
+          title: this.$t('m.a7'),
+          router: 'product3foShou'
         },
         {
           path: require('@/assets/img_food/home/组 1085.png'),
-          title: this.$t('m.a8')
+          title: this.$t('m.a8'),
+          router: 'product4Chocolate'
         },
         {
           path: require('@/assets/img_food/home/组 1086.png'),
-          title: this.$t('m.a9')
+          title: this.$t('m.a9'),
+          router: 'product5Biscuit'
         }
       ]
     }
