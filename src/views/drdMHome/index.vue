@@ -89,13 +89,22 @@
         <div
           v-for="(img, imgIndex) in outList"
           :key="imgIndex"
-          class=""
+          class=" flex  justify-center"
         >
           <el-image
-            :src="img.path"
+            :src="require('@/assets/img_drd_mobile/outbg.png')"
             fit="cover"
-            class="block w-full"
+            class=" relative block w-full"
           />
+          <div class="absolute flex flex-col items-center">
+            <el-image
+              :src="img.path"
+              fit="cover"
+              class=" absolute block top-7"
+            />
+            <div class=" pt-20 font-bold text-gray-600">{{ img.country }}</div>
+            <div class=" text-xs text-gray-400">了解更多</div>
+          </div>
         </div>
       </div>
     </div>
@@ -185,12 +194,21 @@
         <div
           v-for="(img, imgIndex) in backList"
           :key="imgIndex"
+          class=" relative"
         >
+          <el-image
+            :src="require('@/assets/img_drd_mobile/backbg.png')"
+            fit="cover"
+            class=" relative block "
+          />
           <el-image
             :src="img.path"
             fit="cover"
-            class="block w-full"
+            class=" absolute block top-14 left-16  "
           />
+          <div class=" absolute top-14 left-32 font-bold text-lg">{{ img.name }}</div>
+          <div class=" absolute top-20 left-32 text-gray-600">{{ img.university }}</div>
+          <div class=" absolute top-32 left-16 pr-16 text-lg">{{ img.info }}</div>
         </div>
       </div>
     </div>
@@ -273,16 +291,20 @@ export default {
       ],
       outList: [
         {
-          path: require('@/assets/img_drd_mobile/out11.png')
+          path: require('@/assets/img_drd_mobile/out11.png'),
+          country: '英国'
         },
         {
-          path: require('@/assets/img_drd_mobile/out22.png')
+          path: require('@/assets/img_drd_mobile/out22.png'),
+          country: '澳大利亚'
         },
         {
-          path: require('@/assets/img_drd_mobile/out33.png')
+          path: require('@/assets/img_drd_mobile/out33.png'),
+          country: '香港'
         },
         {
-          path: require('@/assets/img_drd_mobile/out44.png')
+          path: require('@/assets/img_drd_mobile/out44.png'),
+          country: '美国'
         }
       ],
       appealList: [
@@ -340,13 +362,22 @@ export default {
       ],
       backList: [
         {
-          path: require('@/assets/img_drd_mobile/back1.png')
+          path: require('@/assets/img_drd_mobile/back11.png'),
+          name: 'Selina',
+          university: '利兹大学',
+          info: '那时因为自身·原因被警告要勒令开除，经过朋友介绍找到了他们，客服很有耐心而且把客户当成了朋友一样，谢谢Zoey 经理，帮我和学校争取权益,最后也让我顺利毕业了'
         },
         {
-          path: require('@/assets/img_drd_mobile/back2.png')
+          path: require('@/assets/img_drd_mobile/back22.png'),
+          name: 'Stacey',
+          university: '牛津大学',
+          info: '本来以为自己可以在期限内做完，没想到记错了Due,发现时只剩三天，幸亏选择了Dr.D海外教育，在这么短的时间内协助我完成了作业，靠谱!'
         },
         {
-          path: require('@/assets/img_drd_mobile/back3.png')
+          path: require('@/assets/img_drd_mobile/back33.png'),
+          name: 'Kevin',
+          university: '爱丁堡大学',
+          info: '这门老师是出了名的刁钻，于是我找了—间辅导,没想到学校抓我去meeting,在面临被开除的边缘我找到了Dr.D,我才知道这行水实在太深了,感谢工作室帮我和校方argue得到多一次resit的机会,太感谢！'
         }
       ]
     }

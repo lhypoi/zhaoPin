@@ -36,18 +36,47 @@
       <div class="text-xs text-gray-400 mt-1">
         OUR SERVICE
       </div>
-      <div class="flex flex-row flex-wrap mt-6">
+      <div class="flex flex-row mt-6 space-x-10 mx-5 ">
         <div
-          v-for="(img, imgIndex) in serveList"
+          v-for="(img, imgIndex) in serveList1"
           :key="imgIndex"
-          class="w-1/2 text-center mb-5 px-2"
+          class=" relative w-1/2 text-center mb-5"
         >
-          <div class="flex items-center">
+          <el-image
+            :src="require('@/assets/img_drd_mobile/fd/servebg.png')"
+            fit="cover"
+            class=" relative block "
+          />
+          <div class="flex flex-col items-center">
             <el-image
               :src="img.path"
               fit="cover"
-              class="block w-full"
+              class=" absolute block top-7"
             />
+            <div class=" absolute top-24 text-xl font-bold">{{ img.title }}</div>
+            <div class=" absolute top-36 px-5 ">{{ img.sub }}</div>
+          </div>
+        </div>
+      </div>
+      <div class="flex  flex-row space-x-10 mx-5 ">
+        <div
+          v-for="(img, imgIndex) in serveList2"
+          :key="imgIndex"
+          class=" relative w-1/2 text-center mb-5"
+        >
+          <el-image
+            :src="require('@/assets/img_drd_mobile/fd/servebg.png')"
+            fit="cover"
+            class=" relative block  "
+          />
+          <div class="flex flex-col items-center">
+            <el-image
+              :src="img.path"
+              fit="cover"
+              class=" absolute block top-7"
+            />
+            <div class=" absolute top-24 text-xl font-bold">{{ img.title }}</div>
+            <div class=" absolute top-36 px-5 ">{{ img.sub }}</div>
           </div>
         </div>
       </div>
@@ -90,18 +119,27 @@
       <div class="text-base text-gray-600 mt-1 px-4">
         Expert team
       </div>
-      <div class="flex flex-row flex-wrap">
+      <div class="flex flex-wrap ">
         <div
           v-for="(img, imgIndex) in jiaList"
           :key="imgIndex"
-          class="w-full text-center"
+          class=" w-full relative text-center"
         >
-          <div class="flex items-center">
+          <el-image
+            :src="require('@/assets/img_drd_mobile/fd/jiabgg.png')"
+            fit="cover"
+            class=" relative"
+          />
+          <div class=" flex flex-col">
             <el-image
               :src="img.path"
               fit="cover"
-              class="block w-full"
+              class=" absolute block top-9 left-14"
             />
+            <div class=" absolute block top-12 left-72 font-bold text-2xl">{{ img.name }}</div>
+            <div class=" absolute block top-28 left-72 text-lg">{{ img.university }}</div>
+            <div class=" absolute block top-36 left-72 text-lg">{{ img.major }}</div>
+            <div class=" absolute block top-44 left-72 text-lg mr-9 text-left">{{ img.info }}</div>
           </div>
         </div>
       </div>
@@ -116,20 +154,31 @@ export default {
   props: {},
   data() {
     return {
-      serveList: [
+      serveList1: [
         {
-          path: require('@/assets/img_drd_mobile/fd/serve1.png')
+          path: require('@/assets/img_drd_mobile/fd/serve111.png'),
+          title: '一站式',
+          sub: '留学规划，培训指导，留学申请提供全程服务'
         },
         {
-          path: require('@/assets/img_drd_mobile/fd/serve2.png')
-        },
-        {
-          path: require('@/assets/img_drd_mobile/fd/serve3.png')
-        },
-        {
-          path: require('@/assets/img_drd_mobile/fd/serve4.png')
+          path: require('@/assets/img_drd_mobile/fd/serve222.png'),
+          title: '一对一',
+          sub: '私人课程或资深老师提供专属服务优化每项步骤'
         }
       ],
+      serveList2: [
+        {
+          path: require('@/assets/img_drd_mobile/fd/serve333.png'),
+          title: '定制化',
+          sub: '根据考生情况量身打造专属培训辅导和方案申请'
+        },
+        {
+          path: require('@/assets/img_drd_mobile/fd/serve444.png'),
+          title: '全程跟踪',
+          sub: '整个留学期间专人跟进并及时解决实质问题'
+        }
+      ],
+
       fieldList: [
         {
           path: require('@/assets/img_drd_mobile/fd/field1.png'),
@@ -164,13 +213,25 @@ export default {
       ],
       jiaList: [
         {
-          path: require('@/assets/img_drd_mobile/fd/jia1.png')
+          path: require('@/assets/img_drd_mobile/fd/jia5.png'),
+          name: 'Lucy',
+          university: '澳洲新南威尔shif士大学',
+          major: '会计与金融学硕士',
+          info: '"每个孩子都有无限的可能"'
         },
         {
-          path: require('@/assets/img_drd_mobile/fd/jia2.png')
+          path: require('@/assets/img_drd_mobile/fd/jia4.png'),
+          name: 'Daniu',
+          university: '圣地亚哥大学',
+          major: '财务会计、审计学、财务报表分析',
+          info: '"Youth means limitlesspossibilities "'
         },
         {
-          path: require('@/assets/img_drd_mobile/fd/jia3.png')
+          path: require('@/assets/img_drd_mobile/fd/jia6.png'),
+          name: 'Junio',
+          university: '林肯大学',
+          major: '市场营销Marketing',
+          info: '"Youth means limitlesspossibilities "'
         }
       ]
     }
