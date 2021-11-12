@@ -89,7 +89,7 @@
         <div
           v-for="(img, imgIndex) in outList"
           :key="imgIndex"
-          class=" w-3/12"
+          class=""
         >
           <el-image
             :src="img.path"
@@ -138,7 +138,28 @@
       <div class="text-base text-gray-400 font-bold mb-2 pl-5">
         development path
       </div>
-      <div class="flex flex-col">
+      <dev-card>
+        <div slot="title">100余名专业师资团队近百位资深留学顾问</div>
+        <div slot="text">500余名专业书写为您竭诚服务，我们的服务项目涵盖超过70种科目，100%原创，支持在线交易方式</div>
+        <div slot="subtitle">留学英文论文辅导服务</div>
+      </dev-card>
+      <dev-card>
+        <div slot="title">Dr.D提供高质量高效率的文章润色降重服务</div>
+        <div slot="text">按照顾客的要求，1v1的进行针对性修改。每位导师都会对文章的结构，语法，句式，以及逻辑和表达方式上进行精细修改并提供一些建设性意见</div>
+        <div slot="subtitle">文章修改润色降重服务</div>
+      </dev-card>
+
+      <div class=" bg-white my-5 py-5 px-4">
+        <div class=" text-xl font-bold">R&D Writing Services 发展历程</div>
+        <div class="centertext py-2">创始人D哥就就读于英国G5名校，对学术和教学有着疯狂的热诚，因缘际会和朋友创建了D辅导工作室，从英国伦敦开始发迹提供学习服务...</div>
+        <div class=" font-bold">2010年-2015年</div>
+        <div class="centertext py-2">随着业务增长，辅导类型从商业金融到数据分析，各种学科的学生都在这个平台快速的和对口老师沟通，一对一快速学习解决了众多留学生的痛点</div>
+        <div class=" font-bold">2016年-2018年</div>
+        <div class="centertext py-2">用户突破5000名，在英国、新加坡、中国三地设立了服务点，为客户提供7X24小时的辅导</div>
+        <div class=" font-bold">2019年- Nowadays ....</div>
+      </div>
+
+      <!-- <div class="flex flex-col">
         <div
           v-for="(img, imgIndex) in developList"
           :key="imgIndex"
@@ -150,7 +171,7 @@
             class="block w-full"
           />
         </div>
-      </div>
+      </div> -->
     </div>
     <!-- 客户反馈 -->
     <div class="bg-gray-100 pt-8 pb-2">
@@ -177,9 +198,12 @@
 </template>
 
 <script>
-
+import DevCard from './component/devCard.vue'
 export default {
   name: 'DrdMHome',
+  components: {
+    DevCard
+  },
   props: {},
   data() {
     return {
@@ -249,16 +273,16 @@ export default {
       ],
       outList: [
         {
-          path: require('@/assets/img_drd_mobile/out1.png')
+          path: require('@/assets/img_drd_mobile/out11.png')
         },
         {
-          path: require('@/assets/img_drd_mobile/out2.png')
+          path: require('@/assets/img_drd_mobile/out22.png')
         },
         {
-          path: require('@/assets/img_drd_mobile/out3.png')
+          path: require('@/assets/img_drd_mobile/out33.png')
         },
         {
-          path: require('@/assets/img_drd_mobile/out4.png')
+          path: require('@/assets/img_drd_mobile/out44.png')
         }
       ],
       appealList: [
@@ -338,5 +362,7 @@ export default {
 </script>
 
 <style lang="scss">
-
+.centertext{
+  text-indent: 2em;
+}
 </style>
