@@ -4,36 +4,67 @@
       <div class="pageSectionContent">
         <div class="sec1Box">
           <el-row>
-            <el-col :span="16" class="sec1Col1">
-              <el-image class="g1" :src="list26Img" fit="cover" lazy
-                ><div slot="placeholder" class="emptyImg"
-              /></el-image>
-              <div class="p1">文化与社区</div>
-              <div class="p2">欢迎Teradat新任首席执行官史蒂夫·麦克米兰</div>
-              <div class="p3">
+            <div @click="$router.push('/passages/index1')">
+              <el-col :span="16" class="sec1Col1">
+                <el-image
+                  class="g1"
+                  :src="list26Img"
+                  fit="cover"
+                  lazy
+                ><div
+                  slot="placeholder"
+                  class="emptyImg"
+                /></el-image>
+                <div class="p1">文化与社区</div>
+                <!-- <div class="p2">欢迎Teradat新任首席执行官史蒂夫·麦克米兰</div> -->
+                <div class="p2">分數低？那是因為你少了批判性思維（Critical Thinking）</div>
+                <!-- <div class="p3">
                 的董事会已任命史蒂夫麦克米伦担任下一任总裁兼首席执行官。从这篇临时总裁兼首席执行官Vic
                 Lund 的文章中了解更多信息. Lund 的文章中了解更多信息.
-              </div>
-              <div class="p4">2020年5月7日-1分钟读</div>
-            </el-col>
+              </div> -->
+                <div class="p3">
+                  在歐美教育，學校裡的教學風格和亞洲相差甚大,這一點相信每個在外留學的同學都深有感觸。
+                  Critical thinking大部分的人翻译成“批判性思维”，但我觉得差了一點意思。
+                </div>
+                <div class="p4">2021年11月15日-1分钟读</div>
+              </el-col>
+            </div>
             <el-col :span="8" class="sec1Col2">
-              <div class="b1">
-                <el-image class="g2" :src="list27Img" fit="cover" lazy
-                  ><div slot="placeholder" class="emptyImg"
+              <div class="b1" @click="$router.push('/passages/index2')">
+                <el-image
+                  class="g2"
+                  :src="list27Img"
+                  fit="cover"
+                  lazy
+                ><div
+                  slot="placeholder"
+                  class="emptyImg"
                 /></el-image>
                 <div class="p5">技术趋势</div>
-                <div class="p6">导航汽车供应链后新冠肺炎</div>
+                <div class="p6">2021 年度10 大最佳降重網站（免费和付费）</div>
               </div>
-              <div class="b1">
-                <el-image class="g2" :src="list28Img" fit="cover" lazy
-                  ><div slot="placeholder" class="emptyImg"
+              <div class="b1" @click="$router.push('/passages/index3')">
+                <el-image
+                  class="g2"
+                  :src="list28Img"
+                  fit="cover"
+                  lazy
+                ><div
+                  slot="placeholder"
+                  class="emptyImg"
                 /></el-image>
                 <div class="p5">技术趋势</div>
-                <div class="p6">所有的模型都是错误的 (但有些是有用的)</div>
+                <div class="p6">挑战全網上最全的论文引用格式解說</div>
               </div>
               <div class="b1">
-                <el-image class="g2" :src="list29Img" fit="cover" lazy
-                  ><div slot="placeholder" class="emptyImg"
+                <el-image
+                  class="g2"
+                  :src="list29Img"
+                  fit="cover"
+                  lazy
+                ><div
+                  slot="placeholder"
+                  class="emptyImg"
                 /></el-image>
                 <div class="p5">技术趋势</div>
                 <div class="p6">
@@ -41,8 +72,14 @@
                 </div>
               </div>
               <div class="b1">
-                <el-image class="g2" :src="list30Img" fit="cover" lazy
-                  ><div slot="placeholder" class="emptyImg"
+                <el-image
+                  class="g2"
+                  :src="list30Img"
+                  fit="cover"
+                  lazy
+                ><div
+                  slot="placeholder"
+                  class="emptyImg"
                 /></el-image>
                 <div class="p5">技术趋势</div>
                 <div class="p6">利用Vantage风险分析技术， 建立早期预警系统</div>
@@ -58,8 +95,14 @@
         <div class="sec1Box">
           <el-row :gutter="30" class="sec2Row" type="flex">
             <el-col :span="8" class="sec2Col">
-              <el-image class="g1" :src="list31Img" fit="cover" lazy
-                ><div slot="placeholder" class="emptyImg"
+              <el-image
+                class="g1"
+                :src="list31Img"
+                fit="cover"
+                lazy
+              ><div
+                slot="placeholder"
+                class="emptyImg"
               /></el-image>
               <div class="p1">万物云</div>
               <div class="p2">有利条件试验解决云数据分析用户</div>
@@ -70,8 +113,14 @@
               <div class="p4">2020年5月7日-1分钟读</div>
             </el-col>
             <el-col :span="8" class="sec2Col">
-              <el-image class="g1" :src="list32Img" fit="cover" lazy
-                ><div slot="placeholder" class="emptyImg"
+              <el-image
+                class="g1"
+                :src="list32Img"
+                fit="cover"
+                lazy
+              ><div
+                slot="placeholder"
+                class="emptyImg"
               /></el-image>
               <div class="p1">业务分析</div>
               <div class="p2">
@@ -84,8 +133,14 @@
               <div class="p4">2021年2月1日-3分钟读</div>
             </el-col>
             <el-col :span="8" class="sec2Col">
-              <el-image class="g1" :src="list33Img" fit="cover" lazy
-                ><div slot="placeholder" class="emptyImg"
+              <el-image
+                class="g1"
+                :src="list33Img"
+                fit="cover"
+                lazy
+              ><div
+                slot="placeholder"
+                class="emptyImg"
               /></el-image>
               <div class="p1">业务分析</div>
               <div class="p2">关于数据策略的常规智慧的六大改进</div>
@@ -96,8 +151,14 @@
               <div class="p4">2021年1月29日-7分钟</div>
             </el-col>
             <el-col :span="8" class="sec2Col">
-              <el-image class="g1" :src="list34Img" fit="cover" lazy
-                ><div slot="placeholder" class="emptyImg"
+              <el-image
+                class="g1"
+                :src="list34Img"
+                fit="cover"
+                lazy
+              ><div
+                slot="placeholder"
+                class="emptyImg"
               /></el-image>
               <div class="p1">技术趋势</div>
               <div class="p2">新冠肺炎有效应对大流行风险建模</div>
@@ -108,8 +169,14 @@
               <div class="p4">2021年1月27日-4分钟</div>
             </el-col>
             <el-col :span="8" class="sec2Col">
-              <el-image class="g1" :src="list35Img" fit="cover" lazy
-                ><div slot="placeholder" class="emptyImg"
+              <el-image
+                class="g1"
+                :src="list35Img"
+                fit="cover"
+                lazy
+              ><div
+                slot="placeholder"
+                class="emptyImg"
               /></el-image>
               <div class="p1">业务分析</div>
               <div class="p2">零售和CPG中的大数据需要手术刀，而不是斧头</div>
@@ -120,8 +187,14 @@
               <div class="p4">2020年1月25日-1分钟读</div>
             </el-col>
             <el-col :span="8" class="sec2Col">
-              <el-image class="g1" :src="list36Img" fit="cover" lazy
-                ><div slot="placeholder" class="emptyImg"
+              <el-image
+                class="g1"
+                :src="list36Img"
+                fit="cover"
+                lazy
+              ><div
+                slot="placeholder"
+                class="emptyImg"
               /></el-image>
               <div class="p1">业务分析</div>
               <div class="p2">
@@ -147,21 +220,21 @@
 </template>
 
 <script>
-const list26Img = require("@/assets/img/list26.png");
-const list27Img = require("@/assets/img/list27.png");
-const list28Img = require("@/assets/img/list28.png");
-const list29Img = require("@/assets/img/list29.png");
-const list30Img = require("@/assets/img/list30.png");
-const list31Img = require("@/assets/img/list31.png");
-const list32Img = require("@/assets/img/list32.png");
-const list33Img = require("@/assets/img/list33.png");
-const list34Img = require("@/assets/img/list34.png");
-const list35Img = require("@/assets/img/list35.png");
-const list36Img = require("@/assets/img/list36.png");
+const list26Img = require('@/assets/img/list26.png')
+const list27Img = require('@/assets/img/list27.png')
+const list28Img = require('@/assets/img/list28.png')
+const list29Img = require('@/assets/img/list29.png')
+const list30Img = require('@/assets/img/list30.png')
+const list31Img = require('@/assets/img/list31.png')
+const list32Img = require('@/assets/img/list32.png')
+const list33Img = require('@/assets/img/list33.png')
+const list34Img = require('@/assets/img/list34.png')
+const list35Img = require('@/assets/img/list35.png')
+const list36Img = require('@/assets/img/list36.png')
 import MoreRow from '@/views/Common/MoreRow'
 
 export default {
-  name: "InformationList",
+  name: 'InformationList',
   components: { MoreRow },
   props: {},
   data() {
@@ -176,13 +249,13 @@ export default {
       list33Img,
       list34Img,
       list35Img,
-      list36Img,
-    };
+      list36Img
+    }
   },
   created() {},
   mounted() {},
-  methods: {},
-};
+  methods: {}
+}
 </script>
 
 <style lang="scss" scoped>
@@ -200,6 +273,7 @@ export default {
 
     .sec1Col1 {
       padding: 40px 40px 40px 0;
+      cursor: pointer;
 
       .g1 {
         height: 291px;
@@ -248,6 +322,7 @@ export default {
         position: relative;
         padding-left: 120px;
         height: 102px;
+        cursor: pointer;
 
         .g2 {
           position: absolute;
@@ -255,6 +330,7 @@ export default {
           top: 0;
           width: 102px;
           height: 102px;
+
         }
 
         .p5 {
