@@ -15,7 +15,7 @@
                   slot="placeholder"
                   class="emptyImg"
                 /></el-image>
-                <div class="p1">文化与社区</div>
+                <div class="p1">留学辅导</div>
                 <!-- <div class="p2">欢迎Teradat新任首席执行官史蒂夫·麦克米兰</div> -->
                 <div class="p2">分數低？那是因為你少了批判性思維（Critical Thinking）</div>
                 <!-- <div class="p3">
@@ -40,7 +40,7 @@
                   slot="placeholder"
                   class="emptyImg"
                 /></el-image>
-                <div class="p5">技术趋势</div>
+                <div class="p5">留学辅导</div>
                 <div class="p6">2021 年度10 大最佳降重網站（免费和付费）</div>
               </div>
               <div class="b1" @click="$router.push('/passages/index3')">
@@ -53,7 +53,7 @@
                   slot="placeholder"
                   class="emptyImg"
                 /></el-image>
-                <div class="p5">技术趋势</div>
+                <div class="p5">留学辅导</div>
                 <div class="p6">挑战全網上最全的论文引用格式解說</div>
               </div>
               <div class="b1">
