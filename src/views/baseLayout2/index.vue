@@ -173,7 +173,7 @@
         </el-row>
       </div>
     </div>
-    <div class="sideWechat">
+    <!-- <div class="sideWechat">
       <el-image
         :src="wechat2Img"
         fit="cover"
@@ -192,7 +192,7 @@
         slot="placeholder"
         class="emptyImg"
       /></el-image>
-    </div>
+    </div> -->
     <el-backtop
       target=".webPage"
       style="background-color: #0282d3; color: #fff"
