@@ -4,7 +4,8 @@
     <div class="sticky top-0 bg-white h-11 flex items-center pl-4 pr-5 z-10 justify-between">
       <!-- 网站icon -->
       <el-image
-        :src="require('@/assets/img_drd_mobile/nav.png')"
+        :src="require('@/assets/img_drd_mobile/nav2.png')"
+        class=" w-1/4 "
         fit="cover"
       />
       <!-- 导航菜单 -->
@@ -67,14 +68,15 @@
           </div>
         </div>
       </div>
+      <div class=" flex flex-col items-center justify-center mb-4">
+        <div class=" text-lg text-gray-500 font-bold mb-3">扫码添加微信咨询</div>
+        <el-image class="w-1/3 " :src="require('@/assets/img_drd_mobile/consultCode1.png')" />
+      </div>
     </div>
     <!-- 页面底部 -->
-    <div class="h-32 pt-6 pl-10 pr-10 bg-gray-200">
-      <div class="text-gray-400 text-sm mb-2">
-        Copyright © Dr.D Global Education的团队 保留所有权 广ICP备09052756号-1
-      </div>
-      <div class="text-gray-400 text-sm">
-        广公网安备 33010802117769号
+    <div class="h-32 pt-6 pl-10 pr-10 bg-gray-200 flex justify-center">
+      <div class="text-gray-400 text-sm ">
+        Copyright © Dr.D Global Education的团队 保留所有权
       </div>
     </div>
   </div>

@@ -27,9 +27,12 @@
       </div>
       <div class="text-base text-gray-800 mt-2">
         <br>广州分公司
-        <br>电话：18688001472
         <br>邮箱：florentians@livemail.tw
         <br>工作时间：9：00-22：00（GMT+8）Mon-Sun
+      </div>
+      <div class=" flex flex-col items-center justify-center mt-2">
+        <div class=" text-base text-gray-500 font-bold ">扫码添加微信咨询</div>
+        <el-image class="w-1/3 " :src="require('@/assets/img_drd_mobile/consultCode1.png')" />
       </div>
     </div>
   </div>
