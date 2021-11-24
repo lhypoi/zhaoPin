@@ -114,6 +114,18 @@ export const constantRoutes = [
   //   ]
   // },
   {
+    path: '/passages/:id',
+    component: BaseLayout,
+    redirect: '/passages/basePassage',
+    children: [
+      {
+        path: 'basePassage',
+        component: () => import('@/views/passages/basePassage'),
+        name: 'passage'
+      }
+    ]
+  },
+  {
     path: '/passages',
     component: BaseLayout,
     redirect: '/passages/index1',

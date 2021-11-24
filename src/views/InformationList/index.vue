@@ -5,6 +5,7 @@
         <div class="sec1Box">
           <el-row>
             <div @click="$router.push('/passages/index1')">
+              <!-- <div @click="goPassage"> -->
               <el-col :span="16" class="sec1Col1">
                 <el-image
                   class="g1"
@@ -254,7 +255,14 @@ export default {
   },
   created() {},
   mounted() {},
-  methods: {}
+  methods: {
+    goPassage() {
+      const id = 5
+      this.$router.push({
+        path: '/passage/' + id
+      })
+    }
+  }
 }
 </script>
 
