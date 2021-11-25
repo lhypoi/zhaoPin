@@ -32,17 +32,19 @@
             </div>
             <el-col :span="8" class="sec1Col2">
               <div class="b1" @click="$router.push('/passages/index2')">
-                <el-image
-                  class="g2"
-                  :src="list27Img"
-                  fit="cover"
-                  lazy
-                ><div
-                  slot="placeholder"
-                  class="emptyImg"
-                /></el-image>
-                <div class="p5">留学辅导</div>
-                <div class="p6">2021 年度10 大最佳降重網站（免费和付费）</div>
+                <div>
+                  <el-image
+                    class="g2"
+                    :src="list27Img"
+                    fit="cover"
+                    lazy
+                  ><div
+                    slot="placeholder"
+                    class="emptyImg"
+                  /></el-image>
+                  <div class="p5">留学辅导</div>
+                  <div class="p6">2021 年度10 大最佳降重網站（免费和付费）</div>
+                </div>
               </div>
               <div class="b1" @click="$router.push('/passages/index3')">
                 <el-image
@@ -250,12 +252,43 @@ export default {
       list33Img,
       list34Img,
       list35Img,
-      list36Img
+      list36Img,
+
+      config: {
+        pageNumber: 1,
+        pageSize: 30,
+        loading: false,
+        tag: '',
+        title: ''
+      }
     }
   },
-  created() {},
+  created() {
+    this.getList()
+  },
   mounted() {},
   methods: {
+    getList(title = '') {
+      this.config.loading = true
+      // 搜索时，页码需要设置为1，才能正确返回数据，因为数据是从第一页开始返回的
+      title ? (this.config.pageNumber = 1) : ''
+      this.$http
+        .post('/api/api/sysArticle/page', {
+          params: {
+            page: this.config,
+            title
+          }
+        })
+        .then(res => {
+          console.log(res)
+          // this.tableData = res.data.data.map(item => {
+          //   return item
+          // })
+          // this.config.pageSize = res.data.count
+          this.config.loading = false
+        })
+    },
+
     goPassage() {
       const id = 5
       this.$router.push({

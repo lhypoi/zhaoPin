@@ -114,7 +114,7 @@ export const constantRoutes = [
   //   ]
   // },
   {
-    path: '/passages/:id',
+    path: '/passages/',
     component: BaseLayout,
     redirect: '/passages/basePassage',
     children: [

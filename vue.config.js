@@ -138,5 +138,17 @@ module.exports = {
           config.optimization.runtimeChunk('single')
         }
       )
+  },
+
+  devServer:{
+    proxy:{
+      '/api':{
+        target:'http://47.96.231.92:18090/',  
+        changeOrigin:true,
+        pathRewrite:{
+          '^/api':''
+        }
+      }
+    }
   }
 }
