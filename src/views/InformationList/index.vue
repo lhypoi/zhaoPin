@@ -93,7 +93,7 @@
       </div>
     </div>
 
-    <div class="pageSection sec2">
+    <!-- <div class="pageSection sec2">
       <div class="pageSectionContent">
         <div class="sec1Box">
           <el-row :gutter="30" class="sec2Row" type="flex">
@@ -212,13 +212,14 @@
           </el-row>
         </div>
       </div>
-    </div>
+    </div> -->
+    <passage-item />
 
-    <div class="pageSection sec3">
+    <!-- <div class="pageSection sec3">
       <div class="pageSectionContent">
         <MoreRow />
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -234,11 +235,14 @@ const list33Img = require('@/assets/img/list33.png')
 const list34Img = require('@/assets/img/list34.png')
 const list35Img = require('@/assets/img/list35.png')
 const list36Img = require('@/assets/img/list36.png')
-import MoreRow from '@/views/Common/MoreRow'
+// import MoreRow from '@/views/Common/MoreRow'
+import PassageItem from './component/passageItem.vue'
 
 export default {
   name: 'InformationList',
-  components: { MoreRow },
+  components: {
+    // MoreRow,
+    PassageItem },
   props: {},
   data() {
     return {
