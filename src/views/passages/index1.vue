@@ -144,6 +144,26 @@ export default {
       list35Img,
       list36Img
     }
+  },
+  created() {
+    // const id = this.$route.query
+    // console.log(id)
+    this.getEditorList()
+  },
+  methods: {
+    getEditorList() {
+      // let id = this.$route.query
+      // let id = 6
+      this.$http
+        .get('api/api/sysArticle/get', {
+          params: {
+            id: 6
+          }
+        })
+        .then(res => {
+          console.log(res)
+        })
+    }
   }
 
 }

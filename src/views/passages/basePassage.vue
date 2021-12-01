@@ -37,23 +37,21 @@ export default {
   created() {
     // const { id } = this.$route.params
     // console.log(id)
-    this.getEditorList()
+
+    // this.getEditorList()
   },
   methods: {
-    getEditorList() {
-      // let id=this.$route.query.id
-      const id = 6
-      this.$http
-        .get('api/api/sysArticle/get', {
-          params: {
-            id
-          }
-        })
-        .then(res => {
-          console.log(res)
-          // this.saveContent = res.data.data
-        })
-    }
+    // getEditorList() {
+    //   this.$http
+    //     .get('api/api/sysArticle/get', {
+    //       params: {
+    //         id
+    //       }
+    //     })
+    //     .then(res => {
+    //       console.log(res)
+    //     })
+    // }
   }
 
 }

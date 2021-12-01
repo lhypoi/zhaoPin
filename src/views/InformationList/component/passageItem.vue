@@ -45,7 +45,14 @@ export default {
     return {
       passageList: [],
       currentPage: 0,
-      pageSize: 6
+      pageSize: 6,
+      config: {
+        pageNumber: 1,
+        pageSize: 30,
+        loading: false,
+        tag: '',
+        title: ''
+      }
     }
   },
   computed: {
@@ -104,7 +111,32 @@ export default {
 
     this.currentPage = 1
   },
+  created() {
+    this.getList()
+  },
   methods: {
+    // 请求文章信息
+    getList(title = '') {
+      this.config.loading = true
+      // 搜索时，页码需要设置为1，才能正确返回数据，因为数据是从第一页开始返回的
+      title ? (this.config.pageNumber = 1) : ''
+      this.$http
+        .post('/api/api/sysArticle/page', {
+          params: {
+            page: this.config,
+            title
+          }
+        })
+        .then(res => {
+          // console.log(res)
+          // this.tableData = res.data.data.map(item => {
+          //   return item
+          // })
+          this.config.pageSize = res.data.count
+          this.config.loading = false
+        })
+    },
+
     handleCurrentChange(val) {
       this.currentPage = val
     }

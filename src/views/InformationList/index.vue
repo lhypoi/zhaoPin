@@ -4,8 +4,8 @@
       <div class="pageSectionContent">
         <div class="sec1Box">
           <el-row>
-            <div @click="$router.push('/passages/index1')">
-              <!-- <div @click="goPassage"> -->
+            <!-- <div @click="$router.push('/passages/index1')"> -->
+            <div @click="goPassage">
               <el-col :span="16" class="sec1Col1">
                 <el-image
                   class="g1"
@@ -16,18 +16,18 @@
                   slot="placeholder"
                   class="emptyImg"
                 /></el-image>
-                <div class="p1">留学辅导</div>
-                <!-- <div class="p2">欢迎Teradat新任首席执行官史蒂夫·麦克米兰</div> -->
-                <div class="p2">分數低？那是因為你少了批判性思維（Critical Thinking）</div>
-                <!-- <div class="p3">
-                的董事会已任命史蒂夫麦克米伦担任下一任总裁兼首席执行官。从这篇临时总裁兼首席执行官Vic
-                Lund 的文章中了解更多信息. Lund 的文章中了解更多信息.
-              </div> -->
-                <div class="p3">
-                  在歐美教育，學校裡的教學風格和亞洲相差甚大,這一點相信每個在外留學的同學都深有感觸。
-                  Critical thinking大部分的人翻译成“批判性思维”，但我觉得差了一點意思。
+                <div
+                  v-for="(item,index) in passageone"
+                  :key="index"
+                >
+                  <div class="p1">{{ item.position }}</div>
+                  <div class="p2">{{ item.title }}</div>
+                  <div class="p3">
+                    在歐美教育，學校裡的教學風格和亞洲相差甚大,這一點相信每個在外留學的同學都深有感觸。
+                    Critical thinking大部分的人翻译成“批判性思维”，但我觉得差了一點意思。
+                  </div>
+                  <div class="p4">2021年11月15日-1分钟读</div>
                 </div>
-                <div class="p4">2021年11月15日-1分钟读</div>
               </el-col>
             </div>
             <el-col :span="8" class="sec1Col2">
@@ -224,6 +224,7 @@
 </template>
 
 <script>
+// import { title } from '@/settings'
 const list26Img = require('@/assets/img/list26.png')
 const list27Img = require('@/assets/img/list27.png')
 const list28Img = require('@/assets/img/list28.png')
@@ -241,7 +242,6 @@ import PassageItem from './component/passageItem.vue'
 export default {
   name: 'InformationList',
   components: {
-    // MoreRow,
     PassageItem },
   props: {},
   data() {
@@ -257,6 +257,14 @@ export default {
       list34Img,
       list35Img,
       list36Img,
+      passageone: [
+        {
+          id: '',
+          position: '',
+          tag: '',
+          title: ''
+        }
+      ],
 
       config: {
         pageNumber: 1,
@@ -284,20 +292,25 @@ export default {
           }
         })
         .then(res => {
-          console.log(res)
-          // this.tableData = res.data.data.map(item => {
-          //   return item
-          // })
+          this.passageone = res.data.data.slice(0, 1)
+          // console.log(this.passageone);
           // this.config.pageSize = res.data.count
           this.config.loading = false
         })
     },
 
     goPassage() {
-      const id = 5
-      this.$router.push({
-        path: '/passage/' + id
+      const arr = this.passageone
+      const id = arr.map(obj => {
+        return obj.id
       })
+      this.$router.push({
+        path: '/passages/index1',
+        query: {
+          id: id
+        }
+      })
+      // console.log(this.$route);
     }
   }
 }

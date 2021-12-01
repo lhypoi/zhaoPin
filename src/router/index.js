@@ -113,18 +113,18 @@ export const constantRoutes = [
   //     }
   //   ]
   // },
-  {
-    path: '/passages/',
-    component: BaseLayout,
-    redirect: '/passages/basePassage',
-    children: [
-      {
-        path: 'basePassage',
-        component: () => import('@/views/passages/basePassage'),
-        name: 'passage'
-      }
-    ]
-  },
+  // {
+  //   path: '/passages',
+  //   component: BaseLayout,
+  //   redirect: '/passages/basePassage',
+  //   children: [
+  //     {
+  //       path: 'passage',
+  //       component: () => import('@/views/passages/basePassage'),
+  //       name: 'passage'
+  //     }
+  //   ]
+  // },
   {
     path: '/passages',
     component: BaseLayout,
@@ -137,30 +137,30 @@ export const constantRoutes = [
       }
     ]
   },
-  {
-    path: '/passages',
-    component: BaseLayout,
-    redirect: '/passages/index2',
-    children: [
-      {
-        path: 'index2',
-        component: () => import('@/views/passages/index2'),
-        name: 'passage2'
-      }
-    ]
-  },
-  {
-    path: '/passages',
-    component: BaseLayout,
-    redirect: '/passages/index3',
-    children: [
-      {
-        path: 'index3',
-        component: () => import('@/views/passages/index3'),
-        name: 'passage3'
-      }
-    ]
-  },
+  // {
+  //   path: '/passages',
+  //   component: BaseLayout,
+  //   redirect: '/passages/index2',
+  //   children: [
+  //     {
+  //       path: 'index2',
+  //       component: () => import('@/views/passages/index2'),
+  //       name: 'passage2'
+  //     }
+  //   ]
+  // },
+  // {
+  //   path: '/passages',
+  //   component: BaseLayout,
+  //   redirect: '/passages/index3',
+  //   children: [
+  //     {
+  //       path: 'index3',
+  //       component: () => import('@/views/passages/index3'),
+  //       name: 'passage3'
+  //     }
+  //   ]
+  // },
   {
     path: '/GuaranteedAdmission',
     component: BaseLayout,
