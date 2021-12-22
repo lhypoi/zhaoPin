@@ -145,19 +145,20 @@ export default {
       list36Img
     }
   },
-  created() {
-    // const id = this.$route.query
-    // console.log(id)
+  mounted() {
     this.getEditorList()
+  },
+  created() {
+
   },
   methods: {
     getEditorList() {
-      // let id = this.$route.query
-      // let id = 6
+      const id = this.$route.query.id
+      // console.log(id);
       this.$http
         .get('api/api/sysArticle/get', {
           params: {
-            id: 6
+            id
           }
         })
         .then(res => {

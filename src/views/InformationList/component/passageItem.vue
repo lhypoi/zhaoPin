@@ -3,19 +3,19 @@
     <div class="pageSection sec2">
       <div class="pageSectionContent">
         <div class="sec1Box">
-          <el-col v-for="(item,index) in passageList" :key="index" :span="8" class="sec2Col">
+          <el-col v-for="(item,index) in showPassageList" :key="index" :span="8" class="sec2Col">
             <el-image
               class="g1"
-              :src="item.imgPath"
+              :src="require('@/assets/img/list31.png')"
               fit="cover"
               lazy
             />
             <div class="p1">{{ item.tag }}</div>
             <div class="p2">{{ item.title }}</div>
             <div class="p3">
-              {{ item.content }}
+              {{ item.articleSummary }}
             </div>
-            <div class="p4">{{ item.date }}</div>
+            <div class="p4">{{ item.articleDate }}</div>
           </el-col>
         </div>
       </div>
@@ -43,7 +43,19 @@ export default {
   components: { pagination, MoreRow },
   data() {
     return {
-      passageList: [],
+      passageList: [
+        {
+          id: '',
+          position: '',
+          tag: '',
+          title: '',
+          articleSummary: '',
+          articleDate: ''
+        }
+      ],
+      imageList: [
+
+      ],
       currentPage: 0,
       pageSize: 6,
       config: {
@@ -65,48 +77,30 @@ export default {
   mounted() {
     this.passageList = [
       {
-        imgPath: require('@/assets/img/list31.png'),
-        tag: '万物云',
-        title: '有利条件试验解决云数据分析用户',
-        content: '有利条件试验为分析人员、开发人员和操作人员提供了免费的、为期30天的云中TeradataVantage访问。',
-        date: '2020年5月7日-1分钟读'
-      },
-      {
-        imgPath: require('@/assets/img/list32.png'),
-        tag: '万物云',
-        title: '有利条件试验解决云数据分析用户',
-        content: '有利条件试验为分析人员、开发人员和操作人员提供了免费的、为期30天的云中TeradataVantage访问。',
-        date: '2020年5月7日-1分钟读'
-      },
-      {
-        imgPath: require('@/assets/img/list33.png'),
-        tag: '万物云',
-        title: '有利条件试验解决云数据分析用户',
-        content: '有利条件试验为分析人员、开发人员和操作人员提供了免费的、为期30天的云中TeradataVantage访问。',
-        date: '2020年5月7日-1分钟读'
-      },
-      {
-        imgPath: require('@/assets/img/list34.png'),
-        tag: '万物云',
-        title: '有利条件试验解决云数据分析用户',
-        content: '有利条件试验为分析人员、开发人员和操作人员提供了免费的、为期30天的云中TeradataVantage访问。',
-        date: '2020年5月7日-1分钟读'
-      },
-      {
-        imgPath: require('@/assets/img/list35.png'),
-        tag: '万物云',
-        title: '有利条件试验解决云数据分析用户',
-        content: '有利条件试验为分析人员、开发人员和操作人员提供了免费的、为期30天的云中TeradataVantage访问。',
-        date: '2020年5月7日-1分钟读'
-      },
-      {
-        imgPath: require('@/assets/img/list36.png'),
-        tag: '万物云',
-        title: '有利条件试验解决云数据分析用户',
-        content: '有利条件试验为分析人员、开发人员和操作人员提供了免费的、为期30天的云中TeradataVantage访问。',
-        date: '2020年5月7日-1分钟读'
-      }
+        imgPath: require('@/assets/img/list31.png')
 
+      },
+      {
+        imgPath: require('@/assets/img/list32.png')
+
+      },
+      {
+        imgPath: require('@/assets/img/list33.png')
+      },
+      {
+        imgPath: require('@/assets/img/list34.png')
+      },
+      {
+        imgPath: require('@/assets/img/list35.png')
+
+      },
+      {
+        imgPath: require('@/assets/img/list36.png')
+
+      },
+      {
+        imgPath: require('@/assets/img/list36.png')
+      }
     ]
 
     this.currentPage = 1
@@ -128,6 +122,9 @@ export default {
           }
         })
         .then(res => {
+          // console.log(res);
+          this.passageList = res.data.data
+          // console.log(this.passageList);
           // console.log(res)
           // this.tableData = res.data.data.map(item => {
           //   return item

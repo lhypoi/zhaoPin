@@ -5,7 +5,7 @@
         <div class="sec1Box">
           <el-row>
             <!-- <div @click="$router.push('/passages/index1')"> -->
-            <div @click="goPassage">
+            <div @click="goPassage1">
               <el-col :span="16" class="sec1Col1">
                 <el-image
                   class="g1"
@@ -18,21 +18,25 @@
                 /></el-image>
                 <div
                   v-for="(item,index) in passageone"
-                  :key="index"
+                  :key="index+'one'"
                 >
-                  <div class="p1">{{ item.position }}</div>
+                  <div class="p1">{{ item.tag }}</div>
                   <div class="p2">{{ item.title }}</div>
                   <div class="p3">
-                    在歐美教育，學校裡的教學風格和亞洲相差甚大,這一點相信每個在外留學的同學都深有感觸。
-                    Critical thinking大部分的人翻译成“批判性思维”，但我觉得差了一點意思。
+                    {{ item.articleSummary }}
                   </div>
-                  <div class="p4">2021年11月15日-1分钟读</div>
+                  <div class="p4">{{ item.articleDate }}发表</div>
+                  <!-- <div class="p4">2021年11月15日-1分钟读</div> -->
                 </div>
               </el-col>
             </div>
             <el-col :span="8" class="sec1Col2">
-              <div class="b1" @click="$router.push('/passages/index2')">
-                <div>
+              <!-- <div class="b1" @click="$router.push('/passages/index2')"> -->
+              <div class="b1" @click="goPassage2">
+                <div
+                  v-for="(item,index) in passagetwo"
+                  :key="index+'two'"
+                >
                   <el-image
                     class="g2"
                     :src="list27Img"
@@ -42,50 +46,63 @@
                     slot="placeholder"
                     class="emptyImg"
                   /></el-image>
-                  <div class="p5">留学辅导</div>
-                  <div class="p6">2021 年度10 大最佳降重網站（免费和付费）</div>
+                  <div class="p5">{{ item.tag }}</div>
+                  <div class="p6">{{ item.title }}</div>
                 </div>
               </div>
-              <div class="b1" @click="$router.push('/passages/index3')">
-                <el-image
-                  class="g2"
-                  :src="list28Img"
-                  fit="cover"
-                  lazy
-                ><div
-                  slot="placeholder"
-                  class="emptyImg"
-                /></el-image>
-                <div class="p5">留学辅导</div>
-                <div class="p6">挑战全網上最全的论文引用格式解說</div>
-              </div>
-              <div class="b1">
-                <el-image
-                  class="g2"
-                  :src="list29Img"
-                  fit="cover"
-                  lazy
-                ><div
-                  slot="placeholder"
-                  class="emptyImg"
-                /></el-image>
-                <div class="p5">技术趋势</div>
-                <div class="p6">
-                  在新冠肺炎大流行期间中国 如何使用先进的分析方法
+              <div class="b1" @click="goPassage3">
+                <div
+                  v-for="(item,index) in passagethree"
+                  :key="index+'three'"
+                >
+                  <el-image
+                    class="g2"
+                    :src="list28Img"
+                    fit="cover"
+                    lazy
+                  ><div
+                    slot="placeholder"
+                    class="emptyImg"
+                  /></el-image>
+                  <div class="p5">{{ item.tag }}</div>
+                  <div class="p6">{{ item.title }}</div>
                 </div>
               </div>
-              <div class="b1">
-                <el-image
-                  class="g2"
-                  :src="list30Img"
-                  fit="cover"
-                  lazy
-                ><div
-                  slot="placeholder"
-                  class="emptyImg"
-                /></el-image>
-                <div class="p5">技术趋势</div>
-                <div class="p6">利用Vantage风险分析技术， 建立早期预警系统</div>
+              <div class="b1" @click="goPassage4">
+                <div
+                  v-for="(item,index) in passagefour"
+                  :key="index+'four'"
+                >
+                  <el-image
+                    class="g2"
+                    :src="list29Img"
+                    fit="cover"
+                    lazy
+                  ><div
+                    slot="placeholder"
+                    class="emptyImg"
+                  /></el-image>
+                  <div class="p5">{{ item.tag }}</div>
+                  <div class="p6">{{ item.title }}</div>
+                </div>
+              </div>
+              <div class="b1" @click="goPassage5">
+                <div
+                  v-for="(item,index) in passagefive"
+                  :key="index+'five'"
+                >
+                  <el-image
+                    class="g2"
+                    :src="list30Img"
+                    fit="cover"
+                    lazy
+                  ><div
+                    slot="placeholder"
+                    class="emptyImg"
+                  /></el-image>
+                  <div class="p5">{{ item.tag }}</div>
+                  <div class="p6">{{ item.title }}</div>
+                </div>
               </div>
             </el-col>
           </el-row>
@@ -257,15 +274,47 @@ export default {
       list34Img,
       list35Img,
       list36Img,
-      passageone: [
-        {
-          id: '',
-          position: '',
-          tag: '',
-          title: ''
-        }
-      ],
 
+      passageone: {
+        id: '',
+        position: '',
+        tag: '',
+        title: '',
+        articleSummary: '',
+        articleDate: ''
+      },
+      passagetwo: {
+        id: '',
+        position: '',
+        tag: '',
+        title: '',
+        articleSummary: '',
+        articleDate: ''
+      },
+      passagethree: {
+        id: '',
+        position: '',
+        tag: '',
+        title: '',
+        articleSummary: '',
+        articleDate: ''
+      },
+      passagefour: {
+        id: '',
+        position: '',
+        tag: '',
+        title: '',
+        articleSummary: '',
+        articleDate: ''
+      },
+      passagefive: {
+        id: '',
+        position: '',
+        tag: '',
+        title: '',
+        articleSummary: '',
+        articleDate: ''
+      },
       config: {
         pageNumber: 1,
         pageSize: 30,
@@ -292,25 +341,67 @@ export default {
           }
         })
         .then(res => {
+          // console.log(res);
+          res.data.data.sort(function(a, b) {
+            return b.articleDate < a.articleDate ? -1 : 1
+          })
+          // console.log(newres);
           this.passageone = res.data.data.slice(0, 1)
-          // console.log(this.passageone);
+          this.passagetwo = res.data.data.slice(1, 2)
+          this.passagethree = res.data.data.slice(2, 3)
+          this.passagefour = res.data.data.slice(3, 4)
+          this.passagefive = res.data.data.slice(4, 5)
+          // console.log(this.passagetop);
           // this.config.pageSize = res.data.count
           this.config.loading = false
         })
     },
 
-    goPassage() {
-      const arr = this.passageone
-      const id = arr.map(obj => {
-        return obj.id
-      })
+    goPassage1() {
+      const id = this.passageone[0].id
       this.$router.push({
-        path: '/passages/index1',
+        // path: '/passages/index1',
+        path: '/basePassage/index',
         query: {
           id: id
         }
       })
-      // console.log(this.$route);
+    },
+    goPassage2() {
+      const id = this.passagetwo[0].id
+      this.$router.push({
+        path: '/basePassage/index',
+        query: {
+          id: id
+        }
+      })
+    },
+    goPassage3() {
+      const id = this.passagethree[0].id
+      this.$router.push({
+        path: '/basePassage/index',
+        query: {
+          id: id
+        }
+      })
+    },
+    goPassage4() {
+      const id = this.passagefour[0].id
+      this.$router.push({
+        path: '/basePassage/index',
+        query: {
+          id: id
+        }
+      })
+    },
+    goPassage5() {
+      const id = this.passagefive[0].id
+      this.$router.push({
+        path: '/basePassage/index',
+        query: {
+          id: id
+        }
+      })
     }
   }
 }
