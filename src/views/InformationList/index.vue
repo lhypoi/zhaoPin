@@ -7,7 +7,7 @@
             <!-- <div @click="$router.push('/passages/index1')"> -->
             <div @click="goPassage1">
               <el-col :span="16" class="sec1Col1">
-                <el-image
+                <!-- <el-image
                   class="g1"
                   :src="list26Img"
                   fit="cover"
@@ -15,11 +15,21 @@
                 ><div
                   slot="placeholder"
                   class="emptyImg"
-                /></el-image>
+                /></el-image> -->
                 <div
                   v-for="(item,index) in passageone"
                   :key="index+'one'"
                 >
+                  <el-image
+                    class="g1"
+                    :src="item.image"
+                    fit="cover"
+                    lazy
+                  ><div
+                    slot="placeholder"
+                    class="emptyImg"
+                  /></el-image>
+
                   <div class="p1">{{ item.tag }}</div>
                   <div class="p2">{{ item.title }}</div>
                   <div class="p3">
@@ -37,9 +47,18 @@
                   v-for="(item,index) in passagetwo"
                   :key="index+'two'"
                 >
-                  <el-image
+                  <!-- <el-image
                     class="g2"
                     :src="list27Img"
+                    fit="cover"
+                    lazy
+                  ><div
+                    slot="placeholder"
+                    class="emptyImg"
+                  /></el-image> -->
+                  <el-image
+                    class="g2"
+                    :src="item.image"
                     fit="cover"
                     lazy
                   ><div
@@ -55,9 +74,18 @@
                   v-for="(item,index) in passagethree"
                   :key="index+'three'"
                 >
-                  <el-image
+                  <!-- <el-image
                     class="g2"
                     :src="list28Img"
+                    fit="cover"
+                    lazy
+                  ><div
+                    slot="placeholder"
+                    class="emptyImg"
+                  /></el-image> -->
+                  <el-image
+                    class="g2"
+                    :src="item.image"
                     fit="cover"
                     lazy
                   ><div
@@ -73,9 +101,18 @@
                   v-for="(item,index) in passagefour"
                   :key="index+'four'"
                 >
-                  <el-image
+                  <!-- <el-image
                     class="g2"
                     :src="list29Img"
+                    fit="cover"
+                    lazy
+                  ><div
+                    slot="placeholder"
+                    class="emptyImg"
+                  /></el-image> -->
+                  <el-image
+                    class="g2"
+                    :src="item.image"
                     fit="cover"
                     lazy
                   ><div
@@ -91,9 +128,18 @@
                   v-for="(item,index) in passagefive"
                   :key="index+'five'"
                 >
-                  <el-image
+                  <!-- <el-image
                     class="g2"
                     :src="list30Img"
+                    fit="cover"
+                    lazy
+                  ><div
+                    slot="placeholder"
+                    class="emptyImg"
+                  /></el-image> -->
+                  <el-image
+                    class="g2"
+                    :src="item.image"
                     fit="cover"
                     lazy
                   ><div
@@ -278,6 +324,7 @@ export default {
       passageone: {
         id: '',
         position: '',
+        image: '',
         tag: '',
         title: '',
         articleSummary: '',
@@ -286,6 +333,7 @@ export default {
       passagetwo: {
         id: '',
         position: '',
+        image: '',
         tag: '',
         title: '',
         articleSummary: '',
@@ -294,6 +342,7 @@ export default {
       passagethree: {
         id: '',
         position: '',
+        image: '',
         tag: '',
         title: '',
         articleSummary: '',
@@ -302,6 +351,7 @@ export default {
       passagefour: {
         id: '',
         position: '',
+        image: '',
         tag: '',
         title: '',
         articleSummary: '',
@@ -310,6 +360,7 @@ export default {
       passagefive: {
         id: '',
         position: '',
+        image: '',
         tag: '',
         title: '',
         articleSummary: '',
@@ -334,18 +385,17 @@ export default {
       // 搜索时，页码需要设置为1，才能正确返回数据，因为数据是从第一页开始返回的
       title ? (this.config.pageNumber = 1) : ''
       this.$http
-        .post('/api/api/sysArticle/page', {
+        .post('/api/sysArticle/page', {
           params: {
             page: this.config,
             title
           }
         })
         .then(res => {
-          // console.log(res);
+          console.log(res)
           res.data.data.sort(function(a, b) {
             return b.articleDate < a.articleDate ? -1 : 1
           })
-          // console.log(newres);
           this.passageone = res.data.data.slice(0, 1)
           this.passagetwo = res.data.data.slice(1, 2)
           this.passagethree = res.data.data.slice(2, 3)

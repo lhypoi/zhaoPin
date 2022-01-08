@@ -3,19 +3,32 @@
     <div class="pageSection sec2">
       <div class="pageSectionContent">
         <div class="sec1Box">
-          <el-col v-for="(item,index) in showPassageList" :key="index" :span="8" class="sec2Col">
-            <el-image
-              class="g1"
-              :src="require('@/assets/img/list31.png')"
-              fit="cover"
-              lazy
-            />
-            <div class="p1">{{ item.tag }}</div>
-            <div class="p2">{{ item.title }}</div>
-            <div class="p3">
-              {{ item.articleSummary }}
+          <el-col
+            v-for="(item,index) in showPassageList"
+            :key="index"
+            :span="8"
+            class="sec2Col"
+          >
+            <div @click="jump(item.id)">
+              <!-- <el-image
+                class="g1"
+                :src="require('@/assets/img/list31.png')"
+                fit="cover"
+                lazy
+              /> -->
+              <el-image
+                class="g1"
+                :src="item.image"
+                fit="cover"
+                lazy
+              />
+              <div class="p1">{{ item.tag }}</div>
+              <div class="p2">{{ item.title }}</div>
+              <div class="p3">
+                {{ item.articleSummary }}
+              </div>
+              <div class="p4">{{ item.articleDate }}</div>
             </div>
-            <div class="p4">{{ item.articleDate }}</div>
           </el-col>
         </div>
       </div>
@@ -39,6 +52,7 @@
 <script>
 import pagination from './Pagination.vue'
 import MoreRow from '@/views/Common/MoreRow'
+// import { Logger } from 'runjs/lib/common'
 export default {
   components: { pagination, MoreRow },
   data() {
@@ -47,6 +61,7 @@ export default {
         {
           id: '',
           position: '',
+          image: '',
           tag: '',
           title: '',
           articleSummary: '',
@@ -115,20 +130,16 @@ export default {
       // 搜索时，页码需要设置为1，才能正确返回数据，因为数据是从第一页开始返回的
       title ? (this.config.pageNumber = 1) : ''
       this.$http
-        .post('/api/api/sysArticle/page', {
+        .post('/api/sysArticle/page', {
           params: {
             page: this.config,
             title
           }
         })
         .then(res => {
-          // console.log(res);
-          this.passageList = res.data.data
-          // console.log(this.passageList);
-          // console.log(res)
-          // this.tableData = res.data.data.map(item => {
-          //   return item
-          // })
+          this.passageList = res.data.data.map(item => {
+            return item
+          })
           this.config.pageSize = res.data.count
           this.config.loading = false
         })
@@ -136,6 +147,16 @@ export default {
 
     handleCurrentChange(val) {
       this.currentPage = val
+    },
+
+    jump(id) {
+      // console.log(id);
+      this.$router.push({
+        path: '/basePassage/index',
+        query: {
+          id: id
+        }
+      })
     }
   }
 }
@@ -153,6 +174,7 @@ export default {
     height: 100%;
     display: flex;
     flex-wrap: wrap;
+    cursor: pointer;
 
     // .sec2Row {
       // flex-wrap: wrap;

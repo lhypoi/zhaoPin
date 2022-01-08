@@ -43,7 +43,7 @@ export default {
   methods: {
     // getEditorList() {
     //   this.$http
-    //     .get('api/api/sysArticle/get', {
+    //     .get('api/sysArticle/get', {
     //       params: {
     //         id
     //       }

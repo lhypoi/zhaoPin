@@ -49,12 +49,13 @@ export default {
     getEditorList() {
       const id = this.$route.query.id
       this.$http
-        .get('/api/api/sysArticle/get', {
+        .get('/api/sysArticle/get', {
           params: {
             id
           }
         })
         .then(res => {
+          console.log(res)
           this.passage = res.data.data
           // console.log(this.passage);
         })

@@ -156,7 +156,7 @@ export default {
       const id = this.$route.query.id
       // console.log(id);
       this.$http
-        .get('api/api/sysArticle/get', {
+        .get('api/sysArticle/get', {
           params: {
             id
           }
