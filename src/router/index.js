@@ -113,6 +113,67 @@ export const constantRoutes = [
   //     }
   //   ]
   // },
+  // {
+  //   path: '/passages',
+  //   component: BaseLayout,
+  //   redirect: '/passages/basePassage',
+  //   children: [
+  //     {
+  //       path: 'passage',
+  //       component: () => import('@/views/passages/basePassage'),
+  //       name: 'passage'
+  //     }
+  //   ]
+  // },
+  {
+    path: '/passages',
+    component: BaseLayout,
+    redirect: '/passages/index1',
+    children: [
+      {
+        path: 'index1',
+        component: () => import('@/views/passages/index1'),
+        name: 'passage1'
+      }
+    ]
+  },
+  {
+    path: '/basePassage',
+    component: BaseLayout,
+    redirect: '/basePassage/index',
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/basePassage/index'),
+        name: 'basePassage'
+      }
+    ]
+  },
+  {
+    path: '/passages',
+    component: BaseLayout,
+    redirect: '/passages/index2',
+    children: [
+      {
+        path: 'index2',
+        component: () => import('@/views/passages/index2'),
+        name: 'passage2'
+      }
+    ]
+  },
+  {
+    path: '/passages',
+    component: BaseLayout,
+    redirect: '/passages/index3',
+    children: [
+      {
+        path: 'index3',
+        component: () => import('@/views/passages/index3'),
+        name: 'passage3'
+      }
+    ]
+  },
+
   {
     path: '/GuaranteedAdmission',
     component: BaseLayout,
@@ -147,6 +208,7 @@ export const constantRoutes = [
         component: () => import('@/views/representationOfInterests/index'),
         name: 'Documentation'
       }
+
     ]
   },
   {

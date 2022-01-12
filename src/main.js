@@ -9,6 +9,7 @@ import './styles/element-variables.scss'
 import enLang from 'element-ui/lib/locale/lang/en'// 如果使用中文语言包请默认支持，无需额外引入，请删除该依赖
 
 import '@/styles/index.scss' // global css
+import './index.css' //  tailwindcss
 
 import App from './App'
 import store from './store'
@@ -19,6 +20,10 @@ import './permission' // permission control
 import './utils/error-log' // error log
 
 import * as filters from './filters' // global filters
+
+import http from '@/api/config.js'
+
+Vue.prototype.$http = http
 
 /**
  * If you don't want to use mock-server
@@ -49,8 +54,8 @@ new Vue({
   el: '#app',
   router,
   store,
-  render: h => h(App),
   mounted() {
     document.dispatchEvent(new Event('render-event'))
-  }
+  },
+  render: h => h(App)
 })

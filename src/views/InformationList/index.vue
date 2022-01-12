@@ -4,48 +4,151 @@
       <div class="pageSectionContent">
         <div class="sec1Box">
           <el-row>
-            <el-col :span="16" class="sec1Col1">
-              <el-image class="g1" :src="list26Img" fit="cover" lazy
-                ><div slot="placeholder" class="emptyImg"
-              /></el-image>
-              <div class="p1">文化与社区</div>
-              <div class="p2">欢迎Teradat新任首席执行官史蒂夫·麦克米兰</div>
-              <div class="p3">
-                的董事会已任命史蒂夫麦克米伦担任下一任总裁兼首席执行官。从这篇临时总裁兼首席执行官Vic
-                Lund 的文章中了解更多信息. Lund 的文章中了解更多信息.
-              </div>
-              <div class="p4">2020年5月7日-1分钟读</div>
-            </el-col>
+            <!-- <div @click="$router.push('/passages/index1')"> -->
+            <div @click="goPassage1">
+              <el-col :span="16" class="sec1Col1">
+                <!-- <el-image
+                  class="g1"
+                  :src="list26Img"
+                  fit="cover"
+                  lazy
+                ><div
+                  slot="placeholder"
+                  class="emptyImg"
+                /></el-image> -->
+                <div
+                  v-for="(item,index) in passageone"
+                  :key="index+'one'"
+                >
+                  <el-image
+                    class="g1"
+                    :src="item.image"
+                    fit="cover"
+                    lazy
+                  ><div
+                    slot="placeholder"
+                    class="emptyImg"
+                  /></el-image>
+
+                  <div class="p1">{{ item.tag }}</div>
+                  <div class="p2">{{ item.title }}</div>
+                  <div class="p3">
+                    {{ item.articleSummary }}
+                  </div>
+                  <div class="p4">{{ item.articleDate }}发表</div>
+                  <!-- <div class="p4">2021年11月15日-1分钟读</div> -->
+                </div>
+              </el-col>
+            </div>
             <el-col :span="8" class="sec1Col2">
-              <div class="b1">
-                <el-image class="g2" :src="list27Img" fit="cover" lazy
-                  ><div slot="placeholder" class="emptyImg"
-                /></el-image>
-                <div class="p5">技术趋势</div>
-                <div class="p6">导航汽车供应链后新冠肺炎</div>
-              </div>
-              <div class="b1">
-                <el-image class="g2" :src="list28Img" fit="cover" lazy
-                  ><div slot="placeholder" class="emptyImg"
-                /></el-image>
-                <div class="p5">技术趋势</div>
-                <div class="p6">所有的模型都是错误的 (但有些是有用的)</div>
-              </div>
-              <div class="b1">
-                <el-image class="g2" :src="list29Img" fit="cover" lazy
-                  ><div slot="placeholder" class="emptyImg"
-                /></el-image>
-                <div class="p5">技术趋势</div>
-                <div class="p6">
-                  在新冠肺炎大流行期间中国 如何使用先进的分析方法
+              <!-- <div class="b1" @click="$router.push('/passages/index2')"> -->
+              <div class="b1" @click="goPassage2">
+                <div
+                  v-for="(item,index) in passagetwo"
+                  :key="index+'two'"
+                >
+                  <!-- <el-image
+                    class="g2"
+                    :src="list27Img"
+                    fit="cover"
+                    lazy
+                  ><div
+                    slot="placeholder"
+                    class="emptyImg"
+                  /></el-image> -->
+                  <el-image
+                    class="g2"
+                    :src="item.image"
+                    fit="cover"
+                    lazy
+                  ><div
+                    slot="placeholder"
+                    class="emptyImg"
+                  /></el-image>
+                  <div class="p5">{{ item.tag }}</div>
+                  <div class="p6">{{ item.title }}</div>
                 </div>
               </div>
-              <div class="b1">
-                <el-image class="g2" :src="list30Img" fit="cover" lazy
-                  ><div slot="placeholder" class="emptyImg"
-                /></el-image>
-                <div class="p5">技术趋势</div>
-                <div class="p6">利用Vantage风险分析技术， 建立早期预警系统</div>
+              <div class="b1" @click="goPassage3">
+                <div
+                  v-for="(item,index) in passagethree"
+                  :key="index+'three'"
+                >
+                  <!-- <el-image
+                    class="g2"
+                    :src="list28Img"
+                    fit="cover"
+                    lazy
+                  ><div
+                    slot="placeholder"
+                    class="emptyImg"
+                  /></el-image> -->
+                  <el-image
+                    class="g2"
+                    :src="item.image"
+                    fit="cover"
+                    lazy
+                  ><div
+                    slot="placeholder"
+                    class="emptyImg"
+                  /></el-image>
+                  <div class="p5">{{ item.tag }}</div>
+                  <div class="p6">{{ item.title }}</div>
+                </div>
+              </div>
+              <div class="b1" @click="goPassage4">
+                <div
+                  v-for="(item,index) in passagefour"
+                  :key="index+'four'"
+                >
+                  <!-- <el-image
+                    class="g2"
+                    :src="list29Img"
+                    fit="cover"
+                    lazy
+                  ><div
+                    slot="placeholder"
+                    class="emptyImg"
+                  /></el-image> -->
+                  <el-image
+                    class="g2"
+                    :src="item.image"
+                    fit="cover"
+                    lazy
+                  ><div
+                    slot="placeholder"
+                    class="emptyImg"
+                  /></el-image>
+                  <div class="p5">{{ item.tag }}</div>
+                  <div class="p6">{{ item.title }}</div>
+                </div>
+              </div>
+              <div class="b1" @click="goPassage5">
+                <div
+                  v-for="(item,index) in passagefive"
+                  :key="index+'five'"
+                >
+                  <!-- <el-image
+                    class="g2"
+                    :src="list30Img"
+                    fit="cover"
+                    lazy
+                  ><div
+                    slot="placeholder"
+                    class="emptyImg"
+                  /></el-image> -->
+                  <el-image
+                    class="g2"
+                    :src="item.image"
+                    fit="cover"
+                    lazy
+                  ><div
+                    slot="placeholder"
+                    class="emptyImg"
+                  /></el-image>
+                  <div class="p5">{{ item.tag }}</div>
+                  <div class="p6">{{ item.title }}</div>
+                </div>
               </div>
             </el-col>
           </el-row>
@@ -53,13 +156,19 @@
       </div>
     </div>
 
-    <div class="pageSection sec2">
+    <!-- <div class="pageSection sec2">
       <div class="pageSectionContent">
         <div class="sec1Box">
           <el-row :gutter="30" class="sec2Row" type="flex">
             <el-col :span="8" class="sec2Col">
-              <el-image class="g1" :src="list31Img" fit="cover" lazy
-                ><div slot="placeholder" class="emptyImg"
+              <el-image
+                class="g1"
+                :src="list31Img"
+                fit="cover"
+                lazy
+              ><div
+                slot="placeholder"
+                class="emptyImg"
               /></el-image>
               <div class="p1">万物云</div>
               <div class="p2">有利条件试验解决云数据分析用户</div>
@@ -70,8 +179,14 @@
               <div class="p4">2020年5月7日-1分钟读</div>
             </el-col>
             <el-col :span="8" class="sec2Col">
-              <el-image class="g1" :src="list32Img" fit="cover" lazy
-                ><div slot="placeholder" class="emptyImg"
+              <el-image
+                class="g1"
+                :src="list32Img"
+                fit="cover"
+                lazy
+              ><div
+                slot="placeholder"
+                class="emptyImg"
               /></el-image>
               <div class="p1">业务分析</div>
               <div class="p2">
@@ -84,8 +199,14 @@
               <div class="p4">2021年2月1日-3分钟读</div>
             </el-col>
             <el-col :span="8" class="sec2Col">
-              <el-image class="g1" :src="list33Img" fit="cover" lazy
-                ><div slot="placeholder" class="emptyImg"
+              <el-image
+                class="g1"
+                :src="list33Img"
+                fit="cover"
+                lazy
+              ><div
+                slot="placeholder"
+                class="emptyImg"
               /></el-image>
               <div class="p1">业务分析</div>
               <div class="p2">关于数据策略的常规智慧的六大改进</div>
@@ -96,8 +217,14 @@
               <div class="p4">2021年1月29日-7分钟</div>
             </el-col>
             <el-col :span="8" class="sec2Col">
-              <el-image class="g1" :src="list34Img" fit="cover" lazy
-                ><div slot="placeholder" class="emptyImg"
+              <el-image
+                class="g1"
+                :src="list34Img"
+                fit="cover"
+                lazy
+              ><div
+                slot="placeholder"
+                class="emptyImg"
               /></el-image>
               <div class="p1">技术趋势</div>
               <div class="p2">新冠肺炎有效应对大流行风险建模</div>
@@ -108,8 +235,14 @@
               <div class="p4">2021年1月27日-4分钟</div>
             </el-col>
             <el-col :span="8" class="sec2Col">
-              <el-image class="g1" :src="list35Img" fit="cover" lazy
-                ><div slot="placeholder" class="emptyImg"
+              <el-image
+                class="g1"
+                :src="list35Img"
+                fit="cover"
+                lazy
+              ><div
+                slot="placeholder"
+                class="emptyImg"
               /></el-image>
               <div class="p1">业务分析</div>
               <div class="p2">零售和CPG中的大数据需要手术刀，而不是斧头</div>
@@ -120,8 +253,14 @@
               <div class="p4">2020年1月25日-1分钟读</div>
             </el-col>
             <el-col :span="8" class="sec2Col">
-              <el-image class="g1" :src="list36Img" fit="cover" lazy
-                ><div slot="placeholder" class="emptyImg"
+              <el-image
+                class="g1"
+                :src="list36Img"
+                fit="cover"
+                lazy
+              ><div
+                slot="placeholder"
+                class="emptyImg"
               /></el-image>
               <div class="p1">业务分析</div>
               <div class="p2">
@@ -136,33 +275,37 @@
           </el-row>
         </div>
       </div>
-    </div>
+    </div> -->
+    <passage-item />
 
-    <div class="pageSection sec3">
+    <!-- <div class="pageSection sec3">
       <div class="pageSectionContent">
         <MoreRow />
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
-const list26Img = require("@/assets/img/list26.png");
-const list27Img = require("@/assets/img/list27.png");
-const list28Img = require("@/assets/img/list28.png");
-const list29Img = require("@/assets/img/list29.png");
-const list30Img = require("@/assets/img/list30.png");
-const list31Img = require("@/assets/img/list31.png");
-const list32Img = require("@/assets/img/list32.png");
-const list33Img = require("@/assets/img/list33.png");
-const list34Img = require("@/assets/img/list34.png");
-const list35Img = require("@/assets/img/list35.png");
-const list36Img = require("@/assets/img/list36.png");
-import MoreRow from '@/views/Common/MoreRow'
+// import { title } from '@/settings'
+const list26Img = require('@/assets/img/list26.png')
+const list27Img = require('@/assets/img/list27.png')
+const list28Img = require('@/assets/img/list28.png')
+const list29Img = require('@/assets/img/list29.png')
+const list30Img = require('@/assets/img/list30.png')
+const list31Img = require('@/assets/img/list31.png')
+const list32Img = require('@/assets/img/list32.png')
+const list33Img = require('@/assets/img/list33.png')
+const list34Img = require('@/assets/img/list34.png')
+const list35Img = require('@/assets/img/list35.png')
+const list36Img = require('@/assets/img/list36.png')
+// import MoreRow from '@/views/Common/MoreRow'
+import PassageItem from './component/passageItem.vue'
 
 export default {
-  name: "InformationList",
-  components: { MoreRow },
+  name: 'InformationList',
+  components: {
+    PassageItem },
   props: {},
   data() {
     return {
@@ -177,12 +320,141 @@ export default {
       list34Img,
       list35Img,
       list36Img,
-    };
+
+      passageone: {
+        id: '',
+        position: '',
+        image: '',
+        tag: '',
+        title: '',
+        articleSummary: '',
+        articleDate: ''
+      },
+      passagetwo: {
+        id: '',
+        position: '',
+        image: '',
+        tag: '',
+        title: '',
+        articleSummary: '',
+        articleDate: ''
+      },
+      passagethree: {
+        id: '',
+        position: '',
+        image: '',
+        tag: '',
+        title: '',
+        articleSummary: '',
+        articleDate: ''
+      },
+      passagefour: {
+        id: '',
+        position: '',
+        image: '',
+        tag: '',
+        title: '',
+        articleSummary: '',
+        articleDate: ''
+      },
+      passagefive: {
+        id: '',
+        position: '',
+        image: '',
+        tag: '',
+        title: '',
+        articleSummary: '',
+        articleDate: ''
+      },
+      config: {
+        pageNumber: 1,
+        pageSize: 30,
+        loading: false,
+        tag: '',
+        title: ''
+      }
+    }
   },
-  created() {},
+  created() {
+    this.getList()
+  },
   mounted() {},
-  methods: {},
-};
+  methods: {
+    getList(title = '') {
+      this.config.loading = true
+      // 搜索时，页码需要设置为1，才能正确返回数据，因为数据是从第一页开始返回的
+      title ? (this.config.pageNumber = 1) : ''
+      this.$http
+        .post('/api/sysArticle/page', {
+          params: {
+            page: this.config,
+            title
+          }
+        })
+        .then(res => {
+          console.log(res)
+          res.data.data.sort(function(a, b) {
+            return b.articleDate < a.articleDate ? -1 : 1
+          })
+          this.passageone = res.data.data.slice(0, 1)
+          this.passagetwo = res.data.data.slice(1, 2)
+          this.passagethree = res.data.data.slice(2, 3)
+          this.passagefour = res.data.data.slice(3, 4)
+          this.passagefive = res.data.data.slice(4, 5)
+          // console.log(this.passagetop);
+          // this.config.pageSize = res.data.count
+          this.config.loading = false
+        })
+    },
+
+    goPassage1() {
+      const id = this.passageone[0].id
+      this.$router.push({
+        // path: '/passages/index1',
+        path: '/basePassage/index',
+        query: {
+          id: id
+        }
+      })
+    },
+    goPassage2() {
+      const id = this.passagetwo[0].id
+      this.$router.push({
+        path: '/basePassage/index',
+        query: {
+          id: id
+        }
+      })
+    },
+    goPassage3() {
+      const id = this.passagethree[0].id
+      this.$router.push({
+        path: '/basePassage/index',
+        query: {
+          id: id
+        }
+      })
+    },
+    goPassage4() {
+      const id = this.passagefour[0].id
+      this.$router.push({
+        path: '/basePassage/index',
+        query: {
+          id: id
+        }
+      })
+    },
+    goPassage5() {
+      const id = this.passagefive[0].id
+      this.$router.push({
+        path: '/basePassage/index',
+        query: {
+          id: id
+        }
+      })
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -200,6 +472,7 @@ export default {
 
     .sec1Col1 {
       padding: 40px 40px 40px 0;
+      cursor: pointer;
 
       .g1 {
         height: 291px;
@@ -248,6 +521,7 @@ export default {
         position: relative;
         padding-left: 120px;
         height: 102px;
+        cursor: pointer;
 
         .g2 {
           position: absolute;
@@ -255,6 +529,7 @@ export default {
           top: 0;
           width: 102px;
           height: 102px;
+
         }
 
         .p5 {
