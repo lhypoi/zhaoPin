@@ -101,7 +101,7 @@ export default {
   props: {},
   data() {
     return {
-      sec1Img,
+      sec1Img
     }
   },
   created() {},
